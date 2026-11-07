@@ -1,0 +1,1872 @@
+{
+ "url": "https://room8group.com/join-the-team/#/?tcoop=full-time",
+ "depth": 0,
+ "mode": "full",
+ "relation": "start",
+ "link_text": "Room 8: заявлено 19 позиций, вакансии не видны",
+ "final_url": "https://room8group.com/join-the-team/#/?tcoop=full-time",
+ "redirect_chain": [],
+ "title": "Careers - Room 8 Group",
+ "h1": "Careers [7]",
+ "http_status": 200,
+ "status": "partial",
+ "kind": "job_listing",
+ "seconds": 6.9,
+ "antibot": null,
+ "error": null,
+ "skip_reason": null,
+ "limits_hit": [],
+ "warnings": [
+  {
+   "code": "w_capped_jobs",
+   "severity": "warn",
+   "limit": 100
+  }
+ ],
+ "notes": [
+  {
+   "code": "n_blocked_requests",
+   "n": 4
+  },
+  {
+   "code": "n_bad_json",
+   "n": 1
+  }
+ ],
+ "sections": [
+  {
+   "label": "initial",
+   "source": "page",
+   "text": "[Consent Preferences] [img: Revisit consent button]\n[Room 8 Group] Great games. Created together.\nMenu\nCareers [7]\nAll\nFull-time\nAll\nAll\nRoom 8 Group\nEngineering\nС#/Unity Render Engineer\nFull-time, Remote\nBulgaria, Czech Republic, Georgia +7\nRoom 8 Group\nDesign\nPrincipal Game Designer\nFull-time, Remote\nEurope\nRoom 8 Group\nBusiness Development\nEngagement Manager\nFull-time, Remote\nArgentina, Brazil, Mexico +1\nRoom 8 Group\nProduction\nProducer\nFull-time, Remote\nEurope\nRoom 8 Group\nTech Art\nProject Technical Art Director\nFull-time, Remote\nCzech Republic, Estonia, Europe +8\nRoom 8 Group\nDesign\nGame Designer\nFull-time, Hybrid\nCanada\nRoom 8 Group\nBusiness Development\nBusiness Development Director\nFull-time, Remote\nUK\nFraud alert\nAll hiring-related communication is conducted exclusively by our representatives using @room8group.com or @room8studio.com email addresses or verified LinkedIn accounts.\nPlease be cautious of any communication from non-corporate sources. For more details, please refer to our Anti-Fraud Policy.\n[Room 8 Group] Great games. Created together.\n[Facebook] [Instagram] [LinkedIn]\nSolutions\nGame Development\nToggle submenu for Game Development\nTechnology\nToggle submenu for Technology\nArt\nToggle submenu for Art\nTrailers & Cinematics\nToggle submenu for Trailers & Cinematics\nQA\nToggle submenu for QA\nTraining & Simulation\nPages\nAbout us\nNews\nCase studies\nCareers\nContact\nPolicies\nPrivacy Policy\nCookies Policy\nAnti-Fraud Declaration\nSustainable Growth\nCompliance Hotline\n© 2026 All Rights Reserved\nAll company names, brand names, trademarks, logos, illustrations, videos and any other intellectual property (Intellectual Property) published on this website are the property of their respective owners. Any non-authorized usage of Intellectual Property is strictly prohibited and any violation will be prosecuted under the law."
+  },
+  {
+   "label": "frame https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lc3oG8sAAAAAArVGC-4vxAb9u4Tidmt7Bmx975c&co=aHR0cHM6Ly9yb29tOGdyb3VwLmNvbTo0NDM.&hl=en&v=bSuJ2xBC8cFy7pM4Z3Hu9boH&size=invisible&anchor-ms=20000&execute-ms=30000&cb=cy0ptzfnvk0f",
+   "source": "frame:https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lc3oG8sAAAAAArVGC-4vxAb9u4Tidmt7Bmx975c&co=aHR0cHM6Ly9yb29tOGdyb3VwLmNvbTo0NDM.&hl=en&v=bSuJ2xBC8cFy7pM4Z3Hu9boH&size=invisible&anchor-ms=20000&execute-ms=30000&cb=cy0ptzfnvk0f",
+   "text": "protected by reCAPTCHA"
+  }
+ ],
+ "text_chars": 1875,
+ "text_truncated": false,
+ "links": [
+  {
+   "text": "Visit CookieYes website",
+   "url": "https://www.cookieyes.com/product/cookie-consent/?ref=cypbcyb",
+   "class": "external",
+   "rel": "noopener",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_skip_external"
+  },
+  {
+   "text": "Room 8 Group",
+   "url": "https://room8group.com/",
+   "class": "internal",
+   "rel": "home",
+   "context": "Great games. Created together. MENU",
+   "source": "page",
+   "visible": true,
+   "probe": {
+    "ok": true,
+    "status": 206,
+    "final_url": "https://room8group.com/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Room 8 Group",
+    "h1": "",
+    "description": "Room 8 Group stands as a perfect foundation to support production and creative needs. From high-end console/PC to free to play mobile games. We unite with industry leaders to deliver exceptional creative and tech services.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/ — Room 8 Group"
+  },
+  {
+   "text": "Privacy Policy",
+   "url": "https://room8group.com/privacy-policy/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/privacy-policy/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Privacy Policy - Room 8 Group",
+    "h1": "Privacy Policy",
+    "description": "ROOM 8 GROUP respects the privacy of online visitors of its website and customers of its services and products and for protection of such privacy and for compliance with the European Union General Data Protection Regulation (“GDPR”) and other legal requirements regarding the protection of personal d",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/privacy-policy/ — Privacy Policy - Room 8 Group"
+  },
+  {
+   "text": "Cookies Policy",
+   "url": "https://room8group.com/cookies-policy/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/cookies-policy/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Cookies Policy - Room 8 Group",
+    "h1": "Cookies Policy",
+    "description": "ROOM 8 GROUP is pleased to welcome you to our website! By using our website https://room8group.com/, you are consenting to our use of cookies and other analytical (tracking) technology in accordance with this Cookies Policy (hereinafter – “Policy”). If you do not agree to our use of cookies and othe",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/cookies-policy/ — Cookies Policy - Room 8 Group"
+  },
+  {
+   "text": "About us",
+   "url": "https://room8group.com/about-us/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/about-us/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "About us - Room 8 Group",
+    "h1": "",
+    "description": "",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/about-us/ — About us - Room 8 Group"
+  },
+  {
+   "text": "Solutions",
+   "url": "https://room8group.com/join-the-team/",
+   "class": "anchor",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_anchor"
+  },
+  {
+   "text": "Game Development",
+   "url": "https://room8group.com/solutions/game-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/solutions/game-development/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Game Development Services | Room 8 Group",
+    "h1": "",
+    "description": "Room 8 Group's game development services cover full game dev, DLCs, LiveOps, prototyping, remakes & level design. 15 years across every platform.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/solutions/game-development/ — Game Development Services | Room 8 Group"
+  },
+  {
+   "text": "Technology",
+   "url": "https://room8group.com/solutions/technology/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/solutions/technology/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Technologies - Room 8 Group",
+    "h1": "",
+    "description": "Room 8 Group offers cutting-edge game technologies: porting, performance optimization, UI/UX, VR, multiplayer, backend infrastructure & AI behavior.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/solutions/technology/ — Technologies - Room 8 Group"
+  },
+  {
+   "text": "Art",
+   "url": "https://room8group.com/solutions/art/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/solutions/art/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Game Art Services: Characters, Environments & More",
+    "h1": "",
+    "description": "Game art services backed by 14 years of AAA experience. Art direction, character development, environment art & VFX. All visual styles.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/solutions/art/ — Game Art Services: Characters, Environments & More"
+  },
+  {
+   "text": "Trailers & Cinematics",
+   "url": "https://room8group.com/solutions/trailers-cinematics/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/solutions/trailers-cinematics/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Game Trailer Production Services | Room 8 Group",
+    "h1": "",
+    "description": "Game trailer production services covering CG trailers, gameplay trailers, cutscenes & UA videos. Any style, any tone. Trusted by Disney & Warner Bros.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/solutions/trailers-cinematics/ — Game Trailer Production Services | Room 8 Group"
+  },
+  {
+   "text": "QA",
+   "url": "https://room8group.com/solutions/qa/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/solutions/qa/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Game Testing Services Across All Platforms",
+    "h1": "",
+    "description": "Game QA testing services trusted by AAA studios. Functional QA, test automation, dev QA & LQA across Android, iOS, PlayStation, Xbox, Nintendo & PC.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/solutions/qa/ — Game Testing Services Across All Platforms"
+  },
+  {
+   "text": "Training & Simulation",
+   "url": "https://room8group.com/solutions/training-simulation/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/solutions/training-simulation/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Gamified Training & Simulations: VR, AR & XR",
+    "h1": "",
+    "description": "Training & simulations powered by game dev expertise: VR, AR, branded learning games, progress systems & multi-platform delivery.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/solutions/training-simulation/ — Gamified Training & Simulations: VR, AR & XR"
+  },
+  {
+   "text": "Immersive experiences",
+   "url": "https://room8group.com/solutions/immersive-experiences/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/solutions/immersive-experiences/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Immersive experiences - Room 8 Group",
+    "h1": "",
+    "description": "Room 8 Group transforms creative ideas into immersive reality.​ By blending art, technology, engineering precision, and AI we deliver immersive projects end-to-end.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/solutions/immersive-experiences/ — Immersive experiences - Room 8 Group"
+  },
+  {
+   "text": "News",
+   "url": "https://room8group.com/category/news/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/category/news/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "News - Room 8 Group",
+    "h1": "News",
+    "description": "",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/category/news/ — News - Room 8 Group"
+  },
+  {
+   "text": "Case studies",
+   "url": "https://room8group.com/cases/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/cases/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Case studies - Room 8 Group",
+    "h1": "Case studies",
+    "description": "",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/cases/ — Case studies - Room 8 Group"
+  },
+  {
+   "text": "Careers",
+   "url": "https://room8group.com/join-the-team/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/join-the-team/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Careers - Room 8 Group",
+    "h1": "Careers",
+    "description": "Together we will bring games to the next level. Exactly with you!",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/join-the-team/ — Careers - Room 8 Group"
+  },
+  {
+   "text": "Contact",
+   "url": "https://room8group.com/contact-us/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/contact-us/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Contact - Room 8 Group",
+    "h1": "",
+    "description": "",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/contact-us/ — Contact - Room 8 Group"
+  },
+  {
+   "text": "ROOM 8 GROUP ENGINEERING С#/Unity Render Engineer FULL-TIME, REMOTE BULGARIA, CZECH REPUBLIC, GEORGIA +7",
+   "url": "https://room8group.com/join-the-team/%d1%81-unity-render-engineer/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/join-the-team/%d1%81-unity-render-engineer/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "С#/Unity Render Engineer - Room 8 Group",
+    "h1": "С#/Unity Render Engineer",
+    "description": "Room 8 Group is an end-to-end strategic partner in external game development. Working across all platforms, we provide creative and technical expertise across game development, technology, art, trailers, and QA for AAA and AA games. Our Game Development team provides comprehensive co-development and",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/join-the-team/%d1%81-unity-render-engineer/ — С#/Unity Render Engineer - Room 8 Group"
+  },
+  {
+   "text": "ROOM 8 GROUP DESIGN Principal Game Designer FULL-TIME, REMOTE EUROPE",
+   "url": "https://room8group.com/join-the-team/principal-game-designer/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/join-the-team/principal-game-designer/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Principal Game Designer - Room 8 Group",
+    "h1": "Principal Game Designer",
+    "description": "Room 8 Group is an end-to-end strategic partner in external game development. Working across all platforms, we provide creative and technical expertise across game development, technology, art, trailers, and QA for AAA and AA games. For 15 years, we’ve built creative partnerships with world-leading ",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/join-the-team/principal-game-designer/ — Principal Game Designer - Room 8 Group"
+  },
+  {
+   "text": "ROOM 8 GROUP BUSINESS DEVELOPMENT Engagement Manager FULL-TIME, REMOTE ARGENTINA, BRAZIL, MEXICO +1",
+   "url": "https://room8group.com/join-the-team/engagement-manager/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/join-the-team/engagement-manager/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Engagement Manager - Room 8 Group",
+    "h1": "Engagement Manager",
+    "description": "Room 8 Group is an end-to-end strategic partner in external game development. Working across all platforms, we provide creative and technical expertise across game development, technology, art, trailers, and QA for AAA and AA games. For 15 years, we’ve built creative partnerships with world-leading ",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/join-the-team/engagement-manager/ — Engagement Manager - Room 8 Group"
+  },
+  {
+   "text": "ROOM 8 GROUP PRODUCTION Producer FULL-TIME, REMOTE EUROPE",
+   "url": "https://room8group.com/join-the-team/producer/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/join-the-team/producer/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Producer - Room 8 Group",
+    "h1": "Producer",
+    "description": "Room 8 Group is an end-to-end strategic partner in external game development. Working across all platforms, we provide creative and technical expertise across game development, technology, art, trailers, and QA for AAA and AA games.  For 15 years, we’ve built creative partnerships with world-leading",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/join-the-team/producer/ — Producer - Room 8 Group"
+  },
+  {
+   "text": "ROOM 8 GROUP TECH ART Project Technical Art Director FULL-TIME, REMOTE CZECH REPUBLIC, ESTONIA, EUROPE +8",
+   "url": "https://room8group.com/join-the-team/project-technical-art-director/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/join-the-team/project-technical-art-director/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Project Technical Art Director - Room 8 Group",
+    "h1": "Project Technical Art Director",
+    "description": "Room 8 Group is an end-to-end strategic partner in external game development. Working across all platforms, we provide creative and technical expertise across game development, technology, art, trailers, and QA for AAA and AA games.  For 15 years, we’ve built creative partnerships with world-leading",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/join-the-team/project-technical-art-director/ — Project Technical Art Director - Room 8 Group"
+  },
+  {
+   "text": "ROOM 8 GROUP DESIGN Game Designer FULL-TIME, HYBRID CANADA",
+   "url": "https://room8group.com/join-the-team/game-designer-2/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/join-the-team/game-designer-2/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Game Designer - Room 8 Group",
+    "h1": "Game Designer",
+    "description": "Room 8 Group is an end-to-end strategic partner in external game development. Working across all platforms, we provide creative and technical expertise across game development, technology, art, trailers, and QA for AAA and AA games. Our Game Development team provides comprehensive co-development and",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/join-the-team/game-designer-2/ — Game Designer - Room 8 Group"
+  },
+  {
+   "text": "ROOM 8 GROUP BUSINESS DEVELOPMENT Business Development Director FULL-TIME, REMOTE UK",
+   "url": "https://room8group.com/join-the-team/senior-business-development-director/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/join-the-team/senior-business-development-director/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Business Development Director - Room 8 Group",
+    "h1": "Business Development Director",
+    "description": "We are looking for an experienced Business Development Director with a passion for the video games industry to help us find new growth opportunities and move the business forward.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/join-the-team/senior-business-development-director/ — Business Development Director - Room 8 Group"
+  },
+  {
+   "text": "Anti-Fraud Policy",
+   "url": "https://room8group.com/anti-fraud-declaration/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/anti-fraud-declaration/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Anti-Fraud Hiring Policies - Room 8 Group",
+    "h1": "Anti-Fraud Hiring Policies",
+    "description": "Here at Room 8 Group we take trust and safety matters extremely seriously. Our Anti-Fraud Hiring Policies apply to all Room 8 Group staff members and contractors (further referred to as “Partners”) without exception. These policies constitute an integral part of our Privacy Policy and should be read",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/anti-fraud-declaration/ — Anti-Fraud Hiring Policies - Room 8 Group"
+  },
+  {
+   "text": "Facebook",
+   "url": "https://www.facebook.com/Room8Group-112953598427839",
+   "class": "social",
+   "rel": "noopener",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_social"
+  },
+  {
+   "text": "Instagram",
+   "url": "https://www.instagram.com/room8.group/",
+   "class": "social",
+   "rel": "noopener",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_social"
+  },
+  {
+   "text": "LinkedIn",
+   "url": "https://www.linkedin.com/company/room-8-group/",
+   "class": "social",
+   "rel": "noopener",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_social"
+  },
+  {
+   "text": "DLCs & Expansions",
+   "url": "https://room8group.com/solutions/game-development/dlcs-expansions/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/solutions/game-development/dlcs-expansions/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Game DLC Development Services | Room 8 Group",
+    "h1": "DLCs & Expansions",
+    "description": "DLC development services that respect your core game while delivering something genuinely new: end-to-end production, T&M or fixed scope.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/solutions/game-development/dlcs-expansions/ — Game DLC Development Services | Room 8 Group"
+  },
+  {
+   "text": "Full Feature Development",
+   "url": "https://room8group.com/solutions/game-development/full-feature-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://room8group.com/solutions/game-development/full-feature-development/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Full Feature Development - Room 8 Group",
+    "h1": "Full Feature Development",
+    "description": "",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://room8group.com/solutions/game-development/full-feature-development/ — Full Feature Development - Room 8 Group"
+  },
+  {
+   "text": "Full Game Development",
+   "url": "https://room8group.com/solutions/game-development/full-game-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Level Design",
+   "url": "https://room8group.com/solutions/game-development/level-design/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "LiveOps",
+   "url": "https://room8group.com/solutions/game-development/liveops/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Prototyping",
+   "url": "https://room8group.com/solutions/game-development/prototyping/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Remake & Remaster",
+   "url": "https://room8group.com/solutions/game-development/remake-remaster/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "AI Behavior Development",
+   "url": "https://room8group.com/solutions/technology/game-ai-behavior-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Backend Infrastructure and DevOps",
+   "url": "https://room8group.com/solutions/technology/game-backend-infrastructure-and-devops/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Certification & Store Submission",
+   "url": "https://room8group.com/solutions/technology/game-certification-store-submission/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Gameplay Development",
+   "url": "https://room8group.com/solutions/technology/gameplay-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Network & Multiplayer",
+   "url": "https://room8group.com/solutions/technology/network-multiplayer/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Performance Optimization",
+   "url": "https://room8group.com/solutions/technology/game-performance-optimization/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Porting",
+   "url": "https://room8group.com/solutions/technology/porting/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Rendering and Graphics",
+   "url": "https://room8group.com/solutions/technology/game-rendering-and-graphics/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Tools Development",
+   "url": "https://room8group.com/solutions/technology/tools-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "UI/UX",
+   "url": "https://room8group.com/solutions/technology/game-ui-ux-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "VR Development",
+   "url": "https://room8group.com/solutions/technology/game-vr-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Art Direction",
+   "url": "https://room8group.com/solutions/art/art-direction/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Characters",
+   "url": "https://room8group.com/solutions/art/characters/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Environment",
+   "url": "https://room8group.com/solutions/art/environment/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Protected: UI/UX Design",
+   "url": "https://room8group.com/solutions/art/ui-ux-design-2/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Vehicles",
+   "url": "https://room8group.com/solutions/art/vehicles/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Weapons",
+   "url": "https://room8group.com/solutions/art/weapons/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "CG Trailers",
+   "url": "https://room8group.com/solutions/trailers-cinematics/cg-trailers/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Gameplay Trailers",
+   "url": "https://room8group.com/solutions/trailers-cinematics/gameplay-trailers/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "In Game Cutscenes",
+   "url": "https://room8group.com/solutions/trailers-cinematics/in-game-cutscenes/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "User Acquisition Videos",
+   "url": "https://room8group.com/solutions/trailers-cinematics/user-acquisition-videos/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Functional QA",
+   "url": "https://room8group.com/solutions/qa/functional-qa/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Game Compatibility Testing",
+   "url": "https://room8group.com/solutions/qa/game-compatibility-testing/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Game Compliance and Certification Testing",
+   "url": "https://room8group.com/solutions/qa/game-compliance-and-certification-testing/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Game Performance Testing",
+   "url": "https://room8group.com/solutions/qa/game-performance-testing/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "LiveOps QA",
+   "url": "https://room8group.com/solutions/qa/liveops-qa/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Localization QA Test Automation",
+   "url": "https://room8group.com/solutions/qa/localization-qa-test-automation/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Test Automation & Tool Development",
+   "url": "https://room8group.com/solutions/qa/test-automation-tool-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Anti-Fraud Declaration",
+   "url": "https://room8group.com/anti-fraud-declaration/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://room8group.com/anti-fraud-declaration/"
+  },
+  {
+   "text": "Sustainable Growth",
+   "url": "https://room8group.com/sustainable-growth/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Compliance Hotline",
+   "url": "https://room8group.typeform.com/to/cnrYWl6y",
+   "class": "external",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_external"
+  },
+  {
+   "text": "",
+   "url": "https://room8group.com/join-the-team/",
+   "class": "anchor",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_anchor"
+  }
+ ],
+ "frames": [
+  {
+   "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lc3oG8sAAAAAArVGC-4vxAb9u4Tidmt7Bmx975c&co=aHR0cHM6Ly9yb29tOGdyb3VwLmNvbTo0NDM.&hl=en&v=bSuJ2xBC8cFy7pM4Z3Hu9boH&size=invisible&anchor-ms=20000&execute-ms=30000&cb=cy0ptzfnvk0f",
+   "kind": "other",
+   "name": "a-n9o2w54xlz73",
+   "read": true,
+   "reason": "",
+   "new_lines": 1,
+   "new_links": 0,
+   "stop_reason": "no_new_content"
+  },
+  {
+   "url": "about:blank",
+   "kind": "inline",
+   "name": "",
+   "read": true,
+   "reason": "",
+   "new_lines": 0,
+   "new_links": 0
+  },
+  {
+   "url": "about:blank",
+   "kind": "inline",
+   "name": "",
+   "read": true,
+   "reason": "",
+   "new_lines": 0,
+   "new_links": 0
+  }
+ ],
+ "network": [
+  {
+   "url": "https://cdn-cookieyes.com/client_data/99cdad7a8c8b1f7085365c2a93107356/4d7Kzh-r.json",
+   "method": "GET",
+   "status": 200,
+   "bytes": 87,
+   "job_total": 0,
+   "excerpt": "[{\"targetBanner\": 3768071, \"condition\": \"all\"}, {\"targetBanner\": 3768072, \"condition\": \"all\"}]",
+   "repeat": 1,
+   "jobs_found": 0
+  },
+  {
+   "url": "https://cdn-cookieyes.com/client_data/99cdad7a8c8b1f7085365c2a93107356/config/BZEu4m_T.json",
+   "method": "GET",
+   "status": 200,
+   "bytes": 41873,
+   "job_total": 0,
+   "excerpt": "{\"reloadOnAccept\": false, \"dataShortCodes\": [{\"key\": \"cky_show_desc\", \"content\": {\"button\": \"<button class=\\\"cky-show-desc-btn\\\" data-cky-tag=\\\"show-desc-button\\\" aria-label=\\\"[cky_showmore_text]\\\">[cky_showmore_text]</button>\"}, \"uiTag\": \"show-desc-button\", \"type\": \"data\", \"customTag\": \"\", \"attributes\": {}, \"processedHTML\": \"<button class=\\\"cky-show-desc-btn\\\" data-cky-tag=\\\"show-desc-button\\\" aria-label=\\\"[cky_showmore_text]\\\" style=\\\"color: #1863dc;\\\">[cky_showmore_text]</button>\"}, {\"key\": \"",
+   "repeat": 1,
+   "jobs_found": 0
+  },
+  {
+   "url": "https://cdn-cookieyes.com/client_data/99cdad7a8c8b1f7085365c2a93107356/translations/bT3ujUoe.json",
+   "method": "GET",
+   "status": 200,
+   "bytes": 1775,
+   "job_total": 0,
+   "excerpt": "{\"cky_notice_title\": \"We value your privacy\", \"cky_notice_description\": \"<p>We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our traffic. By clicking \\\"Accept All\\\", you consent to our use of cookies.</p>\", \"cky_notice_close_label\": \"Close\", \"cky_readmore_text\": \"Cookie Policy\", \"cky_readmore_privacyLink\": \"\", \"cky_revisit_title\": \"Consent Preferences\", \"cky_video_placeholder_title\": \"Please accept cookies to access this content\", \"cky_accept_tex",
+   "repeat": 1,
+   "jobs_found": 0
+  },
+  {
+   "url": "https://cdn-cookieyes.com/client_data/99cdad7a8c8b1f7085365c2a93107356/audit-table/UVG2tlcw.json",
+   "method": "GET",
+   "status": 200,
+   "bytes": 19269,
+   "job_total": 0,
+   "excerpt": "{\"cookies\": {\"_GRECAPTCHA\": {\"cookie_id\": \"_GRECAPTCHA\", \"duration\": \"6 months\", \"description\": \"Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.\"}, \"rc::a\": {\"cookie_id\": \"rc::a\", \"duration\": \"Never Expires\", \"description\": \"This cookie is set by the Google recaptcha service to identify bots to protect the website against malicious spam attacks.\"}, \"rc::f\": {\"cookie_id\": \"rc::f\", \"duration\": \"Never Expires\", \"description\": \"This c",
+   "repeat": 1,
+   "jobs_found": 0
+  },
+  {
+   "url": "https://room8group.com//wp-json/vendor/v1/terms/tlocation,tcoop,tteam",
+   "method": "GET",
+   "status": 200,
+   "bytes": 5044,
+   "job_total": 24,
+   "excerpt": "",
+   "repeat": 1,
+   "jobs_found": 24
+  },
+  {
+   "url": "https://www.google.com/recaptcha/api2/reload?k=6Lc3oG8sAAAAAArVGC-4vxAb9u4Tidmt7Bmx975c",
+   "method": "POST",
+   "status": 200,
+   "bytes": 2865,
+   "job_total": 0,
+   "excerpt": "",
+   "repeat": 1,
+   "skipped": "not_parsed",
+   "jobs_found": 0
+  },
+  {
+   "url": "https://room8group.com/wp-json/contact-form-7/v1/contact-forms/17527/feedback/schema",
+   "method": "GET",
+   "status": 200,
+   "bytes": 333,
+   "job_total": 0,
+   "excerpt": "{\"version\": \"Contact Form 7 SWV Schema 2024-10\", \"locale\": \"en_US\", \"rules\": [{\"rule\": \"required\", \"field\": \"your-email\", \"error\": \"Please fill out this field.\"}, {\"rule\": \"email\", \"field\": \"your-email\", \"error\": \"Please enter an email address.\"}, {\"rule\": \"maxlength\", \"field\": \"your-email\", \"threshold\": 400, \"error\": \"This field has a too long input.\"}]}",
+   "repeat": 1,
+   "jobs_found": 0
+  },
+  {
+   "url": "https://room8group.com/wp-json/contact-form-7/v1/contact-forms/17527/refill",
+   "method": "GET",
+   "status": 200,
+   "bytes": 2,
+   "job_total": 0,
+   "excerpt": "[]",
+   "repeat": 1,
+   "jobs_found": 0
+  },
+  {
+   "url": "https://room8group.com//wp-json/wp/v2/talent?per_page=100&page=1&_embed=true",
+   "method": "GET",
+   "status": 200,
+   "bytes": 56796,
+   "job_total": 27,
+   "excerpt": "",
+   "repeat": 1,
+   "jobs_found": 27
+  },
+  {
+   "url": "https://room8studio.com//wp-json/wp/v2/talent?per_page=100&page=1&_embed=true",
+   "method": "GET",
+   "status": 200,
+   "bytes": 375618,
+   "job_total": 329,
+   "excerpt": "",
+   "repeat": 1,
+   "jobs_found": 100
+  }
+ ],
+ "jobs": {
+  "links": [],
+  "network": [
+   {
+    "title": "Argentina",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/argentina",
+    "source": "network"
+   },
+   {
+    "title": "Brazil",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/brazil",
+    "source": "network"
+   },
+   {
+    "title": "Bulgaria",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/bulgaria",
+    "source": "network"
+   },
+   {
+    "title": "Canada",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/canada",
+    "source": "network"
+   },
+   {
+    "title": "Czech Republic",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/czech-republic",
+    "source": "network"
+   },
+   {
+    "title": "Estonia",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/estonia",
+    "source": "network"
+   },
+   {
+    "title": "Europe",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/europe",
+    "source": "network"
+   },
+   {
+    "title": "Georgia",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/georgia",
+    "source": "network"
+   },
+   {
+    "title": "Latvia",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/latvia",
+    "source": "network"
+   },
+   {
+    "title": "Lithuania",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/lithuania",
+    "source": "network"
+   },
+   {
+    "title": "Mexico",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/mexico",
+    "source": "network"
+   },
+   {
+    "title": "Moldova",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/moldova",
+    "source": "network"
+   },
+   {
+    "title": "Poland",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/poland",
+    "source": "network"
+   },
+   {
+    "title": "Portugal",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/portugal",
+    "source": "network"
+   },
+   {
+    "title": "Romania",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/romania",
+    "source": "network"
+   },
+   {
+    "title": "Ukraine",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/ukraine",
+    "source": "network"
+   },
+   {
+    "title": "Full-time",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/full-time",
+    "source": "network"
+   },
+   {
+    "title": "Hybrid",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/hybrid",
+    "source": "network"
+   },
+   {
+    "title": "Remote",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/remote",
+    "source": "network"
+   },
+   {
+    "title": "Business Development",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/business-development",
+    "source": "network"
+   },
+   {
+    "title": "Design",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/design",
+    "source": "network"
+   },
+   {
+    "title": "Engineering",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/engineering",
+    "source": "network"
+   },
+   {
+    "title": "Production",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/production",
+    "source": "network"
+   },
+   {
+    "title": "Tech Art",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "",
+    "url": "https://room8group.com/join-the-team/tech-art",
+    "source": "network"
+   },
+   {
+    "title": "Bucharest",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "74",
+    "url": "https://room8group.com/tlocation/bucharest/",
+    "source": "network"
+   },
+   {
+    "title": "Bulgaria",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "95",
+    "url": "https://room8group.com/tlocation/bulgaria/",
+    "source": "network"
+   },
+   {
+    "title": "Czech Republic",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "27",
+    "url": "https://room8group.com/tlocation/czech-republic/",
+    "source": "network"
+   },
+   {
+    "title": "Georgia",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "29",
+    "url": "https://room8group.com/tlocation/georgia/",
+    "source": "network"
+   },
+   {
+    "title": "Latvia",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "30",
+    "url": "https://room8group.com/tlocation/latvia/",
+    "source": "network"
+   },
+   {
+    "title": "Lithuania",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "31",
+    "url": "https://room8group.com/tlocation/lithuania/",
+    "source": "network"
+   },
+   {
+    "title": "Moldova",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "32",
+    "url": "https://room8group.com/tlocation/moldova/",
+    "source": "network"
+   },
+   {
+    "title": "Montreal",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "94",
+    "url": "https://room8group.com/tlocation/montreal/",
+    "source": "network"
+   },
+   {
+    "title": "Poland",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "33",
+    "url": "https://room8group.com/tlocation/poland/",
+    "source": "network"
+   },
+   {
+    "title": "Portugal",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "34",
+    "url": "https://room8group.com/tlocation/portugal/",
+    "source": "network"
+   },
+   {
+    "title": "Romania",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "35",
+    "url": "https://room8group.com/tlocation/romania/",
+    "source": "network"
+   },
+   {
+    "title": "Ukraine",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "41",
+    "url": "https://room8group.com/tlocation/ukraine/",
+    "source": "network"
+   },
+   {
+    "title": "Argentina",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "91",
+    "url": "https://room8group.com/tlocation/argentina/",
+    "source": "network"
+   },
+   {
+    "title": "Brazil",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "75",
+    "url": "https://room8group.com/tlocation/brazil/",
+    "source": "network"
+   },
+   {
+    "title": "Mexico",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "185",
+    "url": "https://room8group.com/tlocation/mexico/",
+    "source": "network"
+   },
+   {
+    "title": "Estonia",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "28",
+    "url": "https://room8group.com/tlocation/estonia/",
+    "source": "network"
+   },
+   {
+    "title": "Europe",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "44",
+    "url": "https://room8group.com/tlocation/europe/",
+    "source": "network"
+   },
+   {
+    "title": "Argentina",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "31",
+    "url": "https://room8studio.com/tlocation/argentina/",
+    "source": "network"
+   },
+   {
+    "title": "Armenia",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "32",
+    "url": "https://room8studio.com/tlocation/armenia/",
+    "source": "network"
+   },
+   {
+    "title": "Brazil",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "129",
+    "url": "https://room8studio.com/tlocation/brazil/",
+    "source": "network"
+   },
+   {
+    "title": "Czech Republic",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "107",
+    "url": "https://room8studio.com/tlocation/czech-republic/",
+    "source": "network"
+   },
+   {
+    "title": "Estonia",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "109",
+    "url": "https://room8studio.com/tlocation/estonia/",
+    "source": "network"
+   },
+   {
+    "title": "Georgia",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "33",
+    "url": "https://room8studio.com/tlocation/georgia/",
+    "source": "network"
+   },
+   {
+    "title": "Latvia",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "110",
+    "url": "https://room8studio.com/tlocation/latvia/",
+    "source": "network"
+   },
+   {
+    "title": "Lithuania",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "111",
+    "url": "https://room8studio.com/tlocation/lithuania/",
+    "source": "network"
+   },
+   {
+    "title": "Malaysia",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "168",
+    "url": "https://room8studio.com/tlocation/malaysia/",
+    "source": "network"
+   },
+   {
+    "title": "Mexico",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "135",
+    "url": "https://room8studio.com/tlocation/mexico/",
+    "source": "network"
+   },
+   {
+    "title": "Moldova",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "112",
+    "url": "https://room8studio.com/tlocation/moldova/",
+    "source": "network"
+   },
+   {
+    "title": "Poland",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "29",
+    "url": "https://room8studio.com/tlocation/poland/",
+    "source": "network"
+   },
+   {
+    "title": "Romania",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "30",
+    "url": "https://room8studio.com/tlocation/romania/",
+    "source": "network"
+   },
+   {
+    "title": "Serbia",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "167",
+    "url": "https://room8studio.com/tlocation/serbia/",
+    "source": "network"
+   },
+   {
+    "title": "Slovakia",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "118",
+    "url": "https://room8studio.com/tlocation/slovakia/",
+    "source": "network"
+   },
+   {
+    "title": "Slovenia",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "119",
+    "url": "https://room8studio.com/tlocation/slovenia/",
+    "source": "network"
+   },
+   {
+    "title": "Turkey",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "34",
+    "url": "https://room8studio.com/tlocation/turkey/",
+    "source": "network"
+   },
+   {
+    "title": "Ukraine",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "23",
+    "url": "https://room8studio.com/tlocation/ukraine/",
+    "source": "network"
+   },
+   {
+    "title": "Bulgaria",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "116",
+    "url": "https://room8studio.com/tlocation/bulgaria/",
+    "source": "network"
+   },
+   {
+    "title": "Bosnia",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "115",
+    "url": "https://room8studio.com/tlocation/bosnia/",
+    "source": "network"
+   },
+   {
+    "title": "Croatia",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "134",
+    "url": "https://room8studio.com/tlocation/croatia/",
+    "source": "network"
+   },
+   {
+    "title": "Cyprus",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "117",
+    "url": "https://room8studio.com/tlocation/cyprus/",
+    "source": "network"
+   },
+   {
+    "title": "Greece",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "133",
+    "url": "https://room8studio.com/tlocation/greece/",
+    "source": "network"
+   },
+   {
+    "title": "Italy",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "128",
+    "url": "https://room8studio.com/tlocation/italy/",
+    "source": "network"
+   },
+   {
+    "title": "Portugal",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "108",
+    "url": "https://room8studio.com/tlocation/portugal/",
+    "source": "network"
+   },
+   {
+    "title": "Albania",
+    "location": "",
+    "department": "",
+    "employment": "",
+    "posted": "",
+    "id": "114",
+    "url": "https://room8studio.com/tlocation/albania/",
+    "source": "network"
+   }
+  ],
+  "jsonld": [],
+  "embedded": [],
+  "counts": {
+   "links": 0,
+   "network": 67,
+   "jsonld": 0,
+   "embedded": 0
+  },
+  "best": 67,
+  "capped": true,
+  "declared": {
+   "value": null,
+   "confidence": null,
+   "candidates": []
+  }
+ },
+ "popups": {
+  "dismissed": [
+   "cookie: .cky-btn-reject"
+  ],
+  "obstructions": []
+ },
+ "expansion": {
+  "scrolls": 6,
+  "expansions": 0,
+  "clicks": [],
+  "stop_reason": "no_new_content"
+ },
+ "counts": {
+  "links_total": 67,
+  "frames_total": 3,
+  "frames_read": 3,
+  "requests": 52,
+  "blocked_requests": {
+   "type:font": 4
+  },
+  "json_responses": 10
+ },
+ "screenshot": "screenshots/007-room8group-com-join-the-team.jpg",
+ "pdf": null,
+ "probe": null,
+ "children": []
+}

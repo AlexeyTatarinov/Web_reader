@@ -1,0 +1,3635 @@
+{
+ "url": "https://varjo.com/jobs",
+ "depth": 0,
+ "mode": "full",
+ "relation": "start",
+ "link_text": "Varjo: страница не открывалась через scrape.do",
+ "final_url": "https://varjo.com/jobs",
+ "redirect_chain": [],
+ "title": "VR Jobs | Start Pushing The Boundaries Across All Realities at Varjo",
+ "h1": "JOIN VARJO",
+ "http_status": 200,
+ "status": "partial",
+ "kind": "other",
+ "seconds": 16.8,
+ "antibot": null,
+ "error": null,
+ "skip_reason": null,
+ "limits_hit": [],
+ "warnings": [
+  {
+   "code": "w_obstruction",
+   "severity": "warn",
+   "text": "This website uses cookies We use cookies to personalise content and ads, to provide social media fea"
+  }
+ ],
+ "notes": [
+  {
+   "code": "n_blocked_requests",
+   "n": 8
+  }
+ ],
+ "sections": [
+  {
+   "label": "initial",
+   "source": "page",
+   "text": "This website uses cookies\nWe use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.\nAllow all\nCookie settings\nSkip to content\nVarjo\nProducts\nSub menu\nUse Cases\nSub menu\nCompany\nSub menu\nResources\nSub menu\nSupport\nSub menu\nTalk to sales\n[img: jobs_header-1]\nJoin Varjo\nIf you want to change VR, computing and the world, you’ve come to the right place. If you want a job where you just show up and do the same boring stuff every day, move along.\nSee all open jobs in VR at Varjo below. If you’re passionate about tech and love to push limits, we can’t wait to hear from you.\n[img: A Varjo employee at work]\nCalling new colleagues from all backgrounds.\nVarjo is best known for delivering virtual and mixed reality that are indistinguishable from the real world. Founded in 2016, Varjo now does business in over 40 countries worldwide with 200+ employees in Helsinki, Washington D.C. and Munich, Germany. And the resolution revolution has only just begun.\nOur in-house R&D team produces the world’s most advanced virtual and mixed reality hardware, software, and services that are now a symbol of the highest quality across the industry. Varjo products are being used to train astronauts at Boeing, design vehicles at Kia, and for many other use cases across the world’s leading companies.\nAs we are developing the next computing paradigm, we need a versatile team to help ensure that the new realities are designed for everyone. Take a look at what we have to offer.\nHere's what to expect:\nOur multicultural team consists of talents from all around the world, and our daily working language is English. We believe in the power of diversity – where different experiences, backgrounds, and ideas drive innovation and results.\nWork with the best\nthe highest tech\nlots of freedom & flexibility\ncompetitive salary & benefits\nglobal footprint\nAnd so much more\nYou’ll work with the world’s best developers, engineers and professionals. We also partner with world-class brands to develop our technology. You’ll work with them, too.\n[img: Knut Nesheim - Varjo]\nHead of Engineering, Reality Services\nKnut Nesheim\n“In the future, VR/XR technology is going to be the default that everybody takes for granted.”\nLead Service Designer\nSanna Shibasaki-Rosenberg\n“At Varjo, everyone seems to appreciate and look up to the company they're working in.”\n[img: hero-9]\nTechnical Director\nAntti Peuhkurinen\n\"No one has solved the problems we're solving.\"\nPrincipal Computer Vision Engineer\nKimmo Roimela\n“I’ve seen virtual and mixed reality evolve every decade. But now, they're really taking off.”\n[img: jobs_lift_02]\nHow we like to work\nVarjo has been lucky to have attracted a supergroup of intelligent professionals from many different backgrounds to our team. We all share the same ambition level of wanting to build the world’s best products, but at the same time, we want to stay humble, maintain a low hierarchy, and focus on solving problems. These values are the guideposts for our everyday work at Varjo:\nBe kind.\nAim for the virtually impossible.\nJust do it – with style.\nHave each other’s back.\nKeep it real.\nIf we are not having fun, we’re doing it wrong.\nWant to learn more about what it’s like to work at Varjo? Download our Culture Handbook.\nBrowse open jobs\nComputer Vision Engineer, C++\nDepartment: Engineering\nLocation: Finland, Uusimaa, Helsinki\nOpen Application\nDepartment: Other\nLocation: Finland, Uusimaa, Helsinki\n[img: varjo-logo-white]\nCompany\nAbout Us\nNews\nBlog\nMedia\nJobs\nCase Studies\nLegal\nProducts\nVarjo XR-4 Series\nVarjo XR-4 Secure Edition\nIntegrated XR System\nAccessories\nVarjo Base\nProfessional Services\nTeleport by Varjo\nTeleport Secure\nSupport\nHelp Center\nSystem Requirements\nCompatible Software\nFind a Reseller\nSetup Guide\nDevelopers\nVarjo account login\nSubscribe to newsletter\nLinkedIn\nYouTube\nInstagram\nFacebook\nX\nCookie policy"
+  },
+  {
+   "label": "expanded: THE HIGHEST TECH",
+   "source": "page",
+   "text": "Work on building a tech stack that doesn’t even exist. Here you’re not only working with game-changing tech tools, you’re creating them."
+  },
+  {
+   "label": "expanded: LOTS OF FREEDOM & FLEXIBILITY",
+   "source": "page",
+   "text": "A low-hierarchy culture with minimal bureaucracy and maximum opportunity for you to take charge of your work. Extremely flexible working conditions with remote work opportunities supported."
+  },
+  {
+   "label": "expanded: COMPETITIVE SALARY & BENEFITS",
+   "source": "page",
+   "text": "You can’t put a price tag on passion, but we’ll show you how much we value your skills and dedication to your craft."
+  },
+  {
+   "label": "expanded: AND SO MUCH MORE",
+   "source": "page",
+   "text": "Friendly colleagues. Flexible vacation time. Healthy and non-healthy snacks. Dedicated learning days. No costume parties. And so much more."
+  }
+ ],
+ "text_chars": 4718,
+ "text_truncated": false,
+ "links": [
+  {
+   "text": "Cloudflare",
+   "url": "https://www.cloudflare.com/privacypolicy/",
+   "class": "external",
+   "rel": "noopener noreferrer nofollow",
+   "context": "cf.turnstile.uCloudflareThis cookie is used to distinguish between humans and bots. PersistentHTML Local Storage",
+   "source": "page",
+   "visible": false,
+   "decision": "d_skip_external"
+  },
+  {
+   "text": "Google",
+   "url": "https://business.safety.google/privacy/",
+   "class": "external",
+   "rel": "noopener noreferrer nofollow",
+   "context": "test_cookieGoogleUsed to check if the user's browser supports cookies.1 dayHTTP Cookie",
+   "source": "page",
+   "visible": false,
+   "decision": "d_skip_external"
+  },
+  {
+   "text": "HubSpot",
+   "url": "https://legal.hubspot.com/privacy-policy",
+   "class": "external",
+   "rel": "noopener noreferrer nofollow",
+   "context": "__cf_bm [x20]HubSpoths-banner.comhs-sites-eu1.comhubspotusercontent.comhubspotusercontent-eu1.nethubspotvideo.comLinkedInTwitter Inc.varjo.comVimeoWorkablezoominfo.comThis cookie is used to distinguish between humans and",
+   "source": "page",
+   "visible": false,
+   "decision": "d_skip_external"
+  },
+  {
+   "text": "LinkedIn",
+   "url": "https://www.linkedin.com/legal/privacy-policy",
+   "class": "social",
+   "rel": "noopener noreferrer nofollow",
+   "context": "__cf_bm [x20]HubSpoths-banner.comhs-sites-eu1.comhubspotusercontent.comhubspotusercontent-eu1.nethubspotvideo.comLinkedInTwitter Inc.varjo.comVimeoWorkablezoominfo.comThis cookie is used to distinguish between humans and",
+   "source": "page",
+   "visible": false,
+   "decision": "d_skip_social"
+  },
+  {
+   "text": "Twitter Inc.",
+   "url": "https://twitter.com/en/privacy",
+   "class": "social",
+   "rel": "noopener noreferrer nofollow",
+   "context": "__cf_bm [x20]HubSpoths-banner.comhs-sites-eu1.comhubspotusercontent.comhubspotusercontent-eu1.nethubspotvideo.comLinkedInTwitter Inc.varjo.comVimeoWorkablezoominfo.comThis cookie is used to distinguish between humans and",
+   "source": "page",
+   "visible": false,
+   "decision": "d_skip_social"
+  },
+  {
+   "text": "Vimeo",
+   "url": "https://vimeo.com/privacy",
+   "class": "external",
+   "rel": "noopener noreferrer nofollow",
+   "context": "__cf_bm [x20]HubSpoths-banner.comhs-sites-eu1.comhubspotusercontent.comhubspotusercontent-eu1.nethubspotvideo.comLinkedInTwitter Inc.varjo.comVimeoWorkablezoominfo.comThis cookie is used to distinguish between humans and",
+   "source": "page",
+   "visible": false,
+   "decision": "d_skip_external"
+  },
+  {
+   "text": "Workable",
+   "url": "https://www.workable.com/privacy",
+   "class": "ats_board",
+   "rel": "noopener noreferrer nofollow",
+   "context": "__cf_bm [x20]HubSpoths-banner.comhs-sites-eu1.comhubspotusercontent.comhubspotusercontent-eu1.nethubspotvideo.comLinkedInTwitter Inc.varjo.comVimeoWorkablezoominfo.comThis cookie is used to distinguish between humans and",
+   "source": "page",
+   "visible": false,
+   "decision": "d_read_full",
+   "where": "https://www.workable.com/privacy — Privacy policy | Workable [job_listing]"
+  },
+  {
+   "text": "Cookiebot",
+   "url": "https://www.cookiebot.com/goto/privacy-policy/",
+   "class": "external",
+   "rel": "noopener noreferrer nofollow",
+   "context": "CookieConsentCookiebotStores the user's cookie consent state for the current domain1 yearHTTP Cookie",
+   "source": "page",
+   "visible": false,
+   "decision": "d_skip_external"
+  },
+  {
+   "text": "Microsoft",
+   "url": "https://privacy.microsoft.com/en-us/privacystatement",
+   "class": "external",
+   "rel": "noopener noreferrer nofollow",
+   "context": "c.gifMicrosoftCollects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.SessionPixel Tracker",
+   "source": "page",
+   "visible": false,
+   "decision": "d_skip_external"
+  },
+  {
+   "text": "Hotjar",
+   "url": "https://www.hotjar.com/legal/policies/privacy/",
+   "class": "external",
+   "rel": "noopener noreferrer nofollow",
+   "context": "hjActiveViewportIdsHotjarThis cookie contains an ID string on the current session. This contains non-personal information on what subpages the visitor enters – this information is used to optimize the visitor's experienc",
+   "source": "page",
+   "visible": false,
+   "decision": "d_skip_external"
+  },
+  {
+   "text": "Microsoft",
+   "url": "https://privacy.microsoft.com/en-US/privacystatement",
+   "class": "external",
+   "rel": "noopener noreferrer nofollow",
+   "context": "_uetsidMicrosoftUsed to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences. PersistentHTML Local Storage",
+   "source": "page",
+   "visible": false,
+   "decision": "d_skip_external"
+  },
+  {
+   "text": "Meta Platforms, Inc.",
+   "url": "https://www.facebook.com/policy.php/",
+   "class": "social",
+   "rel": "noopener noreferrer nofollow",
+   "context": "lastExternalReferrer Meta Platforms, Inc.Detects how the user reached the website by registering their last URL-address.PersistentHTML Local Storage",
+   "source": "page",
+   "visible": false,
+   "decision": "d_skip_social"
+  },
+  {
+   "text": "Leadfeeder",
+   "url": "https://www.leadfeeder.com/privacy/",
+   "class": "external",
+   "rel": "noopener noreferrer nofollow",
+   "context": "[empty name]LeadfeederTracks the individual sessions on the website, allowing the website to compile statistical data from multiple visits. This data can also be used to create leads for marketing purposes.SessionPixel T",
+   "source": "page",
+   "visible": false,
+   "decision": "d_skip_external"
+  },
+  {
+   "text": "YouTube",
+   "url": "https://business.safety.google/privacy/",
+   "class": "external",
+   "rel": "noopener noreferrer nofollow",
+   "context": "__Secure-ROLLOUT_TOKENYouTubeUsed to track user’s interaction with embedded content.180 daysHTTP Cookie",
+   "source": "page",
+   "visible": false,
+   "decision": "d_skip_dup",
+   "where": "https://business.safety.google/privacy/"
+  },
+  {
+   "text": "Cookiebot",
+   "url": "https://www.cookiebot.com/",
+   "class": "external",
+   "rel": "noopener",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_skip_external"
+  },
+  {
+   "text": "Skip to content",
+   "url": "https://varjo.com/jobs",
+   "class": "anchor",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_anchor"
+  },
+  {
+   "text": "Take the State of XR survey",
+   "url": "https://varjo.typeform.com/xr-survey-2026",
+   "class": "external",
+   "rel": "noopener",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_skip_external"
+  },
+  {
+   "text": "Varjo",
+   "url": "https://varjo.com/?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/?hsLang=en",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Varjo | VR/XR Headsets and Solutions for Simulation Training",
+    "h1": "MISSION-READY XR",
+    "description": "Varjo delivers the world",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/?hsLang=en — Varjo | VR/XR Headsets and Solutions for Simulation Training"
+  },
+  {
+   "text": "Products",
+   "url": "https://varjo.com/products",
+   "class": "internal",
+   "rel": "",
+   "context": "Products SUB MENU",
+   "source": "page",
+   "visible": true,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/products",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "High-Resolution Virtual and Mixed Reality Headsets | Varjo",
+    "h1": "Military-grade VR and XR",
+    "description": "Highest-resolution virtual and mixed reality headsets that will transform the way you train, create and learn.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/products — High-Resolution Virtual and Mixed Reality Headsets | Varjo"
+  },
+  {
+   "text": "XR-4 Series",
+   "url": "https://varjo.com/products/xr-4",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/products/xr-4",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "VR/XR Headset for Training and Simulation – Varjo XR-4 Series",
+    "h1": "Varjo XR-4 Series",
+    "description": "The most advanced VR/XR headsets for professional training and simulation, with dome-level immersion, ultra-high visual fidelity, & mission-ready performance.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/products/xr-4 — VR/XR Headset for Training and Simulation – Varjo XR-4 Series"
+  },
+  {
+   "text": "Integrated XR System",
+   "url": "https://varjo.com/products/integrated-xr-system",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/products/integrated-xr-system",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Integrated XR System – Preconfigured XR Bundle",
+    "h1": "Integrated XR SYSTEM",
+    "description": "The Integrated XR Station bundles Varjo XR-4 Series with a certified workstation and pre-installed software for a reliable, out-of-the-box XR experience.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/products/integrated-xr-system — Integrated XR System – Preconfigured XR Bundle"
+  },
+  {
+   "text": "Accessories",
+   "url": "https://varjo.com/accessories",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/accessories",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Accessories and Peripherals for VR and XR | Varjo",
+    "h1": "Complete your experience with the best VR accessories and peripherals",
+    "description": "Browse accessories, peripherals and spare parts for Varjo VR/XR headsets. Order official Varjo accessories through us.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/accessories — Accessories and Peripherals for VR and XR | Varjo"
+  },
+  {
+   "text": "Book a Live Demo",
+   "url": "https://varjo.com/demo",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/demo",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Book a Demo | Mixed Reality for Training & Simulation",
+    "h1": "Experience Mission-Ready XR",
+    "description": "Book a live Varjo demo to experience mission-ready virtual and mixed reality for training and simulation. Available at Varjo offices and select trusted partner locations, as well as selected events throughout the year.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/demo — Book a Demo | Mixed Reality for Training & Simulation"
+  },
+  {
+   "text": "Varjo Base",
+   "url": "https://varjo.com/products/varjo-base",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/products/varjo-base",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Varjo Base - Powerful XR Software for Varjo Headsets",
+    "h1": "Varjo Base: Take your headset experience to new heights.",
+    "description": "Explore Varjo Base, the companion software for Varjo headsets. Access advanced XR tools, diagnostics, and secure performance. Free and Pro versions available.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/products/varjo-base — Varjo Base - Powerful XR Software for Varjo Headsets"
+  },
+  {
+   "text": "Teleport Secure",
+   "url": "https://varjo.com/products/teleport-secure",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/products/teleport-secure",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Teleport Secure | Photorealistic 3D Mission Environments",
+    "h1": "Teleport Secure",
+    "description": "Turn drone footage into navigable, photorealistic 3D environments for mission rehearsal and training. Processed fully on your own infrastructure.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/products/teleport-secure — Teleport Secure | Photorealistic 3D Mission Environments"
+  },
+  {
+   "text": "Compatible Software",
+   "url": "https://varjo.com/software-integrations",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/software-integrations",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "VR Software with Highest Performance – Varjo Software Integrations",
+    "h1": "Software Integrations",
+    "description": "Varjo",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/software-integrations — VR Software with Highest Performance – Varjo Software Integrations"
+  },
+  {
+   "text": "Varjo Alpha",
+   "url": "https://varjo.com/products/professional-services",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/products/professional-services",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Varjo Alpha – Enterprise XR Professional Services | Varjo",
+    "h1": "Varjo Alpha: Bring your XR vision to life with our help.",
+    "description": "Accelerate your XR success with Varjo Alpha: enterprise-grade professional services to design, implement, and optimize mission-critical immersive systems.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/products/professional-services — Varjo Alpha – Enterprise XR Professional Services | Varjo"
+  },
+  {
+   "text": "Use Cases",
+   "url": "https://varjo.com/use-cases",
+   "class": "internal",
+   "rel": "",
+   "context": "Use Cases SUB MENU",
+   "source": "page",
+   "visible": true,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/use-cases",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Explore Use Cases for VR and XR Training and Simulation | Varjo",
+    "h1": "perform in any reality",
+    "description": "Replace outdated workflows with Varjo",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/use-cases — Explore Use Cases for VR and XR Training and Simulation | Varjo"
+  },
+  {
+   "text": "Air",
+   "url": "https://varjo.com/use-cases/air",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/use-cases/air",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Aerospace Training Solutions in Mixed Reality | Varjo",
+    "h1": "Master the cockpit",
+    "description": "Varjo XR-4 Series mixed reality for aerospace training: flight training, emergency procedures and mission rehearsal on existing simulators.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/use-cases/air — Aerospace Training Solutions in Mixed Reality | Varjo"
+  },
+  {
+   "text": "Land",
+   "url": "https://varjo.com/use-cases/land",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/use-cases/land",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "XR Vehicle and Combat Vehicle Crew Training | Varjo",
+    "h1": "Prepare for every mission",
+    "description": "Varjo XR-4 Series for combat vehicle and land crew training: driving, gunnery, heavy weapons and JTAC in mixed reality, from classroom to container.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/use-cases/land — XR Vehicle and Combat Vehicle Crew Training | Varjo"
+  },
+  {
+   "text": "Sea",
+   "url": "https://varjo.com/use-cases/sea",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/use-cases/sea",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Maritime & Naval XR and VR Training | Realistic Simulation",
+    "h1": "Train for the seas ahead",
+    "description": "Transform naval readiness with Varjo’s immersive VR/XR training for sea operations. Realistic bridge navigation, small-craft maneuvers, and weapons systems training at lower cost and higher flexibility.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/use-cases/sea — Maritime & Naval XR and VR Training | Realistic Simulation"
+  },
+  {
+   "text": "Other",
+   "url": "https://varjo.com/use-cases",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_skip_dup",
+   "where": "https://varjo.com/use-cases"
+  },
+  {
+   "text": "Company",
+   "url": "https://varjo.com/company",
+   "class": "internal",
+   "rel": "",
+   "context": "Company SUB MENU",
+   "source": "page",
+   "visible": true,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/company",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "About Us | Varjo | World Leader in Industrial-Grade VR and XR",
+    "h1": "Delivering the highest levels of immersion for defense and aerospace",
+    "description": "Varjo merges virtual, augmented and traditional realities in retinal resolution. Read more about the industry",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/company — About Us | Varjo | World Leader in Industrial-Grade VR and XR"
+  },
+  {
+   "text": "About Us",
+   "url": "https://varjo.com/company",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_skip_dup",
+   "where": "https://varjo.com/company"
+  },
+  {
+   "text": "Newsroom",
+   "url": "https://varjo.com/news",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/news",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "News",
+    "h1": "News",
+    "description": "News from the world",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/news — News"
+  },
+  {
+   "text": "Jobs",
+   "url": "https://varjo.com/jobs",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_skip_dup",
+   "where": "https://varjo.com/jobs"
+  },
+  {
+   "text": "Resources",
+   "url": "https://varjo.com/resources",
+   "class": "internal",
+   "rel": "",
+   "context": "Resources SUB MENU",
+   "source": "page",
+   "visible": true,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/resources",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Varjo Resources | VR and XR Whitepapers, E-Books and Webinars",
+    "h1": "Resources",
+    "description": "Learn more about the business benefits of Varjo",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/resources — Varjo Resources | VR and XR Whitepapers, E-Books and Webinars"
+  },
+  {
+   "text": "Why XR?",
+   "url": "https://varjo.com/why-xr",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/why-xr",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Why Choose XR for Training and Simulation | Advanced Solutions with Varjo",
+    "h1": "Smarter. Faster. Safer.",
+    "description": "Mixed reality transforms training by delivering lifelike simulations across domains, preparing personnel for real-world missions at a fraction of the cost. Read more about the benefits of XR training.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/why-xr — Why Choose XR for Training and Simulation | Advanced Solutions with Varjo"
+  },
+  {
+   "text": "Case Studies",
+   "url": "https://varjo.com/case-studies",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/case-studies",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "VR and XR Case Studies | Varjo",
+    "h1": "",
+    "description": "Read our case studies to learn how companies use Varjo’s virtual reality (VR) and mixed reality (XR) headsets to save money, time and effort.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/case-studies — VR and XR Case Studies | Varjo"
+  },
+  {
+   "text": "Product Book",
+   "url": "https://varjo.com/product-book",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/product-book",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Varjo Product Book: Download",
+    "h1": "Varjo Product Book",
+    "description": "Download the Varjo product book to get detailed Varjo headset tech specs directly to your inbox. Learn more about the highest-resolution VR.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/product-book — Varjo Product Book: Download"
+  },
+  {
+   "text": "Varjo Insider Blog",
+   "url": "https://varjo.com/blog",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/blog",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Varjo Insider Blog",
+    "h1": "Varjo Insider Blog",
+    "description": "Keep up to date with augmented, mixed and virtual reality news, and the latest from the AR, XR, and VR community with the Varjo Insider blog.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/blog — Varjo Insider Blog"
+  },
+  {
+   "text": "E-Books and Whitepapers",
+   "url": "https://varjo.com/resources",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_skip_dup",
+   "where": "https://varjo.com/resources"
+  },
+  {
+   "text": "HEAT Starter Kit",
+   "url": "https://varjo.com/vrai",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://varjo.com/vrai",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "HEAT Starter Kit | Human Performance Data for XR Training",
+    "h1": "GET BETTER TRAINING OUTCOMES WITH DATA",
+    "description": "Add a measurable human-performance layer to your Varjo XR\ntraining. Free HEAT Starter Kit, included with Varjo Base. Installs on existing\nsystems",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://varjo.com/vrai — HEAT Starter Kit | Human Performance Data for XR Training"
+  },
+  {
+   "text": "Support",
+   "url": "https://support.varjo.com/hc/en-us",
+   "class": "internal",
+   "rel": "",
+   "context": "Support SUB MENU",
+   "source": "page",
+   "visible": true,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://support.varjo.com/hc/en-us",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Varjo Support",
+    "h1": "",
+    "description": "Varjo Support",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://support.varjo.com/hc/en-us — Varjo Support"
+  },
+  {
+   "text": "Help Center",
+   "url": "https://support.varjo.com/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://support.varjo.com/hc/en-us",
+    "redirected": true,
+    "content_type": "text/html",
+    "title": "Varjo Support",
+    "h1": "",
+    "description": "Varjo Support",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://support.varjo.com/hc/en-us — Varjo Support"
+  },
+  {
+   "text": "Contact Support",
+   "url": "https://support.varjo.com/hc/en-us/kb-tickets/new",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://support.varjo.com/hc/en-us/kb-tickets/new",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Contact us | Varjo Support",
+    "h1": "",
+    "description": "Varjo Support",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://support.varjo.com/hc/en-us/kb-tickets/new — Contact us | Varjo Support"
+  },
+  {
+   "text": "Account Portal",
+   "url": "https://account.varjo.com/login",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "System Requirements",
+   "url": "https://varjo.com/system-requirements",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "TALK TO SALES",
+   "url": "https://cta-eu1.hubspot.com/web-interactives/public/v1/track/click?encryptedPayload=AVxigLKiMZyiBBeBIIGDX1tn79vlTKMB0xuFsTqjQditT3Q%2BCSR6RkKkzji7Ouarzv8CefnNvD%2BC%2FZVuE%2F9mOM2fiZ%2FxwqCivQ5rC%2FmV77jXbfwqH2Z%2FmMnurcQSWxDqmg%2FEO0bHdc6Gm0U%2B%2F4JurNdnmga9XuBEkCggiI0gZgzCiYv6c4S5qFxOSk%2FgRvW4sZWJcFd%2B&portalId=25667574",
+   "class": "external",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_external"
+  },
+  {
+   "text": "move along",
+   "url": "https://online-solitaire.com/varjo",
+   "class": "external",
+   "rel": "noopener",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_external"
+  },
+  {
+   "text": "virtual and mixed reality hardware",
+   "url": "https://varjo.com/products?hsLang=en",
+   "class": "internal",
+   "rel": "noopener",
+   "context": "CALLING NEW COLLEAGUES FROM ALL BACKGROUNDS. Varjo is best known for delivering virtual and mixed reality that are indistinguishable from the real world. Founded in 2016, Varjo now does business in over 40 countries worl",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Boeing",
+   "url": "https://varjo.com/case-studies/boeing-starliner/?hsLang=en",
+   "class": "internal",
+   "rel": "noopener",
+   "context": "CALLING NEW COLLEAGUES FROM ALL BACKGROUNDS. Varjo is best known for delivering virtual and mixed reality that are indistinguishable from the real world. Founded in 2016, Varjo now does business in over 40 countries worl",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Kia",
+   "url": "https://varjo.com/case-studies/kia-launches-new-ev9-model-in-finland-with-varjos-mixed-reality?hsLang=en",
+   "class": "internal",
+   "rel": "noopener",
+   "context": "CALLING NEW COLLEAGUES FROM ALL BACKGROUNDS. Varjo is best known for delivering virtual and mixed reality that are indistinguishable from the real world. Founded in 2016, Varjo now does business in over 40 countries worl",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "KNUT NESHEIM “In the future, VR/XR technology is going to be the default that everybody takes for granted.”",
+   "url": "https://varjo.com/company-jobs/in-the-future-vr-xr-technology-is-going-to-be-the-default-that-everybody-takes-for-granted-knut-nesheim-principal-engineer-at-varjo?hsLang=en",
+   "class": "internal",
+   "rel": "noopener",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "SANNA SHIBASAKI-ROSENBERG “At Varjo, everyone seems to appreciate and look up to the company they're working in.”",
+   "url": "https://varjo.com/company-jobs/sanna-shibasaki-rosenberg-lead-service-designer?hsLang=en",
+   "class": "internal",
+   "rel": "noopener",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "ANTTI PEUHKURINEN \"No one has solved the problems we're solving.\"",
+   "url": "https://varjo.com/company-jobs/no-one-has-solved-the-problems-were-solving-antti-peuhkurinen?hsLang=en",
+   "class": "internal",
+   "rel": "noopener",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "KIMMO ROIMELA “I’ve seen virtual and mixed reality evolve every decade. But now, they're really taking off.”",
+   "url": "https://varjo.com/company-jobs/ive-seen-virtual-and-mixed-reality-evolve-every-decade-now-theyre-really-taking-off-kimmo-roimela-principal-teleport-engineer?hsLang=en",
+   "class": "internal",
+   "rel": "noopener",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Culture Handbook",
+   "url": "https://varjo.com/hubfs/Company/Varjo-Culture-Handbook.pdf?hsLang=en",
+   "class": "pdf",
+   "rel": "noopener",
+   "context": "HOW WE LIKE TO WORK Varjo has been lucky to have attracted a supergroup of intelligent professionals from many different backgrounds to our team. We all share the same ambition level of wanting to build the world’s best ",
+   "source": "page",
+   "visible": true,
+   "decision": "d_pdf",
+   "where": "https://varjo.com/hubfs/Company/Varjo-Culture-Handbook.pdf?hsLang=en — Culture Handbook [pdf]"
+  },
+  {
+   "text": "COMPUTER VISION ENGINEER, C++",
+   "url": "https://apply.workable.com/j/66D564EA34",
+   "class": "ats_job",
+   "rel": "",
+   "context": "COMPUTER VISION ENGINEER, C++ Department: Engineering Location: Finland, Uusimaa, Helsinki",
+   "source": "page",
+   "visible": true,
+   "decision": "d_read_light",
+   "where": "https://apply.workable.com/varjo-1/j/66D564EA34 — Computer Vision Engineer, C++ - Varjo [job_listing]"
+  },
+  {
+   "text": "OPEN APPLICATION",
+   "url": "https://apply.workable.com/j/B64F9C1C64",
+   "class": "ats_job",
+   "rel": "",
+   "context": "OPEN APPLICATION Department: Other Location: Finland, Uusimaa, Helsinki",
+   "source": "page",
+   "visible": true,
+   "decision": "d_read_light",
+   "where": "https://apply.workable.com/varjo-1/j/B64F9C1C64 — Open Application - Varjo [job_listing]"
+  },
+  {
+   "text": "[img: varjo-logo-white]",
+   "url": "https://varjo.com/?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://varjo.com/?hsLang=en"
+  },
+  {
+   "text": "COMPANY",
+   "url": "https://varjo.com/company?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "COMPANY About Us News Blog Media Jobs Case Studies Legal",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "About Us",
+   "url": "https://varjo.com/company?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://varjo.com/company?hsLang=en"
+  },
+  {
+   "text": "News",
+   "url": "https://varjo.com/news?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Blog",
+   "url": "https://varjo.com/blog?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Media",
+   "url": "https://varjo.com/media?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Case Studies",
+   "url": "https://varjo.com/case-studies?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Legal",
+   "url": "https://varjo.com/legal?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "PRODUCTS",
+   "url": "https://varjo.com/products?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "PRODUCTS Varjo XR-4 Series Varjo XR-4 Secure Edition Integrated XR System Accessories Varjo Base Professional Services Teleport by Varjo Teleport Secure",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://varjo.com/products?hsLang=en"
+  },
+  {
+   "text": "Varjo XR-4 Series",
+   "url": "https://varjo.com/products/xr-4?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Varjo XR-4 Secure Edition",
+   "url": "https://varjo.com/products/xr-4-secure-edition?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Integrated XR System",
+   "url": "https://varjo.com/products/integrated-xr-system?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Accessories",
+   "url": "https://varjo.com/accessories?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Varjo Base",
+   "url": "https://varjo.com/products/varjo-base?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Professional Services",
+   "url": "https://varjo.com/products/professional-services?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Teleport by Varjo",
+   "url": "https://get.teleport.varjo.com/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Teleport Secure",
+   "url": "https://varjo.com/products/teleport-secure?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "SUPPORT",
+   "url": "https://support.varjo.com/hc/en-us?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "SUPPORT Help Center System Requirements Compatible Software Find a Reseller Setup Guide Developers",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Help Center",
+   "url": "https://support.varjo.com/hc/en-us?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://support.varjo.com/hc/en-us?hsLang=en"
+  },
+  {
+   "text": "System Requirements",
+   "url": "https://varjo.com/system-requirements?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Compatible Software",
+   "url": "https://varjo.com/software-integrations?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Find a Reseller",
+   "url": "https://varjo.com/resellers?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Setup Guide",
+   "url": "https://support.varjo.com/hc/en-us/get-started-with-varjo-headsets?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Developers",
+   "url": "https://developer.varjo.com/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "VARJO ACCOUNT LOGIN",
+   "url": "https://account.varjo.com/",
+   "class": "internal",
+   "rel": "noopener",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "SUBSCRIBE TO NEWSLETTER",
+   "url": "https://varjo.com/newsletter?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "LINKEDIN",
+   "url": "https://www.linkedin.com/company/varjo/",
+   "class": "social",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_social"
+  },
+  {
+   "text": "YOUTUBE",
+   "url": "https://www.youtube.com/c/VarjoTechnologies",
+   "class": "social",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_social"
+  },
+  {
+   "text": "INSTAGRAM",
+   "url": "https://www.instagram.com/varjodotcom/",
+   "class": "social",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_social"
+  },
+  {
+   "text": "FACEBOOK",
+   "url": "https://www.facebook.com/varjodotcom",
+   "class": "social",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_social"
+  },
+  {
+   "text": "X",
+   "url": "https://twitter.com/varjodotcom",
+   "class": "social",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_social"
+  },
+  {
+   "text": "Cookie policy",
+   "url": "https://varjo.com/cookie-policy?hsLang=en",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  }
+ ],
+ "frames": [
+  {
+   "url": "about:blank",
+   "kind": "inline",
+   "name": "__uspapiLocator",
+   "read": true,
+   "reason": "",
+   "new_lines": 0,
+   "new_links": 0
+  },
+  {
+   "url": "https://consentcdn.cookiebot.com/sdk/bc-v5.min.html",
+   "kind": "other",
+   "name": "",
+   "read": true,
+   "reason": "",
+   "new_lines": 0,
+   "new_links": 0,
+   "stop_reason": "no_new_content"
+  }
+ ],
+ "network": [
+  {
+   "url": "https://consentcdn.cookiebot.com/consentconfig/f7323d4b-009d-476c-ab11-fbb7d2e3c478/settings.json",
+   "method": "GET",
+   "status": 200,
+   "bytes": 620,
+   "job_total": 0,
+   "excerpt": "{\"widget\": {\"enabled\": false, \"position\": {\"position\": \"bottom-left\", \"distanceVerticalPx\": 10, \"distanceHorizontalPx\": 10}, \"theme\": {\"closed\": {\"backgroundColor\": \"#141414\", \"foregroundColor\": \"#FFFFFF\"}, \"opened\": {\"backgroundColor\": \"#FFFFFF\", \"foregroundColor\": \"#141414\", \"highlightColor\": \"#1032CF\", \"shadeColor\": \"#D6D6D6\", \"changeBackgroundColor\": \"#1032CF\", \"changeTextColor\": \"#FFFFFF\", \"changeBorderColor\": \"#1032CF\", \"withdrawBackgroundColor\": \"#FFFFFF\", \"withdrawTextColor\": \"#141414\", ",
+   "repeat": 1,
+   "jobs_found": 0
+  }
+ ],
+ "jobs": {
+  "links": [
+   {
+    "title": "COMPUTER VISION ENGINEER, C++",
+    "url": "https://apply.workable.com/j/66D564EA34",
+    "location": "",
+    "context": "COMPUTER VISION ENGINEER, C++ Department: Engineering Location: Finland, Uusimaa, Helsinki",
+    "source": "page"
+   },
+   {
+    "title": "OPEN APPLICATION",
+    "url": "https://apply.workable.com/j/B64F9C1C64",
+    "location": "",
+    "context": "OPEN APPLICATION Department: Other Location: Finland, Uusimaa, Helsinki",
+    "source": "page"
+   }
+  ],
+  "network": [],
+  "jsonld": [],
+  "embedded": [],
+  "counts": {
+   "links": 2,
+   "network": 0,
+   "jsonld": 0,
+   "embedded": 0
+  },
+  "best": 2,
+  "capped": false,
+  "declared": {
+   "value": null,
+   "confidence": null,
+   "candidates": []
+  }
+ },
+ "popups": {
+  "dismissed": [],
+  "obstructions": [
+   "This website uses cookies We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We als"
+  ]
+ },
+ "expansion": {
+  "scrolls": 8,
+  "expansions": 5,
+  "clicks": [
+   "expand: THE HIGHEST TECH",
+   "expand: WORK WITH THE BEST",
+   "expand: LOTS OF FREEDOM & FLEXIBILITY",
+   "expand: COMPETITIVE SALARY & BENEFITS",
+   "expand: AND SO MUCH MORE"
+  ],
+  "stop_reason": "no_new_content"
+ },
+ "counts": {
+  "links_total": 92,
+  "frames_total": 2,
+  "frames_read": 2,
+  "requests": 48,
+  "blocked_requests": {
+   "type:font": 8
+  },
+  "json_responses": 1
+ },
+ "screenshot": "screenshots/008-varjo-com-jobs.jpg",
+ "pdf": null,
+ "probe": null,
+ "children": [
+  {
+   "url": "https://www.workable.com/privacy",
+   "depth": 1,
+   "mode": "full",
+   "relation": "ats_board",
+   "link_text": "Workable",
+   "final_url": "https://www.workable.com/privacy",
+   "redirect_chain": [],
+   "title": "Privacy policy | Workable",
+   "h1": "Privacy Notice",
+   "http_status": 200,
+   "status": "ok",
+   "kind": "job_listing",
+   "seconds": 9.5,
+   "antibot": null,
+   "error": null,
+   "skip_reason": null,
+   "limits_hit": [],
+   "warnings": [],
+   "notes": [
+    {
+     "code": "n_blocked_requests",
+     "n": 7
+    }
+   ],
+   "sections": [
+    {
+     "label": "initial",
+     "source": "page",
+     "text": "Just released: Workable's AI Recruiting AgentCheck it out\n[Close banner]\nProducts\nAI\nIndustries\nCustomers\nResources\nPricing\nLog in\nStart a free trial\nRequest a demo\nPrivacy Notice\nLegal\nPrivacy Notice\nPrivacy Policy\nPrivacy Notice\nPrivacy Policy\nWorkable's Candidates Privacy Policy\nCookies Policy\nDo not sell/share my Personal Information\nRecruitment Privacy Notice Template for Customers\nPrivacy Policy\nDownload\nSources of Personal Data\nInformation we collect from you\nCategories of Personal Data We Collect\nLawful Basis for Processing\nYour Rights\nGoogle Account Authentication\nGoogle API Services\nUses made of your information when you request assistance from Workable Support\nUses made of your information\nAggregate Data\nDisclosure of your information\nSales of Personal Data\nHow we store your Personal Data\nYour California Privacy Rights\nOther State Law Privacy Rights\nRepresentatives\nThird Party Websites\nHow to complain\nChanges to our privacy\nContact\nAs the operators of the Workable websites, www.workable.com and jobs.workable.com (“Website”) Workable Software Limited registered in England and Wales with Company Registration Number 08125469 and having its registered office address at 1st Floor, Sackville House, 143-149 Fenchurch Street, London, EC3M 6BL, United Kingdom (“We”, “Us”, “Workable”), is committed to protecting and respecting your privacy. This Privacy Policy (“Policy”) relates to services provided through our websites and application (“Services”) and sets out the basis on which the Personal Data collected from you, or that you provide to Us will be processed by Us. “Personal Data” means any information that identifies or relates to a particular individual and also includes information referred to as “personally identifiable information” or “personal information” under applicable data privacy laws, rules, or regulations (collectively the “Data Protection Laws”). This Policy does not cover the practices of companies We don’t own or control or people We don’t manage. For clarity, this policy applies when Workable acts as a “Controller” (as defined in the General Data Protection Regulation (the “GDPR”) and the version of the GDPR retained in UK law (the “UK GDPR”) or “Business” as defined under the California Consumer Privacy Act of 2018 , as amended by the California Privacy Rights Act of 2020 (the “CPRA”) (all together the “CCPA”). Note that we may also process Personal Data of our customers’ job applicants in connection with our provision of services to customers, in which case we are the processor of Personal Data. If we are the processor or service provider for your Personal Data (i.e., not the controller or business), please contact the controller/business party in the first instance to address your rights with respect to such data. Please read the following carefully to understand our views and practices regarding your Personal Data and how We will treat it.\nIf you have a disability, you may access this Privacy Policy in an alternative format by contacting support@workable.com.\nFor the purpose of the GDPR and the CCPA:\nin respect of the Personal Data of visitors of the Website and users of the Services, business contacts and prospects of Workable, the Data Controller or Business under the CCPA is Workable;\nIn respect of the Personal Data of candidates who apply for, or who a Customer of Workable contacts in respect of an Opening (as the term is described in Workable’s Terms) (“Candidates”), or in regard to Customer’s employees data, Workable shall process personal information as a data processor on behalf of its Customers, who use Our Services to assist with their recruitment processes and employee onboarding, or as Service Provider. When you apply for a role with one of Workable’s Customers, our Customer’s privacy policy, rather than this Privacy Policy, will apply to our processing of your personal information.\nFor the Users of the Workable Job board (as the term is defined in the Workable Job Board Terms), when You create an Account (as the term is defined in the Workable Job Board Terms) and use the Services, We act as a Data Controller. When You to apply to a Job Opening, the Employer is collecting and storing your personal data as a Data Controller.\nSources of Personal Data\nWe collect Personal Data about you from:\nYou:\nwhen you provide such information directly to us,\nwhen you set up an Account with us to use the Services, and\nwhen Personal Data about you is automatically collected in connection with your use of our Services.\nOur subsidiaries and affiliates (together, “Affiliates”), when they provide us with Personal Data about you.\nThird parties, when they provide us with Personal Data about you (“Third Parties”). Third Parties that share your Personal Data with us include:\nService providers. For example, we may use analytics service providers to analyze how you interact and engage with the Services, or third parties may help us provide you with customer support.\nSocial networks connected to the services. If you provide your social network account credentials to us or otherwise sign in to the Services through a third-party site or service, you understand some content and/or information in those accounts may be transmitted into your Account with us.\nAdvertising partners. We receive information about you from some of our service providers who assist us with marketing or promotional services related to how you interact with our websites, applications, products, services, advertisements or communications.\nOther third parties, such as providers of business contact information, who provide us with publicly available information on You, such as mailing addresses, job titles, email addresses, phone numbers, Internet Protocol (IP) addresses, social media profiles, social media URLs and custom profiles for purposes of targeting advertising. We may combine this information with Personal Data provided by You, for targeting advertising purposes. This helps us analyze our records and identify new Customers.\nInformation we collect from you\nWe collect and process some or all of the following types of information from you:\nInformation that you provide by filling in forms on the Website. This includes information provided at the time of registering to use the Website, subscribing to our Services, creating an Account to the Job Board, posting material or requesting further information or services. We may also ask you for information when you report a problem with the Website.\nIf you contact Us, We may keep a record of that correspondence.\nWe may also ask you to complete surveys that We use for research purposes, although you do not have to respond to them.\nDetails of all actions that you carry out through the Website and of the provision of services to you.\nDetails of your visits to the Website including, but not limited to, traffic data, location data, weblogs and other communication data, the site that referred you to our site and the resources that you access.\nThe provision of your full name and email address, your employer and/or your place of work and the url of the business that you work for is required from you when you register to use our Services. We will inform you at the point of collecting information from you, whether you are required to provide the information to Us.\nCategories of Personal Data We Collect\nThe following chart details the categories of Personal Data that we collect and have collected over the past twelve (12) months. Throughout this Privacy Policy, we will refer back to the categories of Personal Data listed in this chart (for example, “Category A. Personal identifiers”).\nPersonal Data Collected (including Categories) | Purposes of Use | What is the source of this Personal Data? | Categories of third parties to whom we disclose the information for business purposes\nA. Personal identifiers\nReal name, postal address, unique personal identifier, online identifier, Internet Protocol address, email address, account name, social profile URL\nProvide the Services\nCreate your Account at the Job Board\nCommunicate with You and provide customer service\nPersonalize your experience\nSend You job advertisements, newsletters, or other marketing communications\nImprove the Services\nOur Marketing and Third Party Marketing and Advertising Purposes\nBug detection and error reporting\nAuditing Consumer Interactions\nSecurity, Fraud and Legal Compliance\nYou\nAffiliates\nThird Parties\nService Providers\nOur Affiliates\nOther Individuals, Services, and Partners at Your Request\nEntities for Legal Purposes\nEmployers (for Users of the Workable Job Board)\nB. Customer records identified by state law (including the California Customer Records statute (Cal. Civ. Code § 1798.80(e)))\nName, signature, address, telephone number, employment.\nProvide the Services\nCommunicate with You and provide customer service\nPersonalize your experience\nImprove the Services\nOur Marketing and Third Party Marketing and Advertising Purposes\nBug detection and error reporting\nAuditing Consumer Interactions\nSecurity, Fraud and Legal Compliance\nYou\nAffiliates\nThird Parties\nService Providers\nOur Affiliates\nOther Individuals, Services, and Partners at Your Request\nEntities for Legal Purposes\nEntities For Sales or Transfer of Business or Assets\nC. Commercial information\nHistory of services purchased through Workable\nProvide the Services\nInternal Accounting purposes\nProvide Customer service\nPerformance of legal obligations\nYou\nAffiliates\nService Providers\nOur Affiliates\nD. Internet or other similar network activity information\nBrowsing history, search history, information interaction with the website or application.\nOur Marketing and Third Party Marketing and Advertising Purposes\nAuditing Consumer Interactions\nCommunicate with You and provide customer service\nImprove the Services\nBug detection and error reporting\nSecurity, Fraud and Legal Compliance\nYou\nAffiliates\nThird Parties\nService Providers\nOur Affiliates\nE. Geolocation data\nPhysical location (calculated from IP address)\nProvide the Services\nSecurity, Fraud and Legal Compliance\nYou\nAffiliates\nThird Parties\nService Providers\nOur Affiliates\nF. Professional or employment-related information\nCurrent job title and employer, Resume\nProvide the Services\nCommunicate with You and provide customer service\nPersonalize your experience\nImprove the Services\nOur Marketing and Third Party Marketing and Advertising Purposes\nYou\nAffiliates\nThird Parties\nService Providers\nOur Affiliates\nG. Payment information\nAll information necessary to complete online payments, such as payment details, bank account information, billing information.\nProvide the Services\nProcess your payments (for services only that require payment)\nWe don't store any credit card or bank account/paypal number\nYou\nSecure third-party payment service providers\nThe following section provides additional information about how we collect your Personal Data.\nLawful Basis for Processing\nUnder the GDPR and the UK General Data Protection Regulation (UK GDPR), the lawful bases we rely on for processing of your personal data could be:\nLegitimate Interest: We may process your personal data based on our legitimate interest, which includes without limitation our legitimate interest to assist Job applicants find a new job (via the Workable Job Board), our legitimate interest to provide and improve the Services, our legitimate interest to improve the Website, our legitimate interest in advertising our product and services, unless you have provided your prior consent as required.\nContract: We may process personal data, in order for us to provide the services and meet our contractual obligations towards you, when we have a contract with you.\nConsent: On a few occasions, we may rely on your consent for the processing of your personal data. In any such case, we will indicate this and ask for your specific informed consent, e.g when you sign up to receive marketing communications etc.\nLegal Obligation: We may process your personal data to comply with a legal or regulatory obligation such as e.g. detecting, preventing or investigating crime or fraud including working with law enforcement agencies.\nYour Rights\nSubject to local data protection laws and in particular under the General Data Protection Regulation (GDPR) and the UK GDPR, you have a number of important rights free of charge. In summary, those include rights to:\naccess to your Personal Data and to certain other supplementary information that this Policy is already designed to address\nrequire Us to correct any mistakes in your information which We hold\nrequire the erasure of Personal Data concerning you in certain situations\nreceive the Personal Data concerning you which you have provided to Us, in a structured, commonly used and machine-readable format and have the right to transmit those data to a third party in certain situations\nobject at any time to processing of Personal Data concerning you for direct marketing\nobject to decisions being taken by automated means which produce legal effects concerning you or similarly significantly affect you\nobject in certain other situations to our continued processing of your Personal Data\notherwise restrict our processing of your Personal Data in certain circumstances\nclaim compensation for damages caused by our breach of any data protection laws.\nFor further information on each of those rights, including the circumstances in which they apply, see the General Data Protection Regulation (GDPR) Guidance from the UK Information Commissioner’s Office (ICO) on individuals rights under the UK GDPR.\nIf you would like to exercise any of those rights, please:\ncontact us using our Contact details below\nlet Us have enough information to identify you,\nlet Us have proof of your identity and address. Where you are a user of our Services you should email us from the email address that you used to register with Workable. Receipt of an email from this address will usually be sufficient to confirm your identity. In all other cases we may request one or more identification documents, such as a copy of your driving license or passport and a recent utility or credit card bill; and\nlet Us know the information to which your request relates.\nFor clarity the above rights apply to EU, UK and Swiss data subjects, as required under applicable law, but also any user of the Website and the Services, regardless of location may exercise any of these rights.\nGoogle Account Authentication\nYou may connect your Google account to your Workable account in order to make use of certain Workable features such as Gmail Import and Syncing and scheduling with Google Calendar. This is done through OAuth authentication, a secure mechanism which gives Workable access to your Google account data without letting Workable know your password.\nIn that case, Workable will require access to your Google account and user data for the following purposes:\nUpon sign-up or sign-in (“Sign in with Google”) and connect with Google through your Personal Profile:\nTo verify your email address and to create your user account on our servers in order to link your Google account with Workable;\nTo access and read your Google account profile information to retrieve, use, and display your Google account name, first name, last name and account photo or image in Workable;\nIf you choose to connect your Gmail account to your Workable account:\nTo access your Gmail account in order to send email messages to candidates from your account through Workable.\nTo access and retrieve your email messages\nto manually import email messages sent to and received from a specific candidate\nto sync email messages, sent to and received from candidates, that belong to threads that were initially sent with Workable or manually imported\nto mark your inbox items related with email messages as read, unread, archived and unarchived\nto read, display, retrieve, and download any files attached to your email messages related with candidates\nIf you choose to connect your Google Calendar account to your Workable account:\nTo access your Google Calendar account in order to schedule events from your Google Calendar account through Workable\nTo access and read your Google Calendar and calendar entries\nto display the calendar entries of your calendar and calendars of other Google users you have the permission to read\nto check availability of other event attendees and resources (e.g. meeting rooms)\nto sync the attendance status of other attendees in Workable\nto sync event updates made externally via Google Calendar in Workable\nTo access and read your Google Contacts in order to suggest email recipients when you compose email messages or events through Workable\nTo access and read your Google Suite resources in order to suggest meeting rooms when you schedule events through Workable\nGoogle API Services\nWorkable’s use of information received from Google APIs will adhere to Google API Services User Data Policy including the Limited Use requirements.\nUses made of your information when you request assistance from Workable Support\nIf you request assistance by a representative of Workable, the Workable representative may obtain access to your Workable account for the purposes of resolving your inquiry. Under those circumstances, the Workable representative will assume your role in Workable and view your account as you would when you log in.\nWorkable reserves the right to assume the role of a user in your account without prior notice in certain situations, for example when it is necessary for security purposes (such as investigating a bug or abuse) or when it is necessary to comply with applicable law.\nUses made of your information\nWhere you are using our Services on behalf of our Customer, we rely on legitimate interests in performing our contract with our Customer as the lawful basis on which We collect and use your Personal Data.\nWe use information held about you in the following ways:\nTo ensure that content from the Website is presented in the most effective manner for you and for your computer.\nTo provide you with information, products or services that you request from us or which we feel may interest you or our Customer.\nTo carry out our obligations arising from any contracts entered into between our Customer (on whose behalf you are using the Services) and Us.\nTo notify you about changes to our Services and provide you with information that is relevant to your use of the Services.\nWhere you or your employer are a prospective Customer, to provide you with information about our Services for marketing purposes.\nAggregate Data\nWe may use anonymised and/or aggregate data collected through your use of the Services and the Website for statistical purposes, for improvement of the Services, to conduct research,or any other lawful purpose. Aggregate Data is not considered personal data.\nDisclosure of your information\nWe may disclose your personal information to any member of our group, which means our subsidiaries, our ultimate holding company and its subsidiaries, as defined in section 1159 of the UK Companies Act 2006 (where applicable). Where any such member of our group is outside the UK or the EU this transfer will be on the basis of a contract, as described below in accordance with the Data Protection Laws.\nWe may disclose your personal information to third parties:\nin the event that we sell or buy any business or assets, in which case we may disclose your Personal Data to the prospective seller or buyer of such business or assets;\nif we or substantially all of our assets are acquired by a third party, in which case Personal Data held by us about our customers will be one of the transferred assets;\nif we are under a duty to disclose or share your Personal Data in order to comply with any legal obligation or in order to enforce or apply our Website Terms and Conditions and other agreements, but we will endeavour to minimise such disclosure to only that reasonably necessary and, where possible, to provide you with notice of such disclosure; and/or\nto protect the rights, property, or safety of Workable, the Website, our users and any third party we interact with to provide the Website.\nWe disclose your Personal Data to service providers and other parties for the following business purposes:\nAuditing related to a current interaction and concurrent transactions, including, but not limited to auditing compliance with this specification and other standards.\nDetecting security incidents, protecting against malicious, deceptive, fraudulent, or illegal activity, and prosecuting those responsible for that activity.\nDebugging to identify and repair errors that impair existing intended functionality.\nShort-term, transient use of Personal Data that is not used by another party to build a consumer profile or otherwise alter your consumer experience outside the current interaction.\nPerforming services on our behalf, including software hosting and cloud computing, Customer Relationship Management, email sending, logging, storing Customer data, maintaining or servicing accounts, providing customer service, processing or fulfilling orders and transactions, verifying customer information, processing payments, providing financing, providing advertising or marketing services, providing analytic services, or providing similar services on behalf of the business or service provider.\nUndertaking internal research for technological development and demonstration.\nUndertaking activities to verify or maintain the quality or safety of a service or functionality that we provide, own, manufacture, or control.\nWe disclose your Personal Data to the following categories of service providers and other parties:\nService providers, including:\nPayment processors.\nAd networks.\nSecurity and fraud prevention consultants.\nHosting and other technology and communications providers.\nAnalytics providers.\nCRM software providers.\nEmail sending providers.\nLogging service providers.\nCustomer Service software providers.\nOur Affiliates.\nParties who acquire your Personal Data through an acquisition or other change of control.\nPersonal Data may be transferred to a third party if we undergo a merger, acquisition, bankruptcy or other transaction in which that third party assumes control of our business (in whole or in part).\nOther parties at your direction.\nOther users (where you post information publicly or as otherwise necessary to effect a transaction initiated or authorized by you through the Services).\nSocial media services (if you intentionally interact with them through your use of the Services).\nThird-party business partners who you access through the Services ( e.g partners accessed through the Workable Marketplace). Workable does not control the use of your data by those third parties and you are advised to check their Privacy Policy as applicable.\nFor Users of the Workable Job board, we will share your personal data directly with the Employer who posted the Job Opening you have applied to.\nOther parties authorized by you.\nOver the past twelve months, we have disclosed the following categories of your Personal Data to service providers or other parties for the business purposes listed above:\nA. Personal identifiers.\nB. Customer records identified by state law.\nC. Commercial information.\nD. Internet or other similar network activity information.\nE. Geolocation data.\nF. Professional or employment-related information.\nWhen we disclose personal information for a business purpose, as described above we enter into a contract with the service provider or other parties, that describes the purpose and requires the recipient to both keep that personal information confidential and not use it for any purpose except performing the contract.\nSales of Personal Data\nWe haven't sold your Personal Data over the last twelve months.\nHow we store your Personal Data\nSecurity\nWe take appropriate measures to ensure that all Personal Data is kept secure including security measures to prevent Personal Data from being accidentally lost, or used or accessed in an unauthorised way, for the duration of your use of our Services. We limit access to your Personal Data to those who have a genuine business need to know it. Those processing your information will do so only in an authorised manner and are subject to a duty of confidentiality.\nWe also have procedures in place to deal with any suspected data security breach. We will notify you and any applicable regulator of a suspected data security breach where We are legally required to do so.\nUnfortunately, the transmission of information via the internet is not completely secure. Although we will do our best to protect your Personal Data, we cannot guarantee the security of your data transmitted to the Website, therefore any transmission remains at your own risk. Once we have received your information, we will use strict procedures and security features in order to prevent unauthorised access.\nKeeping your Personal Data up to date\nIf your personal details change you may update them by accessing the relevant page of the Website, or by contacting Us at support@workable.com.\nWe will endeavour to update your Personal Data within thirty (30) days of any new or updated Personal Data being provided to Us, in order to ensure that the Personal Data We hold about you is as accurate and up to date as possible.\nWhere we store your Personal Data\nThe data that We collect from you and process as a result of your use of the Services may be transferred to, and stored at, a destination outside the UK, Switzerland or the European Economic Area (\"EEA\"). It may also be processed by staff operating outside the UK, Switzerland or the EEA who work for Us or for one of our suppliers. Such staff maybe engaged in, among other things, the fulfilment of your orders, the processing of your payment details and the provision of support services. By submitting your Personal Data, you agree to this transfer, storing or processing.\nIn particular, your data may be accessible to i) Workable’s staff in the USA or ii) may be stored by Workable’s hosting service provider on servers in the USA as well as in the EEA. The USA does not have the same data protection laws as the United Kingdom and the EEA. A Data Processing and Transfer Agreement has been signed between the entities of the Workable Group of Companies, and between Workable and each of its data processors. These Data Processor Agreements that are designed to help safeguard your privacy rights and give you remedies in the unlikely event of a misuse of your Personal Data. A full list of Workable's sub-processors can be found here.\nIf you would like further information please contact Us (see ‘Contact’ below). We will not otherwise transfer your Personal Data outside of the United Kingdom or EEA or to any organisation (or subordinate bodies) governed by public international law or which is set up under any agreement between two or more countries.\nHow long we keep your Personal Data\nWe will hold all the data for so long as we have an obligation to You to provide you with the Services, as long as we have an obligation to the Customer to provide the Services, or as long as necessary to fulfill the purpose for which was initially collected and thereafter until such time as we delete the Customer’s account in accordance with our Customer Terms and Conditions. We will retain and use your Personal Data to the extent necessary to comply with any legal/accounting/reporting obligation.\nYour personal information will be deleted on one of the following occurrences:\ndeletion of your personal information by You (or by another person engaged by the Customer); or\nreceipt of a written request by You (or another person engaged by the Customer) to us.\nPersonal Data of Children\nWe do not knowingly collect or solicit Personal Data from children under 16; if you are a child under 16, please do not attempt to register for or otherwise use the Services or send us any Personal Data. If we learn we have collected Personal Data from a child under 16, we will delete that information as quickly as possible. If you believe that a child under 16 may have provided us Personal Data, please contact us at support@workable.com.\nYour California Privacy Rights\nIf you are a California resident, you have the rights outlined in this section. Please see the “Exercising Your Rights” section below for instructions regarding how to exercise these rights. If there are any conflicts between this section and any other provision of this Policy and you are a California resident, the portion that is more protective of Personal Data shall control to the extent of such conflict. If you have any questions about this section or whether any of the following applies to you, please contact us at support@workable.com.\nRight of Access\nYou have the right to request certain information about our collection and use of your Personal Data over the past 12 months. We will provide you with the following information:\nThe categories of Personal Data that we have collected about you.\nThe categories of sources from which that Personal Data was collected.\nThe business or commercial purpose for collecting your Personal Data.\nThe categories of third parties with whom we have shared your Personal Data.\nThe specific pieces of Personal Data that we have collected about you.\nIf we have disclosed your Personal Data for a business purpose over the past 12 months, we will identify the categories of Personal Data shared with each category of third party recipient.\nRight of Deletion\nYou have the right to request that we delete the Personal Data that we have collected from you. Under the CCPA, this right is subject to certain exceptions: for example, we may need to retain your Personal Data to provide you with the Services or complete a transaction or other action you have requested. If your deletion request is subject to one of these exceptions, we may deny your deletion request.\nRight to Correct\nYou have a right to request correction of inaccurate personal information.\nRight to Opt out of selling your personal Information\nWorkable does not sell your personal information\nRight to Opt out of sharing your personal Information\nAlthough Workable does not sell your personal information, we may share in a few instances your personal information with third parties. “Sharing” under the CCPA, is broadly defined to cover the disclosing personal information for purposes of cross-context behavioral advertising, as for example targeting advertising based on personal information obtained from a consumer’s activity across distinctly-branded websites or services.\nYou can request to opt out of sharing your personal information as defined above by using our cookies preference banner.\nRight to Limit the Use of Sensitive Personal Information\nWorkable does not use or disclose Sensitive Personal Information for reasons other than permitted under the CCPA.\nNon discrimination for Exercising Your CCPA Rights\nWe will not discriminate against you for exercising your rights under the CCPA. We will not deny you our goods or services, charge you different prices or rates, or provide you a lower quality of goods and services if you exercise your rights under the CCPA.\nRight to Opt-out of Automated Decision-Making Technology (Profiling)\nWorkable does not engage in automated decision-making or profiling.\nExercising Your Rights\nTo exercise the rights described above, you must send us a request that (1) provides sufficient information to allow us to verify that you are the person about whom we have collected Personal Data, and (2) describes your request in sufficient detail to allow us to understand, evaluate, and respond to it. Each request that meets both of these criteria will be considered a “Valid Request.” We may not respond to requests that do not meet these criteria. We will only use Personal Data provided in a Valid Request to verify you and complete your request. You do not need an account to submit a Valid Request.\nWe will work to respond to your Valid Request within 45 days of receipt. We will not charge you a fee for making a Valid Request unless your Valid Request(s) is excessive, repetitive, or manifestly unfounded. If we determine that your Valid Request warrants a fee, we will notify you of the fee and explain that decision before completing your request.\nYou may submit a Valid Request using the following methods:\nCall us at: +1 844-657-7637\nEmailing us at: support@workable.com\nOther State Law Privacy Rights\nOther California Resident Rights\nUnder California Civil Code Sections 1798.83-1798.84, California residents are entitled to contact us to prevent disclosure of Personal Data to third parties for such third parties’ direct marketing purposes; in order to submit such a request, please contact us at support@workable.com.\nYour browser may offer you a “Do Not Track” option, which allows you to signal to operators of websites and web applications and services that you do not wish such operators to track certain of your online activities over time and across different websites. Our Services do not support Do Not Track requests at this time. To find out more about “Do Not Track,” you can visit www.allaboutdnt.com.\nNevada Resident Rights\nIf you are a resident of Nevada, you have the right to opt-out of the sale of certain Personal Data to third parties who intend to license or sell that Personal Data. You can exercise this right by contacting us at support@workable.com with the subject line “Nevada Do Not Sell Request” and providing us with your name and the email address associated with your account. Please note that we do not currently sell your Personal Data as sales are defined in Nevada Revised Statutes Chapter 603A.\nTransfers of Personal Data\nThe Services are hosted and operated in the United States (“U.S.”) through Workable, Inc. and its service providers, and if you do not reside in the U.S., laws in the U.S. may differ from the laws where you reside. By using the Services, you acknowledge that any Personal Data about you, regardless of whether provided by you or obtained from a third party, is being provided to Workable, Inc. in the U.S. and will be hosted on U.S. servers, and you authorize Workable to transfer, store and process your information to and in the U.S., and possibly other countries. You hereby acknowledge and agree with the transfer of your data to the U.S.\nFor transfers of data outside the EEA, Switzerland and the UK to the US, We rely i) on the European Commission Standard Contractual Clauses ( “EE “SCCs”) and the UK DTIA as approved by the ICO (all together the “SCCs”), as our data transfer mechanism, or ii) the Data Privacy Frameworks if the recipient of the data adheres to the Data Privacy Framework principles.\nData Privacy Framework compliance\nWorkable Inc. is self-certified under the EU-U.S. Data Privacy Framework (“EU-U.S. DPF”), the Swiss-U.S. Data Privacy Framework (“Swiss-U.S. DPF”) and the UK Extension to the EU-U.S. DPF as set forth by the U.S. Department of Commerce regarding the collection, use, and retention of personal information from European Union member countries, the UK and Switzerland that have been transferred to the United States pursuant to the Data Privacy Framework. Workable has certified that it adheres to the Data Privacy Framework Principles with respect to such data. If there is any conflict between the terms of this privacy policy and data subject rights under the Data Privacy Framework Principles, the Data Privacy Framework Principles shall govern. To learn more about the Data Privacy Framework program, and to view our certification page, please visit https://www.dataprivacyframework.gov/.\nWith respect to Personal Data that have been received or transferred pursuant to the Privacy Framework, Workable Inc. is subject to the regulatory and enforcement powers of the U.S. Federal Trade Commission.\nPursuant to the Data Privacy Framework, EU, United Kingdom and Swiss individuals have the right to obtain our confirmation of whether we maintain personal information relating to you in the United States. Upon request, we will provide you with access to the personal information that we hold about you. You may also correct, amend, or delete the personal information we hold about you. An individual who seeks access, or who seeks to correct, amend, or delete inaccurate data transferred to the United States under the Data Privacy Framework, should direct their query to support@workable.com. If requested to remove data, we will respond within a reasonable timeframe.\nWe will provide an individual opt-out choice, or opt-in for sensitive data, before we share your data with third parties other than our agents, or before we use it for a purpose other than which it was originally collected or subsequently authorized. To request to limit the use and disclosure of your personal information, please submit a written request to support@workable.com.\nIn certain situations, we may be required to disclose Personal Data in response to lawful requests by public authorities, including to meet national security or law enforcement requirements.\nIn compliance with the Data Privacy Framework Principles, Workable commits to resolve complaints about your privacy and our collection or use of your personal information transferred to the United States pursuant to Data Privacy Framework. Please contact us at support@workable.com with any questions, concerns or complaints relating to our Data Privacy Framework Certification.\nWe are committed to cooperate with the panel established by the EU data protection authorities (DPAs), the Swiss Federal Data Protection and Information Commissioner (FDPIC) and the UK ICO, with regard to unresolved complaints concerning data received in reliance on the EU-U.S. DPF, the Swiss-U.S. DPF and the UK Extension to the EU-U.S. DPF and you may have the possibility to engage in binding arbitration through the Data Privacy Framework Panel. More information can be found here.\nIn regard to onward transfers of personal data to third parties, Workable is responsible for ensuring that the third parties process such personal data in a manner consistent with the DPF Principles. Workable remains liable for the third party’s failure to comply with the DPF Principles, unless Workable can prove that it is not responsible for the event giving rise to the damage.\nRepresentatives\nWorkable Inc. is based in the USA and it has appointed Workable Software Single Member Private Company to be its representative within the EEA and Workable Software Limited as its representative in the UK.\nWorkable Software Single Member Private Company is the EU representative of Workable Software Limited within the EEA and likewise Workable Software Limited is the UK representative of Workable Software Single Member Private Company.\nWorkable Software Single Member Private Company is registered in Greece with its office located at Leof. Kifisias 95-97, Marousi 151 25, Greece. Contact via the email: support@workable.com.\nWorkable Software Limited is registered in England and Wales with Company Registration Number 08125469 and having its registered office address at 1st Floor, Sackville House, 143-149 Fenchurch Street, London, EC3M 6BL, United Kingdom. Contact via the email: support@workable.com.\nThird Party Websites\nThe Website may, from time to time, contain links to and from the websites of our partner networks, advertisers and affiliates. If you follow a link to any of these websites, please note that these websites have their own privacy policies and terms of use and that we do not accept any responsibility or liability for these policies and terms of use. Please check these policies before you submit any Personal Data to these websites.\nHow to complain\nWe hope that We can resolve any query or concern you raise about our use of your information.\nThe General Data Protection Regulation and the UK GDPR also give you right to lodge a complaint with a supervisory authority, in particular (under the GDPR) in the European Union (or European Economic Area) state where you work, normally live or where any alleged infringement of data protection laws occurred. The supervisory authority in the UK is the Information Commissioner who may be contacted at https://ico.org.uk/concerns/ or telephone: 0303 123 1113.\nThe supervisory authority in Greece is the Hellenic Data Protection Authority, which may be contacted at Call Centre: +30-210 6475600 or E-mail: contact@dpa.gr\nChanges to our privacy policy\nWe reserve the right to modify this Privacy Policy at any time. Any changes we may make to our Policy in the future will be notified and made available to you using the Website. Your continued use of the Services and the Website shall be deemed your acceptance of the varied Privacy Policy.\nContact\nIf you have any questions about this Privacy Policy or want to report a potential data breach please reach out to support@workable.com. Please note that Workable’s Data Protection Officer (DPO) responds to any requests submitted to support@workable.com, attention Workable’s DPO.\nLAST UPDATED ON JANUARY 16TH 2025\nArchived versions\nPrivacy policy 2023\nProduct\nPricing\nFeatures\nAI technology\nPartners\nSecurity\nResources\nHelp center\nResource library\nDeveloper API\nSearch for jobs\nWorkable\nAbout us\nWork with us\nBackstage\nAccessibility\nStatus\nAmericas: +1 617 861 3548\nEurope & Rest of World: +44 20 4579 3313\n[Workable on LinkedIn]\n[Workable on Facebook]\n[Workable on X]\n[Workable on Instagram]\n[Workable on Youtube]\n[Download Workable on App Store]\n[Download Workable on Google Play]\nRequest an AI summary of Workable\n[A Workable summary by chatGPT] [img: A Workable summary by chatGPT] [A Workable summary by Claude] [img: A Workable summary by Claude] [A Workable summary by Gemini] [img: A Workable summary by Gemini] [A Workable summary by Grok] [img: A Workable summary by Grok] [A Workable summary by Perplexity] [img: A Workable summary by Perplexity]\n© Workable Technology Limited 2012-2026\nLegal\nPrivacy policy\nCookie settings\nDo not sell/share my personal information\nModern slavery statement"
+    }
+   ],
+   "text_chars": 42175,
+   "text_truncated": false,
+   "links": [
+    {
+     "text": "Check it out",
+     "url": "https://www.workable.com/workable-ai",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Workable | All-in-one HR software",
+     "url": "https://www.workable.com/",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Products",
+     "url": "https://www.workable.com/features",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "AI",
+     "url": "https://www.workable.com/workable-ai",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Industries",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Construction & Engineering",
+     "url": "https://www.workable.com/industry-construction-and-engineering",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Healthcare Services",
+     "url": "https://www.workable.com/industry-healthcare",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Real Estate & Property Services",
+     "url": "https://www.workable.com/industry-real-estate-and-property-management",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Technology",
+     "url": "https://www.workable.com/industry-technology",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Professional Services",
+     "url": "https://www.workable.com/industry-professional-services",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Customers",
+     "url": "https://www.workable.com/customers",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Resources",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Resources Library",
+     "url": "https://resources.workable.com/",
+     "class": "ats_board",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Help Center",
+     "url": "https://help.workable.com/",
+     "class": "ats_board",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Search for Jobs",
+     "url": "https://jobs.workable.com/",
+     "class": "ats_board",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Partners & Integrations",
+     "url": "https://partners.workable.com/",
+     "class": "ats_board",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Pricing",
+     "url": "https://www.workable.com/pricing",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Log in",
+     "url": "https://www.workable.com/signin",
+     "class": "ats_board",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Start a free trial",
+     "url": "https://www.workable.com/free-trial",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Request a demo",
+     "url": "https://www.workable.com/demo",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Legal",
+     "url": "https://www.workable.com/legal",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Download",
+     "url": "https://www.workable.com/privacy",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Sources of Personal Data",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Information we collect from you",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Categories of Personal Data We Collect",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Lawful Basis for Processing",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Your Rights",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Google Account Authentication",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Google API Services",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Uses made of your information when you request assistance from Workable Support",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Uses made of your information",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Aggregate Data",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Disclosure of your information",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Sales of Personal Data",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "How we store your Personal Data",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Your California Privacy Rights",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Other State Law Privacy Rights",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Representatives",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Third Party Websites",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "How to complain",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Changes to our privacy",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Contact",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "support@workable.com",
+     "url": "mailto:support@workable.com",
+     "class": "mailto",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "General Data Protection Regulation (GDPR) Guidance from the UK Information Commissioner’s Office (ICO) on individuals rights under the UK GDPR",
+     "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/",
+     "class": "external",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Google API Services User Data Policy",
+     "url": "https://developers.google.com/terms/api-services-user-data-policy",
+     "class": "external",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "here",
+     "url": "https://www.workable.com/subprocessors",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "www.allaboutdnt.com",
+     "url": "https://allaboutdnt.com/",
+     "class": "external",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "https://www.dataprivacyframework.gov/",
+     "url": "https://www.dataprivacyframework.gov/",
+     "class": "external",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "here",
+     "url": "https://www.dataprivacyframework.gov/s/article/ANNEX-I-introduction-dpf?tabset-35584=2",
+     "class": "external",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "General Data Protection Regulation",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32016R0679&from=EN",
+     "class": "external",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "https://ico.org.uk/concerns/",
+     "url": "https://ico.org.uk/make-a-complaint/",
+     "class": "external",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Privacy policy 2023",
+     "url": "https://www.workable.com/static/downloads/privacy.pdf?1.6=",
+     "class": "pdf",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "",
+     "url": "https://www.workable.com/privacy",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Features",
+     "url": "https://www.workable.com/features",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "AI technology",
+     "url": "https://www.workable.com/workable-ai",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Partners",
+     "url": "https://partners.workable.com/",
+     "class": "ats_board",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Security",
+     "url": "https://www.workable.com/security",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Help center",
+     "url": "https://help.workable.com/",
+     "class": "ats_board",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Resource library",
+     "url": "https://resources.workable.com/",
+     "class": "ats_board",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Developer API",
+     "url": "https://www.workable.com/developers",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Search for jobs",
+     "url": "https://jobs.workable.com/",
+     "class": "ats_board",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "About us",
+     "url": "https://www.workable.com/about",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Work with us",
+     "url": "https://apply.workable.com/careers",
+     "class": "ats_board",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Backstage",
+     "url": "https://resources.workable.com/backstage-at-workable/",
+     "class": "ats_board",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Accessibility",
+     "url": "https://www.workable.com/web-accessibility-statement",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Status",
+     "url": "https://workable.statuspage.io/",
+     "class": "external",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "+1 617 861 3548",
+     "url": "tel:+16178613548",
+     "class": "tel",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "+44 20 4579 3313",
+     "url": "tel:+442045793313",
+     "class": "tel",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Workable on LinkedIn",
+     "url": "https://www.linkedin.com/company/workable-software",
+     "class": "social",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Workable on Facebook",
+     "url": "https://www.facebook.com/workable",
+     "class": "social",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Workable on X",
+     "url": "https://x.com/workable",
+     "class": "social",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Workable on Instagram",
+     "url": "https://www.instagram.com/workable/",
+     "class": "social",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Workable on Youtube",
+     "url": "https://www.youtube.com/@WorkableSoftware",
+     "class": "social",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Download Workable on App Store",
+     "url": "https://itunes.apple.com/us/app/workablehr/id1164841670?ls=1&mt=8",
+     "class": "external",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Download Workable on Google Play",
+     "url": "https://play.google.com/store/apps/details?id=com.workable.ats",
+     "class": "external",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "A Workable summary by chatGPT",
+     "url": "https://chatgpt.com/?q=I%E2%80%99m+a+recruiter+%2F+HR+professional+trying+to+learn+about+Workable.+Can+you+explain+what+it+is%2C+what+it%E2%80%99s+mainly+used+for%2C+and+what+kinds+of+companies+or+teams+usually+get+the+most+value+from+it%3F",
+     "class": "external",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "A Workable summary by Claude",
+     "url": "https://claude.ai/new?q=I%E2%80%99m+a+recruiter+%2F+HR+professional+trying+to+learn+about+Workable.+Can+you+explain+what+it+is%2C+what+it%E2%80%99s+mainly+used+for%2C+and+what+kinds+of+companies+or+teams+usually+get+the+most+value+from+it%3F",
+     "class": "external",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "A Workable summary by Gemini",
+     "url": "https://gemini.google.com/app?q=I%E2%80%99m+a+recruiter+%2F+HR+professional+trying+to+learn+about+Workable.+Can+you+explain+what+it+is%2C+what+it%E2%80%99s+mainly+used+for%2C+and+what+kinds+of+companies+or+teams+usually+get+the+most+value+from+it%3F",
+     "class": "external",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "A Workable summary by Grok",
+     "url": "https://x.com/i/grok?text=I%E2%80%99m+a+recruiter+%2F+HR+professional+trying+to+learn+about+Workable.+Can+you+explain+what+it+is%2C+what+it%E2%80%99s+mainly+used+for%2C+and+what+kinds+of+companies+or+teams+usually+get+the+most+value+from+it%3F",
+     "class": "social",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "A Workable summary by Perplexity",
+     "url": "https://www.perplexity.ai/search?q=I%E2%80%99m+a+recruiter+%2F+HR+professional+trying+to+learn+about+Workable.+Can+you+explain+what+it+is%2C+what+it%E2%80%99s+mainly+used+for%2C+and+what+kinds+of+companies+or+teams+usually+get+the+most+value+from+it%3F",
+     "class": "external",
+     "rel": "noopener noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Privacy policy",
+     "url": "https://www.workable.com/privacy",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Cookie settings",
+     "url": "https://www.workable.com/privacy",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Do not sell/share my personal information",
+     "url": "https://www.workable.com/workable-data-selling-CCPA-policy",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Modern slavery statement",
+     "url": "https://www.workable.com/modern-slavery-statement",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    }
+   ],
+   "frames": [
+    {
+     "url": "about:blank",
+     "kind": "inline",
+     "name": "",
+     "read": true,
+     "reason": "",
+     "new_lines": 0,
+     "new_links": 0
+    }
+   ],
+   "network": [
+    {
+     "url": "https://ff-proxy.workable.com/api/features/sdk-4qhVqINxlZi0vqcG",
+     "method": "GET",
+     "status": 200,
+     "bytes": 181,
+     "job_total": 0,
+     "excerpt": "{\"status\": 200, \"features\": {\"pricing_starting_price\": {\"defaultValue\": true}, \"new_fte_pricing\": {\"defaultValue\": false, \"rules\": [{\"force\": true}]}}, \"dateUpdated\": \"2026-07-06T11:50:23.506Z\"}",
+     "repeat": 1,
+     "jobs_found": 0
+    },
+    {
+     "url": "https://www.workable.com/_next/data/2halXW-4NO28E6h9mnuTW/workable-ai.json",
+     "method": "GET",
+     "status": 200,
+     "bytes": 17970,
+     "job_total": 24,
+     "excerpt": "",
+     "repeat": 1,
+     "jobs_found": 24
+    },
+    {
+     "url": "https://www.workable.com/_next/data/2halXW-4NO28E6h9mnuTW/free-trial.json",
+     "method": "GET",
+     "status": 200,
+     "bytes": 3353,
+     "job_total": 0,
+     "excerpt": "{\"pageProps\": {\"locale\": \"en\", \"messages\": {\"shared\": {\"demoCTALabel\": \"Request a demo\", \"freeTrialCTALabel\": \"Start a free trial\", \"adBanner\": {\"description\": \"Just released: Workable's AI Recruiting Agent\", \"button\": \"Check it out\"}, \"header\": {\"nav\": {\"ai\": \"AI\", \"product\": \"Products\", \"pricing\": \"Pricing\", \"customers\": \"Customers\", \"industries\": {\"label\": \"Industries\", \"ConstructionEngineering\": \"Construction & Engineering\", \"HealthcareServices\": \"Healthcare Services\", \"RealEstatePropertySer",
+     "repeat": 1,
+     "jobs_found": 0
+    },
+    {
+     "url": "https://www.workable.com/_next/data/2halXW-4NO28E6h9mnuTW/demo.json",
+     "method": "GET",
+     "status": 200,
+     "bytes": 2534,
+     "job_total": 0,
+     "excerpt": "{\"pageProps\": {\"locale\": \"en\", \"messages\": {\"shared\": {\"demoCTALabel\": \"Request a demo\", \"freeTrialCTALabel\": \"Start a free trial\", \"adBanner\": {\"description\": \"Just released: Workable's AI Recruiting Agent\", \"button\": \"Check it out\"}, \"header\": {\"nav\": {\"ai\": \"AI\", \"product\": \"Products\", \"pricing\": \"Pricing\", \"customers\": \"Customers\", \"industries\": {\"label\": \"Industries\", \"ConstructionEngineering\": \"Construction & Engineering\", \"HealthcareServices\": \"Healthcare Services\", \"RealEstatePropertySer",
+     "repeat": 1,
+     "jobs_found": 0
+    },
+    {
+     "url": "https://www.workable.com/_next/data/2halXW-4NO28E6h9mnuTW/pricing.json",
+     "method": "GET",
+     "status": 200,
+     "bytes": 9124,
+     "job_total": 0,
+     "excerpt": "{\"pageProps\": {\"locale\": \"en\", \"messages\": {\"shared\": {\"demoCTALabel\": \"Request a demo\", \"freeTrialCTALabel\": \"Start a free trial\", \"adBanner\": {\"description\": \"Just released: Workable's AI Recruiting Agent\", \"button\": \"Check it out\"}, \"header\": {\"nav\": {\"ai\": \"AI\", \"product\": \"Products\", \"pricing\": \"Pricing\", \"customers\": \"Customers\", \"industries\": {\"label\": \"Industries\", \"ConstructionEngineering\": \"Construction & Engineering\", \"HealthcareServices\": \"Healthcare Services\", \"RealEstatePropertySer",
+     "repeat": 1,
+     "jobs_found": 0
+    },
+    {
+     "url": "https://www.workable.com/_next/data/2halXW-4NO28E6h9mnuTW/legal.json",
+     "method": "GET",
+     "status": 200,
+     "bytes": 4370,
+     "job_total": 0,
+     "excerpt": "{\"pageProps\": {\"locale\": \"en\", \"messages\": {\"shared\": {\"demoCTALabel\": \"Request a demo\", \"freeTrialCTALabel\": \"Start a free trial\", \"adBanner\": {\"description\": \"Just released: Workable's AI Recruiting Agent\", \"button\": \"Check it out\"}, \"header\": {\"nav\": {\"ai\": \"AI\", \"product\": \"Products\", \"pricing\": \"Pricing\", \"customers\": \"Customers\", \"industries\": {\"label\": \"Industries\", \"ConstructionEngineering\": \"Construction & Engineering\", \"HealthcareServices\": \"Healthcare Services\", \"RealEstatePropertySer",
+     "repeat": 1,
+     "jobs_found": 0
+    },
+    {
+     "url": "https://www.workable.com/_next/data/2halXW-4NO28E6h9mnuTW/features.json",
+     "method": "GET",
+     "status": 200,
+     "bytes": 39164,
+     "job_total": 0,
+     "excerpt": "{\"pageProps\": {\"locale\": \"en\", \"messages\": {\"shared\": {\"demoCTALabel\": \"Request a demo\", \"freeTrialCTALabel\": \"Start a free trial\", \"adBanner\": {\"description\": \"Just released: Workable's AI Recruiting Agent\", \"button\": \"Check it out\"}, \"header\": {\"nav\": {\"ai\": \"AI\", \"product\": \"Products\", \"pricing\": \"Pricing\", \"customers\": \"Customers\", \"industries\": {\"label\": \"Industries\", \"ConstructionEngineering\": \"Construction & Engineering\", \"HealthcareServices\": \"Healthcare Services\", \"RealEstatePropertySer",
+     "repeat": 1,
+     "jobs_found": 0
+    },
+    {
+     "url": "https://www.workable.com/_next/data/2halXW-4NO28E6h9mnuTW/index.json",
+     "method": "GET",
+     "status": 200,
+     "bytes": 30522,
+     "job_total": 24,
+     "excerpt": "",
+     "repeat": 1,
+     "jobs_found": 24
+    },
+    {
+     "url": "https://www.workable.com/_next/data/2halXW-4NO28E6h9mnuTW/customers.json",
+     "method": "GET",
+     "status": 200,
+     "bytes": 37793,
+     "job_total": 0,
+     "excerpt": "{\"pageProps\": {\"locale\": \"en\", \"messages\": {\"shared\": {\"demoCTALabel\": \"Request a demo\", \"freeTrialCTALabel\": \"Start a free trial\", \"adBanner\": {\"description\": \"Just released: Workable's AI Recruiting Agent\", \"button\": \"Check it out\"}, \"header\": {\"nav\": {\"ai\": \"AI\", \"product\": \"Products\", \"pricing\": \"Pricing\", \"customers\": \"Customers\", \"industries\": {\"label\": \"Industries\", \"ConstructionEngineering\": \"Construction & Engineering\", \"HealthcareServices\": \"Healthcare Services\", \"RealEstatePropertySer",
+     "repeat": 1,
+     "jobs_found": 0
+    },
+    {
+     "url": "https://www.workable.com/_next/data/2halXW-4NO28E6h9mnuTW/privacy.json",
+     "method": "GET",
+     "status": 200,
+     "bytes": 52558,
+     "job_total": 21,
+     "excerpt": "",
+     "repeat": 1,
+     "jobs_found": 21
+    },
+    {
+     "url": "https://www.workable.com/_next/data/2halXW-4NO28E6h9mnuTW/developers.json",
+     "method": "GET",
+     "status": 200,
+     "bytes": 2534,
+     "job_total": 0,
+     "excerpt": "{\"pageProps\": {\"locale\": \"en\", \"messages\": {\"shared\": {\"demoCTALabel\": \"Request a demo\", \"freeTrialCTALabel\": \"Start a free trial\", \"adBanner\": {\"description\": \"Just released: Workable's AI Recruiting Agent\", \"button\": \"Check it out\"}, \"header\": {\"nav\": {\"ai\": \"AI\", \"product\": \"Products\", \"pricing\": \"Pricing\", \"customers\": \"Customers\", \"industries\": {\"label\": \"Industries\", \"ConstructionEngineering\": \"Construction & Engineering\", \"HealthcareServices\": \"Healthcare Services\", \"RealEstatePropertySer",
+     "repeat": 1,
+     "jobs_found": 0
+    },
+    {
+     "url": "https://www.workable.com/_next/data/2halXW-4NO28E6h9mnuTW/web-accessibility-statement.json",
+     "method": "GET",
+     "status": 200,
+     "bytes": 4456,
+     "job_total": 0,
+     "excerpt": "{\"pageProps\": {\"locale\": \"en\", \"messages\": {\"shared\": {\"demoCTALabel\": \"Request a demo\", \"freeTrialCTALabel\": \"Start a free trial\", \"adBanner\": {\"description\": \"Just released: Workable's AI Recruiting Agent\", \"button\": \"Check it out\"}, \"header\": {\"nav\": {\"ai\": \"AI\", \"product\": \"Products\", \"pricing\": \"Pricing\", \"customers\": \"Customers\", \"industries\": {\"label\": \"Industries\", \"ConstructionEngineering\": \"Construction & Engineering\", \"HealthcareServices\": \"Healthcare Services\", \"RealEstatePropertySer",
+     "repeat": 1,
+     "jobs_found": 0
+    },
+    {
+     "url": "https://www.workable.com/_next/data/2halXW-4NO28E6h9mnuTW/about.json",
+     "method": "GET",
+     "status": 200,
+     "bytes": 4571,
+     "job_total": 0,
+     "excerpt": "{\"pageProps\": {\"locale\": \"en\", \"messages\": {\"shared\": {\"demoCTALabel\": \"Request a demo\", \"freeTrialCTALabel\": \"Start a free trial\", \"adBanner\": {\"description\": \"Just released: Workable's AI Recruiting Agent\", \"button\": \"Check it out\"}, \"header\": {\"nav\": {\"ai\": \"AI\", \"product\": \"Products\", \"pricing\": \"Pricing\", \"customers\": \"Customers\", \"industries\": {\"label\": \"Industries\", \"ConstructionEngineering\": \"Construction & Engineering\", \"HealthcareServices\": \"Healthcare Services\", \"RealEstatePropertySer",
+     "repeat": 1,
+     "jobs_found": 0
+    },
+    {
+     "url": "https://www.workable.com/_next/data/2halXW-4NO28E6h9mnuTW/security.json",
+     "method": "GET",
+     "status": 200,
+     "bytes": 2534,
+     "job_total": 0,
+     "excerpt": "{\"pageProps\": {\"locale\": \"en\", \"messages\": {\"shared\": {\"demoCTALabel\": \"Request a demo\", \"freeTrialCTALabel\": \"Start a free trial\", \"adBanner\": {\"description\": \"Just released: Workable's AI Recruiting Agent\", \"button\": \"Check it out\"}, \"header\": {\"nav\": {\"ai\": \"AI\", \"product\": \"Products\", \"pricing\": \"Pricing\", \"customers\": \"Customers\", \"industries\": {\"label\": \"Industries\", \"ConstructionEngineering\": \"Construction & Engineering\", \"HealthcareServices\": \"Healthcare Services\", \"RealEstatePropertySer",
+     "repeat": 1,
+     "jobs_found": 0
+    },
+    {
+     "url": "https://www.workable.com/_next/data/2halXW-4NO28E6h9mnuTW/workable-data-selling-CCPA-policy.json",
+     "method": "GET",
+     "status": 200,
+     "bytes": 4390,
+     "job_total": 0,
+     "excerpt": "{\"pageProps\": {\"locale\": \"en\", \"messages\": {\"shared\": {\"demoCTALabel\": \"Request a demo\", \"freeTrialCTALabel\": \"Start a free trial\", \"adBanner\": {\"description\": \"Just released: Workable's AI Recruiting Agent\", \"button\": \"Check it out\"}, \"header\": {\"nav\": {\"ai\": \"AI\", \"product\": \"Products\", \"pricing\": \"Pricing\", \"customers\": \"Customers\", \"industries\": {\"label\": \"Industries\", \"ConstructionEngineering\": \"Construction & Engineering\", \"HealthcareServices\": \"Healthcare Services\", \"RealEstatePropertySer",
+     "repeat": 1,
+     "jobs_found": 0
+    },
+    {
+     "url": "https://www.workable.com/_next/data/2halXW-4NO28E6h9mnuTW/modern-slavery-statement.json",
+     "method": "GET",
+     "status": 200,
+     "bytes": 8410,
+     "job_total": 0,
+     "excerpt": "{\"pageProps\": {\"locale\": \"en\", \"messages\": {\"shared\": {\"demoCTALabel\": \"Request a demo\", \"freeTrialCTALabel\": \"Start a free trial\", \"adBanner\": {\"description\": \"Just released: Workable's AI Recruiting Agent\", \"button\": \"Check it out\"}, \"header\": {\"nav\": {\"ai\": \"AI\", \"product\": \"Products\", \"pricing\": \"Pricing\", \"customers\": \"Customers\", \"industries\": {\"label\": \"Industries\", \"ConstructionEngineering\": \"Construction & Engineering\", \"HealthcareServices\": \"Healthcare Services\", \"RealEstatePropertySer",
+     "repeat": 1,
+     "jobs_found": 0
+    }
+   ],
+   "jobs": {
+    "links": [],
+    "network": [
+     {
+      "title": "Batching",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "a-1",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Recency bias",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "a-2",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Pipeline drift",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "a-3",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Inconsistency",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "a-4",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Ordinary bias",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "b-1",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Late discover",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "b-2",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Complexity as coping",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "b-3",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Passive sourcing",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "b-4",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Evaluated on arrival",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "c-1",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "ICP as the spec",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "c-2",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Strong fits move fast",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "c-3",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Volume routes itself",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "c-4",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Always-on sourcing",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "c-5",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Front-loaded discovery",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "c-6",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Consistent & continuous",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "c-7",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Less agency spend",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "c-8",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Step 1",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "1",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Step 2",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "2",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Step 3",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "3",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Step 4",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "4",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Step 5",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "5",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Step 6",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "6",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Step 7",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "7",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Step 8",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "8",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Sources of Personal Data",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "sources-of-personal-data",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Information we collect from you",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "information-we-collect",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Categories of Personal Data We Collect",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "categories-of-personal-data",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Lawful Basis for Processing",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "lawful-basis-for-processing",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Your Rights",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "your-rights",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Google Account Authentication",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "google-account-authentication",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Google API Services",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "google-api-services",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Uses made of your information when you request assistance from Workable Support",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "request-assistance-from-support",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Uses made of your information",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "uses-of-information",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Aggregate Data",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "aggregate-data",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Disclosure of your information",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "disclosure-of-information",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Sales of Personal Data",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "sales-of-personal-data",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "How we store your Personal Data",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "store-personal-data",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Your California Privacy Rights",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "california-privacy-rights",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Other State Law Privacy Rights",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "other-state-law-privacy-rights",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Transfers of Personal Data",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Representatives",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "representatives",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Third Party Websites",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "third-party-websites",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "How to complain",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "how-to-complain",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Changes to our privacy policy",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "changes-to-our-privacy",
+      "url": "",
+      "source": "network"
+     },
+     {
+      "title": "Contact",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "contact",
+      "url": "",
+      "source": "network"
+     }
+    ],
+    "jsonld": [],
+    "embedded": [
+     {
+      "title": "Sources of Personal Data",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "sources-of-personal-data",
+      "url": ""
+     },
+     {
+      "title": "Information we collect from you",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "information-we-collect",
+      "url": ""
+     },
+     {
+      "title": "Categories of Personal Data We Collect",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "categories-of-personal-data",
+      "url": ""
+     },
+     {
+      "title": "Lawful Basis for Processing",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "lawful-basis-for-processing",
+      "url": ""
+     },
+     {
+      "title": "Your Rights",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "your-rights",
+      "url": ""
+     },
+     {
+      "title": "Google Account Authentication",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "google-account-authentication",
+      "url": ""
+     },
+     {
+      "title": "Google API Services",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "google-api-services",
+      "url": ""
+     },
+     {
+      "title": "Uses made of your information when you request assistance from Workable Support",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "request-assistance-from-support",
+      "url": ""
+     },
+     {
+      "title": "Uses made of your information",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "uses-of-information",
+      "url": ""
+     },
+     {
+      "title": "Aggregate Data",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "aggregate-data",
+      "url": ""
+     },
+     {
+      "title": "Disclosure of your information",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "disclosure-of-information",
+      "url": ""
+     },
+     {
+      "title": "Sales of Personal Data",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "sales-of-personal-data",
+      "url": ""
+     },
+     {
+      "title": "How we store your Personal Data",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "store-personal-data",
+      "url": ""
+     },
+     {
+      "title": "Your California Privacy Rights",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "california-privacy-rights",
+      "url": ""
+     },
+     {
+      "title": "Other State Law Privacy Rights",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "other-state-law-privacy-rights",
+      "url": ""
+     },
+     {
+      "title": "Transfers of Personal Data",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "",
+      "url": ""
+     },
+     {
+      "title": "Representatives",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "representatives",
+      "url": ""
+     },
+     {
+      "title": "Third Party Websites",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "third-party-websites",
+      "url": ""
+     },
+     {
+      "title": "How to complain",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "how-to-complain",
+      "url": ""
+     },
+     {
+      "title": "Changes to our privacy policy",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "changes-to-our-privacy",
+      "url": ""
+     },
+     {
+      "title": "Contact",
+      "location": "",
+      "department": "",
+      "employment": "",
+      "posted": "",
+      "id": "contact",
+      "url": ""
+     }
+    ],
+    "counts": {
+     "links": 0,
+     "network": 45,
+     "jsonld": 0,
+     "embedded": 21
+    },
+    "best": 45,
+    "capped": false,
+    "declared": {
+     "value": null,
+     "confidence": null,
+     "candidates": []
+    }
+   },
+   "popups": {
+    "dismissed": [],
+    "obstructions": []
+   },
+   "expansion": {
+    "scrolls": 3,
+    "expansions": 0,
+    "clicks": [],
+    "stop_reason": "no_new_content"
+   },
+   "counts": {
+    "links_total": 84,
+    "frames_total": 1,
+    "frames_read": 1,
+    "requests": 112,
+    "blocked_requests": {
+     "type:font": 6,
+     "ads_trackers": 1
+    },
+    "json_responses": 16
+   },
+   "screenshot": null,
+   "pdf": null,
+   "probe": null,
+   "children": []
+  },
+  {
+   "url": "https://apply.workable.com/j/66D564EA34",
+   "depth": 1,
+   "mode": "light",
+   "relation": "ats_job",
+   "link_text": "COMPUTER VISION ENGINEER, C++",
+   "final_url": "https://apply.workable.com/varjo-1/j/66D564EA34",
+   "redirect_chain": [
+    "https://apply.workable.com/j/66D564EA34"
+   ],
+   "title": "Computer Vision Engineer, C++ - Varjo",
+   "h1": "Computer Vision Engineer, C++",
+   "http_status": 200,
+   "status": "ok",
+   "kind": "job_listing",
+   "seconds": 1.8,
+   "antibot": null,
+   "error": null,
+   "skip_reason": null,
+   "limits_hit": [],
+   "warnings": [],
+   "notes": [],
+   "sections": [
+    {
+     "label": "initial",
+     "source": "page",
+     "text": "[img: Varjo]\nComputer Vision Engineer, C++\nHybridEngineering\nHelsinki, Uusimaa, Finland\nOverviewApplication\nShare this job\nDescription\nVarjo is the world-leading provider of enterprise virtual and mixed reality solutions, delivering the highest levels of immersion, performance, and security for the most demanding industrial customers globally. Used by over 25% of the Fortune 100 to transform how they operate, Varjo is known for virtual and mixed reality that look and feel as real as the real world, allowing training fighter jet pilots and astronauts, designing cars, and conducting pioneering medical research across virtual environments. With our technology, professionals can recreate the exact feeling and conditions of real life in 3D, allowing them to work and train faster, better and more cost effectively.\nFounded in 2016, Varjo now operates in over 40 countries worldwide with 200 employees in offices in Helsinki and Washington D.C. Our multicultural team consists of talents from all around the world, and our daily working language is English. We believe in the power of diversity – where different experiences, backgrounds, and ideas drive innovation and results.\nWe are now offering you an exciting position where you can see into the future and play your part in shaping Varjo’s growth journey.\nJob description\nWe are looking for a Computer Vision Engineer to join our Eye Tracking Team and contribute broadly across the eye tracking stack to deliver algorithms and machine learning models that power gaze-driven features in Varjo mixed reality products. This is a software engineering role with a strong focus on production-grade C++. In a small, fast-moving team you'll wear many “hats” and moving fluidly between algorithm development, ML, tooling, data work, and performance optimization as priorities shift. You will develop and optimize C++ algorithm pipelines for accuracy and runtime efficiency, build the systems that measure their performance, and work hands-on with real human-collected eye data to drive improvements. You are an experienced engineer comfortable working in both C++ and Python, with a strong analytical mindset and a genuine interest in applied machine learning.\nWhat you’ll be doing\nStepping across the stack as needed; from low-level optimization in specialized hardware to ML experimentation to data tooling. You also will be taking ownership of problems end-to-end rather than a fixed slice:\nDeveloping and improving the ML driven C++ algorithm pipelines behind Varjo's eye tracking, coding in C++ and Python\nOptimizing algorithms and models for accuracy and runtime efficiency on low power resource-constrained hardware\nBuilding and automating the KPI and testing pipelines that measure eye tracking performance, along with the metrics and visualizations behind them\nAnalyzing algorithm and model performance and running data-driven experiments to guide improvements\nBuilding and automating the data processing pipelines for the eye data captured in human data-collection studies\nOur expectations\n5+ years of professional software engineering experience with proficiency in C++ for production-grade algorithm code\nExperience working with complex C++ codebases, including debugging, performance optimization, and writing maintainable production software\nExperience optimizing code and models for performance on resource-constrained or embedded hardware\nStrong Python skills for data pipeline and ML work\nPractical experience with computer vision, machine learning, image processing, or sensor fusion\nExperience delivering software within a structured development lifecycle, including work in sprints, continuous integration, quality assurance, and release processes\nStrong data analysis skills: data cleaning, statistical analysis, visualization\nTeam player with excellent communication skills in English\nA big plus\nBackground in any tracking technologies: eye tracking, pose tracking\nFamiliarity with camera hardware, optics, and image acquisition\nBy joining us, you’ll get\nOpportunity to take part in creating the new state-of-the-art in virtual and mixed reality experiences.\nA low-hierarchy culture with minimal bureaucracy and maximum opportunity for you to take charge of your work.\nAn international working environment with tons of opportunities to learn and grow with the company.\nReady to jump into the exciting world of VR/XR? Apply now!\nApply for this job\nVarjo collects and processes personal data in accordance with applicable data protection laws. If you are a European Job Applicant see the privacy notice for further details.\nView website\nView all jobsHelp\nAccessibility\nCookie settings\nPowered byWorkable"
+    }
+   ],
+   "text_chars": 4675,
+   "text_truncated": false,
+   "links": [
+    {
+     "text": "[img: Varjo]",
+     "url": "https://apply.workable.com/varjo-1/",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "OVERVIEW",
+     "url": "https://apply.workable.com/varjo-1/j/66D564EA34/",
+     "class": "ats_job",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "APPLICATION",
+     "url": "https://apply.workable.com/varjo-1/j/66D564EA34/apply/",
+     "class": "ats_job",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Apply for this job",
+     "url": "https://apply.workable.com/varjo-1/j/66D564EA34/apply/",
+     "class": "ats_job",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "privacy notice",
+     "url": "https://apply.workable.com/varjo-1/gdpr_policy?lng=en",
+     "class": "ats_job",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "View website",
+     "url": "https://varjo.com/",
+     "class": "external",
+     "rel": "noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "View all jobs",
+     "url": "https://apply.workable.com/varjo-1/",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Help",
+     "url": "https://jobseekers.workable.com/hc/en",
+     "class": "ats_job",
+     "rel": "noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Accessibility",
+     "url": "https://workable.com/web-accessibility-statement",
+     "class": "ats_board",
+     "rel": "noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Workable",
+     "url": "https://jobs.workable.com/",
+     "class": "ats_board",
+     "rel": "noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    }
+   ],
+   "frames": [
+    {
+     "url": "about:blank",
+     "kind": "inline",
+     "name": "",
+     "read": true,
+     "reason": "",
+     "new_lines": 0,
+     "new_links": 0
+    }
+   ],
+   "network": [
+    {
+     "url": "https://apply.workable.com/api/v1/accounts/varjo-1/jobs/count",
+     "method": "GET",
+     "status": 200,
+     "bytes": 25,
+     "job_total": 0,
+     "excerpt": "{\"incountry\": 0, \"total\": 2}",
+     "repeat": 1,
+     "jobs_found": 0
+    },
+    {
+     "url": "https://apply.workable.com/api/v1/jobs/66D564EA34/seek/button",
+     "method": "GET",
+     "status": 200,
+     "bytes": 28,
+     "job_total": 0,
+     "excerpt": "{\"applyWithSeekButton\": null}",
+     "repeat": 1,
+     "jobs_found": 0
+    },
+    {
+     "url": "https://apply.workable.com/api/v2/accounts/varjo-1/jobs/66D564EA34",
+     "method": "GET",
+     "status": 200,
+     "bytes": 5330,
+     "job_total": 0,
+     "excerpt": "{\"id\": 6140296, \"shortcode\": \"66D564EA34\", \"title\": \"Computer Vision Engineer, C++\", \"remote\": false, \"location\": {\"city\": \"Helsinki\", \"country\": \"Finland\", \"countryCode\": \"FI\", \"region\": \"Uusimaa\"}, \"locations\": [{\"city\": \"Helsinki\", \"country\": \"Finland\", \"countryCode\": \"FI\", \"hidden\": false, \"region\": \"Uusimaa\"}], \"state\": \"published\", \"isInternal\": false, \"code\": \"\", \"published\": \"2026-09-23T00:00:00.000Z\", \"language\": \"en\", \"department\": [\"Engineering\"], \"accountUid\": \"27431a27-6160-4fe1-886",
+     "repeat": 1,
+     "jobs_found": 0
+    },
+    {
+     "url": "https://apply.workable.com/api/v1/accounts/varjo-1?full=true",
+     "method": "GET",
+     "status": 200,
+     "bytes": 1537,
+     "job_total": 0,
+     "excerpt": "{\"id\": 659213, \"uid\": \"27431a27-6160-4fe1-8861-e4f0ef53a286\", \"logo\": \"https://workablehr.s3.amazonaws.com/uploads/account/logo/659213/logo\", \"subdomain\": \"varjo-1\", \"name\": \"Varjo\", \"url\": \"https://varjo.com/\", \"languages\": {\"default\": \"en\", \"options\": [{\"enabled\": true, \"name\": \"en\", \"published\": true, \"visible\": true}]}, \"details\": {\"overview\": {\"description\": \"<p>Varjo is the world-leading provider of military-grade virtual and mixed reality solutions, delivering the highest levels of immers",
+     "repeat": 1,
+     "jobs_found": 0
+    },
+    {
+     "url": "https://apply.workable.com/api/v1/jobs/66D564EA34/form",
+     "method": "GET",
+     "status": 200,
+     "bytes": 1406,
+     "job_total": 0,
+     "excerpt": "[{\"fields\": [{\"id\": \"firstname\", \"label\": \"First name\", \"required\": true, \"maxLength\": 127, \"type\": \"text\"}, {\"id\": \"lastname\", \"label\": \"Last name\", \"required\": true, \"maxLength\": 127, \"type\": \"text\"}, {\"id\": \"email\", \"label\": \"Email\", \"required\": true, \"maxLength\": 255, \"type\": \"email\"}, {\"id\": \"phone\", \"label\": \"Phone\", \"required\": false, \"helper\": \"The hiring team may use this number to contact you about this job.\", \"maxLength\": 255, \"type\": \"phone\"}], \"name\": \"Personal information\"}, {\"fiel",
+     "repeat": 1,
+     "jobs_found": 0
+    }
+   ],
+   "jobs": {
+    "links": [
+     {
+      "title": "OVERVIEW",
+      "url": "https://apply.workable.com/varjo-1/j/66D564EA34/",
+      "location": "",
+      "context": "",
+      "source": "page"
+     },
+     {
+      "title": "APPLICATION",
+      "url": "https://apply.workable.com/varjo-1/j/66D564EA34/apply/",
+      "location": "",
+      "context": "",
+      "source": "page"
+     },
+     {
+      "title": "privacy notice",
+      "url": "https://apply.workable.com/varjo-1/gdpr_policy?lng=en",
+      "location": "",
+      "context": "",
+      "source": "page"
+     },
+     {
+      "title": "Help",
+      "url": "https://jobseekers.workable.com/hc/en",
+      "location": "",
+      "context": "",
+      "source": "page"
+     }
+    ],
+    "network": [],
+    "jsonld": [
+     {
+      "title": "Computer Vision Engineer, C++",
+      "organization": "Varjo",
+      "location": "Helsinki, Uusimaa, Finland",
+      "remote": "TELECOMMUTE",
+      "employment": "",
+      "posted": "2026-09-23",
+      "valid_through": "",
+      "url": "https://apply.workable.com/varjo-1/j/66D564EA34/",
+      "id": "Varjo, 66D564EA34",
+      "description": "Varjo is the world-leading provider of enterprise virtual and mixed reality solutions, delivering the highest levels of immersion, performance, and security for the most demanding industrial customers globally. Used by over 25% of the Fortune 100 to transform how they operate, Varjo is known for virtual and mixed reality that look and feel as real as the real world, allowing training fighter jet pilots and astronauts, designing cars, and conducting pioneering medical research across virtual environments. With our technology, professionals can recreate the exact feeling and conditions of real l"
+     }
+    ],
+    "embedded": [],
+    "counts": {
+     "links": 4,
+     "network": 0,
+     "jsonld": 1,
+     "embedded": 0
+    },
+    "best": 4,
+    "capped": false,
+    "declared": {
+     "value": null,
+     "confidence": null,
+     "candidates": []
+    }
+   },
+   "popups": {
+    "dismissed": [
+     "cookie: Decline all"
+    ],
+    "obstructions": []
+   },
+   "expansion": {
+    "scrolls": 0,
+    "expansions": 0,
+    "clicks": [],
+    "stop_reason": ""
+   },
+   "counts": {
+    "links_total": 10,
+    "frames_total": 1,
+    "frames_read": 1,
+    "requests": 44,
+    "blocked_requests": {},
+    "json_responses": 5
+   },
+   "screenshot": null,
+   "pdf": null,
+   "probe": null,
+   "children": []
+  },
+  {
+   "url": "https://apply.workable.com/j/B64F9C1C64",
+   "depth": 1,
+   "mode": "light",
+   "relation": "ats_job",
+   "link_text": "OPEN APPLICATION",
+   "final_url": "https://apply.workable.com/varjo-1/j/B64F9C1C64",
+   "redirect_chain": [
+    "https://apply.workable.com/j/B64F9C1C64"
+   ],
+   "title": "Open Application - Varjo",
+   "h1": "Open Application",
+   "http_status": 200,
+   "status": "ok",
+   "kind": "job_listing",
+   "seconds": 1.7,
+   "antibot": null,
+   "error": null,
+   "skip_reason": null,
+   "limits_hit": [],
+   "warnings": [],
+   "notes": [],
+   "sections": [
+    {
+     "label": "initial",
+     "source": "page",
+     "text": "[img: Varjo]\nOpen Application\nHybridOther\nHelsinki, Uusimaa, Finland\nOverviewApplication\nShare this job\nDescription\nAt Varjo, we are not just a Finnish mixed and virtual reality technology company; we are pioneers in the immersive computing revolution. Our mixed reality solutions redefine realism, creating virtual experiences that match the authenticity of the real world. Since our founding in 2016, Varjo has rapidly expanded its global footprint and currently operates in several locations - Helsinki, Oslo, Germany, UK and Washington D.C.\nWhy Varjo?\nImagine working in an environment where your daily endeavors contribute to training astronauts, designing cutting-edge vehicles, and transforming professional use cases worldwide. Varjo's VR and XR solutions set the industry standard for quality, and we've recently raised the bar for prosumers seeking lifelike virtual simulations. Now, we're on the brink of ushering in the future of computing, where the digital world seamlessly integrates with our physical surroundings, reshaping the way we live our lives.\nOur Team and Culture\nJoin a multicultural team comprising talents from around the globe, where diversity fuels innovation and drives results. English is our daily working language, providing an inclusive and collaborative atmosphere. At Varjo, we believe in the power of different experiences, backgrounds, and ideas coming together to shape the future of immersive computing.\nValues That Define Us: Aim for Virtually Impossible, Do It with Style, Be Kind, Have Each Other's Back, If We Are Not Having Fun, We Are Doing It Wrong\nOpportunity Awaits\nVarjo is always looking for exceptional technical talent to join us on our journey. While we may not have specific technical roles open at the moment, we welcome open applications from talented professionals who believe they could contribute to our mission. Join us in shaping the future of technology and building what comes next.\nAreas and Technologies We Work With\nC++/C Programming\nEmbedded C/C++\nSLAM and Computer Vision (image processing, object recognition and detection)\nAlgorithm Design and Optimization\nGPU/CPU Programming\nUnity and Unreal Development\nSensor Fusion\nCUDA\nOptics and Cameras\nAudio and Video Streaming\nApply Now\nSubmit an open application, including your CV, a link to your LinkedIn profile, and details of projects that make you particularly proud.\nIf you have connections at Varjo, feel free to drop some names. Join Varjo and play a crucial role in shaping the future of immersive computing.\n#LI-DNI\nApply for this job\nVarjo collects and processes personal data in accordance with applicable data protection laws. If you are a European Job Applicant see the privacy notice for further details.\nView website\nView all jobsHelp\nAccessibility\nCookie settings\nPowered byWorkable"
+    }
+   ],
+   "text_chars": 2817,
+   "text_truncated": false,
+   "links": [
+    {
+     "text": "[img: Varjo]",
+     "url": "https://apply.workable.com/varjo-1/",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "OVERVIEW",
+     "url": "https://apply.workable.com/varjo-1/j/B64F9C1C64/",
+     "class": "ats_job",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "APPLICATION",
+     "url": "https://apply.workable.com/varjo-1/j/B64F9C1C64/apply/",
+     "class": "ats_job",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Apply for this job",
+     "url": "https://apply.workable.com/varjo-1/j/B64F9C1C64/apply/",
+     "class": "ats_job",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "privacy notice",
+     "url": "https://apply.workable.com/varjo-1/gdpr_policy?lng=en",
+     "class": "ats_job",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "View website",
+     "url": "https://varjo.com/",
+     "class": "external",
+     "rel": "noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "View all jobs",
+     "url": "https://apply.workable.com/varjo-1/",
+     "class": "ats_board",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Help",
+     "url": "https://jobseekers.workable.com/hc/en",
+     "class": "ats_job",
+     "rel": "noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Accessibility",
+     "url": "https://workable.com/web-accessibility-statement",
+     "class": "ats_board",
+     "rel": "noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Workable",
+     "url": "https://jobs.workable.com/",
+     "class": "ats_board",
+     "rel": "noreferrer",
+     "context": "",
+     "source": "page",
+     "visible": true
+    }
+   ],
+   "frames": [
+    {
+     "url": "about:blank",
+     "kind": "inline",
+     "name": "",
+     "read": true,
+     "reason": "",
+     "new_lines": 0,
+     "new_links": 0
+    }
+   ],
+   "network": [
+    {
+     "url": "https://apply.workable.com/api/v1/jobs/B64F9C1C64/seek/button",
+     "method": "GET",
+     "status": 200,
+     "bytes": 28,
+     "job_total": 0,
+     "excerpt": "{\"applyWithSeekButton\": null}",
+     "repeat": 1,
+     "jobs_found": 0
+    },
+    {
+     "url": "https://apply.workable.com/api/v1/accounts/varjo-1/jobs/count",
+     "method": "GET",
+     "status": 200,
+     "bytes": 25,
+     "job_total": 0,
+     "excerpt": "{\"incountry\": 0, \"total\": 2}",
+     "repeat": 1,
+     "jobs_found": 0
+    },
+    {
+     "url": "https://apply.workable.com/api/v1/accounts/varjo-1?full=true",
+     "method": "GET",
+     "status": 200,
+     "bytes": 1537,
+     "job_total": 0,
+     "excerpt": "{\"id\": 659213, \"uid\": \"27431a27-6160-4fe1-8861-e4f0ef53a286\", \"logo\": \"https://workablehr.s3.amazonaws.com/uploads/account/logo/659213/logo\", \"subdomain\": \"varjo-1\", \"name\": \"Varjo\", \"url\": \"https://varjo.com/\", \"languages\": {\"default\": \"en\", \"options\": [{\"enabled\": true, \"name\": \"en\", \"published\": true, \"visible\": true}]}, \"details\": {\"overview\": {\"description\": \"<p>Varjo is the world-leading provider of military-grade virtual and mixed reality solutions, delivering the highest levels of immers",
+     "repeat": 1,
+     "jobs_found": 0
+    },
+    {
+     "url": "https://apply.workable.com/api/v1/jobs/B64F9C1C64/form",
+     "method": "GET",
+     "status": 200,
+     "bytes": 1916,
+     "job_total": 0,
+     "excerpt": "[{\"fields\": [{\"id\": \"firstname\", \"label\": \"First name\", \"required\": true, \"maxLength\": 127, \"type\": \"text\"}, {\"id\": \"lastname\", \"label\": \"Last name\", \"required\": true, \"maxLength\": 127, \"type\": \"text\"}, {\"id\": \"email\", \"label\": \"Email\", \"required\": true, \"maxLength\": 255, \"type\": \"email\"}, {\"id\": \"phone\", \"label\": \"Phone\", \"required\": false, \"helper\": \"The hiring team may use this number to contact you about this job.\", \"maxLength\": 255, \"type\": \"phone\"}], \"name\": \"Personal information\"}, {\"fiel",
+     "repeat": 1,
+     "jobs_found": 0
+    },
+    {
+     "url": "https://apply.workable.com/api/v2/accounts/varjo-1/jobs/B64F9C1C64",
+     "method": "GET",
+     "status": 200,
+     "bytes": 3338,
+     "job_total": 0,
+     "excerpt": "{\"id\": 4219562, \"shortcode\": \"B64F9C1C64\", \"title\": \"Open Application\", \"remote\": false, \"location\": {\"city\": \"Helsinki\", \"country\": \"Finland\", \"countryCode\": \"FI\", \"region\": \"Uusimaa\"}, \"locations\": [{\"city\": \"Helsinki\", \"country\": \"Finland\", \"countryCode\": \"FI\", \"hidden\": false, \"region\": \"Uusimaa\"}], \"state\": \"published\", \"isInternal\": false, \"code\": null, \"published\": \"2024-08-12T00:00:00.000Z\", \"language\": \"en\", \"department\": [\"Other\"], \"accountUid\": \"27431a27-6160-4fe1-8861-e4f0ef53a286\", ",
+     "repeat": 1,
+     "jobs_found": 0
+    }
+   ],
+   "jobs": {
+    "links": [
+     {
+      "title": "OVERVIEW",
+      "url": "https://apply.workable.com/varjo-1/j/B64F9C1C64/",
+      "location": "",
+      "context": "",
+      "source": "page"
+     },
+     {
+      "title": "APPLICATION",
+      "url": "https://apply.workable.com/varjo-1/j/B64F9C1C64/apply/",
+      "location": "",
+      "context": "",
+      "source": "page"
+     },
+     {
+      "title": "privacy notice",
+      "url": "https://apply.workable.com/varjo-1/gdpr_policy?lng=en",
+      "location": "",
+      "context": "",
+      "source": "page"
+     },
+     {
+      "title": "Help",
+      "url": "https://jobseekers.workable.com/hc/en",
+      "location": "",
+      "context": "",
+      "source": "page"
+     }
+    ],
+    "network": [],
+    "jsonld": [
+     {
+      "title": "Open Application",
+      "organization": "Varjo",
+      "location": "Helsinki, Uusimaa, Finland",
+      "remote": "TELECOMMUTE",
+      "employment": "",
+      "posted": "2024-08-12",
+      "valid_through": "",
+      "url": "https://apply.workable.com/varjo-1/j/B64F9C1C64/",
+      "id": "Varjo, B64F9C1C64",
+      "description": "At Varjo, we are not just a Finnish mixed and virtual reality technology company; we are pioneers in the immersive computing revolution. Our mixed reality solutions redefine realism, creating virtual experiences that match the authenticity of the real world. Since our founding in 2016, Varjo has rapidly expanded its global footprint and currently operates in several locations - Helsinki, Oslo, Germany, UK and Washington D.C. Why Varjo? Imagine working in an environment where your daily endeavors contribute to training astronauts, designing cutting-edge vehicles, and transforming professional u"
+     }
+    ],
+    "embedded": [],
+    "counts": {
+     "links": 4,
+     "network": 0,
+     "jsonld": 1,
+     "embedded": 0
+    },
+    "best": 4,
+    "capped": false,
+    "declared": {
+     "value": null,
+     "confidence": null,
+     "candidates": []
+    }
+   },
+   "popups": {
+    "dismissed": [
+     "cookie: Decline all"
+    ],
+    "obstructions": []
+   },
+   "expansion": {
+    "scrolls": 0,
+    "expansions": 0,
+    "clicks": [],
+    "stop_reason": ""
+   },
+   "counts": {
+    "links_total": 10,
+    "frames_total": 1,
+    "frames_read": 1,
+    "requests": 44,
+    "blocked_requests": {},
+    "json_responses": 5
+   },
+   "screenshot": null,
+   "pdf": null,
+   "probe": null,
+   "children": []
+  },
+  {
+   "url": "https://varjo.com/hubfs/Company/Varjo-Culture-Handbook.pdf?hsLang=en",
+   "depth": 1,
+   "mode": "light",
+   "relation": "pdf",
+   "link_text": "Culture Handbook",
+   "final_url": "https://varjo.com/hubfs/Company/Varjo-Culture-Handbook.pdf?hsLang=en",
+   "redirect_chain": [],
+   "title": "Culture Handbook",
+   "h1": "",
+   "http_status": 200,
+   "status": "error",
+   "kind": "pdf",
+   "seconds": 0.0,
+   "antibot": null,
+   "error": "file too large (14856037 bytes)",
+   "skip_reason": null,
+   "limits_hit": [],
+   "warnings": [],
+   "notes": [],
+   "sections": [],
+   "text_chars": 0,
+   "text_truncated": false,
+   "links": [],
+   "frames": [],
+   "network": [],
+   "jobs": {},
+   "popups": {},
+   "expansion": {},
+   "counts": {},
+   "screenshot": null,
+   "pdf": {
+    "ok": false,
+    "final_url": "https://varjo.com/hubfs/Company/Varjo-Culture-Handbook.pdf?hsLang=en",
+    "status": 200,
+    "pages": 0,
+    "pages_read": 0,
+    "text": "",
+    "notes": [],
+    "error": "file too large (14856037 bytes)"
+   },
+   "probe": null,
+   "children": []
+  }
+ ]
+}
