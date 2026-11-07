@@ -98,19 +98,21 @@ LINKS_JS = r"""
     }
     return '';
   };
-  // Название карточки без тегов заголовка: первая строка текста ближайшего блока с 1-3 ссылками («Art Manager / Bangalore / Apply Now»).
+  // Название карточки без тегов заголовка: первая содержательная строка самого крупного блока с 1-3 ссылками и небольшим текстом
+  // («Art Manager / Bangalore / Department: ... / View Job Description / Apply Now»). Подписи полей («Department:») и кнопки пропускаются.
   const cardTitleOf = (el) => {
     const own = ((el.innerText || '') + '').replace(/\s+/g, ' ').trim().toLowerCase();
+    const bad = /(:\s*$)|^(apply|view|read more|learn more|more details|details|job description|see details|click here)\b/i;
+    let best = '';
     let e = el.parentElement;
-    for (let i = 0; i < 5 && e && e.nodeType === 1; i++, e = e.parentElement) {
-      if (e.querySelectorAll('a[href]').length > 3) return '';
+    for (let i = 0; i < 6 && e && e.nodeType === 1; i++, e = e.parentElement) {
+      if (e.querySelectorAll('a[href]').length > 3) break;
       const lines = ((e.innerText || '') + '').split(/\n+/).map(x => x.replace(/\s+/g, ' ').trim()).filter(Boolean);
-      if (lines.length < 2) continue;
-      const first = lines[0];
-      if (first.length >= 3 && first.length <= 120 && first.toLowerCase() !== own) return first;
-      return '';
+      if (lines.length > 14) break;
+      const first = lines.find(x => x.length >= 3 && x.length <= 120 && !bad.test(x) && x.toLowerCase() !== own);
+      if (first) best = first;
     }
-    return '';
+    return best;
   };
   const visible = (el) => { const cs = getComputedStyle(el); if (cs.display === 'none' || cs.visibility === 'hidden') return false; const r = el.getBoundingClientRect(); return r.width > 0 || r.height > 0; };
   for (const el of all) {

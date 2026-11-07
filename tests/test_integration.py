@@ -309,7 +309,7 @@ def test_generic_button_text_is_replaced_by_card_heading(base_url):
 def test_card_first_line_is_title_for_apply_links(base_url):
     res = read_one(base_url + "/cards2")
     titles = sorted(j["title"] for j in res.jobs["links"])
-    assert titles == ["QA Tester - Consoles (Compliance & DevKits)", "Technical Artist"], titles   # two links of one card: one job; lone "Apply" is not a job
+    assert titles == ["Art Production Manager", "QA Tester - Consoles (Compliance & DevKits)", "Technical Artist"], titles   # two links of one card: one job; lone "Apply" is not a job
 
 
 def test_run_budget_marks_unprocessed_addresses(base_url, tmp_path):
