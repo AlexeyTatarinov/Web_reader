@@ -1,0 +1,63 @@
+name: Read pages
+
+# Запускается вручную (можно вписать адреса прямо в форму) или при изменении input/urls.txt.
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "Адреса через пробел или с новой строки. Если пусто, берётся input/urls.txt"
+        required: false
+  push:
+    paths:
+      - input/urls.txt
+
+concurrency:
+  group: web-reader
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  read:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      # Правило проекта: сначала отдельная проверка соединений, и только после неё основной запуск.
+      - name: Pre-flight check
+        run: python -m web_reader check
+
+      - name: Read pages
+        env:
+          URLS: ${{ github.event.inputs.urls }}
+        run: |
+          if [ -n "$URLS" ]; then
+            set -f
+            printf '%s\n' $URLS > "$RUNNER_TEMP/urls.txt"
+            python -m web_reader read --skip-check --file "$RUNNER_TEMP/urls.txt"
+          else
+            python -m web_reader read --skip-check --file input/urls.txt
+          fi
+
+      - name: Commit results
+        run: |
+          git config user.name "web-reader-bot"
+          git config user.email "web-reader-bot@users.noreply.github.com"
+          git add results
+          if ! git diff --cached --quiet; then
+            git commit -m "Results of page reading run"
+            git pull --rebase
+            git push
+          fi

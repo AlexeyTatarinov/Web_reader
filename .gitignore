@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+# результаты чтения хранятся в репозитории только когда их кладёт workflow
+/results/preflight.json
