@@ -342,14 +342,11 @@
     "test automation specialist",
     "test automation lead",
     "test automation architect",
-    "automation engineer",
     "automation qa",
     "automation test engineer",
     "automated testing",
     "automated tester",
     "automated test",
-    "autotest",
-    "auto tests",
     "software test engineer",
     "software testing engineer",
     "software testing specialist",
@@ -1010,7 +1007,8 @@
     "инженер по валидации",
     "проверка качества",
     "аудитор качества",
-    "инспектор качества"
+    "инспектор качества",
+    "autotest"
    ],
    "stems": [
     "тестувальн",
