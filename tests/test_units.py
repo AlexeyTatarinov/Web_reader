@@ -288,3 +288,15 @@ def test_roles_region_exclusion_and_language_markers():
     assert r.excluded_region("Moscow, Russia") and r.excluded_region("Мінськ")
     assert r.excluded_region("Valencia, Spain; Russian speaker required") is None      # язык, не страна
     assert r.languages_in("Fluent Russian and Ukrainian required") == ["ukrainian", "russian"] or set(r.languages_in("Fluent Russian and Ukrainian required")) >= {"ukrainian"}
+
+
+def test_roles_expanded_dictionary_multilingual():
+    r = _rules()
+    strong = ["Quality Assurance Analyst", "Game Tester", "Software Development Engineer in Test", "LQA Tester (Russian)",
+              "Linguistic Quality Assurance Specialist", "Platform Compliance Manager", "Xbox XR Tester", "TRC Specialist",
+              "Console Certification Lead", "Інженер із забезпечення якості", "Тестувальник ігор", "Тестировщик игр",
+              "Инженер по обеспечению качества", "Лінгвістичний тестувальник", "Комплаенс-менеджер", "Менеджер по сертификации"]
+    for title in strong:
+        assert r.match(title), title
+    for title in ("Qatar Sales Manager", "Release Manager", "Platform Engineer", "Marketing Manager", "Бухгалтер"):
+        assert r.match(title) == [], title
