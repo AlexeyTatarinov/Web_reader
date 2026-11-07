@@ -1,0 +1,5059 @@
+{
+ "url": "https://nipsapp.com/careers-nipsapp/",
+ "depth": 0,
+ "mode": "full",
+ "relation": "start",
+ "link_text": "NipsApp: карточки вакансий с кнопкой More Details",
+ "final_url": "https://nipsapp.com/careers-nipsapp/",
+ "redirect_chain": [],
+ "title": "Nipsapp | Careers | VR & AR Game Development Company In India",
+ "h1": "Careers",
+ "http_status": 200,
+ "status": "ok",
+ "kind": "job_listing",
+ "seconds": 3.6,
+ "antibot": null,
+ "error": null,
+ "skip_reason": null,
+ "limits_hit": [],
+ "site_label": null,
+ "warnings": [],
+ "notes": [
+  {
+   "code": "n_blocked_requests",
+   "n": 11
+  }
+ ],
+ "sections": [
+  {
+   "label": "initial",
+   "source": "page",
+   "text": "Home\nGame Development Services\nMetaverse Development\nVR Solutions\nGame Design Services\nIndustry Solutions\nAbout\nContact us\nCareers\nExplore the current opening from NipsApp Gaming Software Private Limited.\nExplore Openings\n[img: image]\n[img: image]\nCurrent Openings\n\nBlockchain Developer\nHiring Blockchain Developer – Full Stack Blockchain Development\nMore Details\n\nGame Programmer\nHiring Experienced Senior Unity3d & Unreal Developers\nMore Details\n\nAI Developer\nStatistics, Machine Learning, Deep Learning and Artificial Intelligence Technologies\nMore Details\nWho is NIPSAPP?\nAt NipsApp, we are the pioneers of boundless digital creativity. Our passion is to craft exceptional gaming experiences that transcend screens and headsets, leaving a lasting impact on players. We excel in various domains, from mobile game development that redefines entertainment on the go, to immersive Virtual Reality games that transport players to new dimensions. With a rich portfolio of excellence, our commitment to quality is unwavering. Beyond gaming, we’ve ventured into unique virtual event projects, connecting people worldwide in unforgettable, immersive gatherings. As your dedicated partner, we bring your digital dreams to life, shaping the future of interactive entertainment.”\nAt NipsApp, we pride ourselves on being a dynamic force in the ever-evolving world of digital experiences. Our team of passionate innovators pushes the boundaries of what’s possible, crafting gaming adventures that captivate audiences of all ages. Our journey is marked by the development of numerous multiplayer games that bring people together, fostering connections and camaraderie. We’ve also ventured into groundbreaking virtual event projects, where we’ve transformed digital gatherings into immersive experiences that showcase the limitless potential of interactive entertainment.\nWhat sets NipsApp apart is not just our impressive portfolio of games and virtual events but also our unwavering dedication to quality, innovation, and customer satisfaction. With each project, we aim to redefine the boundaries of creativity and technology, ensuring that every experience we create leaves a lasting impression. As your creative partner, we’re here to turn your digital dreams into reality, delivering remarkable experiences that resonate with your audience and shape the future of the digital landscape.”\nABOUT NIPSAPP\nNipsApp Game Studios is a full-cycle game development company founded in 2010, based in Trivandrum, India. With expertise in Unity, Unreal Engine, VR, mobile, and blockchain game development, NipsApp serves startups and enterprises across 25+ countries.\n🚀 3,000+ Projects Delivered ⭐ 121 Verified Clutch Reviews 🌍 25+ Countries Served 🎮 Since 2010\nSERVICES\nVR Game Development\nBlockchain Game Development\nMetaverse Game Development\nMobile Game Development\nNFT Game Development\nUnity3D Game Development\nUnreal Game Development\nKids Game Development\nReal Money Ludo Game\nAR Development\nGamification Services\nGAME GRAPHICS DESIGN\n3D Game Design\n3D Automobile Modelling\n2D/3D Concept Art\n2D Game Design\n2D Caricature Design\n3D Animation\n3D Character Design\n2D Character Design\nArchviz Design\nVR/XR SIMULATION\nVR Real Estate\nArchviz VR Simulation\nVR Simulation Games\nTALENT OUTSOURCING\nHire Game Developer\nHire Game Designer\nHire Character Designer\nHire VR Developer\nHire Mobile Game Developer\nHire Metaverse Developer\nHire Unity3D Developer\nHire 3D Modelling Artist\nRESOURCES\nBlog\nWhy NipsApp\nBanking Solutions\nEdutainment Solutions\nHow To Start A Game Studio\nKids Game Development\nEducational Game Dev\nVision Pro Development\nWORK SAMPLES\nVR Games\nMobile Games\n3D Designs and Modelling\nReal Money Ludo Game\nAR Projects\nCONTACT US\nIndia Office:\nViddhya Bhavan, Panniyode Road, Vattappara, Trivandrum, Kerala, India\nEmail: [email protected]\nPhone: +91 62384 72255\n[img: Apple Maps Icon] View on Apple Maps [img: Google Maps Icon] View on Google Maps\nUAE Office:\nOffice No: 102, Near Siemens Building, Masdar Free Zone, Masdar City, Abu Dhabi, UAE\nCOPYRIGHT © 2026 NipsApp Game Studios | Privacy Policy | Terms & Conditions | Refund Policy | Privacy Policy Product\n[img: Facebook] [img: Twitter] [img: LinkedIn] [img: Instagram] [img: YouTube]"
+  }
+ ],
+ "text_chars": 4236,
+ "text_truncated": false,
+ "links": [
+  {
+   "text": "HOME",
+   "url": "https://nipsapp.com/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "NipsApp: Leading Game Development Company For VR, Mobile, NFT & Metaverse Games",
+    "h1": "",
+    "description": "NipsApp Game Studios is a full-cycle game development company with 16+ years, 3,000+ projects shipped, and 591 verified reviews across 25+ countries. NipsApp Game Studios builds mobile, VR, AR, blockchain, and metaverse games for studios and enterprises in 25+ countries. 3,000+ projects delivered si",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/ — NipsApp: Leading Game Development Company For VR, Mobile, NFT & Metaverse Games"
+  },
+  {
+   "text": "GAME DEVELOPMENT SERVICES",
+   "url": "https://nipsapp.com/game-development-company/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/game-development-company/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Trusted Game Development Services | NipsApp Game Studios",
+    "h1": "",
+    "description": "NipsApp Game Studios provides top game development services pushing the boundaries of mobile, VR, blockchain, & AI game development. Contact us now!",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/game-development-company/ — Trusted Game Development Services | NipsApp Game Studios"
+  },
+  {
+   "text": "full cycle game development",
+   "url": "https://nipsapp.com/full-cycle-game-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/full-cycle-game-development/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Trusted Full Cycle Game Development By NipsApp Game Studios",
+    "h1": "",
+    "description": "Get full cycle game development from concept to launch. Partner with NipsApp Game Studios for comprehensive game development services. Contact us now!",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/full-cycle-game-development/ — Trusted Full Cycle Game Development By NipsApp Game Studios"
+  },
+  {
+   "text": "Mobile Game development",
+   "url": "https://nipsapp.com/mobile-game-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/mobile-game-development/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "NipsApp Mobile Game Development Services – Proven Experts",
+    "h1": "",
+    "description": "With 16+ years of expertise and 2000+ mobile games delivered, NipsApp delivers top-tier mobile game development for iOS & Android.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/mobile-game-development/ — NipsApp Mobile Game Development Services – Proven Experts"
+  },
+  {
+   "text": "VR game development",
+   "url": "https://nipsapp.com/vr-game-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/vr-game-development/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "VR Game Development | NipsApp – Concept To Success",
+    "h1": "",
+    "description": "NipsApp is a trusted VR game development company that creates engaging, interactive games for Steam, Meta, and international VR arcades.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/vr-game-development/ — VR Game Development | NipsApp – Concept To Success"
+  },
+  {
+   "text": "unity3d game development",
+   "url": "https://nipsapp.com/unity3d-game-development-services/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/unity3d-game-development-services/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Leading Unity3D Game Development Services For Stunning Results",
+    "h1": "",
+    "description": "Unity3D game development services delivering stunning, high-performance, multi-platform games with immersive design and engaging gameplay. Contact NipsApp now!",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/unity3d-game-development-services/ — Leading Unity3D Game Development Services For Stunning Results"
+  },
+  {
+   "text": "unreal game development",
+   "url": "https://nipsapp.com/unreal-game-development-services/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/unreal-game-development-services/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Unreal Game Development Services For Mobile, PC And AAA Games",
+    "h1": "",
+    "description": "Unlock the power of Unreal Engine with NipsApp Game Studios",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/unreal-game-development-services/ — Unreal Game Development Services For Mobile, PC And AAA Games"
+  },
+  {
+   "text": "pc game development services",
+   "url": "https://nipsapp.com/pc-game-development-services/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/pc-game-development-services/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "PC Game Development Services By NipsApp- Trusted AAA Quality",
+    "h1": "",
+    "description": "We offer end-to-end PC game development services with stunning visuals, smooth performance, and engaging gameplay. From design to deployment, we handle it all.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/pc-game-development-services/ — PC Game Development Services By NipsApp- Trusted AAA Quality"
+  },
+  {
+   "text": "console game development services",
+   "url": "https://nipsapp.com/console-game-development-services/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/console-game-development-services/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Console Game Development Services | NipsApp Game Studios",
+    "h1": "",
+    "description": "Nipsapp Game Studios delivers AAA console game development services for PlayStation & Xbox. Expert Unity & Unreal developers build immersive, cross-platform experiences.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/console-game-development-services/ — Console Game Development Services | NipsApp Game Studios"
+  },
+  {
+   "text": "multiplayer game development",
+   "url": "https://nipsapp.com/multiplayer-game-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/multiplayer-game-development/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Affordable Multiplayer Game Development By NipsApp",
+    "h1": "",
+    "description": "Build real-time experiences with a top multiplayer game development company. Experts in multiplayer game development services for mobile & VR.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/multiplayer-game-development/ — Affordable Multiplayer Game Development By NipsApp"
+  },
+  {
+   "text": "blockchain game development",
+   "url": "https://nipsapp.com/blockchain-game-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/blockchain-game-development/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "NipsApp | Blockchain Game Development – Hire Proven Experts",
+    "h1": "",
+    "description": "Custom blockchain game development with NipsApp. 16+ years of experience, expert blockchain developers, and affordable pricing. Contact us today!",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/blockchain-game-development/ — NipsApp | Blockchain Game Development – Hire Proven Experts"
+  },
+  {
+   "text": "Game Genre Development Services",
+   "url": "https://nipsapp.com/game-genre-development-services/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/game-genre-development-services/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Game Genre Development Services By NipsApp Game Studios",
+    "h1": "",
+    "description": "Nipsapp Game Studios offers expert game genre development services including Racing, Fighting, Puzzle, casual and Shooting games in mobile, VR, and consoles.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/game-genre-development-services/ — Game Genre Development Services By NipsApp Game Studios"
+  },
+  {
+   "text": "web3 game development company",
+   "url": "https://nipsapp.com/web3-game-development-company/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/web3-game-development-company/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Web3 Game Development Company - NipsApp",
+    "h1": "",
+    "description": "End to end Web3 game development services covering blockchain integration, NFT systems, tokenomics, smart contracts, testing, deployment, and long term live support.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/web3-game-development-company/ — Web3 Game Development Company - NipsApp"
+  },
+  {
+   "text": "locations game development",
+   "url": "https://nipsapp.com/locations-game-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/locations-game-development/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Locations Game Development - NipsApp",
+    "h1": "",
+    "description": "Locations game development by NipsApp Game Studios provides full-cycle game development services to clients in the USA, UK, Europe, Middle East, and Asia.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/locations-game-development/ — Locations Game Development - NipsApp"
+  },
+  {
+   "text": "Web Game Development Company",
+   "url": "https://nipsapp.com/web-game-development-company/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/web-game-development-company/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Web Game Development Company - NipsApp",
+    "h1": "",
+    "description": "Looking for a web game development company? NipsApp builds HTML5 and WebGL games that run smoothly in any browser, no downloads, no install friction.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/web-game-development-company/ — Web Game Development Company - NipsApp"
+  },
+  {
+   "text": "casino game development",
+   "url": "https://nipsapp.com/casino-game-development-3/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/casino-game-development-3/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Casino Game Development Services By NipsApp – Proven & Trusted",
+    "h1": "",
+    "description": "Explore how pioneers like Nipsapp are revolutionizing casino game development with innovative technology and immersive gameplay.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/casino-game-development-3/ — Casino Game Development Services By NipsApp – Proven & Trusted"
+  },
+  {
+   "text": "real money game development",
+   "url": "https://nipsapp.com/real-money-game-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/real-money-game-development/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Real Money Game Development Services By NipsApp – Proven & Trusted",
+    "h1": "",
+    "description": "NipsApp",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/real-money-game-development/ — Real Money Game Development Services By NipsApp – Proven & Trusted"
+  },
+  {
+   "text": "Resource Augmentation",
+   "url": "https://nipsapp.com/careers-nipsapp/",
+   "class": "anchor",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_anchor"
+  },
+  {
+   "text": "hire game character designer",
+   "url": "https://nipsapp.com/hire-game-character-designer/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/hire-game-character-designer/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Hire Game Character Designer, NipsApp- Trusted Design Experts",
+    "h1": "",
+    "description": "Hire game character designers at NipsApp to craft unique, high-quality characters for your game. Contact us now!",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/hire-game-character-designer/ — Hire Game Character Designer, NipsApp- Trusted Design Experts"
+  },
+  {
+   "text": "hire game designers",
+   "url": "https://nipsapp.com/hire-game-designers/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/hire-game-designers/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Hire Game Designers At NipsApp- Trusted AAA Game Design Company",
+    "h1": "",
+    "description": "Looking to hire game designers? Nipsapp is a leading game design company offering top-notch game design services. Contact us now!",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/hire-game-designers/ — Hire Game Designers At NipsApp- Trusted AAA Game Design Company"
+  },
+  {
+   "text": "hire game developers",
+   "url": "https://nipsapp.com/hire-game-developers/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/hire-game-developers/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Hire Video Game Developers – NipsApp’s Proven Talent",
+    "h1": "",
+    "description": "Hire video game developers from NipsApp to bring your gaming vision to life. Our skilled team delivers engaging, high-quality games across mobile, PC, VR, and consoles.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/hire-game-developers/ — Hire Video Game Developers – NipsApp’s Proven Talent"
+  },
+  {
+   "text": "hire metaverse developers",
+   "url": "https://nipsapp.com/hire-metaverse-developers/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/hire-metaverse-developers/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Hire Metaverse Developers From NipsApp- Trusted Experts",
+    "h1": "",
+    "description": "Hire metaverse developers at NipsApp—one of the top metaverse development companies in the world for virtual worlds, games, & apps.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/hire-metaverse-developers/ — Hire Metaverse Developers From NipsApp- Trusted Experts"
+  },
+  {
+   "text": "hire mobile game developer",
+   "url": "https://nipsapp.com/hire-mobile-game-developer/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/hire-mobile-game-developer/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Hire Mobile Game Developers — Trusted & Proven By NipsApp",
+    "h1": "",
+    "description": "Hire mobile game developers from NipsApp with 16 years of experience and over 2,200 AAA-quality games developed for iOS, Android and WebGL.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/hire-mobile-game-developer/ — Hire Mobile Game Developers — Trusted & Proven By NipsApp"
+  },
+  {
+   "text": "hire unity3d developers",
+   "url": "https://nipsapp.com/hire-unity3d-developers/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/hire-unity3d-developers/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Hire Unity3D Developers For Exceptional Game Development From NipsApp",
+    "h1": "",
+    "description": "Hire Unity3D developers for custom, high-quality game development. Get reliable talent to bring your vision to life.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/hire-unity3d-developers/ — Hire Unity3D Developers For Exceptional Game Development From NipsApp"
+  },
+  {
+   "text": "hire vr developers",
+   "url": "https://nipsapp.com/hire-vr-developers/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/hire-vr-developers/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Hire VR Developers At NipsApp For Custom VR Games & Solutions",
+    "h1": "",
+    "description": "Why should you hire VR developers from NipsApp? our team has developed 120+ AAA VR titles for STEAM, META, VR arcades, and enterprise VR solutions.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/hire-vr-developers/ — Hire VR Developers At NipsApp For Custom VR Games & Solutions"
+  },
+  {
+   "text": "METAVERSE DEVELOPMENT",
+   "url": "https://nipsapp.com/metaverse-development-services/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "probe": {
+    "ok": true,
+    "status": 200,
+    "final_url": "https://nipsapp.com/metaverse-development-services/",
+    "redirected": false,
+    "content_type": "text/html",
+    "title": "Trusted Metaverse Development Services | NipsApp Game Studios",
+    "h1": "",
+    "description": "NipsApp Game Studios offers trusted metaverse development services, building immersive games, NFT platforms, virtual schools, and virtual events.",
+    "error": null
+   },
+   "decision": "d_probe",
+   "where": "https://nipsapp.com/metaverse-development-services/ — Trusted Metaverse Development Services | NipsApp Game Studios"
+  },
+  {
+   "text": "metaverse game development",
+   "url": "https://nipsapp.com/metaverse-game-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "nft game development",
+   "url": "https://nipsapp.com/nft-game-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "metaverse school",
+   "url": "https://nipsapp.com/metaverse-school/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "virtual event",
+   "url": "https://nipsapp.com/virtual-event/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "VR SOLUTIONS",
+   "url": "https://nipsapp.com/vr-solutions/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Virtual Reality Training",
+   "url": "https://nipsapp.com/virtual-reality-training-development-service/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "VR kiosk",
+   "url": "https://nipsapp.com/vr-kiosk/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "vr walkthrough for real estate",
+   "url": "https://nipsapp.com/vr-walkthroughs-for-real-estate-game-simulations/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "GAME DESIGN SERVICES",
+   "url": "https://nipsapp.com/game-design-services/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "2D Caricature Designs",
+   "url": "https://nipsapp.com/2d-caricature-designs/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "2D Character Designing",
+   "url": "https://nipsapp.com/2d-character-designing/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "2d game design services",
+   "url": "https://nipsapp.com/2d-game-design-services/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "3d animation service",
+   "url": "https://nipsapp.com/3d-game-animations-rigging/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "3d character design service",
+   "url": "https://nipsapp.com/3d-character-design-service/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "3D Modelling",
+   "url": "https://nipsapp.com/3d-modelling/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "game environment design",
+   "url": "https://nipsapp.com/game-environment-design/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "INDUSTRY SOLUTIONS",
+   "url": "https://nipsapp.com/industry-solutions/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "AR development",
+   "url": "https://nipsapp.com/ar-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "3D Configurators in Unreal Engine",
+   "url": "https://nipsapp.com/3d-configurators-in-unreal-engine/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "3d automotive modelling",
+   "url": "https://nipsapp.com/3d-automotive-modelling/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Archviz design services",
+   "url": "https://nipsapp.com/archviz-design-services/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "banking solutions",
+   "url": "https://nipsapp.com/banking-solutions/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "AI Development",
+   "url": "https://nipsapp.com/ai-project-ideas/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "edutainment solutions",
+   "url": "https://nipsapp.com/edutainment-solutions/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "ABOUT",
+   "url": "https://nipsapp.com/about/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "NipsApp’s Game Development Case Studies",
+   "url": "https://nipsapp.com/case-studies/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Blog and Articles",
+   "url": "https://nipsapp.com/blog-and-articles/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "faq",
+   "url": "https://nipsapp.com/faq/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "client list",
+   "url": "https://nipsapp.com/client-list/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "client testimony",
+   "url": "https://nipsapp.com/client-testimony/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "SEO & ASO",
+   "url": "https://nipsapp.com/seo-aso/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Nipin P N",
+   "url": "https://nipsapp.com/about/nipin-p-n/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Sneha Nair",
+   "url": "https://nipsapp.com/about/sneha-nair/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "CONTACT US",
+   "url": "https://nipsapp.com/hire-us-ar-vr-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Explore Openings",
+   "url": "https://nipsapp.com/careers-nipsapp/",
+   "class": "anchor",
+   "rel": "",
+   "context": "Careers Explore the current opening from NipsApp Gaming Software Private Limited. Explore Openings Current Openings  Blockchain Developer Hiring Blockchain Developer – Full Stack Blockchain Development More Details  Ga",
+   "source": "page",
+   "visible": true,
+   "decision": "d_anchor"
+  },
+  {
+   "text": "[img: image]",
+   "url": "https://www.ambitionbox.com/overview/nipsapp-game-studios-overview",
+   "class": "external",
+   "rel": "noopener",
+   "context": "Careers Explore the current opening from NipsApp Gaming Software Private Limited. Explore Openings Current Openings  Blockchain Developer Hiring Blockchain Developer – Full Stack Blockchain Development More Details  Ga",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_external"
+  },
+  {
+   "text": "More Details",
+   "url": "https://nipsapp.com/careers-nipsapp/blockchain-developer/",
+   "class": "job_internal",
+   "rel": "",
+   "context": "Careers Explore the current opening from NipsApp Gaming Software Private Limited. Explore Openings Current Openings  Blockchain Developer Hiring Blockchain Developer – Full Stack Blockchain Development More Details  Ga",
+   "source": "page",
+   "visible": true,
+   "decision": "d_read_light",
+   "where": "https://nipsapp.com/careers-nipsapp/blockchain-developer/ — Blockchain Developer - NipsApp [job_posting]"
+  },
+  {
+   "text": "More Details",
+   "url": "https://nipsapp.com/careers-nipsapp/senior-unity3d-unreal-developers/",
+   "class": "job_internal",
+   "rel": "",
+   "context": "Careers Explore the current opening from NipsApp Gaming Software Private Limited. Explore Openings Current Openings  Blockchain Developer Hiring Blockchain Developer – Full Stack Blockchain Development More Details  Ga",
+   "source": "page",
+   "visible": true,
+   "decision": "d_read_light",
+   "where": "https://nipsapp.com/careers-nipsapp/senior-unity3d-unreal-developers/ — Senior Unity3d & Unreal Developers - NipsApp [job_posting]"
+  },
+  {
+   "text": "More Details",
+   "url": "https://nipsapp.com/careers-nipsapp/ai-developer/",
+   "class": "job_internal",
+   "rel": "",
+   "context": "Careers Explore the current opening from NipsApp Gaming Software Private Limited. Explore Openings Current Openings  Blockchain Developer Hiring Blockchain Developer – Full Stack Blockchain Development More Details  Ga",
+   "source": "page",
+   "visible": true,
+   "decision": "d_read_light",
+   "where": "https://nipsapp.com/careers-nipsapp/ai-developer/ — AI Developer - NipsApp [job_posting]"
+  },
+  {
+   "text": "VR Game Development",
+   "url": "https://nipsapp.com/vr-game-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/vr-game-development/"
+  },
+  {
+   "text": "Blockchain Game Development",
+   "url": "https://nipsapp.com/blockchain-game-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/blockchain-game-development/"
+  },
+  {
+   "text": "Metaverse Game Development",
+   "url": "https://nipsapp.com/metaverse-game-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/metaverse-game-development/"
+  },
+  {
+   "text": "Mobile Game Development",
+   "url": "https://nipsapp.com/mobile-game-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/mobile-game-development/"
+  },
+  {
+   "text": "NFT Game Development",
+   "url": "https://nipsapp.com/nft-game-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/nft-game-development/"
+  },
+  {
+   "text": "Unity3D Game Development",
+   "url": "https://nipsapp.com/unity3d-game-development-services/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/unity3d-game-development-services/"
+  },
+  {
+   "text": "Unreal Game Development",
+   "url": "https://nipsapp.com/hire-unreal-developers/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Kids Game Development",
+   "url": "https://nipsapp.com/kids-game-development-services/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Real Money Ludo Game",
+   "url": "https://nipsapp.com/real-money-ludo-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "AR Development",
+   "url": "https://nipsapp.com/ar-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/ar-development/"
+  },
+  {
+   "text": "Gamification Services",
+   "url": "https://nipsapp.com/gamification-services/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "3D Game Design",
+   "url": "https://nipsapp.com/3d-modelling/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/3d-modelling/"
+  },
+  {
+   "text": "3D Automobile Modelling",
+   "url": "https://nipsapp.com/3d-automobile-modeling/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "2D/3D Concept Art",
+   "url": "https://nipsapp.com/game-design-services/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/game-design-services/"
+  },
+  {
+   "text": "2D Game Design",
+   "url": "https://nipsapp.com/2d-game-design-services/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/2d-game-design-services/"
+  },
+  {
+   "text": "2D Caricature Design",
+   "url": "https://nipsapp.com/2d-caricature-designs/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/2d-caricature-designs/"
+  },
+  {
+   "text": "3D Animation",
+   "url": "https://nipsapp.com/3d-game-animations-rigging/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/3d-game-animations-rigging/"
+  },
+  {
+   "text": "3D Character Design",
+   "url": "https://nipsapp.com/3d-character-design-service/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/3d-character-design-service/"
+  },
+  {
+   "text": "2D Character Design",
+   "url": "https://nipsapp.com/2d-character-designing/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/2d-character-designing/"
+  },
+  {
+   "text": "Archviz Design",
+   "url": "https://nipsapp.com/archviz-design-services/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/archviz-design-services/"
+  },
+  {
+   "text": "VR Real Estate",
+   "url": "https://nipsapp.com/vr-walkthrough-vr-app-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Archviz VR Simulation",
+   "url": "https://nipsapp.com/archviz-design-services/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/archviz-design-services/"
+  },
+  {
+   "text": "VR Simulation Games",
+   "url": "https://nipsapp.com/vr-simulation-game-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Hire Game Developer",
+   "url": "https://nipsapp.com/hire-game-developers/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/hire-game-developers/"
+  },
+  {
+   "text": "Hire Game Designer",
+   "url": "https://nipsapp.com/hire-game-designers/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/hire-game-designers/"
+  },
+  {
+   "text": "Hire Character Designer",
+   "url": "https://nipsapp.com/hire-game-character-designer/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/hire-game-character-designer/"
+  },
+  {
+   "text": "Hire VR Developer",
+   "url": "https://nipsapp.com/hire-vr-developers/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/hire-vr-developers/"
+  },
+  {
+   "text": "Hire Mobile Game Developer",
+   "url": "https://nipsapp.com/hire-mobile-game-developer/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/hire-mobile-game-developer/"
+  },
+  {
+   "text": "Hire Metaverse Developer",
+   "url": "https://nipsapp.com/hire-metaverse-developers/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/hire-metaverse-developers/"
+  },
+  {
+   "text": "Hire Unity3D Developer",
+   "url": "https://nipsapp.com/hire-unity3d-developers/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/hire-unity3d-developers/"
+  },
+  {
+   "text": "Hire 3D Modelling Artist",
+   "url": "https://nipsapp.com/3d-modelling/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/3d-modelling/"
+  },
+  {
+   "text": "Blog",
+   "url": "https://nipsapp.com/blog-and-articles/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/blog-and-articles/"
+  },
+  {
+   "text": "Why NipsApp",
+   "url": "https://nipsapp.com/why-nipsapp-game-studios/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Banking Solutions",
+   "url": "https://nipsapp.com/banking-solutions/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/banking-solutions/"
+  },
+  {
+   "text": "Edutainment Solutions",
+   "url": "https://nipsapp.com/edutainment-solutions/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/edutainment-solutions/"
+  },
+  {
+   "text": "How To Start A Game Studio",
+   "url": "https://nipsapp.com/how-to-start-a-game-studio/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Educational Game Dev",
+   "url": "https://nipsapp.com/educational-game-development/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Vision Pro Development",
+   "url": "https://nipsapp.com/apple-vision-pro-game-development-services/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "VR Games",
+   "url": "https://nipsapp.com/virtual-reality-game-showcase/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Mobile Games",
+   "url": "https://nipsapp.com/mobile-game-showcase/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "3D Designs and Modelling",
+   "url": "https://nipsapp.com/3d-modelling/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_dup",
+   "where": "https://nipsapp.com/3d-modelling/"
+  },
+  {
+   "text": "AR Projects",
+   "url": "https://nipsapp.com/ar-development-showcase/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "[email protected]",
+   "url": "https://nipsapp.com/cdn-cgi/l/email-protection",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "+91 62384 72255",
+   "url": "tel:+916238472255",
+   "class": "tel",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_mail"
+  },
+  {
+   "text": "View on Apple Maps",
+   "url": "https://maps.apple.com/place?place-id=ID69653D32728AB20&address=Panniyode+Road%2C+Nedumangad%2C+Vattappara%2C+695028%2C+Kerala%2C+India&coordinate=8.5914983%2C76.9480629&name=NipsApp+Game+Studios&_provider=9902",
+   "class": "external",
+   "rel": "noopener",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_external"
+  },
+  {
+   "text": "View on Google Maps",
+   "url": "https://maps.app.goo.gl/onTnYJRjAsWLygfT9",
+   "class": "external",
+   "rel": "noopener",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_external"
+  },
+  {
+   "text": "Privacy Policy",
+   "url": "https://nipsapp.com/privacy-policy/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Terms & Conditions",
+   "url": "https://nipsapp.com/terms-conditions/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Refund Policy",
+   "url": "https://nipsapp.com/refund-policy/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "Privacy Policy Product",
+   "url": "https://nipsapp.com/privacy-policy-product/",
+   "class": "internal",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_not_probed"
+  },
+  {
+   "text": "[img: Facebook]",
+   "url": "https://www.facebook.com/nipsapp/",
+   "class": "social",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_social"
+  },
+  {
+   "text": "[img: Twitter]",
+   "url": "https://x.com/nipsapp",
+   "class": "social",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_social"
+  },
+  {
+   "text": "[img: LinkedIn]",
+   "url": "https://www.linkedin.com/company/27761010/",
+   "class": "social",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_social"
+  },
+  {
+   "text": "[img: Instagram]",
+   "url": "https://www.instagram.com/nipsapp/",
+   "class": "social",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_social"
+  },
+  {
+   "text": "[img: YouTube]",
+   "url": "https://www.youtube.com/c/NIPINPN/",
+   "class": "social",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": true,
+   "decision": "d_skip_social"
+  },
+  {
+   "text": "Never see this message again.",
+   "url": "https://nipsapp.com/careers-nipsapp/",
+   "class": "anchor",
+   "rel": "",
+   "context": "",
+   "source": "page",
+   "visible": false,
+   "decision": "d_anchor"
+  }
+ ],
+ "frames": [],
+ "network": [],
+ "jobs": {
+  "links": [
+   {
+    "title": "More Details",
+    "url": "https://nipsapp.com/careers-nipsapp/blockchain-developer/",
+    "location": "",
+    "context": "Careers Explore the current opening from NipsApp Gaming Software Private Limited. Explore Openings Current Openings  Blockchain Developer Hiring Blockchain Developer – Full Stack Blockchain Developme",
+    "source": "page"
+   },
+   {
+    "title": "More Details",
+    "url": "https://nipsapp.com/careers-nipsapp/senior-unity3d-unreal-developers/",
+    "location": "",
+    "context": "Careers Explore the current opening from NipsApp Gaming Software Private Limited. Explore Openings Current Openings  Blockchain Developer Hiring Blockchain Developer – Full Stack Blockchain Developme",
+    "source": "page"
+   },
+   {
+    "title": "More Details",
+    "url": "https://nipsapp.com/careers-nipsapp/ai-developer/",
+    "location": "",
+    "context": "Careers Explore the current opening from NipsApp Gaming Software Private Limited. Explore Openings Current Openings  Blockchain Developer Hiring Blockchain Developer – Full Stack Blockchain Developme",
+    "source": "page"
+   }
+  ],
+  "network": [],
+  "jsonld": [],
+  "embedded": [],
+  "counts": {
+   "links": 3,
+   "network": 0,
+   "jsonld": 0,
+   "embedded": 0
+  },
+  "best": 3,
+  "capped": false,
+  "declared": {
+   "value": null,
+   "confidence": null,
+   "candidates": []
+  }
+ },
+ "popups": {
+  "dismissed": [],
+  "obstructions": []
+ },
+ "expansion": {
+  "scrolls": 3,
+  "expansions": 0,
+  "clicks": [],
+  "stop_reason": "no_new_content"
+ },
+ "counts": {
+  "links_total": 121,
+  "frames_total": 0,
+  "frames_read": 0,
+  "requests": 38,
+  "blocked_requests": {
+   "type:font": 10,
+   "ads_trackers": 1
+  },
+  "json_responses": 0
+ },
+ "screenshot": null,
+ "pdf": null,
+ "probe": null,
+ "children": [
+  {
+   "url": "https://nipsapp.com/careers-nipsapp/blockchain-developer/",
+   "depth": 1,
+   "mode": "light",
+   "relation": "job_internal",
+   "link_text": "More Details",
+   "final_url": "https://nipsapp.com/careers-nipsapp/blockchain-developer/",
+   "redirect_chain": [],
+   "title": "Blockchain Developer - NipsApp",
+   "h1": "Blockchain Developer – Full Stack",
+   "http_status": 200,
+   "status": "ok",
+   "kind": "job_posting",
+   "seconds": 1.6,
+   "antibot": null,
+   "error": null,
+   "skip_reason": null,
+   "limits_hit": [],
+   "site_label": null,
+   "warnings": [],
+   "notes": [
+    {
+     "code": "n_blocked_requests",
+     "n": 11
+    }
+   ],
+   "sections": [
+    {
+     "label": "initial",
+     "source": "page",
+     "text": "Home\nGame Development Services\nMetaverse Development\nVR Solutions\nGame Design Services\nIndustry Solutions\nAbout\nContact us\nBlockchain Developer – Full Stack\nRole – Software Developer\nEmployment Type – Full Time, Permanent\nRole Category – Programming & Design\nApply now\nBlockchain Developer – Full Stack\nDesired Skills:\nExperience in contributing to the architecture, design, and development over Ethereum i.e. Smart Contracts and ERC20 tokens along with deep understanding of EVM\nExperience in development on non-EVM based blockchains will be a plus\nExperience with Blockchain architecture design patterns and supporting infrastructure\nExperience delivering end-to-end solutions (Life Cycle for infrastructure including SDLC)\nExperience developing crypto wallets and crypto exchanges will be a plus\nExperience in integration of blockchain technology with Backend server & APIs using Node Js\nStrong proficiency in Solidity and Node JS.\nUnderstanding of cryptography and cryptographic protocols\nRole – Software Developer\nEmployment Type – Full Time, Permanent\nRole Category – Programming & Design\nEducation\nUG :B.Tech/B.E. in Computers\nPG :MS/M.Sc(Computer Science) in Any Specialization\nApply now\nABOUT NIPSAPP\nNipsApp Game Studios is a full-cycle game development company founded in 2010, based in Trivandrum, India. With expertise in Unity, Unreal Engine, VR, mobile, and blockchain game development, NipsApp serves startups and enterprises across 25+ countries.\n🚀 3,000+ Projects Delivered ⭐ 121 Verified Clutch Reviews 🌍 25+ Countries Served 🎮 Since 2010\nSERVICES\nVR Game Development\nBlockchain Game Development\nMetaverse Game Development\nMobile Game Development\nNFT Game Development\nUnity3D Game Development\nUnreal Game Development\nKids Game Development\nReal Money Ludo Game\nAR Development\nGamification Services\nGAME GRAPHICS DESIGN\n3D Game Design\n3D Automobile Modelling\n2D/3D Concept Art\n2D Game Design\n2D Caricature Design\n3D Animation\n3D Character Design\n2D Character Design\nArchviz Design\nVR/XR SIMULATION\nVR Real Estate\nArchviz VR Simulation\nVR Simulation Games\nTALENT OUTSOURCING\nHire Game Developer\nHire Game Designer\nHire Character Designer\nHire VR Developer\nHire Mobile Game Developer\nHire Metaverse Developer\nHire Unity3D Developer\nHire 3D Modelling Artist\nRESOURCES\nBlog\nWhy NipsApp\nBanking Solutions\nEdutainment Solutions\nHow To Start A Game Studio\nKids Game Development\nEducational Game Dev\nVision Pro Development\nWORK SAMPLES\nVR Games\nMobile Games\n3D Designs and Modelling\nReal Money Ludo Game\nAR Projects\nCONTACT US\nIndia Office:\nViddhya Bhavan, Panniyode Road, Vattappara, Trivandrum, Kerala, India\nEmail: [email protected]\nPhone: +91 62384 72255\n[img: Apple Maps Icon] View on Apple Maps [img: Google Maps Icon] View on Google Maps\nUAE Office:\nOffice No: 102, Near Siemens Building, Masdar Free Zone, Masdar City, Abu Dhabi, UAE\nCOPYRIGHT © 2026 NipsApp Game Studios | Privacy Policy | Terms & Conditions | Refund Policy | Privacy Policy Product\n[img: Facebook] [img: Twitter] [img: LinkedIn] [img: Instagram] [img: YouTube]"
+    }
+   ],
+   "text_chars": 3047,
+   "text_truncated": false,
+   "links": [
+    {
+     "text": "HOME",
+     "url": "https://nipsapp.com/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "GAME DEVELOPMENT SERVICES",
+     "url": "https://nipsapp.com/game-development-company/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "full cycle game development",
+     "url": "https://nipsapp.com/full-cycle-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Mobile Game development",
+     "url": "https://nipsapp.com/mobile-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "VR game development",
+     "url": "https://nipsapp.com/vr-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "unity3d game development",
+     "url": "https://nipsapp.com/unity3d-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "unreal game development",
+     "url": "https://nipsapp.com/unreal-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "pc game development services",
+     "url": "https://nipsapp.com/pc-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "console game development services",
+     "url": "https://nipsapp.com/console-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "multiplayer game development",
+     "url": "https://nipsapp.com/multiplayer-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "blockchain game development",
+     "url": "https://nipsapp.com/blockchain-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Game Genre Development Services",
+     "url": "https://nipsapp.com/game-genre-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "web3 game development company",
+     "url": "https://nipsapp.com/web3-game-development-company/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "locations game development",
+     "url": "https://nipsapp.com/locations-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Web Game Development Company",
+     "url": "https://nipsapp.com/web-game-development-company/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "casino game development",
+     "url": "https://nipsapp.com/casino-game-development-3/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "real money game development",
+     "url": "https://nipsapp.com/real-money-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Resource Augmentation",
+     "url": "https://nipsapp.com/careers-nipsapp/blockchain-developer/",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire game character designer",
+     "url": "https://nipsapp.com/hire-game-character-designer/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire game designers",
+     "url": "https://nipsapp.com/hire-game-designers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire game developers",
+     "url": "https://nipsapp.com/hire-game-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire metaverse developers",
+     "url": "https://nipsapp.com/hire-metaverse-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire mobile game developer",
+     "url": "https://nipsapp.com/hire-mobile-game-developer/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire unity3d developers",
+     "url": "https://nipsapp.com/hire-unity3d-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire vr developers",
+     "url": "https://nipsapp.com/hire-vr-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "METAVERSE DEVELOPMENT",
+     "url": "https://nipsapp.com/metaverse-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "metaverse game development",
+     "url": "https://nipsapp.com/metaverse-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "nft game development",
+     "url": "https://nipsapp.com/nft-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "metaverse school",
+     "url": "https://nipsapp.com/metaverse-school/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "virtual event",
+     "url": "https://nipsapp.com/virtual-event/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "VR SOLUTIONS",
+     "url": "https://nipsapp.com/vr-solutions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Virtual Reality Training",
+     "url": "https://nipsapp.com/virtual-reality-training-development-service/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "VR kiosk",
+     "url": "https://nipsapp.com/vr-kiosk/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "vr walkthrough for real estate",
+     "url": "https://nipsapp.com/vr-walkthroughs-for-real-estate-game-simulations/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "GAME DESIGN SERVICES",
+     "url": "https://nipsapp.com/game-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "2D Caricature Designs",
+     "url": "https://nipsapp.com/2d-caricature-designs/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "2D Character Designing",
+     "url": "https://nipsapp.com/2d-character-designing/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "2d game design services",
+     "url": "https://nipsapp.com/2d-game-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "3d animation service",
+     "url": "https://nipsapp.com/3d-game-animations-rigging/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "3d character design service",
+     "url": "https://nipsapp.com/3d-character-design-service/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "3D Modelling",
+     "url": "https://nipsapp.com/3d-modelling/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "game environment design",
+     "url": "https://nipsapp.com/game-environment-design/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "INDUSTRY SOLUTIONS",
+     "url": "https://nipsapp.com/industry-solutions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "AR development",
+     "url": "https://nipsapp.com/ar-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "3D Configurators in Unreal Engine",
+     "url": "https://nipsapp.com/3d-configurators-in-unreal-engine/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "3d automotive modelling",
+     "url": "https://nipsapp.com/3d-automotive-modelling/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Archviz design services",
+     "url": "https://nipsapp.com/archviz-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "banking solutions",
+     "url": "https://nipsapp.com/banking-solutions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "AI Development",
+     "url": "https://nipsapp.com/ai-project-ideas/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "edutainment solutions",
+     "url": "https://nipsapp.com/edutainment-solutions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "ABOUT",
+     "url": "https://nipsapp.com/about/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "NipsApp’s Game Development Case Studies",
+     "url": "https://nipsapp.com/case-studies/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Blog and Articles",
+     "url": "https://nipsapp.com/blog-and-articles/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "faq",
+     "url": "https://nipsapp.com/faq/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "client list",
+     "url": "https://nipsapp.com/client-list/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "client testimony",
+     "url": "https://nipsapp.com/client-testimony/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "SEO & ASO",
+     "url": "https://nipsapp.com/seo-aso/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Nipin P N",
+     "url": "https://nipsapp.com/about/nipin-p-n/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Sneha Nair",
+     "url": "https://nipsapp.com/about/sneha-nair/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "CONTACT US",
+     "url": "https://nipsapp.com/hire-us-ar-vr-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Apply now",
+     "url": "https://nipsapp.com/hire-us-ar-vr-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "Blockchain Developer – Full Stack Role – Software Developer Employment Type – Full Time, Permanent Role Category – Programming & Design Apply now Blockchain Developer – Full Stack Desired Skills: Experience in contributi",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "VR Game Development",
+     "url": "https://nipsapp.com/vr-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Blockchain Game Development",
+     "url": "https://nipsapp.com/blockchain-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Metaverse Game Development",
+     "url": "https://nipsapp.com/metaverse-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Mobile Game Development",
+     "url": "https://nipsapp.com/mobile-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "NFT Game Development",
+     "url": "https://nipsapp.com/nft-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Unity3D Game Development",
+     "url": "https://nipsapp.com/unity3d-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Unreal Game Development",
+     "url": "https://nipsapp.com/hire-unreal-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Kids Game Development",
+     "url": "https://nipsapp.com/kids-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Real Money Ludo Game",
+     "url": "https://nipsapp.com/real-money-ludo-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "AR Development",
+     "url": "https://nipsapp.com/ar-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Gamification Services",
+     "url": "https://nipsapp.com/gamification-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "3D Game Design",
+     "url": "https://nipsapp.com/3d-modelling/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "3D Automobile Modelling",
+     "url": "https://nipsapp.com/3d-automobile-modeling/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "2D/3D Concept Art",
+     "url": "https://nipsapp.com/game-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "2D Game Design",
+     "url": "https://nipsapp.com/2d-game-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "2D Caricature Design",
+     "url": "https://nipsapp.com/2d-caricature-designs/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "3D Animation",
+     "url": "https://nipsapp.com/3d-game-animations-rigging/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "3D Character Design",
+     "url": "https://nipsapp.com/3d-character-design-service/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "2D Character Design",
+     "url": "https://nipsapp.com/2d-character-designing/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Archviz Design",
+     "url": "https://nipsapp.com/archviz-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "VR Real Estate",
+     "url": "https://nipsapp.com/vr-walkthrough-vr-app-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Archviz VR Simulation",
+     "url": "https://nipsapp.com/archviz-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "VR Simulation Games",
+     "url": "https://nipsapp.com/vr-simulation-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire Game Developer",
+     "url": "https://nipsapp.com/hire-game-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire Game Designer",
+     "url": "https://nipsapp.com/hire-game-designers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire Character Designer",
+     "url": "https://nipsapp.com/hire-game-character-designer/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire VR Developer",
+     "url": "https://nipsapp.com/hire-vr-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire Mobile Game Developer",
+     "url": "https://nipsapp.com/hire-mobile-game-developer/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire Metaverse Developer",
+     "url": "https://nipsapp.com/hire-metaverse-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire Unity3D Developer",
+     "url": "https://nipsapp.com/hire-unity3d-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire 3D Modelling Artist",
+     "url": "https://nipsapp.com/3d-modelling/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Blog",
+     "url": "https://nipsapp.com/blog-and-articles/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Why NipsApp",
+     "url": "https://nipsapp.com/why-nipsapp-game-studios/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Banking Solutions",
+     "url": "https://nipsapp.com/banking-solutions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Edutainment Solutions",
+     "url": "https://nipsapp.com/edutainment-solutions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "How To Start A Game Studio",
+     "url": "https://nipsapp.com/how-to-start-a-game-studio/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Educational Game Dev",
+     "url": "https://nipsapp.com/educational-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Vision Pro Development",
+     "url": "https://nipsapp.com/apple-vision-pro-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "VR Games",
+     "url": "https://nipsapp.com/virtual-reality-game-showcase/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Mobile Games",
+     "url": "https://nipsapp.com/mobile-game-showcase/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "3D Designs and Modelling",
+     "url": "https://nipsapp.com/3d-modelling/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "AR Projects",
+     "url": "https://nipsapp.com/ar-development-showcase/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "[email protected]",
+     "url": "https://nipsapp.com/cdn-cgi/l/email-protection",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "+91 62384 72255",
+     "url": "tel:+916238472255",
+     "class": "tel",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "View on Apple Maps",
+     "url": "https://maps.apple.com/place?place-id=ID69653D32728AB20&address=Panniyode+Road%2C+Nedumangad%2C+Vattappara%2C+695028%2C+Kerala%2C+India&coordinate=8.5914983%2C76.9480629&name=NipsApp+Game+Studios&_provider=9902",
+     "class": "external",
+     "rel": "noopener",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "View on Google Maps",
+     "url": "https://maps.app.goo.gl/onTnYJRjAsWLygfT9",
+     "class": "external",
+     "rel": "noopener",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Privacy Policy",
+     "url": "https://nipsapp.com/privacy-policy/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Terms & Conditions",
+     "url": "https://nipsapp.com/terms-conditions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Refund Policy",
+     "url": "https://nipsapp.com/refund-policy/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Privacy Policy Product",
+     "url": "https://nipsapp.com/privacy-policy-product/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "[img: Facebook]",
+     "url": "https://www.facebook.com/nipsapp/",
+     "class": "social",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "[img: Twitter]",
+     "url": "https://x.com/nipsapp",
+     "class": "social",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "[img: LinkedIn]",
+     "url": "https://www.linkedin.com/company/27761010/",
+     "class": "social",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "[img: Instagram]",
+     "url": "https://www.instagram.com/nipsapp/",
+     "class": "social",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "[img: YouTube]",
+     "url": "https://www.youtube.com/c/NIPINPN/",
+     "class": "social",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Never see this message again.",
+     "url": "https://nipsapp.com/careers-nipsapp/blockchain-developer/",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    }
+   ],
+   "frames": [],
+   "network": [],
+   "jobs": {
+    "links": [],
+    "network": [],
+    "jsonld": [],
+    "embedded": [],
+    "counts": {
+     "links": 0,
+     "network": 0,
+     "jsonld": 0,
+     "embedded": 0
+    },
+    "best": 0,
+    "capped": false,
+    "declared": {
+     "value": null,
+     "confidence": null,
+     "candidates": []
+    }
+   },
+   "popups": {
+    "dismissed": [],
+    "obstructions": []
+   },
+   "expansion": {
+    "scrolls": 0,
+    "expansions": 0,
+    "clicks": [],
+    "stop_reason": ""
+   },
+   "counts": {
+    "links_total": 117,
+    "frames_total": 0,
+    "frames_read": 0,
+    "requests": 29,
+    "blocked_requests": {
+     "type:font": 10,
+     "ads_trackers": 1
+    },
+    "json_responses": 0
+   },
+   "screenshot": null,
+   "pdf": null,
+   "probe": null,
+   "children": []
+  },
+  {
+   "url": "https://nipsapp.com/careers-nipsapp/senior-unity3d-unreal-developers/",
+   "depth": 1,
+   "mode": "light",
+   "relation": "job_internal",
+   "link_text": "More Details",
+   "final_url": "https://nipsapp.com/careers-nipsapp/senior-unity3d-unreal-developers/",
+   "redirect_chain": [],
+   "title": "Senior Unity3d & Unreal Developers - NipsApp",
+   "h1": "Senior Unity3d & Unreal Developers",
+   "http_status": 200,
+   "status": "ok",
+   "kind": "job_posting",
+   "seconds": 1.5,
+   "antibot": null,
+   "error": null,
+   "skip_reason": null,
+   "limits_hit": [],
+   "site_label": null,
+   "warnings": [],
+   "notes": [
+    {
+     "code": "n_blocked_requests",
+     "n": 11
+    }
+   ],
+   "sections": [
+    {
+     "label": "initial",
+     "source": "page",
+     "text": "Home\nGame Development Services\nMetaverse Development\nVR Solutions\nGame Design Services\nIndustry Solutions\nAbout\nContact us\nSenior Unity3d & Unreal Developers\nRole – Software Developer\nEmployment Type – Full Time, Permanent\nRole Category – Programming & Design\nApply now\nSenior Unity3d & Unreal Developers\nKey Skills:\nUnity3d\nUnreal (UE4)\nVirtual Reality\nAR\nMultiplayer Game Development\n3d Graphics\n3d Math\nRole – Software Developer\nEmployment Type – Full Time, Permanent\nRole Category – Programming & Design\nEducation\nUG :B.Tech/B.E. in Computers\nPG :MS/M.Sc(Computer Science) in Any Specialization\nApply now\nABOUT NIPSAPP\nNipsApp Game Studios is a full-cycle game development company founded in 2010, based in Trivandrum, India. With expertise in Unity, Unreal Engine, VR, mobile, and blockchain game development, NipsApp serves startups and enterprises across 25+ countries.\n🚀 3,000+ Projects Delivered ⭐ 121 Verified Clutch Reviews 🌍 25+ Countries Served 🎮 Since 2010\nSERVICES\nVR Game Development\nBlockchain Game Development\nMetaverse Game Development\nMobile Game Development\nNFT Game Development\nUnity3D Game Development\nUnreal Game Development\nKids Game Development\nReal Money Ludo Game\nAR Development\nGamification Services\nGAME GRAPHICS DESIGN\n3D Game Design\n3D Automobile Modelling\n2D/3D Concept Art\n2D Game Design\n2D Caricature Design\n3D Animation\n3D Character Design\n2D Character Design\nArchviz Design\nVR/XR SIMULATION\nVR Real Estate\nArchviz VR Simulation\nVR Simulation Games\nTALENT OUTSOURCING\nHire Game Developer\nHire Game Designer\nHire Character Designer\nHire VR Developer\nHire Mobile Game Developer\nHire Metaverse Developer\nHire Unity3D Developer\nHire 3D Modelling Artist\nRESOURCES\nBlog\nWhy NipsApp\nBanking Solutions\nEdutainment Solutions\nHow To Start A Game Studio\nKids Game Development\nEducational Game Dev\nVision Pro Development\nWORK SAMPLES\nVR Games\nMobile Games\n3D Designs and Modelling\nReal Money Ludo Game\nAR Projects\nCONTACT US\nIndia Office:\nViddhya Bhavan, Panniyode Road, Vattappara, Trivandrum, Kerala, India\nEmail: [email protected]\nPhone: +91 62384 72255\n[img: Apple Maps Icon] View on Apple Maps [img: Google Maps Icon] View on Google Maps\nUAE Office:\nOffice No: 102, Near Siemens Building, Masdar Free Zone, Masdar City, Abu Dhabi, UAE\nCOPYRIGHT © 2026 NipsApp Game Studios | Privacy Policy | Terms & Conditions | Refund Policy | Privacy Policy Product\n[img: Facebook] [img: Twitter] [img: LinkedIn] [img: Instagram] [img: YouTube]"
+    }
+   ],
+   "text_chars": 2460,
+   "text_truncated": false,
+   "links": [
+    {
+     "text": "HOME",
+     "url": "https://nipsapp.com/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "GAME DEVELOPMENT SERVICES",
+     "url": "https://nipsapp.com/game-development-company/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "full cycle game development",
+     "url": "https://nipsapp.com/full-cycle-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Mobile Game development",
+     "url": "https://nipsapp.com/mobile-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "VR game development",
+     "url": "https://nipsapp.com/vr-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "unity3d game development",
+     "url": "https://nipsapp.com/unity3d-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "unreal game development",
+     "url": "https://nipsapp.com/unreal-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "pc game development services",
+     "url": "https://nipsapp.com/pc-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "console game development services",
+     "url": "https://nipsapp.com/console-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "multiplayer game development",
+     "url": "https://nipsapp.com/multiplayer-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "blockchain game development",
+     "url": "https://nipsapp.com/blockchain-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Game Genre Development Services",
+     "url": "https://nipsapp.com/game-genre-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "web3 game development company",
+     "url": "https://nipsapp.com/web3-game-development-company/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "locations game development",
+     "url": "https://nipsapp.com/locations-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Web Game Development Company",
+     "url": "https://nipsapp.com/web-game-development-company/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "casino game development",
+     "url": "https://nipsapp.com/casino-game-development-3/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "real money game development",
+     "url": "https://nipsapp.com/real-money-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Resource Augmentation",
+     "url": "https://nipsapp.com/careers-nipsapp/senior-unity3d-unreal-developers/",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire game character designer",
+     "url": "https://nipsapp.com/hire-game-character-designer/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire game designers",
+     "url": "https://nipsapp.com/hire-game-designers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire game developers",
+     "url": "https://nipsapp.com/hire-game-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire metaverse developers",
+     "url": "https://nipsapp.com/hire-metaverse-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire mobile game developer",
+     "url": "https://nipsapp.com/hire-mobile-game-developer/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire unity3d developers",
+     "url": "https://nipsapp.com/hire-unity3d-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire vr developers",
+     "url": "https://nipsapp.com/hire-vr-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "METAVERSE DEVELOPMENT",
+     "url": "https://nipsapp.com/metaverse-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "metaverse game development",
+     "url": "https://nipsapp.com/metaverse-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "nft game development",
+     "url": "https://nipsapp.com/nft-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "metaverse school",
+     "url": "https://nipsapp.com/metaverse-school/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "virtual event",
+     "url": "https://nipsapp.com/virtual-event/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "VR SOLUTIONS",
+     "url": "https://nipsapp.com/vr-solutions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Virtual Reality Training",
+     "url": "https://nipsapp.com/virtual-reality-training-development-service/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "VR kiosk",
+     "url": "https://nipsapp.com/vr-kiosk/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "vr walkthrough for real estate",
+     "url": "https://nipsapp.com/vr-walkthroughs-for-real-estate-game-simulations/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "GAME DESIGN SERVICES",
+     "url": "https://nipsapp.com/game-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "2D Caricature Designs",
+     "url": "https://nipsapp.com/2d-caricature-designs/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "2D Character Designing",
+     "url": "https://nipsapp.com/2d-character-designing/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "2d game design services",
+     "url": "https://nipsapp.com/2d-game-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "3d animation service",
+     "url": "https://nipsapp.com/3d-game-animations-rigging/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "3d character design service",
+     "url": "https://nipsapp.com/3d-character-design-service/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "3D Modelling",
+     "url": "https://nipsapp.com/3d-modelling/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "game environment design",
+     "url": "https://nipsapp.com/game-environment-design/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "INDUSTRY SOLUTIONS",
+     "url": "https://nipsapp.com/industry-solutions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "AR development",
+     "url": "https://nipsapp.com/ar-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "3D Configurators in Unreal Engine",
+     "url": "https://nipsapp.com/3d-configurators-in-unreal-engine/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "3d automotive modelling",
+     "url": "https://nipsapp.com/3d-automotive-modelling/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Archviz design services",
+     "url": "https://nipsapp.com/archviz-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "banking solutions",
+     "url": "https://nipsapp.com/banking-solutions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "AI Development",
+     "url": "https://nipsapp.com/ai-project-ideas/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "edutainment solutions",
+     "url": "https://nipsapp.com/edutainment-solutions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "ABOUT",
+     "url": "https://nipsapp.com/about/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "NipsApp’s Game Development Case Studies",
+     "url": "https://nipsapp.com/case-studies/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Blog and Articles",
+     "url": "https://nipsapp.com/blog-and-articles/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "faq",
+     "url": "https://nipsapp.com/faq/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "client list",
+     "url": "https://nipsapp.com/client-list/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "client testimony",
+     "url": "https://nipsapp.com/client-testimony/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "SEO & ASO",
+     "url": "https://nipsapp.com/seo-aso/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Nipin P N",
+     "url": "https://nipsapp.com/about/nipin-p-n/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Sneha Nair",
+     "url": "https://nipsapp.com/about/sneha-nair/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "CONTACT US",
+     "url": "https://nipsapp.com/hire-us-ar-vr-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Apply now",
+     "url": "https://nipsapp.com/hire-us-ar-vr-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "Senior Unity3d & Unreal Developers Role – Software Developer Employment Type – Full Time, Permanent Role Category – Programming & Design Apply now Senior Unity3d & Unreal Developers Key Skills: Unity3d Unreal (UE4) Virtu",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "VR Game Development",
+     "url": "https://nipsapp.com/vr-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Blockchain Game Development",
+     "url": "https://nipsapp.com/blockchain-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Metaverse Game Development",
+     "url": "https://nipsapp.com/metaverse-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Mobile Game Development",
+     "url": "https://nipsapp.com/mobile-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "NFT Game Development",
+     "url": "https://nipsapp.com/nft-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Unity3D Game Development",
+     "url": "https://nipsapp.com/unity3d-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Unreal Game Development",
+     "url": "https://nipsapp.com/hire-unreal-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Kids Game Development",
+     "url": "https://nipsapp.com/kids-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Real Money Ludo Game",
+     "url": "https://nipsapp.com/real-money-ludo-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "AR Development",
+     "url": "https://nipsapp.com/ar-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Gamification Services",
+     "url": "https://nipsapp.com/gamification-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "3D Game Design",
+     "url": "https://nipsapp.com/3d-modelling/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "3D Automobile Modelling",
+     "url": "https://nipsapp.com/3d-automobile-modeling/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "2D/3D Concept Art",
+     "url": "https://nipsapp.com/game-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "2D Game Design",
+     "url": "https://nipsapp.com/2d-game-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "2D Caricature Design",
+     "url": "https://nipsapp.com/2d-caricature-designs/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "3D Animation",
+     "url": "https://nipsapp.com/3d-game-animations-rigging/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "3D Character Design",
+     "url": "https://nipsapp.com/3d-character-design-service/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "2D Character Design",
+     "url": "https://nipsapp.com/2d-character-designing/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Archviz Design",
+     "url": "https://nipsapp.com/archviz-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "VR Real Estate",
+     "url": "https://nipsapp.com/vr-walkthrough-vr-app-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Archviz VR Simulation",
+     "url": "https://nipsapp.com/archviz-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "VR Simulation Games",
+     "url": "https://nipsapp.com/vr-simulation-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire Game Developer",
+     "url": "https://nipsapp.com/hire-game-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire Game Designer",
+     "url": "https://nipsapp.com/hire-game-designers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire Character Designer",
+     "url": "https://nipsapp.com/hire-game-character-designer/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire VR Developer",
+     "url": "https://nipsapp.com/hire-vr-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire Mobile Game Developer",
+     "url": "https://nipsapp.com/hire-mobile-game-developer/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire Metaverse Developer",
+     "url": "https://nipsapp.com/hire-metaverse-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire Unity3D Developer",
+     "url": "https://nipsapp.com/hire-unity3d-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire 3D Modelling Artist",
+     "url": "https://nipsapp.com/3d-modelling/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Blog",
+     "url": "https://nipsapp.com/blog-and-articles/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Why NipsApp",
+     "url": "https://nipsapp.com/why-nipsapp-game-studios/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Banking Solutions",
+     "url": "https://nipsapp.com/banking-solutions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Edutainment Solutions",
+     "url": "https://nipsapp.com/edutainment-solutions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "How To Start A Game Studio",
+     "url": "https://nipsapp.com/how-to-start-a-game-studio/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Educational Game Dev",
+     "url": "https://nipsapp.com/educational-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Vision Pro Development",
+     "url": "https://nipsapp.com/apple-vision-pro-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "VR Games",
+     "url": "https://nipsapp.com/virtual-reality-game-showcase/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Mobile Games",
+     "url": "https://nipsapp.com/mobile-game-showcase/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "3D Designs and Modelling",
+     "url": "https://nipsapp.com/3d-modelling/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "AR Projects",
+     "url": "https://nipsapp.com/ar-development-showcase/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "[email protected]",
+     "url": "https://nipsapp.com/cdn-cgi/l/email-protection",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "+91 62384 72255",
+     "url": "tel:+916238472255",
+     "class": "tel",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "View on Apple Maps",
+     "url": "https://maps.apple.com/place?place-id=ID69653D32728AB20&address=Panniyode+Road%2C+Nedumangad%2C+Vattappara%2C+695028%2C+Kerala%2C+India&coordinate=8.5914983%2C76.9480629&name=NipsApp+Game+Studios&_provider=9902",
+     "class": "external",
+     "rel": "noopener",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "View on Google Maps",
+     "url": "https://maps.app.goo.gl/onTnYJRjAsWLygfT9",
+     "class": "external",
+     "rel": "noopener",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Privacy Policy",
+     "url": "https://nipsapp.com/privacy-policy/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Terms & Conditions",
+     "url": "https://nipsapp.com/terms-conditions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Refund Policy",
+     "url": "https://nipsapp.com/refund-policy/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Privacy Policy Product",
+     "url": "https://nipsapp.com/privacy-policy-product/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "[img: Facebook]",
+     "url": "https://www.facebook.com/nipsapp/",
+     "class": "social",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "[img: Twitter]",
+     "url": "https://x.com/nipsapp",
+     "class": "social",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "[img: LinkedIn]",
+     "url": "https://www.linkedin.com/company/27761010/",
+     "class": "social",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "[img: Instagram]",
+     "url": "https://www.instagram.com/nipsapp/",
+     "class": "social",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "[img: YouTube]",
+     "url": "https://www.youtube.com/c/NIPINPN/",
+     "class": "social",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Never see this message again.",
+     "url": "https://nipsapp.com/careers-nipsapp/senior-unity3d-unreal-developers/",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    }
+   ],
+   "frames": [],
+   "network": [],
+   "jobs": {
+    "links": [],
+    "network": [],
+    "jsonld": [],
+    "embedded": [],
+    "counts": {
+     "links": 0,
+     "network": 0,
+     "jsonld": 0,
+     "embedded": 0
+    },
+    "best": 0,
+    "capped": false,
+    "declared": {
+     "value": null,
+     "confidence": null,
+     "candidates": []
+    }
+   },
+   "popups": {
+    "dismissed": [],
+    "obstructions": []
+   },
+   "expansion": {
+    "scrolls": 0,
+    "expansions": 0,
+    "clicks": [],
+    "stop_reason": ""
+   },
+   "counts": {
+    "links_total": 117,
+    "frames_total": 0,
+    "frames_read": 0,
+    "requests": 28,
+    "blocked_requests": {
+     "type:font": 10,
+     "ads_trackers": 1
+    },
+    "json_responses": 0
+   },
+   "screenshot": null,
+   "pdf": null,
+   "probe": null,
+   "children": []
+  },
+  {
+   "url": "https://nipsapp.com/careers-nipsapp/ai-developer/",
+   "depth": 1,
+   "mode": "light",
+   "relation": "job_internal",
+   "link_text": "More Details",
+   "final_url": "https://nipsapp.com/careers-nipsapp/ai-developer/",
+   "redirect_chain": [],
+   "title": "AI Developer - NipsApp",
+   "h1": "AI Developer",
+   "http_status": 200,
+   "status": "ok",
+   "kind": "job_posting",
+   "seconds": 1.4,
+   "antibot": null,
+   "error": null,
+   "skip_reason": null,
+   "limits_hit": [],
+   "site_label": null,
+   "warnings": [],
+   "notes": [
+    {
+     "code": "n_blocked_requests",
+     "n": 11
+    }
+   ],
+   "sections": [
+    {
+     "label": "initial",
+     "source": "page",
+     "text": "Home\nGame Development Services\nMetaverse Development\nVR Solutions\nGame Design Services\nIndustry Solutions\nAbout\nContact us\nAI Developer\nRole – AI Developer\nEmployment Type – Full Time, Permanent\nRole Category – Programming & Design\nAs an AI software development company, we deliver cutting-edge AI development services. Our expertise ensures innovative, efficient solutions. By choosing us, you benefit from advanced AI technologies that drive your business forward. Looking forward to hire AI developers.\nApply now\nAI Developer\nDesired Skills:\nSolid understanding of Statistics, Machine Learning, Deep Learning and Artificial Intelligence Technologies\nHands on experience in YOLO and other object detection algorithms using Tensorflow/Keras libraries\nThorough knowledge in CNN, VGG, Resnet and InceptionNet backend networks and transfer learning\nExpertise in productionalizing deep neural network based solution using Docker/Kubernetes\nHands On experience in Python, R and equivalent programming languages\nExpertise in building, productionizing and scaling analytics solutions for big data problems\nExperience in building and scaling models for time series (such as sensors etc.) data is a priority\nExperience with SQL and NoSQL databases\nFamiliarity with agile execution of data science projects\nRole – AI Developer\nEmployment Type – Full Time, Permanent\nRole Category – Programming & Design\nEducation\nUG :B.Tech/B.E. in Computers\nPG :MS/M.Sc(Computer Science) in Any Specialization\nApply now\nABOUT NIPSAPP\nNipsApp Game Studios is a full-cycle game development company founded in 2010, based in Trivandrum, India. With expertise in Unity, Unreal Engine, VR, mobile, and blockchain game development, NipsApp serves startups and enterprises across 25+ countries.\n🚀 3,000+ Projects Delivered ⭐ 121 Verified Clutch Reviews 🌍 25+ Countries Served 🎮 Since 2010\nSERVICES\nVR Game Development\nBlockchain Game Development\nMetaverse Game Development\nMobile Game Development\nNFT Game Development\nUnity3D Game Development\nUnreal Game Development\nKids Game Development\nReal Money Ludo Game\nAR Development\nGamification Services\nGAME GRAPHICS DESIGN\n3D Game Design\n3D Automobile Modelling\n2D/3D Concept Art\n2D Game Design\n2D Caricature Design\n3D Animation\n3D Character Design\n2D Character Design\nArchviz Design\nVR/XR SIMULATION\nVR Real Estate\nArchviz VR Simulation\nVR Simulation Games\nTALENT OUTSOURCING\nHire Game Developer\nHire Game Designer\nHire Character Designer\nHire VR Developer\nHire Mobile Game Developer\nHire Metaverse Developer\nHire Unity3D Developer\nHire 3D Modelling Artist\nRESOURCES\nBlog\nWhy NipsApp\nBanking Solutions\nEdutainment Solutions\nHow To Start A Game Studio\nKids Game Development\nEducational Game Dev\nVision Pro Development\nWORK SAMPLES\nVR Games\nMobile Games\n3D Designs and Modelling\nReal Money Ludo Game\nAR Projects\nCONTACT US\nIndia Office:\nViddhya Bhavan, Panniyode Road, Vattappara, Trivandrum, Kerala, India\nEmail: [email protected]\nPhone: +91 62384 72255\n[img: Apple Maps Icon] View on Apple Maps [img: Google Maps Icon] View on Google Maps\nUAE Office:\nOffice No: 102, Near Siemens Building, Masdar Free Zone, Masdar City, Abu Dhabi, UAE\nCOPYRIGHT © 2026 NipsApp Game Studios | Privacy Policy | Terms & Conditions | Refund Policy | Privacy Policy Product\n[img: Facebook] [img: Twitter] [img: LinkedIn] [img: Instagram] [img: YouTube]"
+    }
+   ],
+   "text_chars": 3346,
+   "text_truncated": false,
+   "links": [
+    {
+     "text": "HOME",
+     "url": "https://nipsapp.com/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "GAME DEVELOPMENT SERVICES",
+     "url": "https://nipsapp.com/game-development-company/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "full cycle game development",
+     "url": "https://nipsapp.com/full-cycle-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Mobile Game development",
+     "url": "https://nipsapp.com/mobile-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "VR game development",
+     "url": "https://nipsapp.com/vr-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "unity3d game development",
+     "url": "https://nipsapp.com/unity3d-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "unreal game development",
+     "url": "https://nipsapp.com/unreal-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "pc game development services",
+     "url": "https://nipsapp.com/pc-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "console game development services",
+     "url": "https://nipsapp.com/console-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "multiplayer game development",
+     "url": "https://nipsapp.com/multiplayer-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "blockchain game development",
+     "url": "https://nipsapp.com/blockchain-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Game Genre Development Services",
+     "url": "https://nipsapp.com/game-genre-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "web3 game development company",
+     "url": "https://nipsapp.com/web3-game-development-company/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "locations game development",
+     "url": "https://nipsapp.com/locations-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Web Game Development Company",
+     "url": "https://nipsapp.com/web-game-development-company/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "casino game development",
+     "url": "https://nipsapp.com/casino-game-development-3/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "real money game development",
+     "url": "https://nipsapp.com/real-money-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Resource Augmentation",
+     "url": "https://nipsapp.com/careers-nipsapp/ai-developer/",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire game character designer",
+     "url": "https://nipsapp.com/hire-game-character-designer/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire game designers",
+     "url": "https://nipsapp.com/hire-game-designers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire game developers",
+     "url": "https://nipsapp.com/hire-game-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire metaverse developers",
+     "url": "https://nipsapp.com/hire-metaverse-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire mobile game developer",
+     "url": "https://nipsapp.com/hire-mobile-game-developer/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire unity3d developers",
+     "url": "https://nipsapp.com/hire-unity3d-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "hire vr developers",
+     "url": "https://nipsapp.com/hire-vr-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "METAVERSE DEVELOPMENT",
+     "url": "https://nipsapp.com/metaverse-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "metaverse game development",
+     "url": "https://nipsapp.com/metaverse-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "nft game development",
+     "url": "https://nipsapp.com/nft-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "metaverse school",
+     "url": "https://nipsapp.com/metaverse-school/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "virtual event",
+     "url": "https://nipsapp.com/virtual-event/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "VR SOLUTIONS",
+     "url": "https://nipsapp.com/vr-solutions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Virtual Reality Training",
+     "url": "https://nipsapp.com/virtual-reality-training-development-service/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "VR kiosk",
+     "url": "https://nipsapp.com/vr-kiosk/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "vr walkthrough for real estate",
+     "url": "https://nipsapp.com/vr-walkthroughs-for-real-estate-game-simulations/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "GAME DESIGN SERVICES",
+     "url": "https://nipsapp.com/game-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "2D Caricature Designs",
+     "url": "https://nipsapp.com/2d-caricature-designs/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "2D Character Designing",
+     "url": "https://nipsapp.com/2d-character-designing/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "2d game design services",
+     "url": "https://nipsapp.com/2d-game-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "3d animation service",
+     "url": "https://nipsapp.com/3d-game-animations-rigging/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "3d character design service",
+     "url": "https://nipsapp.com/3d-character-design-service/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "3D Modelling",
+     "url": "https://nipsapp.com/3d-modelling/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "game environment design",
+     "url": "https://nipsapp.com/game-environment-design/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "INDUSTRY SOLUTIONS",
+     "url": "https://nipsapp.com/industry-solutions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "AR development",
+     "url": "https://nipsapp.com/ar-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "3D Configurators in Unreal Engine",
+     "url": "https://nipsapp.com/3d-configurators-in-unreal-engine/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "3d automotive modelling",
+     "url": "https://nipsapp.com/3d-automotive-modelling/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Archviz design services",
+     "url": "https://nipsapp.com/archviz-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "banking solutions",
+     "url": "https://nipsapp.com/banking-solutions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "AI Development",
+     "url": "https://nipsapp.com/ai-project-ideas/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "edutainment solutions",
+     "url": "https://nipsapp.com/edutainment-solutions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "ABOUT",
+     "url": "https://nipsapp.com/about/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "NipsApp’s Game Development Case Studies",
+     "url": "https://nipsapp.com/case-studies/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Blog and Articles",
+     "url": "https://nipsapp.com/blog-and-articles/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "faq",
+     "url": "https://nipsapp.com/faq/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "client list",
+     "url": "https://nipsapp.com/client-list/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "client testimony",
+     "url": "https://nipsapp.com/client-testimony/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "SEO & ASO",
+     "url": "https://nipsapp.com/seo-aso/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Nipin P N",
+     "url": "https://nipsapp.com/about/nipin-p-n/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "Sneha Nair",
+     "url": "https://nipsapp.com/about/sneha-nair/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    },
+    {
+     "text": "CONTACT US",
+     "url": "https://nipsapp.com/hire-us-ar-vr-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Apply now",
+     "url": "https://nipsapp.com/hire-us-ar-vr-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "AI Developer Role – AI Developer Employment Type – Full Time, Permanent Role Category – Programming & Design As an AI software development company, we deliver cutting-edge AI development services. Our expertise ensures i",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "VR Game Development",
+     "url": "https://nipsapp.com/vr-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Blockchain Game Development",
+     "url": "https://nipsapp.com/blockchain-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Metaverse Game Development",
+     "url": "https://nipsapp.com/metaverse-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Mobile Game Development",
+     "url": "https://nipsapp.com/mobile-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "NFT Game Development",
+     "url": "https://nipsapp.com/nft-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Unity3D Game Development",
+     "url": "https://nipsapp.com/unity3d-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Unreal Game Development",
+     "url": "https://nipsapp.com/hire-unreal-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Kids Game Development",
+     "url": "https://nipsapp.com/kids-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Real Money Ludo Game",
+     "url": "https://nipsapp.com/real-money-ludo-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "AR Development",
+     "url": "https://nipsapp.com/ar-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Gamification Services",
+     "url": "https://nipsapp.com/gamification-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "3D Game Design",
+     "url": "https://nipsapp.com/3d-modelling/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "3D Automobile Modelling",
+     "url": "https://nipsapp.com/3d-automobile-modeling/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "2D/3D Concept Art",
+     "url": "https://nipsapp.com/game-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "2D Game Design",
+     "url": "https://nipsapp.com/2d-game-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "2D Caricature Design",
+     "url": "https://nipsapp.com/2d-caricature-designs/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "3D Animation",
+     "url": "https://nipsapp.com/3d-game-animations-rigging/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "3D Character Design",
+     "url": "https://nipsapp.com/3d-character-design-service/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "2D Character Design",
+     "url": "https://nipsapp.com/2d-character-designing/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Archviz Design",
+     "url": "https://nipsapp.com/archviz-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "VR Real Estate",
+     "url": "https://nipsapp.com/vr-walkthrough-vr-app-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Archviz VR Simulation",
+     "url": "https://nipsapp.com/archviz-design-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "VR Simulation Games",
+     "url": "https://nipsapp.com/vr-simulation-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire Game Developer",
+     "url": "https://nipsapp.com/hire-game-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire Game Designer",
+     "url": "https://nipsapp.com/hire-game-designers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire Character Designer",
+     "url": "https://nipsapp.com/hire-game-character-designer/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire VR Developer",
+     "url": "https://nipsapp.com/hire-vr-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire Mobile Game Developer",
+     "url": "https://nipsapp.com/hire-mobile-game-developer/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire Metaverse Developer",
+     "url": "https://nipsapp.com/hire-metaverse-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire Unity3D Developer",
+     "url": "https://nipsapp.com/hire-unity3d-developers/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Hire 3D Modelling Artist",
+     "url": "https://nipsapp.com/3d-modelling/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Blog",
+     "url": "https://nipsapp.com/blog-and-articles/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Why NipsApp",
+     "url": "https://nipsapp.com/why-nipsapp-game-studios/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Banking Solutions",
+     "url": "https://nipsapp.com/banking-solutions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Edutainment Solutions",
+     "url": "https://nipsapp.com/edutainment-solutions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "How To Start A Game Studio",
+     "url": "https://nipsapp.com/how-to-start-a-game-studio/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Educational Game Dev",
+     "url": "https://nipsapp.com/educational-game-development/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Vision Pro Development",
+     "url": "https://nipsapp.com/apple-vision-pro-game-development-services/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "VR Games",
+     "url": "https://nipsapp.com/virtual-reality-game-showcase/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Mobile Games",
+     "url": "https://nipsapp.com/mobile-game-showcase/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "3D Designs and Modelling",
+     "url": "https://nipsapp.com/3d-modelling/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "AR Projects",
+     "url": "https://nipsapp.com/ar-development-showcase/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "[email protected]",
+     "url": "https://nipsapp.com/cdn-cgi/l/email-protection",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "+91 62384 72255",
+     "url": "tel:+916238472255",
+     "class": "tel",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "View on Apple Maps",
+     "url": "https://maps.apple.com/place?place-id=ID69653D32728AB20&address=Panniyode+Road%2C+Nedumangad%2C+Vattappara%2C+695028%2C+Kerala%2C+India&coordinate=8.5914983%2C76.9480629&name=NipsApp+Game+Studios&_provider=9902",
+     "class": "external",
+     "rel": "noopener",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "View on Google Maps",
+     "url": "https://maps.app.goo.gl/onTnYJRjAsWLygfT9",
+     "class": "external",
+     "rel": "noopener",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Privacy Policy",
+     "url": "https://nipsapp.com/privacy-policy/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Terms & Conditions",
+     "url": "https://nipsapp.com/terms-conditions/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Refund Policy",
+     "url": "https://nipsapp.com/refund-policy/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Privacy Policy Product",
+     "url": "https://nipsapp.com/privacy-policy-product/",
+     "class": "internal",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "[img: Facebook]",
+     "url": "https://www.facebook.com/nipsapp/",
+     "class": "social",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "[img: Twitter]",
+     "url": "https://x.com/nipsapp",
+     "class": "social",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "[img: LinkedIn]",
+     "url": "https://www.linkedin.com/company/27761010/",
+     "class": "social",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "[img: Instagram]",
+     "url": "https://www.instagram.com/nipsapp/",
+     "class": "social",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "[img: YouTube]",
+     "url": "https://www.youtube.com/c/NIPINPN/",
+     "class": "social",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": true
+    },
+    {
+     "text": "Never see this message again.",
+     "url": "https://nipsapp.com/careers-nipsapp/ai-developer/",
+     "class": "anchor",
+     "rel": "",
+     "context": "",
+     "source": "page",
+     "visible": false
+    }
+   ],
+   "frames": [],
+   "network": [],
+   "jobs": {
+    "links": [],
+    "network": [],
+    "jsonld": [],
+    "embedded": [],
+    "counts": {
+     "links": 0,
+     "network": 0,
+     "jsonld": 0,
+     "embedded": 0
+    },
+    "best": 0,
+    "capped": false,
+    "declared": {
+     "value": null,
+     "confidence": null,
+     "candidates": []
+    }
+   },
+   "popups": {
+    "dismissed": [],
+    "obstructions": []
+   },
+   "expansion": {
+    "scrolls": 0,
+    "expansions": 0,
+    "clicks": [],
+    "stop_reason": ""
+   },
+   "counts": {
+    "links_total": 117,
+    "frames_total": 0,
+    "frames_read": 0,
+    "requests": 28,
+    "blocked_requests": {
+     "type:font": 10,
+     "ads_trackers": 1
+    },
+    "json_responses": 0
+   },
+   "screenshot": null,
+   "pdf": null,
+   "probe": null,
+   "children": []
+  }
+ ]
+}
