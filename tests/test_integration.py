@@ -255,3 +255,21 @@ def test_browser_launches_with_default_settings():
             await browser.close()
             return label
     assert asyncio.run(go())
+
+
+def test_pagination_limit_is_reported_and_site_hint_is_in_index(base_url, tmp_path):
+    settings = make_settings(run={"max_pagination_pages": 0})
+    summary = asyncio.run(run_urls([InputItem(base_url + "/listing")], settings, tmp_path, "ru", log=lambda m: None))
+    top = summary.results[0]
+    assert any(h["limit"] == "max_pagination_pages" for h in top.limits_hit) and top.status == "partial"
+    index = (summary.run_dir / "index.md").read_text(encoding="utf-8")
+    assert "site_overrides" in index and "max_pagination_pages" in index
+
+
+def test_site_override_raises_limit_for_that_site_only(base_url, tmp_path):
+    settings = make_settings(run={"max_pagination_pages": 0},
+                             site_overrides={"127.0.0.1": {"run": {"max_pagination_pages": 3}}})
+    summary = asyncio.run(run_urls([InputItem(base_url + "/listing")], settings, tmp_path, "ru", log=lambda m: None))
+    top = summary.results[0]
+    assert any(c.relation == "pagination" for c in top.children)
+    assert not any(h["limit"] == "max_pagination_pages" for h in top.limits_hit)

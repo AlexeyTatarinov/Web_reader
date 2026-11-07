@@ -61,6 +61,7 @@ class PageResult:
     error: str | None = None
     skip_reason: str | None = None
     limits_hit: list[dict[str, Any]] = field(default_factory=list)
+    site_label: str | None = None
     warnings: list[dict[str, Any]] = field(default_factory=list)
     notes: list[dict[str, Any]] = field(default_factory=list)
     sections: list[dict[str, Any]] = field(default_factory=list)

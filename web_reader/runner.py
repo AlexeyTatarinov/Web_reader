@@ -149,6 +149,14 @@ class Runner:
                 break
             current = child
             await asyncio.sleep(self.settings.run.delay_between_pages_s)
+        if len(chain) >= run.max_pagination_pages:
+            nxt = next((l for l in current.links if l["class"] == "pagination"), None)
+            nkey = url_key(nxt["url"]) if nxt else None
+            if nxt and not (nkey and nkey in self.rc.visited):
+                if not any(h["limit"] == "max_pagination_pages" for h in res.limits_hit):
+                    res.limits_hit.append({"limit": "max_pagination_pages", "value": run.max_pagination_pages})
+                if res.status == "ok":
+                    res.status = "partial"
         apply_chain_totals(res, chain)
         return chain
 
@@ -307,8 +315,12 @@ async def run_urls(items: list[InputItem], settings: Any, out_dir: Path, lang: s
             runner = Runner(rc, log)
             for index, item in enumerate(items, start=1):
                 log(t(lang, "reading", url=item.url))
-                budget.start_item(run.max_pages_per_start)
+                site = settings.for_url(item.url)
+                rc.settings = runner.settings = site
+                budget.start_item(site.run.max_pages_per_start)
                 res = await runner.process(item)
+                res.site_label = site.site_label
+                _mark_limits_for_index(res, site)
                 summary.results.append(res)
                 summary.stems.append(write_group(run_dir, index, res, settings, lang))  # сразу на диск
                 write_index(run_dir, _partial(summary, budget), settings, lang)
@@ -323,6 +335,21 @@ async def run_urls(items: list[InputItem], settings: Any, out_dir: Path, lang: s
     prune_runs(Path(out_dir), settings.output.keep_runs)
     log(t(lang, "run_done", path=str(run_dir / "index.md")))
     return summary
+
+
+def _mark_limits_for_index(res: PageResult, site: Any) -> None:
+    """Записывает на стартовую страницу пределы запуска, которые оборвали чтение сайта (для раздела отчёта «упёрлись в лимит»)."""
+    kids = []
+    stack = list(res.children)
+    while stack:
+        c = stack.pop()
+        kids.append(c)
+        stack.extend(c.children)
+    if any(k.skip_reason == "item_page_budget" for k in kids):
+        if not any(h["limit"] == "max_pages_per_start" for h in res.limits_hit):
+            res.limits_hit.append({"limit": "max_pages_per_start", "value": site.run.max_pages_per_start})
+        if res.status == "ok":
+            res.status = "partial"
 
 
 def _partial(summary: RunSummary, budget: RunBudget) -> RunSummary:

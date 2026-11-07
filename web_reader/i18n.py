@@ -47,6 +47,8 @@ _TEXTS: dict[str, tuple[str, str, str]] = {
     "s_text": ("Текст страницы", "Page text", "Текст сторінки"),
     "s_links": ("Ссылки", "Links", "Посилання"),
     "s_children": ("Страницы, открытые по ссылкам", "Pages opened via links", "Сторінки, відкриті за посиланнями"),
+    "s_limit_sites": ("Сайты, где не хватило лимита (можно поднять для конкретного сайта)", "Sites that ran out of limit (can be raised per site)", "Сайти, де не вистачило ліміту (можна підняти для окремого сайту)"),
+    "limit_site_hint": ("чтобы поднять, добавьте в config/settings.json раздел site_overrides", "to raise it, add a site_overrides section to config/settings.json", "щоб підняти, додайте до config/settings.json розділ site_overrides"),
     "s_unread": ("Непрочитанное и прочитанное не полностью", "Unread and partially read", "Непрочитане та прочитане не повністю"),
     "s_all": ("Все адреса", "All addresses", "Усі адреси"),
     "s_not_processed": ("Не обработано", "Not processed", "Не оброблено"),
@@ -81,6 +83,8 @@ _TEXTS: dict[str, tuple[str, str, str]] = {
     # --- названия лимитов ---
     "lim_timeout": ("время на страницу", "page time limit", "час на сторінку"),
     "lim_hard_timeout": ("принудительная остановка по времени", "hard time stop", "примусова зупинка за часом"),
+    "lim_max_pagination_pages": ("число страниц списка (пагинация)", "list pages limit (pagination)", "кількість сторінок списку (пагінація)"),
+    "lim_max_pages_per_start": ("число страниц на один стартовый адрес", "pages per start address", "кількість сторінок на одну стартову адресу"),
     "lim_max_scrolls": ("число прокруток", "scroll limit", "кількість прокруток"),
     "lim_max_expansions": ("число раскрытий", "expansion limit", "кількість розкриттів"),
     "lim_max_jobs_per_page": ("число вакансий на страницу", "vacancies per page", "кількість вакансій на сторінку"),

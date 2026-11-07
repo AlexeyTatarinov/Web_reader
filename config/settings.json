@@ -49,5 +49,6 @@
   },
   "preflight": {
     "probe_url": "https://example.com"
-  }
+  },
+  "site_overrides": {}
 }

@@ -151,9 +151,17 @@ class Section:
         return copy.deepcopy(self._data)
 
 
+# Что можно менять для отдельного сайта (остальные пределы общие и поднимаются только в основных настройках).
+SITE_OVERRIDE_KEYS = {
+    "run": {"max_pagination_pages", "max_pages_per_start", "max_followed_per_page"},
+    "limits": {"max_scrolls", "max_expansions", "max_jobs_per_page", "page_timeout_s"},
+}
+
+
 class Settings:
     def __init__(self, data: dict[str, Any], warnings: list[str]):
         self._data = data
+        self.site_overrides: dict[str, dict[str, Any]] = data.get("site_overrides", {})
         self.warnings = warnings
         self.language: str = data["language"]
         self.authorship_mark: str = data["authorship_mark"]
@@ -166,6 +174,26 @@ class Settings:
 
     def as_dict(self) -> dict[str, Any]:
         return copy.deepcopy(self._data)
+
+    def for_url(self, url: str) -> "Settings":
+        """Настройки для конкретного сайта: общие значения плюс поднятые пределы из site_overrides."""
+        from urllib.parse import urlsplit
+        host = (urlsplit(url).hostname or "").lower().rstrip(".")
+        best = None
+        for domain in self.site_overrides:
+            if host == domain or host.endswith("." + domain):
+                if best is None or len(domain) > len(best):
+                    best = domain
+        if best is None:
+            return self
+        data = copy.deepcopy(self._data)
+        for section, values in self.site_overrides[best].items():
+            data[section].update(values)
+        derived = Settings(data, self.warnings)
+        derived.site_label = best
+        return derived
+
+    site_label: str | None = None
 
 
 def _merge(defaults: dict[str, Any], user: dict[str, Any], path: str,
@@ -235,7 +263,9 @@ def load_settings(path: str | Path | None = None, overrides: dict[str, Any] | No
             warnings.append(f"файл настроек {file} не найден, использованы значения по умолчанию")
     if overrides:
         user = _deep_update(user, overrides)
+    site_raw = user.pop("site_overrides", {}) if isinstance(user, dict) else {}
     data = _merge(DEFAULTS, user, "", warnings)
+    data["site_overrides"] = _parse_site_overrides(site_raw, data, warnings)
 
     if data["language"] not in SUPPORTED_LANGUAGES:
         warnings.append(f"язык «{data['language']}» не поддерживается, взят ru")
@@ -244,6 +274,40 @@ def load_settings(path: str | Path | None = None, overrides: dict[str, Any] | No
         warnings.append("output.screenshots должен быть never, on_problem или always; взят on_problem")
         data["output"]["screenshots"] = "on_problem"
     return Settings(data, warnings)
+
+
+def _parse_site_overrides(raw: Any, data: dict[str, Any], warnings: list[str]) -> dict[str, dict[str, Any]]:
+    """site_overrides: {"домен": {"run": {...}, "limits": {...}}}. Значения проверяются так же, как основные (потолки действуют)."""
+    result: dict[str, dict[str, Any]] = {}
+    if not raw:
+        return result
+    if not isinstance(raw, dict):
+        warnings.append("«site_overrides» должен быть объектом, проигнорирован")
+        return result
+    for domain, entry in raw.items():
+        label = f"site_overrides.{domain}"
+        if not isinstance(entry, dict):
+            warnings.append(f"«{label}» должен быть объектом, проигнорирован")
+            continue
+        clean: dict[str, Any] = {}
+        for section, values in entry.items():
+            allowed = SITE_OVERRIDE_KEYS.get(section)
+            if allowed is None or not isinstance(values, dict):
+                warnings.append(f"«{label}.{section}» не поддерживается, проигнорирован")
+                continue
+            ok_values = {}
+            for key, value in values.items():
+                if key not in allowed:
+                    warnings.append(f"«{label}.{section}.{key}» нельзя менять для отдельного сайта, проигнорирован")
+                    continue
+                ok_values[key] = value
+            local: list[str] = []
+            merged = _merge({section: data[section]}, {section: ok_values}, "", local)[section]   # путь без префикса: так находятся потолки
+            warnings.extend(f"{label}: {w}" for w in local)
+            clean[section] = {k: merged[k] for k in ok_values}
+        if clean:
+            result[domain.lower().strip()] = clean
+    return result
 
 
 def _deep_update(base: dict[str, Any], extra: dict[str, Any]) -> dict[str, Any]:

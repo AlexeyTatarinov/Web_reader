@@ -233,3 +233,20 @@ def test_wordpress_jobs_are_found_and_taxonomy_terms_are_not():
     assert extract_job_items(terms)[1] == 0
     items, total = extract_job_items(talent)
     assert total == 3 and items[0]["title"] == "QA Tester – Remote"
+
+
+def test_site_overrides_apply_only_to_matching_domain_and_respect_rules():
+    from web_reader.settings import load_settings
+    s = load_settings(None, {"site_overrides": {
+        "careers.playstation.com": {"run": {"max_pagination_pages": 12, "max_run_seconds": 99999}},
+        "bad.example": {"limits": {"max_text_chars": 5}},
+    }})
+    assert s.run.max_pagination_pages == 5
+    ps = s.for_url("https://careers.playstation.com/jobs")
+    assert ps.run.max_pagination_pages == 12 and ps.site_label == "careers.playstation.com"
+    assert ps.run.max_run_seconds == s.run.max_run_seconds          # на весь запуск для сайта менять нельзя
+    assert s.for_url("https://other.com/").run.max_pagination_pages == 5
+    assert s.for_url("https://x.com/") is s
+    assert any("max_run_seconds" in w for w in s.warnings) and any("max_text_chars" in w for w in s.warnings)
+    ceil = load_settings(None, {"site_overrides": {"a.com": {"run": {"max_pagination_pages": 10_000}}}})
+    assert ceil.for_url("https://a.com/").run.max_pagination_pages == 20       # потолок действует

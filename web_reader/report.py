@@ -244,6 +244,36 @@ def _total_jobs(res: PageResult) -> int:
     return sum(p.jobs.get("best", 0) for p in [res] + [c for c in res.children if c.relation == "pagination"] if p.jobs)
 
 
+_SITE_LIMIT_SECTION = {
+    "max_pagination_pages": "run", "max_pages_per_start": "run",
+    "max_scrolls": "limits", "max_expansions": "limits", "max_jobs_per_page": "limits",
+}
+
+
+def _limit_sites_section(summary: Any, lang: str) -> list[str]:
+    """Сайты, у которых сработал лимит, который можно поднять отдельно для сайта, с готовой строкой настройки."""
+    from urllib.parse import urlsplit
+    rows: list[str] = []
+    for top in summary.results:
+        hits = {}
+        for res in _walk(top):
+            for h in res.limits_hit:
+                if h["limit"] in _SITE_LIMIT_SECTION and isinstance(h.get("value"), (int, float)):
+                    hits[h["limit"]] = max(hits.get(h["limit"], 0), h["value"])
+        if not hits:
+            continue
+        host = (urlsplit(top.url).hostname or top.url)
+        parts: dict[str, dict[str, int]] = {}
+        for name, value in hits.items():
+            parts.setdefault(_SITE_LIMIT_SECTION[name], {})[name] = int(value)
+        rows.append(f"- {host}: " + "; ".join(_fmt_limit(lang, {"limit": n, "value": v}) for n, v in hits.items()))
+        snippet = json.dumps({host: parts}, ensure_ascii=False)
+        rows.append(f"  `\"site_overrides\": {snippet}`  ({t(lang, 'limit_site_hint')})")
+    if not rows:
+        return []
+    return [f"## {t(lang, 's_limit_sites')}\n", *rows, ""]
+
+
 def render_index_md(summary: Any, settings: Any, lang: str) -> str:
     out: list[str] = [f"# {t(lang, 'report_title')} {summary.run_id}\n"]
     out.append(f"- web_reader {__version__} · browser: {summary.browser_label}")
@@ -270,6 +300,8 @@ def render_index_md(summary: Any, settings: Any, lang: str) -> str:
     out.append(f"## {t(lang, 's_unread')}\n")
     out.extend(attention or [t(lang, "none")])
     out.append("")
+
+    out.extend(_limit_sites_section(summary, lang))
 
     out.append(f"## {t(lang, 's_all')}\n")
     out.append(f"| {t(lang, 'f_url')} | {t(lang, 'col_status')} | {t(lang, 'f_kind')} | {t(lang, 's_jobs')} | {t(lang, 'col_children')} | file |\n|---|---|---|---|---|---|")
