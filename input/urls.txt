@@ -2,6 +2,4 @@
 # После адреса можно написать пометку (через пробел или « | »). Строки с # игнорируются.
 # Пример:
 # https://example.com/careers | карьерная страница компании
-https://careers.playstation.com/jobs | PlayStation: поиск на JS, 395 вакансий, без фильтра
-https://room8group.com/join-the-team/#/?tcoop=full-time | Room 8: заявлено 19 позиций, вакансии не видны
-https://varjo.com/jobs | Varjo: страница не открывалась через scrape.do
+https://nipsapp.com/careers-nipsapp/ | NipsApp: карточки вакансий с кнопкой More Details
