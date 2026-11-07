@@ -221,14 +221,14 @@ FIND_JS = r"""
       const meta = (el.id || '') + ' ' + (typeof el.className === 'string' ? el.className : '') + ' ' + (el.getAttribute('aria-controls') || '');
       if (/menu|hamburger|navbar|cookie|consent|language|locale|search|filter-reset/i.test(meta)) continue;
       if (skip.test(text)) continue;
-    } else if (arg.kind === 'reject') {
+    } else if (arg.kind === 'reject' || arg.kind === 'settings' || arg.kind === 'save') {
       if (!text || text.length > 60 || !re.test(text) || realLink) continue;
       if (!el.closest(BANNER)) continue;
     } else if (arg.kind === 'close') {
       const aria = (el.getAttribute('aria-label') || '') + ' ' + (el.getAttribute('data-dismiss') || '') + ' ' + (el.getAttribute('data-bs-dismiss') || '');
       if (!(re.test(text) || re.test(aria))) continue;
       if (realLink) continue;
-      const box = el.closest(MODAL);
+      const box = el.closest(MODAL) || el.closest(BANNER);
       if (!box) continue;
       const pos = getComputedStyle(box).position;
       const modalLike = box.matches('[role="dialog"], [aria-modal="true"]') || pos === 'fixed' || pos === 'sticky' || pos === 'absolute';
@@ -240,6 +240,45 @@ FIND_JS = r"""
     el.setAttribute('data-wr-id', id);
     out.push({id: id, text: text.slice(0, 80), tag: tag, role: role, sig: tag + '|' + text.slice(0, 40) + '|' + path(el)});
   }
+  return out;
+}
+"""
+
+# Выключает необязательные переключатели в панели настроек cookie (обязательные неактивны и не трогаются).
+UNCHECK_OPTIONAL_JS = r"""
+() => {
+  const BANNER = '[role="dialog"], [aria-modal="true"], [id*="cookie" i], [class*="cookie" i], [id*="consent" i], [class*="consent" i], [id*="cmp" i], [class*="cmp" i], [id*="onetrust" i], [id*="gdpr" i], [class*="gdpr" i], [class*="privacy" i], [id*="privacy" i]';
+  let n = 0, total = 0;
+  const visit = (root) => root.querySelectorAll('input[type="checkbox"], [role="switch"], [role="checkbox"]').forEach(el => {
+    if (!el.closest(BANNER) || el.disabled || el.getAttribute('aria-disabled') === 'true') return;
+    total += 1;
+    const on = el.checked === true || el.getAttribute('aria-checked') === 'true';
+    if (on) { el.click(); n += 1; }
+  });
+  visit(document);
+  document.querySelectorAll('*').forEach(el => { if (el.shadowRoot) visit(el.shadowRoot); });
+  return [n, total];
+}
+"""
+
+# Последнее средство для баннера cookie без отказа: скрыть его на странице. Согласие при этом не даётся.
+HIDE_COOKIE_BANNER_JS = r"""
+(hide) => {
+  const out = [];
+  const vw = window.innerWidth, vh = window.innerHeight;
+  document.querySelectorAll('*').forEach(el => {
+    const cs = getComputedStyle(el);
+    if (cs.display === 'none' || cs.visibility === 'hidden') return;
+    const isDialog = el.matches('[role="dialog"], [aria-modal="true"], dialog[open]');
+    const fixed = cs.position === 'fixed' || cs.position === 'sticky';
+    if (!isDialog && !fixed) return;
+    const t = (el.innerText || '').replace(/\s+/g, ' ').trim();
+    if (t.length < 20 || t.length > 1500 || !/cookie|consent|gdpr|куки|кукі|cookies/i.test(t)) return;
+    const r = el.getBoundingClientRect();
+    if (r.width < 200 || r.height < 40 || r.width * r.height > vw * vh * 0.98) return;
+    if (hide) el.style.setProperty('display', 'none', 'important');
+    out.push(t.slice(0, 80));
+  });
   return out;
 }
 """
@@ -290,7 +329,11 @@ REJECT_RE = (
     r"ablehnen|alle ablehnen|nur notwendige|nur erforderliche|"
     r"rifiuta( tutto| tutti)?|solo necessari|rejeitar( tudo| todos)?|recusar|apenas necess\w+|"
     r"odmítnout|відхилити( все| всі)?|відмовитися|тільки необхідні|"
-    r"отклонить( все)?|отказаться|только необходимые)$"
+    r"отклонить( все)?|отказаться|только необходимые|"
+    r"(use |allow |accept )?(strictly |only )?(necessary|essential|required) cookies( only)?|"
+    r"i do not accept|do not accept|continue with(out)? (necessary|essential)( cookies)?( only)?|"
+    r"deny cookies|no cookies|reject non-?essential( cookies)?|decline non-?essential( cookies)?|"
+    r"rechazar (las )?no esenciales|refuser les cookies non essentiels)$"
 )
 
 CLOSE_RE = (
@@ -309,6 +352,20 @@ SKIP_RE = (
     r"löschen|abmelden|anmelden|senden|kaufen|bewerben|"
     r"удалить|выйти|войти|отправить|купить|оплатить|подписаться|откликнуться|сохранить|принять|"
     r"видалити|вийти|увійти|надіслати|купити|сплатити|підписатися|відгукнутися|зберегти|прийняти"
+)
+
+# Баннер без кнопки отказа: открываем «Настройки cookie», выключаем необязательное и сохраняем выбор.
+SETTINGS_RE = (
+    r"^(cookie settings|cookies settings|cookie preferences|manage( cookies| preferences| settings| options)?|customi[sz]e( cookies| settings)?|"
+    r"preferences|settings|more options|configure|"
+    r"configurar( cookies)?|gestionar( cookies| preferencias)?|personalizar|paramétrer|gérer( les cookies)?|personnalisation|"
+    r"einstellungen|cookie-einstellungen|anpassen|налаштування( cookie)?|налаштувати|управління|настройки( cookie)?|настроить)$"
+)
+SAVE_RE = (
+    r"^(save( my)?( preferences| settings| choices| selection)?|confirm( my)?( choices| selection| preferences)?|save and close|"
+    r"allow selection|apply|done|"
+    r"guardar( preferencias| configuración| selección)?|confirmar( selección| mi selección)?|enregistrer( mes choix)?|valider( mes choix)?|"
+    r"speichern|auswahl (speichern|bestätigen)|зберегти( вибір)?|підтвердити( вибір)?|сохранить( выбор)?|подтвердить( выбор)?)$"
 )
 
 KNOWN_REJECT_SELECTORS = [

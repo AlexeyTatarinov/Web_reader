@@ -96,6 +96,21 @@ def test_cookie_banner_is_rejected_never_accepted(base_url):
     assert "We use cookies" not in text_of(res)
 
 
+def test_cookie_banner_without_reject_goes_through_settings_and_switches_optional_off(base_url):
+    res = read_one(base_url + "/cookie_settings")
+    text = text_of(res)
+    assert "SAVED an=false mk=false" in text, text[-300:]
+    assert "ACCEPTED" not in text
+    assert not res.popups["obstructions"]
+
+
+def test_cookie_banner_with_only_accept_is_hidden_never_accepted(base_url):
+    res = read_one(base_url + "/cookie_no_way_out")
+    assert "ACCEPTED" not in text_of(res)
+    assert any(d.startswith("cookie-hidden") for d in res.popups["dismissed"])
+    assert not res.popups["obstructions"]
+
+
 def test_modal_popup_is_closed(base_url):
     res = read_one(base_url + "/popup")
     assert any(d.startswith("popup") for d in res.popups["dismissed"])

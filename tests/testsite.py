@@ -85,6 +85,22 @@ PAGES["/cookie"] = page(
     "We use cookies. <button onclick=\"document.getElementById('state').textContent='ACCEPTED';this.parentNode.remove()\">Accept all</button> "
     "<button onclick=\"this.parentNode.remove()\">Reject all</button></div>")
 
+PAGES["/cookie_settings"] = page(
+    "<h1>Cookie settings site</h1>" + FILLER + "<p id='state'>not accepted</p>"
+    "<div id='cookie-banner' class='cookie-consent' role='dialog' style='position:fixed;bottom:0;left:0;right:0;background:#eee;padding:20px;z-index:1000'>"
+    "<p>This website uses cookies</p>"
+    "<div id='main'><button onclick=\"document.getElementById('state').textContent='ACCEPTED';this.closest('#cookie-banner').remove()\">Allow all</button> "
+    "<button onclick=\"document.getElementById('main').hidden=true;document.getElementById('panel').hidden=false\">Cookie settings</button></div>"
+    "<div id='panel' hidden><label><input type='checkbox' checked disabled> Necessary</label> "
+    "<label><input id='an' type='checkbox' checked> Analytics</label> <label><input id='mk' type='checkbox' checked> Marketing</label> "
+    "<button onclick=\"document.getElementById('state').textContent='SAVED an='+document.getElementById('an').checked+' mk='+document.getElementById('mk').checked;this.closest('#cookie-banner').remove()\">Save</button></div></div>")
+
+PAGES["/cookie_no_way_out"] = page(
+    "<h1>Cookie trap site</h1>" + FILLER + "<p id='state'>not accepted</p>"
+    "<div class='cookie-consent' style='position:fixed;bottom:0;left:0;right:0;background:#eee;padding:20px;z-index:1000'>"
+    "<p>This website uses cookies to personalise content and ads</p>"
+    "<button onclick=\"document.getElementById('state').textContent='ACCEPTED'\">Allow all</button></div>")
+
 PAGES["/popup"] = page(
     "<h1>Popup site</h1>" + FILLER +
     "<div class='modal' role='dialog' style='position:fixed;top:10%;left:15%;width:70%;height:70%;z-index:2000;background:white;border:1px solid #000'>"
