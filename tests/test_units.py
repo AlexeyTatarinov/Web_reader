@@ -25,7 +25,7 @@ def test_defaults_match_agreed_limits():
     assert s.limits.max_scrolls == 15
     assert s.limits.max_expansions == 25
     assert s.limits.max_jobs_per_page == 100
-    assert s.language == "ru"
+    assert s.language == "en"
 
 
 def test_ceilings_and_bad_values_are_clamped_with_warnings():
@@ -38,7 +38,7 @@ def test_ceilings_and_bad_values_are_clamped_with_warnings():
 
 
 def test_unknown_language_falls_back():
-    assert settings(language="xx").language == "ru"
+    assert settings(language="xx").language == "en"
 
 
 # ---------------- безопасность адресов

@@ -15,7 +15,7 @@ from typing import Any
 SUPPORTED_LANGUAGES = ("ru", "en", "uk")
 
 DEFAULTS: dict[str, Any] = {
-    "language": "ru",
+    "language": "en",
     # Метка авторства; выводится в подвале отчётов, если не пустая.
     "authorship_mark": "",
     "limits": {
@@ -280,7 +280,7 @@ def load_settings(path: str | Path | None = None, overrides: dict[str, Any] | No
 
     if data["language"] not in SUPPORTED_LANGUAGES:
         warnings.append(f"язык «{data['language']}» не поддерживается, взят ru")
-        data["language"] = "ru"
+        data["language"] = "en"
     if data["output"]["screenshots"] not in SCREENSHOT_MODES:
         warnings.append("output.screenshots должен быть never, on_problem или always; взят on_problem")
         data["output"]["screenshots"] = "on_problem"
