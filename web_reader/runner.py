@@ -307,6 +307,7 @@ async def run_urls(items: list[InputItem], settings: Any, out_dir: Path, lang: s
             runner = Runner(rc, log)
             for index, item in enumerate(items, start=1):
                 log(t(lang, "reading", url=item.url))
+                budget.start_item(run.max_pages_per_start)
                 res = await runner.process(item)
                 summary.results.append(res)
                 summary.stems.append(write_group(run_dir, index, res, settings, lang))  # сразу на диск

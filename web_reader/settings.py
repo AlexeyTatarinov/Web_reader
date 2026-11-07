@@ -36,6 +36,7 @@ DEFAULTS: dict[str, Any] = {
     },
     "run": {
         "max_pages_per_run": 40,
+        "max_pages_per_start": 15,
         "max_run_seconds": 900,
         "max_depth": 1,                # 0 = только указанные адреса
         "max_followed_per_page": 15,
@@ -104,6 +105,7 @@ CEILINGS: dict[str, float] = {
     "limits.max_pdf_bytes": 50_000_000,
     "limits.max_pdf_pages": 200,
     "run.max_pages_per_run": 300,
+    "run.max_pages_per_start": 100,
     "run.max_run_seconds": 7200,
     "run.max_depth": 3,
     "run.max_followed_per_page": 50,

@@ -42,7 +42,9 @@ def normalize_url(url: str, base: str | None = None) -> str | None:
         (k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True)
         if not (k.lower().startswith("utm_") or k.lower() in TRACKING_PARAMS)
     ]
-    return urlunsplit((scheme, netloc, parts.path or "/", urlencode(query), ""))
+    # Фрагмент вида «#/…» или «#!…» это маршрут одностраничного сайта: без него откроется другая страница.
+    fragment = parts.fragment if parts.fragment.startswith(("/", "!")) else ""
+    return urlunsplit((scheme, netloc, parts.path or "/", urlencode(query), fragment))
 
 
 def url_key(url: str) -> str | None:
@@ -52,7 +54,7 @@ def url_key(url: str) -> str | None:
         return None
     parts = urlsplit(norm)
     path = parts.path.rstrip("/") or "/"
-    return urlunsplit((parts.scheme, parts.netloc, path, parts.query, ""))
+    return urlunsplit((parts.scheme, parts.netloc, path, parts.query, parts.fragment))
 
 
 def host_matches(host: str, domains: list[str] | tuple[str, ...]) -> bool:

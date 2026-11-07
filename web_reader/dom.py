@@ -301,6 +301,7 @@ CLOSE_RE = (
 
 # Нажимать эти кнопки программа не станет никогда: они меняют данные, а не раскрывают их.
 SKIP_RE = (
+    r"assistant|chatbot|chat with|live chat|ai recruit|virtual agent|ask me|"
     r"delete|remove|logout|log out|sign out|sign in|log in|login|sign up|register|submit|send|buy|pay|checkout|"
     r"subscribe|unsubscribe|apply|save|donate|accept|agree|confirm|upload|download|share|print|reset|clear|cancel|"
     r"eliminar|borrar|cerrar sesión|iniciar sesión|enviar|comprar|pagar|suscri|solicitar|aplicar|guardar|"

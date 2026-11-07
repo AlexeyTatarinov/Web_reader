@@ -30,6 +30,11 @@ class RunBudget:
         self.deadline = Deadline(max_seconds)
         self.max_probes = max_probes
         self.probes_used = 0
+        self.item_limit: int | None = None     # потолок pages_used для текущего стартового адреса
+
+    def start_item(self, per_item: int) -> None:
+        """Один стартовый адрес не может съесть весь бюджет запуска: ему выделяется своя доля."""
+        self.item_limit = self.pages_used + max(1, per_item)
 
     def pages_left(self) -> int:
         return max(0, self.max_pages - self.pages_used)
@@ -39,6 +44,8 @@ class RunBudget:
             return False, "run_time_budget"
         if self.pages_used >= self.max_pages:
             return False, "run_page_budget"
+        if self.item_limit is not None and self.pages_used >= self.item_limit:
+            return False, "item_page_budget"
         return True, "ok"
 
     def use_page(self) -> None:

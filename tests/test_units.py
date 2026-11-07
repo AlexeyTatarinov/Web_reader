@@ -195,3 +195,29 @@ def test_make_pdf_is_readable():
     from pypdf import PdfReader
     text = PdfReader(io.BytesIO(make_pdf("Hello QA"))).pages[0].extract_text()
     assert "Hello QA" in text
+
+
+# ---------------- уроки первого запуска на настоящих сайтах
+
+def test_hash_route_fragment_is_kept_but_plain_anchor_is_dropped():
+    from web_reader.safety import normalize_url
+    assert normalize_url("https://x.com/join/#/?tcoop=full-time").endswith("#/?tcoop=full-time")
+    assert normalize_url("https://x.com/page#section-2") == "https://x.com/page"
+
+
+def test_one_start_address_cannot_eat_the_whole_run_budget():
+    from web_reader.budget import RunBudget
+    b = RunBudget(40, 900, 10)
+    b.start_item(15)
+    for _ in range(15):
+        assert b.can_read_page()[0]
+        b.use_page()
+    assert b.can_read_page() == (False, "item_page_budget")
+    b.start_item(15)                       # следующий адрес получает свою долю
+    assert b.can_read_page()[0]
+
+
+def test_chat_assistant_buttons_are_never_clicked():
+    import re
+    from web_reader.dom import SKIP_RE
+    assert re.search(SKIP_RE, "Open Ichi's AI Recruiting Assistant", re.I)

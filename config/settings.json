@@ -19,6 +19,7 @@
   },
   "run": {
     "max_pages_per_run": 40,
+    "max_pages_per_start": 15,
     "max_run_seconds": 900,
     "max_depth": 1,
     "max_followed_per_page": 15,
