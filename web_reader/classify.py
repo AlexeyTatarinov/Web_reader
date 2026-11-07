@@ -13,7 +13,9 @@ JOB_PATH_HINTS = (
     "/oferta", "/empleo", "/emploi", "/offre", "/stelle", "/karriere", "/vaga",
     "/vakans", "/vacante", "/trabajo", "/o/", "/j/",
 )
-JOB_QUERY_KEYS = {"gh_jid", "jobid", "job_id", "jid", "requisitionid", "reqid", "posting", "jobreqid"}
+JOB_QUERY_KEYS = {"gh_jid", "jobid", "job_id", "jid", "requisitionid", "reqid", "posting", "jobreqid", "jobopeningid",
+                  "jobdescriptionid", "vacancyid", "vacancy_id", "positionid", "position_id", "openingid", "opening_id",
+                  "jobpostingid", "postingid", "jobref", "jobcode"}
 
 SOCIAL_DOMAINS = (
     "linkedin.com", "facebook.com", "fb.com", "twitter.com", "x.com", "instagram.com",

@@ -98,6 +98,20 @@ LINKS_JS = r"""
     }
     return '';
   };
+  // Название карточки без тегов заголовка: первая строка текста ближайшего блока с 1-3 ссылками («Art Manager / Bangalore / Apply Now»).
+  const cardTitleOf = (el) => {
+    const own = ((el.innerText || '') + '').replace(/\s+/g, ' ').trim().toLowerCase();
+    let e = el.parentElement;
+    for (let i = 0; i < 5 && e && e.nodeType === 1; i++, e = e.parentElement) {
+      if (e.querySelectorAll('a[href]').length > 3) return '';
+      const lines = ((e.innerText || '') + '').split(/\n+/).map(x => x.replace(/\s+/g, ' ').trim()).filter(Boolean);
+      if (lines.length < 2) continue;
+      const first = lines[0];
+      if (first.length >= 3 && first.length <= 120 && first.toLowerCase() !== own) return first;
+      return '';
+    }
+    return '';
+  };
   const visible = (el) => { const cs = getComputedStyle(el); if (cs.display === 'none' || cs.visibility === 'hidden') return false; const r = el.getBoundingClientRect(); return r.width > 0 || r.height > 0; };
   for (const el of all) {
     let href = null, kind = null;
@@ -120,7 +134,7 @@ LINKS_JS = r"""
     if (seen.has(key)) continue;
     seen.add(key);
     out.push({href: full, text: text, kind: kind, rel: el.getAttribute('rel') || '', target: el.getAttribute('target') || '',
-              download: el.hasAttribute('download'), aria: el.getAttribute('aria-label') || '', context: ctx(el), heading: headingOf(el), visible: visible(el)});
+              download: el.hasAttribute('download'), aria: el.getAttribute('aria-label') || '', context: ctx(el), heading: headingOf(el), cardTitle: cardTitleOf(el), visible: visible(el)});
     if (out.length >= arg.max) break;
   }
   return out;

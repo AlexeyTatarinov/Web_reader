@@ -306,6 +306,12 @@ def test_generic_button_text_is_replaced_by_card_heading(base_url):
     assert titles == {"card-qa-1": "Game QA Tester", "card-lqa-2": "LQA Ukrainian", "card-dev-3": "Unity Developer"}
 
 
+def test_card_first_line_is_title_for_apply_links(base_url):
+    res = read_one(base_url + "/cards2")
+    titles = sorted(j["title"] for j in res.jobs["links"])
+    assert titles == ["QA Tester - Consoles (Compliance & DevKits)", "Technical Artist"], titles   # two links of one card: one job; lone "Apply" is not a job
+
+
 def test_run_budget_marks_unprocessed_addresses(base_url, tmp_path):
     settings = make_settings(run={"max_pages_per_run": 1, "max_depth": 0})
     summary = asyncio.run(run_urls([InputItem(base_url + "/dynamic"), InputItem(base_url + "/about")],

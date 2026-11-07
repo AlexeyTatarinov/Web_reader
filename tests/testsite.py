@@ -156,6 +156,12 @@ PAGES["/cards"] = page(
     "<div class='card'><h3>LQA Ukrainian</h3><p>Linguistic testing</p><a href='/jobs/card-lqa-2'>Apply Now</a></div>"
     "<div class='card'><h3>Unity Developer</h3><p>Programmer</p><a href='/jobs/card-dev-3'>Details</a></div></div>",
     title="Join us")
+PAGES["/cards2"] = page(
+    "<h1>Careers</h1>" + FILLER + "<div class='board'>"
+    "<div class='opening'><div class='t'>QA Tester - Consoles (Compliance &amp; DevKits)</div><div>Mexico</div>"
+    "<a href='/hub/?module=interview&jobOpeningId=334'>Apply Now</a><a href='/hub/?module=interview&jobDescriptionId=17'>View Job Description</a></div>"
+    "<div class='opening'><div class='t'>Technical Artist</div><div>Remote</div><a href='/r/TA-OCT-26'>Apply!</a></div></div>"
+    "<p><a href='/about'>Apply</a></p>", title="Careers")
 PAGES["/flakylist"] = page(
     "<h1>Careers at Flaky Co</h1>" + FILLER + "<ul><li><a href='/jobs/ok-qa-1'>QA Fine</a></li>"
     "<li><a href='/jobs/flaky-qa-2'>QA Flaky</a></li></ul>", title="Careers at Flaky Co")

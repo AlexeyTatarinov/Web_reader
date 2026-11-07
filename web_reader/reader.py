@@ -49,6 +49,10 @@ _GENERIC_LINK_TEXT = re.compile(
     r"подробнее|детальніше|докладніше|дізнатися більше|докладно)[\s.»>→›…]*$", re.I)
 
 
+_APPLY_TEXT = re.compile(r"^(apply( now| here| today| for this job)?|view job description|view( the)? (job|role|position)( description| details)?|"
+                         r"job description|apply!|подати заявку|подать заявку|отправить резюме|aplicar|postuler|bewerben)[\s.!»>→›…]*$", re.I)
+
+
 @dataclass
 class PageResult:
     url: str
@@ -454,16 +458,31 @@ def finalize(res: PageResult, settings: Any) -> None:
         links.append({"text": raw["text"], "url": norm, "class": cls, "rel": raw.get("rel", ""),
                       "context": raw.get("context", "") if raw.get("context", "") != raw["text"] else "",
                       "heading": raw.get("heading", "") or "",
+                      "card_title": raw.get("cardTitle", "") or "",
                       "source": raw.get("source", "page"), "visible": raw.get("visible", True)})
     res.links = links
 
     # --- вакансии из трёх независимых источников
     job_links: dict[str, dict[str, Any]] = {}
+    card_titles: set[str] = set()
     for link in links:
-        if link["class"] in ("job_internal", "ats_job") and link["url"] not in job_links:
+        generic = len(link["text"]) < 4 or bool(_GENERIC_LINK_TEXT.match(link["text"])) or bool(_APPLY_TEXT.match(link["text"]))
+        # «Apply Now» / «View Job Description» без понятного адреса: вакансия, если у карточки есть своё название
+        applyish = (link["class"] in ("internal", "external") and bool(_APPLY_TEXT.match(link["text"]))
+                    and bool(link.get("card_title")) and not _GENERIC_LINK_TEXT.match(link["card_title"])
+                    and not _APPLY_TEXT.match(link["card_title"]))
+        if (link["class"] in ("job_internal", "ats_job") or applyish) and link["url"] not in job_links:
             title = link["text"] if len(link["text"]) >= 4 else (link["context"][:100] or link["text"])
-            if link.get("heading") and (len(link["text"]) < 4 or _GENERIC_LINK_TEXT.match(link["text"])):
+            from_card = False
+            if link.get("heading") and generic:
                 title = link["heading"]            # «More Details», «Apply»: название вакансии берём из заголовка карточки
+                from_card = True
+            elif generic and link.get("card_title"):
+                title, from_card = link["card_title"], True
+            if from_card:
+                if title.lower() in card_titles:   # две ссылки одной карточки (описание и подача): одна вакансия
+                    continue
+                card_titles.add(title.lower())
             job_links[link["url"]] = {"title": title, "url": link["url"], "location": "",
                                       "context": link["context"][:200], "source": "page"}
     network_jobs: list[dict[str, Any]] = []
