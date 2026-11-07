@@ -115,6 +115,14 @@ _TEXTS: dict[str, tuple[str, str, str]] = {
         "Страница закрыта защитой от ботов ({detail}). Обход не выполняется.",
         "The page is blocked by bot protection ({detail}). No bypass is attempted.",
         "Сторінку закрито захистом від ботів ({detail}). Обхід не виконується."),
+    "w_retry_recovered": (
+        "Первая попытка получила отказ, повторное чтение удалось (попытка {attempt}).",
+        "The first attempt was denied; the retry succeeded (attempt {attempt}).",
+        "Перша спроба отримала відмову, повторне читання вдалося (спроба {attempt})."),
+    "w_retry_failed": (
+        "Сайт отказал и при повторных попытках ({attempts}). Защита не обходилась.",
+        "The site denied access on retries too ({attempts}). No bypass was attempted.",
+        "Сайт відмовив і при повторних спробах ({attempts}). Захист не обходився."),
     "w_empty": (
         "Страница открылась, но почти не содержит текста.",
         "The page opened but contains almost no text.",

@@ -97,12 +97,99 @@ def _mark_visited(rc: RunContext, res: PageResult) -> None:
             rc.visited[key] = res.url
 
 
+_RETRY_HTTP = (403, 429, 503)
+
+
+@dataclass
+class RetryEntry:
+    res: PageResult                 # результат, который будет обновлён на месте
+    parent: PageResult | None
+    link: dict[str, Any] | None
+    due_index: int                  # после какого по счёту стартового адреса возвращаться
+    attempts: int = 0
+
+
+_NOT_RETRYABLE = {"cloudflare", "cloudflare_challenge", "perimeterx", "imperva", "datadome", "captcha"}
+
+
+def _is_retryable(res: PageResult) -> bool:
+    """Отказ «слишком часто / доступ закрыт» (access denied, 403, 429, 503) повторяем позже.
+    Капчи и проверки браузера (Cloudflare и подобные) не повторяем: это не вопрос частоты запросов."""
+    if res.status != "blocked" or res.antibot in _NOT_RETRYABLE:
+        return False
+    return res.antibot == "access_denied" or res.http_status in _RETRY_HTTP
+
+
 class Runner:
     def __init__(self, rc: RunContext, log: Callable[[str], None]):
         self.rc = rc
         self.settings = rc.settings
         self.log = log
         self.lang = rc.lang
+        self.retry_queue: list[RetryEntry] = []
+        self.start_index = 0            # номер стартового адреса, который читается сейчас
+
+    def _enqueue_retry(self, res: PageResult, parent: PageResult | None, link: dict[str, Any] | None) -> None:
+        if not _is_retryable(res) or self.settings.run.max_retry_attempts <= 0:
+            return
+        self.retry_queue.append(RetryEntry(res, parent, link, self.start_index + self.settings.run.retry_after_starts))
+
+    async def run_retries(self, index: int, final: bool) -> None:
+        """Возвращается к страницам, которым сайт отказал. Не в конце запуска: когда накопилось retry_after_starts
+        других адресов. В конце запуска (final): с паузами, пока не кончатся попытки. Защита не обходится."""
+        run = self.settings.run
+        rc = self.rc
+        rc.budget.item_limit = None
+        while True:
+            due = [e for e in self.retry_queue if final or e.due_index <= index]
+            if not due:
+                return
+            if final:
+                pause = run.retry_pause_s * (min(e.attempts for e in due) + 1)
+                self.log(f"retry pause {pause}s ({len(due)} pages)")
+                await asyncio.sleep(pause)
+            for entry in due:
+                self.retry_queue.remove(entry)
+                if not rc.budget.can_read_page()[0]:
+                    self._finish_retry(entry, recovered=False)
+                    continue
+                entry.attempts += 1
+                old = entry.res
+                self.log(t(self.lang, "reading", url=old.url) + f" (retry {entry.attempts})")
+                new = await read_page(rc, old.url, depth=old.depth, mode=old.mode, relation=old.relation,
+                                      link_text=old.link_text)
+                if new.status not in ("blocked", "skipped"):
+                    await self._apply_recovered(entry, new)
+                elif entry.attempts >= run.max_retry_attempts:
+                    self._finish_retry(entry, recovered=False)
+                else:
+                    entry.due_index = index + run.retry_after_starts
+                    self.retry_queue.append(entry)
+                if not final:
+                    await asyncio.sleep(run.delay_between_pages_s)
+            if not final:
+                return
+
+    def _finish_retry(self, entry: RetryEntry, recovered: bool) -> None:
+        if not recovered:
+            entry.res.warnings.append({"code": "w_retry_failed", "severity": "warn", "attempts": entry.attempts})
+
+    async def _apply_recovered(self, entry: RetryEntry, new: PageResult) -> None:
+        old = entry.res
+        children = old.children
+        old.__dict__.update(new.__dict__)
+        old.children = children
+        old.warnings.append({"code": "w_retry_recovered", "severity": "info", "attempt": entry.attempts})
+        _mark_visited(self.rc, old)
+        if entry.link is not None:
+            self._record(entry.link, old, "d_read_full" if old.mode == "full" else "d_read_light")
+        parent = entry.parent
+        if old.mode == "light":
+            _trim(old, self.settings.run.followed_text_chars)
+        if old.relation == "pagination" and parent is not None:
+            await self.follow_pagination(parent, current=old)
+        else:
+            await self.expand_result(old)
 
     # ------------------------------------------------------------ верхний уровень
     async def process(self, item: InputItem) -> PageResult:
@@ -111,6 +198,7 @@ class Runner:
             self.rc.visited.setdefault(key, item.url)
         res = await read_page(self.rc, item.url, depth=0, mode="full", relation="start", link_text=item.note)
         _mark_visited(self.rc, res)
+        self._enqueue_retry(res, None, None)
         await self.expand_result(res)
         return res
 
@@ -126,10 +214,11 @@ class Runner:
                 await self.follow_links(page)
 
     # ------------------------------------------------------------ пагинация
-    async def follow_pagination(self, res: PageResult) -> list[PageResult]:
+    async def follow_pagination(self, res: PageResult, current: PageResult | None = None) -> list[PageResult]:
+        """Читает следующие страницы списка. С current продолжает цепочку с этой страницы (после успешного повтора)."""
         run = self.settings.run
-        chain: list[PageResult] = []
-        current = res
+        chain: list[PageResult] = [c for c in res.children if c.relation == "pagination"] if current is not None else []
+        current = current or res
         while len(chain) < run.max_pagination_pages:
             link = next((l for l in current.links if l["class"] == "pagination"), None)
             if link is None:
@@ -146,6 +235,7 @@ class Runner:
             res.children.append(child)
             chain.append(child)
             if child.status not in ("ok", "partial"):
+                self._enqueue_retry(child, res, link)
                 break
             current = child
             await asyncio.sleep(self.settings.run.delay_between_pages_s)
@@ -228,6 +318,7 @@ class Runner:
                     _trim(child, run.followed_text_chars)
                 self._record(link, child, "d_read_full" if browse_mode == "full" else "d_read_light")
                 page.children.append(child)
+                self._enqueue_retry(child, page, link)
                 await self.expand_result(child)
                 await asyncio.sleep(run.delay_between_pages_s)
                 continue
@@ -318,6 +409,7 @@ async def run_urls(items: list[InputItem], settings: Any, out_dir: Path, lang: s
                 site = settings.for_url(item.url)
                 rc.settings = runner.settings = site
                 budget.start_item(site.run.max_pages_per_start)
+                runner.start_index = index
                 res = await runner.process(item)
                 res.site_label = site.site_label
                 _mark_limits_for_index(res, site)
@@ -325,6 +417,10 @@ async def run_urls(items: list[InputItem], settings: Any, out_dir: Path, lang: s
                 summary.stems.append(write_group(run_dir, index, res, settings, lang))  # сразу на диск
                 write_index(run_dir, _partial(summary, budget), settings, lang)
                 await asyncio.sleep(run.delay_between_pages_s)
+                if index < len(items):
+                    await runner.run_retries(index, final=False)     # вернуться к отказанным страницам через несколько адресов
+            await runner.run_retries(len(items), final=True)           # адресов больше нет: повторы с паузами
+            _rewrite_reports(summary, run_dir, settings, lang)
         finally:
             await browser.close()
 
@@ -335,6 +431,13 @@ async def run_urls(items: list[InputItem], settings: Any, out_dir: Path, lang: s
     prune_runs(Path(out_dir), settings.output.keep_runs)
     log(t(lang, "run_done", path=str(run_dir / "index.md")))
     return summary
+
+
+def _rewrite_reports(summary: RunSummary, run_dir: Path, settings: Any, lang: str) -> None:
+    """После повторов результаты могли измениться на месте: переписываем отчёты по адресам."""
+    for index, res in enumerate(summary.results, start=1):
+        _mark_limits_for_index(res, settings.for_url(res.url))
+        summary.stems[index - 1] = write_group(run_dir, index, res, settings, lang)
 
 
 def _mark_limits_for_index(res: PageResult, site: Any) -> None:

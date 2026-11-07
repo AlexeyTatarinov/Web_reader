@@ -149,6 +149,9 @@ PAGES["/listing"] = page(
     "<a href='https://example.org/partner'>Partner</a> <a href='https://www.linkedin.com/company/acme'>LinkedIn</a> "
     "<a href='mailto:jobs@acme.test'>Email us</a> <a href='#top'>Back to top</a> <a href='javascript:void(0)'>Nothing</a>",
     title="Careers at Acme")
+PAGES["/flakylist"] = page(
+    "<h1>Careers at Flaky Co</h1>" + FILLER + "<ul><li><a href='/jobs/ok-qa-1'>QA Fine</a></li>"
+    "<li><a href='/jobs/flaky-qa-2'>QA Flaky</a></li></ul>", title="Careers at Flaky Co")
 PAGES["/listing?page=2"] = page(
     "<h1>Careers at Acme, page 2</h1>" + FILLER + "<ul><li><a href='/jobs/compliance-c-3'>Compliance Manager</a></li></ul>",
     title="Careers at Acme 2")
@@ -162,6 +165,10 @@ def job_page(slug: str) -> bytes:
                      "datePosted": "2026-11-01", "validThrough": "2026-12-31", "description": "<p>Test games.</p>"})
     return page(f"<h1>{title}</h1>" + FILLER + "<p>Responsibilities: test games. Requirements: attention. Apply now.</p>",
                 title=f"{title} - Acme", head=f"<script type='application/ld+json'>{ld}</script>")
+
+
+FLAKY_COUNTS: dict[str, int] = {}
+FLAKY_DENIALS: dict[str, int] = {}
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -201,6 +208,14 @@ class Handler(BaseHTTPRequestHandler):
                     time.sleep(0.5)
                     self.wfile.write(b" ")
                     self.wfile.flush()
+            elif path.startswith("/jobs/flaky-"):
+                # первые FLAKY_DENIALS запросов к странице получают «Access denied», потом страница открывается
+                seen = FLAKY_COUNTS.get(path, 0)
+                FLAKY_COUNTS[path] = seen + 1
+                if seen < FLAKY_DENIALS.get(path, 1):
+                    self._send(403, page("<h1>Access denied</h1>", title="Access Denied"))
+                else:
+                    self._send(200, job_page(path.split("/", 2)[2]))
             elif path == "/forbidden":
                 self._send(403, page("<h1>Access denied</h1>", title="Error"))
             elif path == "/missing":

@@ -47,6 +47,9 @@ DEFAULTS: dict[str, Any] = {
         "follow_external": False,      # переходить по внешним сайтам (не рекомендуется)
         "follow_ats": True,            # переходить на системы найма (Greenhouse, Lever и т. д.)
         "delay_between_pages_s": 2,
+        "retry_after_starts": 3,       # вернуться к отказанным страницам после стольких других стартовых адресов
+        "max_retry_attempts": 2,       # сколько раз возвращаться к одной странице
+        "retry_pause_s": 30,           # пауза перед повтором, если других адресов уже не осталось (умножается на номер попытки)
         "followed_text_chars": 6000,   # сколько текста сохранять с открытой по ссылке страницы
     },
     "browser": {
@@ -106,6 +109,9 @@ CEILINGS: dict[str, float] = {
     "limits.max_pdf_pages": 200,
     "run.max_pages_per_run": 300,
     "run.max_pages_per_start": 100,
+    "run.retry_after_starts": 100,
+    "run.max_retry_attempts": 5,
+    "run.retry_pause_s": 600,
     "run.max_run_seconds": 7200,
     "run.max_depth": 3,
     "run.max_followed_per_page": 50,

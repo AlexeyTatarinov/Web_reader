@@ -247,6 +247,43 @@ def test_full_run_follows_links_one_level_and_writes_reports(base_url, tmp_path)
     assert (tmp_path / "LATEST.txt").read_text().strip() == summary.run_id
 
 
+def _flaky_child(summary):
+    return next(c for c in summary.results[0].children if c.url.endswith("/jobs/flaky-qa-2"))
+
+
+def test_denied_page_is_retried_after_other_addresses_without_long_pauses(base_url, tmp_path):
+    from testsite import FLAKY_COUNTS, FLAKY_DENIALS
+    FLAKY_COUNTS.clear(); FLAKY_DENIALS["/jobs/flaky-qa-2"] = 1
+    settings = make_settings(run={"retry_after_starts": 2, "retry_pause_s": 60})
+    items = [InputItem(base_url + p) for p in ("/flakylist", "/dynamic", "/about", "/jobs/qa-tester-7")]
+    import time
+    t0 = time.monotonic()
+    summary = asyncio.run(run_urls(items, settings, tmp_path, "ru", log=lambda m: None))
+    child = _flaky_child(summary)
+    assert child.status in ("ok", "partial") and any(w["code"] == "w_retry_recovered" for w in child.warnings)
+    assert time.monotonic() - t0 < 50            # вернулись через другие адреса, длинной паузы не было
+    assert FLAKY_COUNTS["/jobs/flaky-qa-2"] == 2
+
+
+def test_last_address_denied_gets_paused_retries_then_gives_up_honestly(base_url, tmp_path):
+    from testsite import FLAKY_COUNTS, FLAKY_DENIALS
+    FLAKY_COUNTS.clear(); FLAKY_DENIALS["/jobs/flaky-qa-2"] = 99
+    settings = make_settings(run={"max_retry_attempts": 2, "retry_pause_s": 1})
+    summary = asyncio.run(run_urls([InputItem(base_url + "/flakylist")], settings, tmp_path, "ru", log=lambda m: None))
+    child = _flaky_child(summary)
+    assert child.status == "blocked" and any(w["code"] == "w_retry_failed" and w["attempts"] == 2 for w in child.warnings)
+    assert FLAKY_COUNTS["/jobs/flaky-qa-2"] == 3      # первая попытка + 2 повтора, не больше
+
+
+def test_last_address_denied_then_recovers_after_pause(base_url, tmp_path):
+    from testsite import FLAKY_COUNTS, FLAKY_DENIALS
+    FLAKY_COUNTS.clear(); FLAKY_DENIALS["/jobs/flaky-qa-2"] = 2
+    settings = make_settings(run={"max_retry_attempts": 3, "retry_pause_s": 1})
+    summary = asyncio.run(run_urls([InputItem(base_url + "/flakylist")], settings, tmp_path, "ru", log=lambda m: None))
+    child = _flaky_child(summary)
+    assert child.status in ("ok", "partial") and any(w["code"] == "w_retry_recovered" and w["attempt"] == 2 for w in child.warnings)
+
+
 def test_run_budget_marks_unprocessed_addresses(base_url, tmp_path):
     settings = make_settings(run={"max_pages_per_run": 1, "max_depth": 0})
     summary = asyncio.run(run_urls([InputItem(base_url + "/dynamic"), InputItem(base_url + "/about")],
