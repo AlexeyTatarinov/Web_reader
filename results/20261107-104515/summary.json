@@ -1,0 +1,37 @@
+{
+ "run_id": "20261107-104515",
+ "started": "2026-11-07T10:45:15+00:00",
+ "finished": "2026-11-07T10:47:50+00:00",
+ "browser": "playwright-chromium",
+ "pages_used": 20,
+ "pages_budget": 40,
+ "role_matches": 26,
+ "input_problems": [],
+ "settings_warnings": [],
+ "results": [
+  {
+   "file": "01-careers-playstation-com-jobs",
+   "url": "https://careers.playstation.com/jobs",
+   "status": "ok",
+   "kind": "job_listing",
+   "jobs": 464,
+   "children": 14
+  },
+  {
+   "file": "02-room8group-com-join-the-team",
+   "url": "https://room8group.com/join-the-team/#/?tcoop=full-time",
+   "status": "empty",
+   "kind": "other",
+   "jobs": 0,
+   "children": 0
+  },
+  {
+   "file": "03-varjo-com-jobs",
+   "url": "https://varjo.com/jobs",
+   "status": "ok",
+   "kind": "other",
+   "jobs": 2,
+   "children": 4
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "url": "https://room8group.com/join-the-team/#/?tcoop=full-time",
+ "depth": 0,
+ "mode": "full",
+ "relation": "start",
+ "link_text": "Room 8: заявлено 19 позиций, вакансии не видны",
+ "final_url": "https://room8group.com/join-the-team/#/?tcoop=full-time",
+ "redirect_chain": [],
+ "title": "One moment, please...",
+ "h1": "",
+ "http_status": 200,
+ "status": "empty",
+ "kind": "other",
+ "seconds": 2.2,
+ "antibot": null,
+ "error": null,
+ "skip_reason": null,
+ "limits_hit": [],
+ "site_label": null,
+ "warnings": [
+  {
+   "code": "w_empty",
+   "severity": "warn"
+  }
+ ],
+ "notes": [
+  {
+   "code": "n_shadow_closed"
+  }
+ ],
+ "sections": [
+  {
+   "label": "initial",
+   "source": "page",
+   "text": "Please wait while your request is being verified..."
+  }
+ ],
+ "text_chars": 52,
+ "text_truncated": false,
+ "links": [],
+ "frames": [],
+ "network": [],
+ "jobs": {
+  "links": [],
+  "network": [],
+  "jsonld": [],
+  "embedded": [],
+  "counts": {
+   "links": 0,
+   "network": 0,
+   "jsonld": 0,
+   "embedded": 0
+  },
+  "best": 0,
+  "capped": false,
+  "declared": {
+   "value": null,
+   "confidence": null,
+   "candidates": []
+  }
+ },
+ "popups": {
+  "dismissed": [],
+  "obstructions": []
+ },
+ "expansion": {
+  "scrolls": 3,
+  "expansions": 0,
+  "clicks": [],
+  "stop_reason": "no_new_content"
+ },
+ "counts": {
+  "links_total": 0,
+  "frames_total": 0,
+  "frames_read": 0,
+  "requests": 4,
+  "blocked_requests": {},
+  "json_responses": 0
+ },
+ "screenshot": "screenshots/009-room8group-com-join-the-team.jpg",
+ "pdf": null,
+ "probe": null,
+ "children": []
+}
