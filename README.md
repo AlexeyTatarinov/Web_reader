@@ -1,77 +1,77 @@
 # web_reader
 
-Программа полного чтения динамических веб-страниц. Открывает страницу в настоящем браузере без окна (Playwright), раскрывает скрытое содержимое, читает встроенные окна, перехватывает данные, которые страница подгружает сама, разбирает ссылки и сохраняет отчёт с честными пометками о том, что прочитано полностью, а что нет.
+A program for fully reading dynamic web pages. It opens a page in a real headless browser (Playwright), expands hidden content, reads embedded frames, intercepts the data the page loads by itself, parses links, and saves a report with honest notes on what was read completely and what was not.
 
-Внутри программы **нет ИИ**: она только читает и описывает. Выводы делает тот, кто читает отчёт (человек или ИИ-помощник). Программа работает без Claude и без каких-либо платных сервисов: браузер запускается у вас или в GitHub Actions.
+There is **no AI inside the program**: it only reads and describes. Conclusions are drawn by whoever reads the report (a person or an AI assistant). It works without Claude and without any paid service: the browser runs on your machine or in GitHub Actions.
 
-## Что она делает
+## What it does
 
-| Ситуация на странице | Что делает программа |
+| Situation on the page | What the program does |
 |---|---|
-| Содержимое строится JavaScript | Ждёт загрузки и читает то, что реально видно на странице |
-| «Показать ещё», вкладки, аккордеоны, закрытые блоки | Раскрывает по очереди, после каждого клика сохраняет увиденное |
-| Бесконечная прокрутка, списки внутри прокручиваемых блоков | Листает, пока появляется новое (с жёсткими пределами) |
-| Постраничные списки («Следующая») | Читает следующие страницы списка (до заданного числа) |
-| Баннеры cookie, всплывающие окна | Нажимает «Отклонить» или «Закрыть». Если отказа нет: «Настройки cookie», необязательное выключается, «Сохранить». Если и так нельзя, баннер скрывается на странице без согласия. «Принять» не нажимается никогда |
-| Встроенные окна (iframe), например Greenhouse, Workable | Читает отдельно, помечая, откуда пришёл текст |
-| Shadow DOM (открытый) | Читает вместе с остальным |
-| Данные приходят отдельным JSON-запросом | Перехватывает ответ и достаёт из него список вакансий |
-| JSON-LD (`JobPosting`) и встроенный JSON (`__NEXT_DATA__`) | Разбирает, сохраняет срок действия вакансии |
-| Ссылки | Для каждой записывает текст, адрес, тип и что с ней сделано (см. ниже) |
-| PDF | Скачивает (с ограничением размера) и извлекает текст |
-| Презентации и картинки | Фиксирует адрес и пометку; текст из картинок не распознаёт |
-| Защита от ботов | Определяет и честно помечает; **не обходит** |
+| Content is built by JavaScript | Waits for loading and reads what is actually visible |
+| "Show more", tabs, accordions, collapsed blocks | Expands them one by one and saves what it sees after each click |
+| Infinite scroll, lists inside scrollable blocks | Scrolls while new content appears (with hard limits) |
+| Paginated lists ("Next") | Reads the following list pages (up to a set number) |
+| Cookie banners, pop-ups | Clicks "Reject" or "Close". If there is no reject button: opens "Cookie settings", turns off the optional categories, and saves. If that is not possible either, the banner is hidden on the page without giving consent. "Accept" is never clicked |
+| Embedded frames (iframe), e.g. Greenhouse, Workable | Reads them separately and marks where the text came from |
+| Open shadow DOM | Reads it together with the rest |
+| Data arrives as a separate JSON request | Intercepts the response and extracts the vacancy list from it |
+| JSON-LD (`JobPosting`) and embedded JSON (`__NEXT_DATA__`) | Parses them and keeps the vacancy expiry date |
+| Links | Records the text, address, type, and what was done with each (see below) |
+| PDF | Downloads it (with a size limit) and extracts the text |
+| Presentations and images | Records the address and a note; does not recognize text in images |
+| Bot protection | Detects and reports it honestly; **does not bypass it** |
 
-### Ссылки: что программа с ними делает
+### Links: what the program does with them
 
-Каждая найденная ссылка получает тип и решение, и всё это попадает в отчёт, ни одна не пропадает молча.
+Every link found gets a type and a decision, and all of it goes into the report; no link disappears silently.
 
-* `job_internal`, `ats_job`: открывается в браузере (лёгкое чтение) на один уровень вглубь;
-* `ats_board` (страница вакансий в системе найма): открывается и читается полностью, с листанием;
-* `pdf`: скачивается, текст извлекается;
-* `internal` и вакансии сверх лимита открытий: быстрая проверка без браузера (куда ведёт, какой заголовок);
-* `external`, `social`: записываются, но не открываются (внешние сайты открывать можно только явной настройкой);
-* `mailto`, `tel`, якоря, `javascript:`: записываются.
+* `job_internal`, `ats_job`: opened in the browser (light read), one level deep;
+* `ats_board` (a vacancy page in a hiring system): opened and read fully, with scrolling;
+* `pdf`: downloaded, text extracted;
+* `internal` and vacancies beyond the open limit: quick check without a browser (where it leads, what the title is);
+* `external`, `social`: recorded but not opened (external sites can only be opened by an explicit setting);
+* `mailto`, `tel`, anchors, `javascript:`: recorded.
 
-## Защита от бесконечного чтения
+## Protection against endless reading
 
-Все пределы лежат в `config/settings.json` и работают независимо друг от друга. Если страница упёрлась в предел, в отчёте появляется пометка «прочитано частично, причина такая-то».
+All limits are in `config/settings.json` and work independently of each other. If a page reaches a limit, the report contains the note "read partially, reason: ...".
 
-| Предел | По умолчанию |
+| Limit | Default |
 |---|---|
-| время на страницу | 30 с (по ссылке без раскрытия: 15 с) плюс запас 10 с до принудительной остановки |
-| прокруток | 15 |
-| раскрытий (клики, вкладки) | 25 |
-| «нет нового» подряд | 3 раунда, затем остановка |
-| вакансий на страницу | 100 |
-| сетевых запросов страницы | 400 (лишние обрываются) |
-| объём текста | 2 000 000 знаков |
-| встроенных окон | 10 |
-| страниц за запуск | 40 |
-| время запуска | 900 с |
-| глубина переходов | 1 |
-| открытий по ссылкам со страницы | 15 |
-| страниц списка (пагинация) | 5 |
+| time per page | 30 s (15 s for a link without expansion) plus a 10 s margin before forced stop |
+| scrolls | 15 |
+| expansions (clicks, tabs) | 25 |
+| consecutive "nothing new" | 3 rounds, then stop |
+| vacancies per page | 100 |
+| network requests per page | 400 (extra ones are aborted) |
+| text size | 2,000,000 characters |
+| embedded frames | 10 |
+| pages per run | 40 |
+| run time | 900 s |
+| link depth | 1 |
+| links opened from a page | 15 |
+| list pages (pagination) | 5 |
 
-Дополнительно: реклама и трекеры блокируются, медиа и шрифты не загружаются, локальные и частные адреса запрещены, каждая ссылка со страницы проходит проверку безопасности, одна и та же страница дважды не читается. Значения выше жёстких потолков (`CEILINGS` в `web_reader/settings.py`) программа урезает сама и сообщает об этом.
+In addition: ads and trackers are blocked, media and fonts are not loaded, local and private addresses are forbidden, every link from a page passes a safety check, and the same page is never read twice. Values above the hard ceilings (`CEILINGS` in `web_reader/settings.py`) are cut down by the program, which reports it.
 
-## Повтор после отказа («Access Denied»)
+## Retry after a refusal ("Access Denied")
 
-Если сайт отказал в доступе при частых запросах (access denied, 403, 429, 503), программа не стоит и не ждёт на месте. Она запоминает страницу и возвращается к ней после `run.retry_after_starts` (по умолчанию 3) других адресов из списка. Если адресов больше не осталось, повторы идут с паузами (`run.retry_pause_s`, 30 с, умножается на номер попытки). Попыток не больше `run.max_retry_attempts` (2). Если сайт отказывает и после этого, в отчёте так и написано. Капчи и проверки браузера (Cloudflare и подобные) не повторяются и не обходятся.
+If a site refuses access under frequent requests (access denied, 403, 429, 503), the program does not wait in place. It remembers the page and returns to it after `run.retry_after_starts` (default 3) other addresses from the list. If no addresses remain, retries are made with pauses (`run.retry_pause_s`, 30 s, multiplied by the attempt number). At most `run.max_retry_attempts` (2) attempts. If the site still refuses, the report says so. CAPTCHAs and browser checks (Cloudflare and the like) are not retried and not bypassed.
 
-## Отбор по ролям
+## Role matching
 
-Словарь `config/roles.json` содержит четыре группы: QA, LQA (лингвистическое тестирование), Compliance и Certification/submission. В каждой: аббревиатуры (QA, QC, SDET, LQA, TRC…), полные названия (Quality Assurance, Test Manager…), названия на английском, испанском, французском, немецком, польском, португальском, итальянском и украинском, а также украинские основы слов, которые ловят все формы («тестувальник», «тестувальниці», «тестування»…). Слишком общие слова (localization, release manager, compliance сам по себе) считаются слабыми и показываются отдельно.
+The dictionary `config/roles.json` has four groups: QA, LQA (linguistic testing), Compliance, and Certification/submission. Each contains abbreviations (QA, QC, SDET, LQA, TRC, ...), full titles (Quality Assurance, Test Manager, ...), names in English, Spanish, French, German, Polish, Portuguese, Italian, and Ukrainian, as well as Ukrainian word stems that catch all forms. Words that are too generic (localization, release manager, compliance alone) count as weak and are shown separately.
 
-В `index.md` появляются разделы: подходящие по ролям, упомянутые только в тексте вакансии (слабое совпадение), подходящие, но исключённые по региону (Россия, Беларусь). Полный список в `roles.json` запуска. Словарь можно править без изменения кода. Отбор идёт только по прочитанному: для непрочитанных сайтов подходящие вакансии могут быть не найдены, об этом сказано в отчёте.
+`index.md` gets these sections: matches by role, mentions only in the vacancy text (weak match), and matches excluded by region (Russia, Belarus). The dictionary can be edited without changing code. Matching works only on what was read: for unread sites, suitable vacancies may be missed, and the report says so.
 
-## Свои пределы для отдельных сайтов
+## Custom limits for individual sites
 
-Общие пределы остаются прежними. Если какому-то сайту их не хватило (например, у PlayStation сотни вакансий на десятках страниц списка), поднимать лимит для всех не нужно. Порядок такой:
+The general limits stay the same. If one site needs more (for example, PlayStation has hundreds of vacancies on dozens of list pages), there is no need to raise the limit for everyone. The procedure:
 
-1. Делается обычный прогон.
-2. В `index.md` появляется раздел «Сайты, где не хватило лимита» с готовой строкой настройки для каждого такого сайта.
-3. Вы решаете, поднимать ли лимит этому сайту. Если да, строка вставляется в `config/settings.json`:
+1. Do a normal run.
+2. `index.md` gets the section "Sites where the limit was not enough" with a ready settings line for each such site.
+3. You decide whether to raise the limit for that site. If so, paste the line into `config/settings.json`:
 
 ```
 "site_overrides": {
@@ -79,30 +79,30 @@
 }
 ```
 
-Домен совпадает и с поддоменами. Для сайта можно менять только: `run.max_pagination_pages`, `run.max_pages_per_start`, `run.max_followed_per_page`, `limits.max_scrolls`, `limits.max_expansions`, `limits.max_jobs_per_page`, `limits.page_timeout_s`. Жёсткие потолки (`CEILINGS`) действуют и здесь. Ограничение на весь запуск (`max_pages_per_run`, `max_run_seconds`) для сайтов не меняется.
+The domain also matches subdomains. Only these can be changed per site: `run.max_pagination_pages`, `run.max_pages_per_start`, `run.max_followed_per_page`, `limits.max_scrolls`, `limits.max_expansions`, `limits.max_jobs_per_page`, `limits.page_timeout_s`. The hard ceilings (`CEILINGS`) apply here too. Whole-run limits (`max_pages_per_run`, `max_run_seconds`) cannot be changed per site.
 
-## Чего программа не делает (и почему)
+## What the program does not do (and why)
 
-* **Не обходит капчи и жёсткую защиту от ботов** (Cloudflare и подобные). Это защита, которую владелец сайта поставил намеренно. Простую проверку «подождите несколько секунд» браузер проходит сам, программа немного ждёт. Если не прошло, страница помечается `blocked`. Законные пути: API системы найма, RSS, те же вакансии на других площадках.
-* Не заполняет формы, не входит в аккаунты, не нажимает «Откликнуться», «Принять» и подобное (список опасных кнопок: `SKIP_RE` в `web_reader/dom.py`).
-* Не читает закрытый shadow DOM (браузер не отдаёт его никому).
-* Не распознаёт текст на картинках и в сканах PDF (в отчёте будет пометка).
-* Не сохраняет скачиваемые файлы, кроме PDF в памяти для чтения.
+* **It does not bypass CAPTCHAs or strong bot protection** (Cloudflare and the like). This is protection the site owner put there on purpose. A simple "wait a few seconds" check is passed by the browser itself, and the program waits a little. If that fails, the page is marked `blocked`. Legitimate alternatives: the hiring system API, RSS, the same vacancies on other platforms.
+* It does not fill in forms, log in to accounts, or click "Apply", "Accept", and similar (the list of dangerous buttons is `SKIP_RE` in `web_reader/dom.py`).
+* It does not read closed shadow DOM (the browser exposes it to no one).
+* It does not recognize text in images and PDF scans (the report has a note).
+* It does not save downloaded files, except PDFs in memory for reading.
 
-## Установка
+## Installation
 
-Нужен Python 3.10 или новее.
+Python 3.10 or newer is required.
 
 ```
 pip install -r requirements.txt
 python -m playwright install chromium
 ```
 
-Если в системе уже есть Chrome или Chromium, можно указать его путь в `browser.executable_path` настроек или в переменной окружения `WEB_READER_BROWSER`.
+If Chrome or Chromium is already installed, you can set its path in `browser.executable_path` in the settings or in the environment variable `WEB_READER_BROWSER`.
 
-## Запуск
+## Running
 
-Сначала всегда выполняется отдельная проверка соединений (браузер, чтение JavaScript, iframe, shadow DOM, выход в интернет). Основной запуск стартует только после её успеха.
+A separate connection check always runs first (browser, JavaScript reading, iframe, shadow DOM, internet access). The main run starts only if it succeeds.
 
 ```
 python -m web_reader check
@@ -111,77 +111,77 @@ python -m web_reader read --file input/urls.txt
 python -m web_reader read --file input/urls.txt --lang en
 ```
 
-`read` сам запускает проверку, если не указано `--skip-check`. Результат появляется в папке `results/<дата-время>/`.
+`read` runs the check by itself unless `--skip-check` is given. The result appears in the folder `results/<date-time>/`.
 
-### В GitHub Actions
+### In GitHub Actions
 
-Файл `.github/workflows/read.yml`. Запуск: вкладка Actions → Read pages → Run workflow (можно вписать адреса в форму) либо изменить файл `input/urls.txt`. Workflow выполняет проверку, затем чтение и сохраняет результаты в `results/` в этом же репозитории. Никаких секретов не требуется.
+The file `.github/workflows/read.yml`. To run: Actions tab → Read pages → Run workflow (you can enter addresses in the form) or edit the file `input/urls.txt`. The workflow runs the check, then the reading, and saves the results in `results/` in the same repository. No secrets are required.
 
-## Что в результате
+## What the result contains
 
-В папке `results/<дата-время>/`:
+In the folder `results/<date-time>/`:
 
-* `index.md`: сводка запуска. Первым идёт раздел «Непрочитанное и прочитанное не полностью» с причинами; затем таблица всех адресов; затем не обработанные из-за лимитов и ошибки во входных данных;
-* `NN-<адрес>.md`: подробный отчёт по каждому адресу (полнота чтения, найденные вакансии, попапы, раскрытие, встроенные окна, перехваченные данные, текст, ссылки с решениями, страницы, открытые по ссылкам);
-* `NN-<адрес>.json`: те же данные полностью, для программной обработки;
-* `summary.json`: краткая сводка;
-* `screenshots/`: снимки экрана для страниц с проблемами (`output.screenshots`: `never`, `on_problem`, `always`).
+* `index.md`: run summary. First comes the section "Unread and partially read" with reasons; then a table of all addresses; then those not processed because of limits and input errors;
+* `NN-<address>.md`: a detailed report per address (reading completeness, vacancies found, pop-ups, expansion, embedded frames, intercepted data, text, links with decisions, pages opened from links);
+* `NN-<address>.json`: the same data in full, for programmatic processing;
+* `summary.json`: a short summary;
+* `screenshots/`: screenshots for pages with problems (`output.screenshots`: `never`, `on_problem`, `always`).
 
-Файл `results/LATEST.txt` содержит имя последнего запуска. Хранятся последние `output.keep_runs` запусков (по умолчанию 10).
+The file `results/LATEST.txt` holds the name of the latest run. The last `output.keep_runs` runs are kept (default 10).
 
-### Как читать оценку полноты
+### How to read the completeness assessment
 
-* **Статусы**: `ok` прочитано полностью; `partial` сработал лимит или есть предупреждение; `blocked` защита от ботов; `error` не открылась; `empty` открылась без содержимого; `skipped` не обработана (причина указана).
-* **Вакансии собираются из нескольких независимых источников**: ссылки на странице, перехваченный JSON, JSON-LD, встроенный JSON. Число сравнивается с заявленным на странице («134 jobs», «Showing 1–20 of 134»). Если собрано заметно меньше, программа пишет об этом прямо. Совпадение чисел это эвристика, а не гарантия: при низкой уверенности это лишь примечание.
-* **Тип страницы**: вакансия, список вакансий, вакансия закрыта или недоступна, не найдена, защита от ботов, требуется вход, PDF.
+* **Statuses**: `ok` read completely; `partial` a limit was hit or there is a warning; `blocked` bot protection; `error` did not open; `empty` opened without content; `skipped` not processed (reason given).
+* **Vacancies are collected from several independent sources**: links on the page, intercepted JSON, JSON-LD, embedded JSON. The count is compared with the number the page declares ("134 jobs", "Showing 1–20 of 134"). If noticeably fewer were collected, the program says so directly. A matching count is a heuristic, not a guarantee: at low confidence it is only a note.
+* **Page type**: vacancy, vacancy list, vacancy closed or unavailable, not found, bot protection, login required, PDF.
 
-## Настройки
+## Settings
 
-Файл `config/settings.json`. Нужно указывать только то, что меняется; остальное берётся из значений по умолчанию. Опечатки в названиях параметров не игнорируются молча, а попадают в предупреждения. Основные разделы: `limits` (пределы чтения одной страницы), `run` (бюджет запуска, глубина, правила переходов), `browser`, `safety` (запрещённые домены, список систем найма), `output`, `preflight`.
+The file `config/settings.json`. Only what changes needs to be specified; the rest comes from the defaults. Typos in parameter names are not silently ignored but reported as warnings. Main sections: `limits` (limits for reading one page), `run` (run budget, depth, link rules), `browser`, `safety` (forbidden domains, list of hiring systems), `output`, `preflight`.
 
-## Языки
+## Languages
 
-Сообщения программы и отчёты: русский, английский, украинский (`"language": "ru" | "en" | "uk"` или ключ `--lang`). Тексты лежат в `web_reader/i18n.py`.
+Program messages and reports: Russian, English, Ukrainian (`"language": "ru" | "en" | "uk"` or the `--lang` key). The texts are in `web_reader/i18n.py`.
 
-## Структура кода
+## Code structure
 
 ```
 web_reader/
-  settings.py    загрузка настроек, пределы и потолки
-  safety.py      проверка адресов (локальные адреса, чёрный список, DNS)
-  classify.py    тип ссылки и встроенного окна
-  dom.py         скрипты, выполняемые внутри страницы (текст, ссылки, кнопки)
-  harvest.py     накопление текста и ссылок снимками
-  network.py     фильтр запросов, счётчик, перехват JSON
-  popups.py      закрытие баннеров и окон
-  expand.py      прокрутка и раскрытие содержимого
-  reader.py      чтение одной страницы, оценка полноты
-  runner.py      запуск по списку, переходы по ссылкам, пагинация
-  fetch.py       быстрые проверки ссылок и PDF без браузера
-  jobs.py        вакансии в JSON и JSON-LD, заявленные числа
-  antibot.py     распознавание защиты от ботов
-  report.py      отчёты Markdown и JSON
-  check.py       предварительная проверка соединений
-  cli.py         командная строка
-tests/           тесты на локальном тестовом сайте
+  settings.py    settings loading, limits and ceilings
+  safety.py      address checks (local addresses, blacklist, DNS)
+  classify.py    link and embedded frame type
+  dom.py         scripts executed inside the page (text, links, buttons)
+  harvest.py     accumulating text and links in snapshots
+  network.py     request filter, counter, JSON interception
+  popups.py      closing banners and windows
+  expand.py      scrolling and expanding content
+  reader.py      reading one page, completeness assessment
+  runner.py      running over a list, following links, pagination
+  fetch.py       quick link and PDF checks without a browser
+  jobs.py        vacancies in JSON and JSON-LD, declared counts
+  antibot.py     bot protection detection
+  report.py      Markdown and JSON reports
+  check.py       preliminary connection check
+  cli.py         command line
+tests/           tests on a local test site
 ```
 
-## Тесты
+## Tests
 
 ```
 pip install -r requirements-dev.txt
 python -m pytest
 ```
 
-Быстрые тесты не требуют браузера (`tests/test_units.py`). Тесты в браузере (`tests/test_integration.py`) поднимают локальный тестовый сайт с типичными «ловушками»: догрузка по кнопке, бесконечная прокрутка, вкладки, попапы, iframe, shadow DOM, бесконечные запросы, зависшая страница, защита от ботов.
+The fast tests do not need a browser (`tests/test_units.py`). The browser tests (`tests/test_integration.py`) start a local test site with typical traps: loading by button, infinite scroll, tabs, pop-ups, iframe, shadow DOM, endless requests, a hung page, bot protection.
 
-## Известные ограничения
+## Known limitations
 
-* Эвристики (тип ссылки «вакансия», тип страницы, заявленное число) могут ошибаться; потому они всегда сопровождаются исходными данными в отчёте.
-* Сайты, которые догружают список только по сложным жестам или после входа, программа может прочитать не полностью; в этом случае сработает сравнение с заявленным числом или правило «нет нового».
-* Окно с полем для адреса (личный интерфейс) запланировано после ядра и пока не реализовано.
-* Метка авторства: поле `authorship_mark` в настройках выводится в подвале отчётов; формат метки будет уточнён.
+* The heuristics (the "vacancy" link type, page type, declared count) can be wrong, so they are always accompanied by the source data in the report.
+* Sites that load the list only by complex gestures or after login may be read incompletely; in that case the comparison with the declared count or the "nothing new" rule applies.
+* A window with an address field (personal interface) is planned after the core and is not implemented yet.
+* Authorship mark: the `authorship_mark` field in the settings is printed in the report footer; the mark format is still to be defined.
 
-## Лицензия
+## License
 
-MIT, см. LICENSE.
+MIT, see LICENSE.
