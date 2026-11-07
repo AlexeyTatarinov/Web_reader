@@ -78,6 +78,7 @@ class PageResult:
     pdf: dict[str, Any] | None = None
     probe: dict[str, Any] | None = None
     children: list["PageResult"] = field(default_factory=list)
+    _html: str = field(default="", repr=False)      # отрисованный HTML (только при RunContext.keep_html)
     _state: Any = field(default=None, repr=False)
     _finalized: bool = field(default=False, repr=False)
 
@@ -106,6 +107,7 @@ class RunContext:
     lang: str = "ru"
     visited: dict[str, str] = field(default_factory=dict)   # url_key -> относительный путь отчёта
     shot_counter: int = 0
+    keep_html: bool = False        # сохранять отрисованный HTML страницы (для внешних программ, например бота вакансий)
 
 
 class _State:
@@ -198,6 +200,11 @@ async def _read_inner(rc: RunContext, res: PageResult, deadline: Deadline) -> No
         # оценка полноты делается, пока окно ещё открыто, чтобы решить о снимке экрана
         if not res._finalized:
             finalize(res, rc.settings)
+        if page is not None and rc.keep_html:
+            try:
+                res._html = (await asyncio.wait_for(page.content(), timeout=5))[:3_000_000]
+            except Exception:
+                res._html = ""
         if page is not None and res.status != "error":
             await _maybe_screenshot(rc, res, page)
     finally:

@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+from urllib.parse import urlsplit
 import re
 from pathlib import Path
 from typing import Any
@@ -274,6 +275,40 @@ def _limit_sites_section(summary: Any, lang: str) -> list[str]:
     return [f"## {t(lang, 's_limit_sites')}\n", *rows, ""]
 
 
+def _roles_rows(items: list[dict[str, Any]], with_region: bool = False) -> list[str]:
+    rows = ["| Роль | Название | Место | Ссылка | Откуда |" + (" Регион |" if with_region else ""),
+            "|---|---|---|---|---|" + ("---|" if with_region else "")]
+    for e in items:
+        roles = ", ".join(r["label"].split(" / ")[0] for r in e["roles"])
+        extra = f" {e['excluded_region']} |" if with_region else ""
+        langs = f" [{'/'.join(e['languages'])}]" if e.get("languages") else ""
+        rows.append(f"| {roles} | {_cell(e['title'], 90)}{langs} | {_cell(e['location'], 40)} | {_cell(e['url'], 160)} | "
+                    f"{_cell(urlsplit(e['page']).hostname or '', 40)} |" + extra)
+    return rows
+
+
+def _roles_section(summary: Any, lang: str) -> list[str]:
+    matches = getattr(summary, "role_matches", None)
+    if matches is None or not getattr(summary, "roles_source", ""):
+        return []
+    good = [e for e in matches if e["level"] == "title" and not e["excluded_region"]]
+    weak = [e for e in matches if e["level"] == "text" and not e["excluded_region"]]
+    excluded = [e for e in matches if e["excluded_region"]]
+    out = [f"## {t(lang, 's_roles')} ({len(good)})\n"]
+    out.extend(_roles_rows(good) if good else [t(lang, "roles_none")])
+    out.append("")
+    if weak:
+        out.append(f"## {t(lang, 's_roles_text')} ({len(weak)})\n")
+        out.extend(_roles_rows(weak))
+        out.append("")
+    if excluded:
+        out.append(f"## {t(lang, 's_roles_excluded')} ({len(excluded)})\n")
+        out.extend(_roles_rows(excluded, with_region=True))
+        out.append("")
+    out.append(f"_{t(lang, 'roles_disclaimer')}_\n")
+    return out
+
+
 def render_index_md(summary: Any, settings: Any, lang: str) -> str:
     out: list[str] = [f"# {t(lang, 'report_title')} {summary.run_id}\n"]
     out.append(f"- web_reader {__version__} · browser: {summary.browser_label}")
@@ -301,6 +336,7 @@ def render_index_md(summary: Any, settings: Any, lang: str) -> str:
     out.extend(attention or [t(lang, "none")])
     out.append("")
 
+    out.extend(_roles_section(summary, lang))
     out.extend(_limit_sites_section(summary, lang))
 
     out.append(f"## {t(lang, 's_all')}\n")
@@ -332,10 +368,13 @@ def render_index_md(summary: Any, settings: Any, lang: str) -> str:
 
 
 def write_index(run_dir: Path, summary: Any, settings: Any, lang: str) -> None:
+    if getattr(summary, "roles_source", ""):
+        (run_dir / "roles.json").write_text(json.dumps(summary.role_matches, ensure_ascii=False, indent=1), encoding="utf-8")
     (run_dir / "index.md").write_text(render_index_md(summary, settings, lang), encoding="utf-8")
     brief = {
         "run_id": summary.run_id, "started": summary.started, "finished": summary.finished,
         "browser": summary.browser_label, "pages_used": summary.pages_used, "pages_budget": summary.pages_budget,
+        "role_matches": len([e for e in getattr(summary, "role_matches", []) if e["level"] == "title" and not e["excluded_region"]]),
         "input_problems": summary.input_problems, "settings_warnings": summary.settings_warnings,
         "results": [
             {"file": stem, "url": r.url, "status": r.status, "kind": r.kind, "jobs": _total_jobs(r),

@@ -47,6 +47,8 @@ class RunSummary:
     browser_label: str = ""
     pages_used: int = 0
     pages_budget: int = 0
+    role_matches: list[dict[str, Any]] = field(default_factory=list)
+    roles_source: str = ""
 
 
 def parse_input_lines(lines: list[str], lang: str) -> tuple[list[InputItem], list[str]]:
@@ -421,6 +423,7 @@ async def run_urls(items: list[InputItem], settings: Any, out_dir: Path, lang: s
                     await runner.run_retries(index, final=False)     # вернуться к отказанным страницам через несколько адресов
             await runner.run_retries(len(items), final=True)           # адресов больше нет: повторы с паузами
             _rewrite_reports(summary, run_dir, settings, lang)
+            _apply_roles(summary, settings)
         finally:
             await browser.close()
 
@@ -431,6 +434,24 @@ async def run_urls(items: list[InputItem], settings: Any, out_dir: Path, lang: s
     prune_runs(Path(out_dir), settings.output.keep_runs)
     log(t(lang, "run_done", path=str(run_dir / "index.md")))
     return summary
+
+
+def _apply_roles(summary: RunSummary, settings: Any) -> None:
+    """Отбор вакансий по словарю ролей. Нет файла словаря: предупреждение, остальное работает."""
+    if not settings.roles.enabled:
+        return
+    from .roles import collect_matches, load_rules
+    path = Path(settings.roles.file)
+    if not path.exists():
+        summary.settings_warnings.append(f"словарь ролей {path} не найден, отбор по ролям пропущен")
+        return
+    try:
+        rules = load_rules(path)
+    except (OSError, ValueError, KeyError) as exc:
+        summary.settings_warnings.append(f"словарь ролей {path} не прочитан: {exc}")
+        return
+    summary.role_matches = collect_matches(summary.results, rules)
+    summary.roles_source = str(path)
 
 
 def _rewrite_reports(summary: RunSummary, run_dir: Path, settings: Any, lang: str) -> None:

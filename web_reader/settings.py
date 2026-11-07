@@ -89,6 +89,10 @@ DEFAULTS: dict[str, Any] = {
     "preflight": {
         "probe_url": "https://example.com",
     },
+    "roles": {
+        "enabled": True,
+        "file": "config/roles.json",   # словарь ролей; если файла нет, отбор по ролям пропускается с предупреждением
+    },
 }
 
 # Жёсткие потолки: больше этих значений программа не позволит, что бы ни стояло в файле.
@@ -177,6 +181,7 @@ class Settings:
         self.safety = Section(data["safety"])
         self.output = Section(data["output"])
         self.preflight = Section(data["preflight"])
+        self.roles = Section(data["roles"])
 
     def as_dict(self) -> dict[str, Any]:
         return copy.deepcopy(self._data)

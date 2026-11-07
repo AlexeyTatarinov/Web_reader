@@ -250,3 +250,41 @@ def test_site_overrides_apply_only_to_matching_domain_and_respect_rules():
     assert any("max_run_seconds" in w for w in s.warnings) and any("max_text_chars" in w for w in s.warnings)
     ceil = load_settings(None, {"site_overrides": {"a.com": {"run": {"max_pagination_pages": 10_000}}}})
     assert ceil.for_url("https://a.com/").run.max_pagination_pages == 20       # потолок действует
+
+
+# ---------------- словарь ролей
+
+def _rules():
+    from web_reader.roles import load_rules
+    return load_rules("config/roles.json")
+
+
+def test_roles_match_abbreviations_full_names_and_ukrainian_forms():
+    r = _rules()
+    def groups(text, level="strong"):
+        return {m["group"] for m in r.match(text, level)}
+    assert groups("Senior QA Engineer") == {"qa"}
+    assert groups("senior-qa-engineer") == {"qa"}                                  # из адреса
+    assert groups("Quality Assurance Analyst") == {"qa"}
+    assert groups("Software Development Engineer in Test") == {"qa"}
+    assert groups("Тестувальниця ігор") == {"qa"} and groups("Інженера з тестування ПЗ") == {"qa"}
+    assert groups("Контролер якості") == {"qa"}
+    assert "lqa" in groups("LQA Tester (Ukrainian)") and "lqa" in groups("Лінгвістичний тестувальник")
+    assert groups("Менеджер з комплаєнсу") == {"compliance"} and groups("Compliance QA") >= {"compliance"}
+    assert groups("Platform Certification Specialist") == {"certification"} and groups("Менеджер з сертифікації") == {"certification"}
+    assert groups("TRC Submission Coordinator") >= {"compliance", "certification"}
+
+
+def test_roles_do_not_match_unrelated_titles_and_weak_terms_stay_weak():
+    r = _rules()
+    for title in ("Software Developer", "Animation Tools Programmer", "Head of Latin America", "Qatar Sales Manager", "Accountant"):
+        assert r.match(title) == [], title
+    assert r.match("Localization Manager") == [] and {m["group"] for m in r.match("Localization Manager", "weak")} == {"lqa"}
+    assert r.match("Release Manager") == []        # слишком общее: только слабое совпадение
+
+
+def test_roles_region_exclusion_and_language_markers():
+    r = _rules()
+    assert r.excluded_region("Moscow, Russia") and r.excluded_region("Мінськ")
+    assert r.excluded_region("Valencia, Spain; Russian speaker required") is None      # язык, не страна
+    assert r.languages_in("Fluent Russian and Ukrainian required") == ["ukrainian", "russian"] or set(r.languages_in("Fluent Russian and Ukrainian required")) >= {"ukrainian"}

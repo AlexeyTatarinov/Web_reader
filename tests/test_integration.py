@@ -284,6 +284,22 @@ def test_last_address_denied_then_recovers_after_pause(base_url, tmp_path):
     assert child.status in ("ok", "partial") and any(w["code"] == "w_retry_recovered" and w["attempt"] == 2 for w in child.warnings)
 
 
+def test_role_matches_are_collected_and_shown_in_index(base_url, tmp_path):
+    summary = asyncio.run(run_urls([InputItem(base_url + "/listing")], make_settings(), tmp_path, "uk", log=lambda m: None))
+    titles = {e["title"] for e in summary.role_matches if e["level"] == "title"}
+    assert {"QA Engineer A", "LQA Russian", "Compliance Manager"} <= titles, titles
+    index = (summary.run_dir / "index.md").read_text(encoding="utf-8")
+    assert "Підходящі за ролями" in index and "QA Engineer A" in index
+    assert json.loads((summary.run_dir / "roles.json").read_text(encoding="utf-8"))
+    assert json.loads((summary.run_dir / "summary.json").read_text(encoding="utf-8"))["role_matches"] >= 3
+
+
+def test_missing_roles_file_is_a_warning_not_a_crash(base_url, tmp_path):
+    settings = make_settings(roles={"file": "no/such/roles.json"})
+    summary = asyncio.run(run_urls([InputItem(base_url + "/dynamic")], settings, tmp_path, "ru", log=lambda m: None))
+    assert summary.results[0].status == "ok" and any("словарь ролей" in w for w in summary.settings_warnings)
+
+
 def test_run_budget_marks_unprocessed_addresses(base_url, tmp_path):
     settings = make_settings(run={"max_pages_per_run": 1, "max_depth": 0})
     summary = asyncio.run(run_urls([InputItem(base_url + "/dynamic"), InputItem(base_url + "/about")],
@@ -325,3 +341,27 @@ def test_site_override_raises_limit_for_that_site_only(base_url, tmp_path):
     top = summary.results[0]
     assert any(c.relation == "pagination" for c in top.children)
     assert not any(h["limit"] == "max_pagination_pages" for h in top.limits_hit)
+
+
+def test_api_fetch_returns_rendered_html_and_jobs_across_list_pages(base_url):
+    from web_reader.api import fetch
+    r = fetch(base_url + "/listing", config=None,
+              overrides={"safety": {"allow_private_hosts": True}, "run": {"delay_between_pages_s": 0}})
+    assert r.status_code == 200 and r.status in ("ok", "partial") and r.pages == 2
+    assert "QA Engineer A" in r.html and "Compliance Manager" in r.html          # страницы списка склеены
+    assert {"QA Engineer A", "Compliance Manager"} <= {j["title"] for j in r.jobs}
+
+
+def test_api_fetch_sees_javascript_rendered_links(base_url):
+    from web_reader.api import fetch
+    r = fetch(base_url + "/dynamic", config=None, overrides={"safety": {"allow_private_hosts": True}})
+    assert "Senior QA Engineer" in r.html and "/jobs/qa-engineer-1" in r.html
+
+
+def test_api_fetch_light_mode_and_denied_page(base_url):
+    from web_reader.api import fetch
+    ov = {"safety": {"allow_private_hosts": True}}
+    r = fetch(base_url + "/jobs/qa-tester-7", light=True, config=None, overrides=ov)
+    assert r.status_code == 200 and "Qa Tester 7" in r.html
+    d = fetch(base_url + "/forbidden", light=True, config=None, overrides=ov)
+    assert d.status_code == 403 and d.status == "blocked"
