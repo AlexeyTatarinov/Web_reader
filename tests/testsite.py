@@ -160,7 +160,7 @@ PAGES["/cards2"] = page(
     "<h1>Careers</h1>" + FILLER + "<div class='board'>"
     "<div class='opening'><div class='t'>QA Tester - Consoles (Compliance &amp; DevKits)</div><div>Mexico</div>"
     "<a href='/hub/?module=interview&jobOpeningId=334'>Apply Now</a><a href='/hub/?module=interview&jobDescriptionId=17'>View Job Description</a></div>"
-    "<div class='opening'><div class='t'>Art Production Manager</div><div>Bangalore</div><div><b>Department:</b></div><div>Project Management</div>"
+    "<div class='opening'><div class='t'>Art Production Manager</div><div>Bangalore</div><div class='title-label'>Department:</div><div>Project Management</div>"
     "<div><b>Position:</b></div><div>Project Manager</div><div class='btns'><a href='/hub/?module=interview&jobDescriptionId=21'>View Job Description</a>"
     "<a href='/hub/?module=interview&jobOpeningId=335'>Apply Now</a></div></div>"
     "<div class='opening'><div class='t'>Technical Artist</div><div>Remote</div><a href='/r/TA-OCT-26'>Apply!</a></div></div>"

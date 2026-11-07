@@ -474,8 +474,11 @@ def finalize(res: PageResult, settings: Any) -> None:
         if (link["class"] in ("job_internal", "ats_job") or applyish) and link["url"] not in job_links:
             title = link["text"] if len(link["text"]) >= 4 else (link["context"][:100] or link["text"])
             from_card = False
-            if link.get("heading") and generic:
-                title = link["heading"]            # «More Details», «Apply»: название вакансии берём из заголовка карточки
+            heading = link.get("heading") or ""
+            if heading.rstrip().endswith(":") or _APPLY_TEXT.match(heading) or _GENERIC_LINK_TEXT.match(heading):
+                heading = ""                       # подпись поля («Department:») или кнопка, а не название
+            if heading and generic:
+                title = heading                    # «More Details», «Apply»: название вакансии берём из заголовка карточки
                 from_card = True
             elif generic and link.get("card_title"):
                 title, from_card = link["card_title"], True
