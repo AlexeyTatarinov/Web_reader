@@ -50,5 +50,11 @@
   "preflight": {
     "probe_url": "https://example.com"
   },
-  "site_overrides": {}
+  "site_overrides": {
+    "careers.playstation.com": {
+      "run": {
+        "max_pagination_pages": 10
+      }
+    }
+  }
 }
