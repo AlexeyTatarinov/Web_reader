@@ -221,3 +221,15 @@ def test_chat_assistant_buttons_are_never_clicked():
     import re
     from web_reader.dom import SKIP_RE
     assert re.search(SKIP_RE, "Open Ichi's AI Recruiting Assistant", re.I)
+
+
+def test_wordpress_jobs_are_found_and_taxonomy_terms_are_not():
+    from web_reader.jobs import extract_job_items
+    terms = [{"id": i, "name": n, "slug": n.lower(), "count": 3, "parent": 0, "taxonomy": "tlocation", "link": f"https://x.com/tlocation/{n}/"}
+             for i, n in enumerate(["Poland", "Spain", "Italy"])]
+    talent = [{"id": 1, "type": "talent", "link": "https://x.com/talent/qa-tester/", "title": {"rendered": "QA Tester &#8211; Remote"}},
+              {"id": 2, "type": "talent", "link": "https://x.com/talent/lqa-ru/", "title": {"rendered": "LQA Russian"}},
+              {"id": 3, "type": "talent", "link": "https://x.com/talent/dev/", "title": {"rendered": "Developer"}}]
+    assert extract_job_items(terms)[1] == 0
+    items, total = extract_job_items(talent)
+    assert total == 3 and items[0]["title"] == "QA Tester – Remote"

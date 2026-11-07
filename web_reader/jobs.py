@@ -52,8 +52,22 @@ def _to_text(value: Any, limit: int = 160) -> str:
     return ""
 
 
-def _looks_like_job(item: dict[str, Any]) -> bool:
+def _is_taxonomy_term(item: dict[str, Any]) -> bool:
+    """Рубрики и метки (страны, отделы, фильтры) похожи на вакансии по полям name/slug/link, но вакансиями не являются."""
+    return "taxonomy" in item or ("count" in item and "slug" in item and ("parent" in item or "taxonomy" in item))
+
+
+def _title_value(item: dict[str, Any]) -> Any:
     title = _first(item, TITLE_KEYS)
+    if isinstance(title, dict) and isinstance(title.get("rendered"), str):   # WordPress REST: {"title": {"rendered": "..."}}
+        return html.unescape(re.sub(r"<[^>]+>", "", title["rendered"])).strip()
+    return title
+
+
+def _looks_like_job(item: dict[str, Any]) -> bool:
+    if _is_taxonomy_term(item):
+        return False
+    title = _title_value(item)
     if not isinstance(title, str) or not (3 <= len(title.strip()) <= 200):
         return False
     return any(k in item for k in URL_KEYS + LOC_KEYS + ID_KEYS + DEPT_KEYS)
@@ -65,7 +79,7 @@ def _normalize(item: dict[str, Any], base_url: str | None) -> dict[str, Any]:
     if url_text and base_url and not re.match(r"^[a-z][a-z0-9+.-]*:", url_text):
         url_text = urljoin(base_url, url_text)
     return {
-        "title": _to_text(_first(item, TITLE_KEYS), 200),
+        "title": _to_text(_title_value(item), 200),
         "location": _to_text(_first(item, LOC_KEYS)),
         "department": _to_text(_first(item, DEPT_KEYS)),
         "employment": _to_text(_first(item, TYPE_KEYS), 60),
