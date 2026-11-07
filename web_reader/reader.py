@@ -42,6 +42,13 @@ _LOGIN_RE = re.compile(r"sign in to (continue|view)|log in to (continue|view)|in
 _CAREERS_HINT = re.compile(r"career|jobs?\b|vacanc|openings|empleo|trabajo|emploi|karriere|stellen|вакан|вакансі|робота|работа", re.I)
 
 
+_GENERIC_LINK_TEXT = re.compile(
+    r"^(more|details?|more details?|more info(rmation)?|read more|learn more|know more|see more|view( job| role| details| more| position)?|"
+    r"open( job| position)?|apply( now| here)?|click here|go|see details|job details?|"
+    r"ver más|más información|leer más|detalles|en savoir plus|voir( l'offre| plus)?|mehr( erfahren| lesen)?|details ansehen|"
+    r"подробнее|детальніше|докладніше|дізнатися більше|докладно)[\s.»>→›…]*$", re.I)
+
+
 @dataclass
 class PageResult:
     url: str
@@ -446,6 +453,7 @@ def finalize(res: PageResult, settings: Any) -> None:
         seen.add(key)
         links.append({"text": raw["text"], "url": norm, "class": cls, "rel": raw.get("rel", ""),
                       "context": raw.get("context", "") if raw.get("context", "") != raw["text"] else "",
+                      "heading": raw.get("heading", "") or "",
                       "source": raw.get("source", "page"), "visible": raw.get("visible", True)})
     res.links = links
 
@@ -454,6 +462,8 @@ def finalize(res: PageResult, settings: Any) -> None:
     for link in links:
         if link["class"] in ("job_internal", "ats_job") and link["url"] not in job_links:
             title = link["text"] if len(link["text"]) >= 4 else (link["context"][:100] or link["text"])
+            if link.get("heading") and (len(link["text"]) < 4 or _GENERIC_LINK_TEXT.match(link["text"])):
+                title = link["heading"]            # «More Details», «Apply»: название вакансии берём из заголовка карточки
             job_links[link["url"]] = {"title": title, "url": link["url"], "location": "",
                                       "context": link["context"][:200], "source": "page"}
     network_jobs: list[dict[str, Any]] = []

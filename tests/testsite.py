@@ -149,6 +149,13 @@ PAGES["/listing"] = page(
     "<a href='https://example.org/partner'>Partner</a> <a href='https://www.linkedin.com/company/acme'>LinkedIn</a> "
     "<a href='mailto:jobs@acme.test'>Email us</a> <a href='#top'>Back to top</a> <a href='javascript:void(0)'>Nothing</a>",
     title="Careers at Acme")
+PAGES["/cards"] = page(
+    "<h1>Join us</h1>" + FILLER +
+    "<div class='cards'>"
+    "<div class='card'><h3>Game QA Tester</h3><p>Hiring testers for console games</p><a href='/jobs/card-qa-1'>More Details</a></div>"
+    "<div class='card'><h3>LQA Ukrainian</h3><p>Linguistic testing</p><a href='/jobs/card-lqa-2'>Apply Now</a></div>"
+    "<div class='card'><h3>Unity Developer</h3><p>Programmer</p><a href='/jobs/card-dev-3'>Details</a></div></div>",
+    title="Join us")
 PAGES["/flakylist"] = page(
     "<h1>Careers at Flaky Co</h1>" + FILLER + "<ul><li><a href='/jobs/ok-qa-1'>QA Fine</a></li>"
     "<li><a href='/jobs/flaky-qa-2'>QA Flaky</a></li></ul>", title="Careers at Flaky Co")

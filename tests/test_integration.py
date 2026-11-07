@@ -300,6 +300,12 @@ def test_missing_roles_file_is_a_warning_not_a_crash(base_url, tmp_path):
     assert summary.results[0].status == "ok" and any("словарь ролей" in w for w in summary.settings_warnings)
 
 
+def test_generic_button_text_is_replaced_by_card_heading(base_url):
+    res = read_one(base_url + "/cards")
+    titles = {j["url"].rsplit("/", 1)[-1]: j["title"] for j in res.jobs["links"]}
+    assert titles == {"card-qa-1": "Game QA Tester", "card-lqa-2": "LQA Ukrainian", "card-dev-3": "Unity Developer"}
+
+
 def test_run_budget_marks_unprocessed_addresses(base_url, tmp_path):
     settings = make_settings(run={"max_pages_per_run": 1, "max_depth": 0})
     summary = asyncio.run(run_urls([InputItem(base_url + "/dynamic"), InputItem(base_url + "/about")],

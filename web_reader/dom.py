@@ -87,6 +87,17 @@ LINKS_JS = r"""
   };
   const CARD = 'li, article, tr, [class*="card" i], [class*="job" i], [class*="position" i], [class*="opening" i], [class*="vacanc" i], [role="listitem"]';
   const ctx = (el) => { const c = el.closest ? el.closest(CARD) : null; if (!c) return ''; return ((c.innerText || '') + '').replace(/\s+/g, ' ').trim().slice(0, 220); };
+  // Заголовок карточки: ближайший объемлющий блок с заголовком, в котором не больше трёх ссылок (иначе это уже весь список).
+  const headingOf = (el) => {
+    let e = el;
+    for (let i = 0; i < 6 && e && e.nodeType === 1; i++) {
+      if (e.querySelectorAll && e.querySelectorAll('a[href]').length > 3) return '';
+      const h = e.querySelector ? e.querySelector('h1,h2,h3,h4,h5,h6,[class*="title" i],[class*="job-name" i],[class*="position-name" i]') : null;
+      if (h && !h.contains(el)) { const t = ((h.innerText || '') + '').replace(/\s+/g, ' ').trim(); if (t && t.length <= 140) return t; }
+      e = e.parentElement;
+    }
+    return '';
+  };
   const visible = (el) => { const cs = getComputedStyle(el); if (cs.display === 'none' || cs.visibility === 'hidden') return false; const r = el.getBoundingClientRect(); return r.width > 0 || r.height > 0; };
   for (const el of all) {
     let href = null, kind = null;
@@ -109,7 +120,7 @@ LINKS_JS = r"""
     if (seen.has(key)) continue;
     seen.add(key);
     out.push({href: full, text: text, kind: kind, rel: el.getAttribute('rel') || '', target: el.getAttribute('target') || '',
-              download: el.hasAttribute('download'), aria: el.getAttribute('aria-label') || '', context: ctx(el), visible: visible(el)});
+              download: el.hasAttribute('download'), aria: el.getAttribute('aria-label') || '', context: ctx(el), heading: headingOf(el), visible: visible(el)});
     if (out.length >= arg.max) break;
   }
   return out;
