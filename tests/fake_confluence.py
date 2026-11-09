@@ -45,6 +45,7 @@ class FakeConfluence(ThreadingHTTPServer):
         self.email, self.token = email, token
         self.pages = make_pages(self.url)
         self.requests: list[str] = []
+        self.user_agents: list[str] = []
         self.scoped_only = False   # site URL refuses Basic auth (as for scoped tokens); only /ex/confluence/abc works
         self.fail_429_once = False
         self.foreign_next = False
@@ -73,6 +74,7 @@ class _Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         srv: FakeConfluence = self.server  # type: ignore[assignment]
         srv.requests.append(self.path)
+        srv.user_agents.append(self.headers.get("User-Agent", ""))
         if self.path == "/_edge/tenant_info":
             return self._json({"cloudId": "abc"})
         gateway = "/ex/confluence/abc"
