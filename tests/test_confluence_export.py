@@ -22,8 +22,9 @@ def server():
     s.shutdown()
 
 
-def client(server, token=TOKEN):
-    return ConfluenceClient(server.url, EMAIL, token, delay_s=0, sleep=lambda _s: None)
+def client(server, token=TOKEN, gateway=False):
+    return ConfluenceClient(server.url, EMAIL, token, delay_s=0, sleep=lambda _s: None,
+                            gateway_base=server.url + "/ex/confluence/abc" if gateway else None)
 
 
 def run(server, tmp_path, **kwargs):
@@ -144,3 +145,41 @@ def test_cli_end_to_end(server, monkeypatch, tmp_path, capsys):
     assert code == 0 and (tmp_path / "out" / "user-guides" / "index.md").exists()
     assert TOKEN not in out.out + out.err
     assert (tmp_path / "out" / "export.zip").exists()
+
+
+# ---------- scoped API tokens (the site URL refuses them, the api.atlassian.com gateway accepts them) ----------
+
+def test_scoped_token_falls_back_to_the_gateway_and_keeps_site_urls(server, tmp_path):
+    server.scoped_only = True
+    summary = export_branch(client(server, gateway=True), "100", tmp_path, page_size=3)
+    assert summary["pages"] == 8
+    text = (tmp_path / "user-guides" / "casino-guide" / "index.md").read_text(encoding="utf-8")
+    assert f"url: {server.url}/wiki/spaces/GD/pages/101/x" in text          # site URL, not the gateway one
+    assert any(r.startswith("/ex/confluence/abc/wiki/rest/api/content/search") for r in server.requests)
+    assert any(r.startswith("/ex/confluence/abc/wiki/rest/api/content/search") and "cursor=" in r for r in server.requests)
+
+
+def test_scoped_token_without_gateway_gives_a_helpful_error(server, tmp_path):
+    server.scoped_only = True
+    with pytest.raises(ExportError) as info:
+        export_branch(client(server), "100", tmp_path)
+    message = str(info.value)
+    assert "403" in message and "scope" in message and TOKEN not in message
+    assert "FAILURE_CLIENT_AUTH_MISMATCH" in message
+
+
+def test_cloud_id_discovery_reads_tenant_info(server):
+    from web_reader.confluence_export import discover_cloud_id
+    assert discover_cloud_id(server.url) == "abc"
+    assert discover_cloud_id("http://127.0.0.1:9") is None
+
+
+def test_cli_uses_cloud_id_for_scoped_tokens(server, monkeypatch, tmp_path, capsys):
+    from web_reader.cli import main
+    server.scoped_only = True
+    monkeypatch.setenv("CONFLUENCE_EMAIL", EMAIL)
+    monkeypatch.setenv("CONFLUENCE_API_TOKEN", TOKEN)
+    code = main(["confluence-export", "--site", server.url, "--allow-local", "--root-id", "100",
+                 "--out", str(tmp_path / "out"), "--delay", "0", "--cloud-id", "abc",
+                 "--api-gateway", server.url])
+    assert code == 0, capsys.readouterr().err

@@ -45,6 +45,7 @@ class FakeConfluence(ThreadingHTTPServer):
         self.email, self.token = email, token
         self.pages = make_pages(self.url)
         self.requests: list[str] = []
+        self.scoped_only = False   # site URL refuses Basic auth (as for scoped tokens); only /ex/confluence/abc works
         self.fail_429_once = False
         self.foreign_next = False
         self._429_done = False
@@ -72,6 +73,14 @@ class _Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         srv: FakeConfluence = self.server  # type: ignore[assignment]
         srv.requests.append(self.path)
+        if self.path == "/_edge/tenant_info":
+            return self._json({"cloudId": "abc"})
+        gateway = "/ex/confluence/abc"
+        on_gateway = self.path.startswith(gateway)
+        if on_gateway:
+            self.path = self.path[len(gateway):]
+        elif srv.scoped_only:
+            return self._json({"message": "Forbidden"}, 403, {"X-Failure-Category": "FAILURE_CLIENT_AUTH_MISMATCH"})
         expected = "Basic " + base64.b64encode(f"{srv.email}:{srv.token}".encode()).decode()
         if self.headers.get("Authorization") != expected:
             return self._json({"message": "Unauthorized"}, 401)
@@ -91,7 +100,8 @@ class _Handler(BaseHTTPRequestHandler):
             links = {"base": f"{srv.url}/wiki"}
             if start + limit < len(matches):
                 host = "http://evil.example.com" if srv.foreign_next else ""
-                links["next"] = f"{host}/rest/api/content/search?cql={query['cql'][0]}&limit={limit}&cursor={start + limit}"
+                prefix = "/ex/confluence/abc/wiki" if False else ""
+                links["next"] = f"{host}{prefix}/rest/api/content/search?cql={query['cql'][0]}&limit={limit}&cursor={start + limit}"
             return self._json({"results": chunk, "start": start, "limit": limit, "size": len(chunk), "_links": links})
         if parts.path.startswith("/wiki/rest/api/content/"):
             page = srv.pages.get(parts.path.rsplit("/", 1)[1])

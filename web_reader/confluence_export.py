@@ -46,13 +46,43 @@ class Page:
     modified: str
 
 
+class _AuthDenied(Exception):
+    def __init__(self, code: int, category: str) -> None:
+        self.code, self.category = code, category
+        super().__init__(str(code))
+
+
+def discover_cloud_id(site_host: str, timeout: float = 10.0) -> str | None:
+    """Reads the public tenant info of a Confluence Cloud site (no credentials) and returns its cloud id."""
+    base = site_host if site_host.startswith("http") else f"https://{site_host}"
+    host = (urlsplit(base).hostname or "").lower()
+    opener = urllib.request.build_opener(urllib.request.ProxyHandler({})) if host in ("127.0.0.1", "localhost") \
+        else urllib.request.build_opener()
+    try:
+        with opener.open(f"{base.rstrip('/')}/_edge/tenant_info", timeout=timeout) as response:
+            return str(json.load(response).get("cloudId") or "") or None
+    except Exception:
+        return None
+
+
 class ConfluenceClient:
-    """Small GET-only client with Basic auth, retries and a pause between requests."""
+    """Small GET-only client with Basic auth, retries and a pause between requests.
+
+    Classic API tokens work on the site URL. Tokens created with scopes only work through the
+    api.atlassian.com gateway, so when the site URL refuses the credentials and a gateway address
+    is known, the client switches to it for the rest of the run.
+    """
 
     def __init__(self, base_url: str, email: str, token: str, delay_s: float = 0.3,
-                 sleep: Callable[[float], None] = time.sleep, max_retries: int = 5) -> None:
-        self.base = base_url.rstrip("/")
-        self.host = (urlsplit(self.base).hostname or "").lower()
+                 sleep: Callable[[float], None] = time.sleep, max_retries: int = 5,
+                 gateway_base: str | None = None) -> None:
+        self.site_base = base_url.rstrip("/")
+        self.base = self.site_base
+        self.host = (urlsplit(self.site_base).hostname or "").lower()
+        self.gateway_base = gateway_base.rstrip("/") if gateway_base else None
+        self._hosts = {self.host}
+        if self.gateway_base:
+            self._hosts.add((urlsplit(self.gateway_base).hostname or "").lower())
         auth = base64.b64encode(f"{email}:{token}".encode()).decode()
         self._headers = {"Authorization": f"Basic {auth}", "Accept": "application/json"}
         self._delay, self._sleep, self._retries = delay_s, sleep, max_retries
@@ -61,9 +91,34 @@ class ConfluenceClient:
             else urllib.request.build_opener()
 
     def get_json(self, path_or_url: str) -> dict[str, Any]:
-        url = path_or_url if path_or_url.startswith("http") else self.base + path_or_url
-        if (urlsplit(url).hostname or "").lower() != self.host:
-            raise ExportError("refusing to follow a link to another host")
+        """GET a path (or an absolute link on a known host); the path is re-rooted on the current route."""
+        if path_or_url.startswith("http"):
+            parts = urlsplit(path_or_url)
+            if (parts.hostname or "").lower() not in self._hosts:
+                raise ExportError("refusing to follow a link to another host")
+            path = parts.path + (f"?{parts.query}" if parts.query else "")
+            for root in (self.gateway_base, self.site_base):
+                if root and (urlsplit(root).path or "") and path.startswith(urlsplit(root).path):
+                    path = path[len(urlsplit(root).path):]
+        else:
+            path = path_or_url
+        try:
+            return self._request(self.base + path)
+        except _AuthDenied as first:
+            tried = [f"site HTTP {first.code}" + (f" {first.category}" if first.category else "")]
+            if self.gateway_base and self.base != self.gateway_base:
+                self.base = self.gateway_base
+                try:
+                    return self._request(self.base + path)
+                except _AuthDenied as second:
+                    tried.append(f"gateway HTTP {second.code}" + (f" {second.category}" if second.category else ""))
+            raise ExportError(
+                f"authorization failed ({'; '.join(tried)}). Check the account email and the API token. "
+                "A token created with scopes needs read scopes for Confluence content and the cloud id "
+                "(--cloud-id); if your organisation restricts API tokens or allowed IP addresses, "
+                "ask the Atlassian administrator.") from None
+
+    def _request(self, url: str) -> dict[str, Any]:
         url = quote(url, safe=":/?&=%,+@")
         for attempt in range(self._retries + 1):
             request = urllib.request.Request(url, headers=self._headers, method="GET")
@@ -75,8 +130,7 @@ class ConfluenceClient:
                 return data
             except urllib.error.HTTPError as exc:
                 if exc.code in (401, 403):
-                    raise ExportError(f"authorization failed (HTTP {exc.code}): check the account email, "
-                                      "the API token and the access rights") from None
+                    raise _AuthDenied(exc.code, str(exc.headers.get("X-Failure-Category", ""))[:60]) from None
                 if exc.code == 404:
                     raise ExportError("not found (HTTP 404): check the page id and the site") from None
                 if exc.code in _RETRY_STATUSES and attempt < self._retries:
@@ -108,13 +162,13 @@ def _to_page(item: dict[str, Any], base: str) -> Page:
 def fetch_branch(client: ConfluenceClient, root_id: str, page_size: int, max_pages: int,
                  log: Callable[[str], None]) -> dict[str, Page]:
     root = client.get_json(f"/wiki/rest/api/content/{root_id}?expand={EXPAND}")
-    pages = {str(root["id"]): _to_page(root, client.base)}
+    pages = {str(root["id"]): _to_page(root, client.site_base)}
     cql = quote(f"ancestor = {root_id} AND type = page", safe="")
     url: str | None = f"/wiki/rest/api/content/search?cql={cql}&expand={EXPAND}&limit={page_size}"
     while url:
         data = client.get_json(url)
         for item in data.get("results", []):
-            pages[str(item["id"])] = _to_page(item, client.base)
+            pages[str(item["id"])] = _to_page(item, client.site_base)
             if len(pages) > max_pages:
                 raise ExportError(f"the branch has more than {max_pages} pages; "
                                   "raise --max-pages if this is intended")
@@ -124,7 +178,7 @@ def fetch_branch(client: ConfluenceClient, root_id: str, page_size: int, max_pag
         nxt = links.get("next")
         if not nxt:
             break
-        url = nxt if nxt.startswith("http") else (links.get("base") or client.base + "/wiki") + nxt
+        url = nxt if nxt.startswith("http") else f"{client.base}/wiki{nxt}"
     return pages
 
 
