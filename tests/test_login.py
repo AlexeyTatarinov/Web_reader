@@ -10,6 +10,7 @@ import pytest
 from playwright.async_api import async_playwright
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import fake_login_site  # noqa: E402
 from fake_login_site import FakeTelegram, LoginSite  # noqa: E402
 from conftest import make_settings  # noqa: E402
 from web_reader.browser import context_options, launch_browser  # noqa: E402
@@ -246,3 +247,26 @@ def test_login_test_fails_fast_when_telegram_is_broken_and_never_opens_the_site(
     _tg_env(monkeypatch, telegram, token="BADTOKEN")
     assert main(["login-test", "--start-url", site.url + "/app", "--allow-local", "--code-timeout", "5"]) == 1
     assert site.events == []
+
+
+@pytest.mark.browser
+def test_unrecognised_code_page_after_password_still_asks_for_the_code(site):
+    fake_login_site.ODD["on"] = True
+    try:
+        (result, _), asked = run_login(site, [CODE])
+    finally:
+        fake_login_site.ODD["on"] = False
+    assert result.ok is True
+    assert asked == ["first"]
+    assert result.stages == ["email", "password", "code", "done"]
+
+
+@pytest.mark.browser
+def test_unrecognised_code_page_wrong_code_is_rejected_not_hanging(site):
+    fake_login_site.ODD["on"] = True
+    try:
+        exc, asked = run_login(site, ["000000", "111111"])
+    finally:
+        fake_login_site.ODD["on"] = False
+    assert isinstance(exc, LoginError) and exc.reason == "rejected" and exc.stage == "code"
+    assert asked == ["first", "retry"]

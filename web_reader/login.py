@@ -22,11 +22,14 @@ from .i18n import t
 TRUSTED_SUFFIXES = (".atlassian.com", ".atlassian.net")
 LOGIN_BUTTON_RE = re.compile(r"^\s*(log ?in|sign ?in|войти|увійти)", re.I)
 
+_GENERIC_INPUT = ("input:not([type=hidden]):not([type=password]):not([type=email]):not([type=checkbox])"
+                  ":not([type=radio]):not([type=submit]):not([type=button])")
 _STAGE_JS = """() => {
   const visible = el => { const r = el.getBoundingClientRect(); const s = getComputedStyle(el);
     return r.width > 0 && r.height > 0 && s.visibility !== 'hidden' && s.display !== 'none' && !el.disabled; };
   const q = sel => [...document.querySelectorAll(sel)].filter(visible);
   const mark = sel => q(sel).some(el => !el.hasAttribute('data-wr-seen'));
+  const GENERIC_INPUT = "__GENERIC__";
   const pw = 'input[type=password]';
   const code = 'input[autocomplete=one-time-code], input[name*=code i], input[id*=code i], input[inputmode=numeric], input[name*=otp i], input[id*=otp i]';
   const email = 'input[type=email], input[name=username], input#username, input[autocomplete=username]';
@@ -34,7 +37,9 @@ _STAGE_JS = """() => {
   const sel = {password: pw, code: code, email: email}[stage];
   const error = q('[role=alert], .error, [class*=error i], [id*=error i], [data-testid*=error i]')
     .some(el => (el.innerText || '').trim().length > 0);
-  return {stage: stage, fresh: stage ? mark(sel) : false, error: error};
+  const generic = q(GENERIC_INPUT);
+  return {stage: stage, fresh: stage ? mark(sel) : false, error: error,
+          generic: generic.length > 0, genericFresh: generic.some(el => !el.hasAttribute('data-wr-seen'))};
 }"""
 _MARK_JS = "() => document.querySelectorAll('input').forEach(el => el.setAttribute('data-wr-seen', '1'))"
 _SELECTORS = {
@@ -43,6 +48,9 @@ _SELECTORS = {
     "code": ("input[autocomplete=one-time-code], input[name*=code i], input[id*=code i], "
              "input[inputmode=numeric], input[name*=otp i], input[id*=otp i]"),
 }
+
+
+_STAGE_JS = _STAGE_JS.replace("__GENERIC__", _GENERIC_INPUT)
 
 
 class LoginError(Exception):
@@ -183,6 +191,29 @@ async def _page_text(page: Any) -> tuple[str, str]:
         return "", ""
 
 
+_DIAG_JS = """() => {
+  const visible = el => { const r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; };
+  const inputs = [...document.querySelectorAll('input')].filter(visible)
+    .map(el => [el.type, el.name, el.id, el.autocomplete, el.inputMode].join('/')).slice(0, 8);
+  const buttons = [...document.querySelectorAll('button, [role=button]')].filter(visible)
+    .map(el => (el.innerText || '').trim().slice(0, 30)).filter(Boolean).slice(0, 6);
+  return {inputs: inputs, buttons: buttons};
+}"""
+
+
+async def _diagnostics(page: Any) -> str:
+    """Safe description of the current page for the error message: no input values, emails masked."""
+    title, text = await _page_text(page)
+    try:
+        info = await page.evaluate(_DIAG_JS)
+    except Exception:
+        info = {"inputs": [], "buttons": []}
+    snippet = re.sub(r"\s+", " ", text)[:200]
+    snippet = re.sub(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+", "***@***", snippet)
+    return (f"host={_host(page.url)} path={urlsplit(page.url).path[:40]} title={title[:60]!r} "
+            f"inputs={info['inputs']} buttons={info['buttons']} text={snippet!r}")
+
+
 async def _click_login_button(page: Any) -> bool:
     for role in ("link", "button"):
         locator = page.get_by_role(role, name=LOGIN_BUTTON_RE)
@@ -198,6 +229,10 @@ async def _click_login_button(page: Any) -> bool:
 async def _submit(page: Any, stage: str, value: str) -> None:
     await page.evaluate(_MARK_JS)
     field_locator = page.locator(_SELECTORS[stage]).first
+    if stage == "code" and not await field_locator.count():
+        field_locator = page.locator(_GENERIC_INPUT).first
+        if not await field_locator.count():
+            raise LoginError("unknown_page", "code", await _diagnostics(page))
     if stage == "code":
         await field_locator.click(timeout=5000)
         await page.keyboard.type(value, delay=40)  # also works when the code is split into one box per digit
@@ -214,6 +249,9 @@ async def _after_submit(page: Any, stage: str, wait_s: float = 25.0) -> str:
         state = await _state(page)
         if state["stage"] == "busy":
             continue
+        if state["stage"] is None and stage == "code" and state.get("generic") and \
+                (state.get("genericFresh") or state["error"]):
+            return "rejected"  # the unrecognised code page came back with a fresh field or an error
         if state["stage"] != stage:
             return "progressed"
         if state["fresh"] or state["error"]:
@@ -236,6 +274,7 @@ async def login_atlassian(page: Any, creds: Credentials,
     stages: list[str] = []
     submits = {"email": 0, "password": 0, "code": 0}
     quiet, clicked_login = 0, False
+    unknown_polls, unknown_since = 0, None
 
     def note(stage: str) -> None:
         if not stages or stages[-1] != stage:
@@ -262,8 +301,22 @@ async def login_atlassian(page: Any, creds: Credentials,
             if quiet >= settle_polls and (not expect_text or expect_text in text):
                 note("done")
                 return LoginResult(True, stages)
-            await asyncio.sleep(0.4)
-            continue
+            if not on_app:
+                unknown_since = unknown_since or time.monotonic()
+                unknown_polls += 1
+                if stages and stages[-1] in ("password", "code") and unknown_polls >= 3 and \
+                        _trusted(_host(page.url), trusted):
+                    stage = "code"  # the page after the password is not recognised: ask the owner for the code
+                    unknown_polls, unknown_since = 0, None
+                elif time.monotonic() - unknown_since > 45:
+                    raise LoginError("unknown_page", stages[-1] if stages else "", await _diagnostics(page))
+            else:
+                unknown_polls, unknown_since = 0, None
+            if stage is None:
+                await asyncio.sleep(0.4)
+                continue
+        else:
+            unknown_polls, unknown_since = 0, None
 
         quiet = 0
         host = _host(page.url)

@@ -30,8 +30,15 @@ def password_form(error: str = "") -> bytes:
                  "<input type='password' name='password' id='password'><button type='submit'>Log in</button></form>")
 
 
+ODD = {"on": False}
+
+
 def code_form(error: str = "") -> bytes:
     note = f"<p class='error'>{error}</p>" if error else ""
+    if ODD["on"]:  # an input that matches none of the usual code selectors
+        return _html("<h1>Check your email</h1><p>We sent a 6-character code to us***@example.com</p>" + note +
+                     "<form method='post' action='/login/code'><input type='text' name='field1' id='f1'>"
+                     "<button type='submit'>Verify</button></form>")
     return _html("<h1>Check your email</h1><p>We sent a code to your email.</p>" + note +
                  "<form method='post' action='/login/code'><input name='code' autocomplete='one-time-code' inputmode='numeric'>"
                  "<button type='submit'>Verify</button></form>")
@@ -97,7 +104,8 @@ class _LoginHandler(BaseHTTPRequestHandler):
             return self._send(code_form())
         if path == "/login/code":
             self.server.events.append("code")
-            if parse_qs(body).get("code", [""])[0].replace(" ", "") != self.server.code:
+            fields = parse_qs(body)
+            if (fields.get("code") or fields.get("field1") or [""])[0].replace(" ", "") != self.server.code:
                 return self._send(code_form("That code is not valid"))
             return self._redirect("/app", {"Set-Cookie": "sid=ok; Path=/"})
         self._send(_html("not found"), 404)
