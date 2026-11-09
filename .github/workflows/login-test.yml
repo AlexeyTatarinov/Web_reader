@@ -1,0 +1,61 @@
+name: Login test
+
+# Manual run only. Logs in to a page behind an Atlassian login and asks for the emailed code in Telegram.
+# Nothing from the site is saved or committed; only a failure screenshot is kept for one day.
+on:
+  workflow_dispatch:
+    inputs:
+      start_url:
+        description: "Page that requires login (https)"
+        required: true
+        default: "https://knowledge-hub.gr8.tech/space/GD/7012399/User+Guides"
+      code_timeout:
+        description: "Seconds to wait for the code in Telegram"
+        required: false
+        default: "300"
+
+concurrency:
+  group: web-reader-login
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  login:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Pre-flight check
+        run: python -m web_reader check
+
+      - name: Login test
+        env:
+          ATLASSIAN_EMAIL: ${{ secrets.ATLASSIAN_EMAIL }}
+          ATLASSIAN_PASSWORD: ${{ secrets.ATLASSIAN_PASSWORD }}
+          LOGIN_TELEGRAM_BOT_TOKEN: ${{ secrets.LOGIN_TELEGRAM_BOT_TOKEN }}
+          LOGIN_TELEGRAM_CHAT_ID: ${{ secrets.LOGIN_TELEGRAM_CHAT_ID }}
+          START_URL: ${{ github.event.inputs.start_url }}
+          CODE_TIMEOUT: ${{ github.event.inputs.code_timeout }}
+        run: python -m web_reader login-test --start-url "$START_URL" --code-timeout "${CODE_TIMEOUT:-300}" --out "$RUNNER_TEMP/login-out"
+
+      - name: Keep failure screenshot (1 day)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: login-failure
+          path: ${{ runner.temp }}/login-out/login/failure.png
+          retention-days: 1
+          if-no-files-found: ignore
