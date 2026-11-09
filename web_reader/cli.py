@@ -48,6 +48,8 @@ def build_parser() -> argparse.ArgumentParser:
     cx.add_argument("--max-pages", type=int, default=3000, help="safety cap on the number of pages")
     cx.add_argument("--delay", type=float, default=0.3, help="pause between requests, seconds")
     cx.add_argument("--zip", action="store_true", help="also write export.zip")
+    cx.add_argument("--cloud-id", help="Atlassian cloud id (needed only for tokens created with scopes; found automatically)")
+    cx.add_argument("--api-gateway", default="https://api.atlassian.com", help=argparse.SUPPRESS)
     cx.add_argument("--allow-local", action="store_true", help="allow http and local hosts (tests only)")
     sub.add_parser("version", help="версия программы")
     return parser
@@ -200,8 +202,11 @@ def _confluence_export(args: argparse.Namespace, lang: str, out_dir: Path) -> in
     if not args.allow_local and not host.lower().endswith(".atlassian.net"):
         print(t(lang, "cx_need_atlassian"), file=sys.stderr)
         return 2
+    from .confluence_export import discover_cloud_id
+    cloud_id = args.cloud_id or (None if args.allow_local else discover_cloud_id(host))
+    gateway = f"{args.api_gateway.rstrip('/')}/ex/confluence/{cloud_id}" if cloud_id else None
     client = ConfluenceClient(base, os.environ["CONFLUENCE_EMAIL"], os.environ["CONFLUENCE_API_TOKEN"],
-                              delay_s=args.delay)
+                              delay_s=args.delay, gateway_base=gateway)
     try:
         summary = export_branch(client, args.root_id, out_dir, max_pages=args.max_pages, make_zip=args.zip, log=print)
     except ExportError as exc:
