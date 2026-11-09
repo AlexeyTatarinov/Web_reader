@@ -38,6 +38,8 @@ def build_parser() -> argparse.ArgumentParser:
     login.add_argument("--code-timeout", type=int, default=300, help="seconds to wait for the code in Telegram")
     login.add_argument("--expect-text", help="text that must be on the page after login")
     login.add_argument("--save-session", help="write the logged-in session (cookies) to this file")
+    tg = sub.add_parser("telegram-test", help="send a test message from the login bot to the owner's chat")
+    _common(tg)
     sub.add_parser("version", help="версия программы")
     return parser
 
@@ -54,6 +56,9 @@ def main(argv: list[str] | None = None) -> int:
         return 2
     lang = args.lang or settings.language
     out_dir = Path(args.out)
+
+    if args.cmd == "telegram-test":
+        return _telegram_test(lang)
 
     if args.cmd == "login-test":
         return _login_test(args, settings, lang, out_dir)
@@ -104,6 +109,11 @@ def _login_test(args: argparse.Namespace, settings, lang: str, out_dir: Path) ->
     prompter = TelegramPrompter(os.environ["LOGIN_TELEGRAM_BOT_TOKEN"], os.environ["LOGIN_TELEGRAM_CHAT_ID"], lang=lang,
                                 api_base=os.environ.get("LOGIN_TELEGRAM_API_BASE", "https://api.telegram.org"))
     creds = Credentials(os.environ["ATLASSIAN_EMAIL"], os.environ["ATLASSIAN_PASSWORD"])
+    try:  # fail fast: do not touch Atlassian when the owner cannot be reached in Telegram
+        prompter.check(t(lang, "telegram_test_message"))
+    except LoginError as exc:
+        print(t(lang, "telegram_test_failed", reason=str(exc)), file=sys.stderr)
+        return 1
 
     async def ask_code(hint: str) -> str | None:
         return await asyncio.to_thread(prompter.request_code, args.code_timeout, hint)
@@ -141,4 +151,22 @@ def _login_test(args: argparse.Namespace, settings, lang: str, out_dir: Path) ->
     message = t(lang, "login_ok", stages=stages)
     print(message)
     prompter.notify(message)
+    return 0
+
+
+def _telegram_test(lang: str) -> int:
+    from .login import LoginError, TelegramPrompter
+
+    missing = [n for n in ("LOGIN_TELEGRAM_BOT_TOKEN", "LOGIN_TELEGRAM_CHAT_ID") if not os.environ.get(n)]
+    if missing:
+        print(t(lang, "login_missing_env", names=", ".join(missing)), file=sys.stderr)
+        return 2
+    prompter = TelegramPrompter(os.environ["LOGIN_TELEGRAM_BOT_TOKEN"], os.environ["LOGIN_TELEGRAM_CHAT_ID"], lang=lang,
+                                api_base=os.environ.get("LOGIN_TELEGRAM_API_BASE", "https://api.telegram.org"))
+    try:
+        username = prompter.check(t(lang, "telegram_test_message"))
+    except LoginError as exc:
+        print(t(lang, "telegram_test_failed", reason=str(exc)), file=sys.stderr)
+        return 1
+    print(t(lang, "telegram_test_ok", username=username))
     return 0

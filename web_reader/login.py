@@ -66,11 +66,21 @@ class LoginResult:
 
 
 def extract_code(text: str) -> str | None:
-    """Returns the first 4-8 digit number in the text (spaces and dashes inside it are ignored)."""
-    for match in re.finditer(r"\d(?:[ \-]?\d)+", text or ""):
+    """Extracts a one-time code from a chat reply.
+
+    Codes may be digits only (spaces or dashes inside are ignored) or letters and digits (e.g. 6E5IUQ).
+    A 4-8 character token counts as a code when it contains a digit, or when the whole reply is exactly
+    six capital letters (so ordinary words such as "hello" are never taken for a code).
+    """
+    text = (text or "").strip()
+    for match in re.finditer(r"\d(?:[ \-]?\d)+", text):
         digits = re.sub(r"\D", "", match.group())
         if 4 <= len(digits) <= 8:
             return digits
+    tokens = re.findall(r"[A-Za-z0-9]{4,8}", text)
+    for token in tokens:
+        if re.search(r"\d", token) or re.fullmatch(r"[A-Z]{6}", text):
+            return token.upper()
     return None
 
 
@@ -94,12 +104,27 @@ class TelegramPrompter:
             with self._opener.open(request, timeout=http_timeout) as response:
                 data = json.load(response)
         except urllib.error.HTTPError as exc:
-            raise LoginError("telegram", "", f"Telegram API refused the request (HTTP {exc.code})") from None
+            detail = ""
+            try:
+                detail = str(json.load(exc).get("description", ""))[:120]
+            except Exception:
+                pass
+            raise LoginError("telegram", "", f"Telegram API refused the request (HTTP {exc.code}) {detail}".strip()) from None
         except (urllib.error.URLError, OSError, ValueError) as exc:
             raise LoginError("telegram", "", f"Telegram API is not reachable ({type(exc).__name__})") from None
         if not data.get("ok"):
             raise LoginError("telegram", "", "Telegram API returned an error")
         return data.get("result")
+
+    def check(self, text: str) -> str:
+        """Sends a test message and returns the bot's @username, so the owner knows which bot to open.
+
+        Raises LoginError('telegram') when the token is wrong or the bot cannot write to the chat
+        (for example the owner has not pressed Start in the bot yet).
+        """
+        info = self._call("getMe", {}) or {}
+        self._call("sendMessage", {"chat_id": self._chat_id, "text": text})
+        return str(info.get("username", ""))
 
     def notify(self, text: str) -> None:
         """Best-effort message to the owner; never raises."""
