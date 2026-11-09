@@ -195,3 +195,13 @@ For sites behind an Atlassian login the program can sign in on its own and ask y
 3. When the bot writes, reply with the digits from the email. The program deletes your message with the code, signs in and reports the result in Telegram and in the log.
 
 Safety rules: credentials are typed only on the start host and `*.atlassian.com` / `*.atlassian.net`; a rejected password is never retried; a wrong code gets one retry; captchas and bot checks stop the run (never bypassed); secrets and codes are never printed. Locally: `python -m web_reader login-test --start-url https://...` with the same four values as environment variables.
+
+## Confluence export (REST API, read-only)
+
+Exports one branch of a Confluence Cloud space to Markdown files that keep the page hierarchy (see `docs/confluence-export-spec.md`).
+
+1. Create the repository secrets `CONFLUENCE_EMAIL` (the Atlassian account email) and `CONFLUENCE_API_TOKEN` (id.atlassian.com, Security, API tokens).
+2. Run the workflow **Confluence export** (root page id, site) and download the artifact `confluence-export` from the finished run (kept 3 days, nothing is committed).
+3. Locally: `python -m web_reader confluence-export --root-id 7012399 --site example.atlassian.net --out export --zip`.
+
+Only GET requests are made; the token is never printed or saved. The export stops with an error if the branch has more pages than `--max-pages` (default 3000).
