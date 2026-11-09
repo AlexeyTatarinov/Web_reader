@@ -82,8 +82,12 @@ class _LoginHandler(BaseHTTPRequestHandler):
         path = urlsplit(self.path).path
         if path == "/app":
             if "sid=ok" in (self.headers.get("Cookie") or ""):
-                return self._send(_html("<h1>Knowledge base</h1><p>Welcome, you are logged in.</p>"))
+                return self._send(_html("<h1>Knowledge base</h1><p>Welcome, you are logged in.</p>"
+                                        "<a href='/app/guide-1'>Guide one</a><button aria-expanded='false'>More</button>"
+                                        "<script>fetch('/api/tree?secret=1')</script>"))
             return self._redirect("/login")
+        if path == "/api/tree":
+            return self._send(b"{}", 200, {"Content-Type": "application/json"})
         if path == "/login":
             return self._send(_html(EMAIL_FORM))
         if path == "/to_other_host":

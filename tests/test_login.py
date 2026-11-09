@@ -270,3 +270,18 @@ def test_unrecognised_code_page_wrong_code_is_rejected_not_hanging(site):
         fake_login_site.ODD["on"] = False
     assert isinstance(exc, LoginError) and exc.reason == "rejected" and exc.stage == "code"
     assert asked == ["first", "retry"]
+
+
+@pytest.mark.browser
+def test_cli_login_test_probe_prints_the_page_structure(site, telegram, monkeypatch, tmp_path, capsys):
+    from web_reader.cli import main
+    _tg_env(monkeypatch, telegram)
+    telegram.push_later(2.0, CHAT, f"code {CODE}")
+    code = main(["login-test", "--start-url", site.url + "/app", "--allow-local", "--out", str(tmp_path),
+                 "--code-timeout", "30", "--probe"])
+    out = capsys.readouterr().out
+    assert code == 0
+    assert "probe: anchors=" in out and "probe: expanders=" in out and "probe: requests" in out
+    assert "Knowledge base" in out                                  # page title / heading seen after login
+    for secret in (PASSWORD, CODE, EMAIL):
+        assert secret not in out
