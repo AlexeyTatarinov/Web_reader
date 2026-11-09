@@ -185,3 +185,13 @@ The fast tests do not need a browser (`tests/test_units.py`). The browser tests 
 ## License
 
 MIT, see LICENSE.
+
+## Login test (Atlassian, code from email via Telegram)
+
+For sites behind an Atlassian login the program can sign in on its own and ask you for the one-time code from the email in Telegram. This step only checks the login; it saves nothing from the site (see `docs/login-spec.md`).
+
+1. Create the repository secrets `ATLASSIAN_EMAIL`, `ATLASSIAN_PASSWORD`, `LOGIN_TELEGRAM_BOT_TOKEN`, `LOGIN_TELEGRAM_CHAT_ID`. Use a bot that has no webhook set and is not polled by another program at the same moment.
+2. Run the workflow **Login test** (Actions tab) and keep Telegram open.
+3. When the bot writes, reply with the digits from the email. The program deletes your message with the code, signs in and reports the result in Telegram and in the log.
+
+Safety rules: credentials are typed only on the start host and `*.atlassian.com` / `*.atlassian.net`; a rejected password is never retried; a wrong code gets one retry; captchas and bot checks stop the run (never bypassed); secrets and codes are never printed. Locally: `python -m web_reader login-test --start-url https://...` with the same four values as environment variables.

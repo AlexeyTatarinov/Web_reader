@@ -5,3 +5,7 @@ __pycache__/
 venv/
 # результаты чтения хранятся в репозитории только когда их кладёт workflow
 /results/preflight.json
+
+# logged-in sessions must never be committed
+/auth/
+*.session.json

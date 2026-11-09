@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+import os
 import sys
 from pathlib import Path
 
@@ -30,6 +31,13 @@ def build_parser() -> argparse.ArgumentParser:
     read.add_argument("urls", nargs="*", help="адреса страниц")
     read.add_argument("--file", help="файл со списком адресов (по одному в строке)")
     read.add_argument("--skip-check", action="store_true", help="не запускать предварительную проверку")
+    login = sub.add_parser("login-test", help="test the Atlassian login (email, password, emailed code via Telegram)")
+    _common(login)
+    login.add_argument("--start-url", required=True, help="page that requires login (https)")
+    login.add_argument("--allow-local", action="store_true", help="allow http and local hosts (tests only)")
+    login.add_argument("--code-timeout", type=int, default=300, help="seconds to wait for the code in Telegram")
+    login.add_argument("--expect-text", help="text that must be on the page after login")
+    login.add_argument("--save-session", help="write the logged-in session (cookies) to this file")
     sub.add_parser("version", help="версия программы")
     return parser
 
@@ -46,6 +54,9 @@ def main(argv: list[str] | None = None) -> int:
         return 2
     lang = args.lang or settings.language
     out_dir = Path(args.out)
+
+    if args.cmd == "login-test":
+        return _login_test(args, settings, lang, out_dir)
 
     if args.cmd == "check":
         ok, _ = asyncio.run(run_checks(settings, lang, out_dir, check_internet=not args.no_internet))
@@ -71,3 +82,63 @@ def main(argv: list[str] | None = None) -> int:
             return 1
     summary = asyncio.run(run_urls(items, settings, out_dir, lang, input_problems=problems))
     return 0 if summary.results else 1
+
+
+_LOGIN_ENV = ("ATLASSIAN_EMAIL", "ATLASSIAN_PASSWORD", "LOGIN_TELEGRAM_BOT_TOKEN", "LOGIN_TELEGRAM_CHAT_ID")
+
+
+def _login_test(args: argparse.Namespace, settings, lang: str, out_dir: Path) -> int:
+    """Logs in once and reports the result (also to Telegram). Nothing from the site is saved."""
+    from playwright.async_api import async_playwright
+
+    from .browser import context_options, launch_browser
+    from .login import Credentials, LoginError, TelegramPrompter, login_atlassian
+
+    missing = [name for name in _LOGIN_ENV if not os.environ.get(name)]
+    if missing:
+        print(t(lang, "login_missing_env", names=", ".join(missing)), file=sys.stderr)
+        return 2
+    if not args.start_url.lower().startswith("https://") and not args.allow_local:
+        print(t(lang, "login_need_https"), file=sys.stderr)
+        return 2
+    prompter = TelegramPrompter(os.environ["LOGIN_TELEGRAM_BOT_TOKEN"], os.environ["LOGIN_TELEGRAM_CHAT_ID"], lang=lang,
+                                api_base=os.environ.get("LOGIN_TELEGRAM_API_BASE", "https://api.telegram.org"))
+    creds = Credentials(os.environ["ATLASSIAN_EMAIL"], os.environ["ATLASSIAN_PASSWORD"])
+
+    async def ask_code(hint: str) -> str | None:
+        return await asyncio.to_thread(prompter.request_code, args.code_timeout, hint)
+
+    async def run() -> str:
+        async with async_playwright() as playwright:
+            browser, _ = await launch_browser(playwright, settings)
+            try:
+                context = await browser.new_context(**context_options(settings, browser))
+                page = await context.new_page()
+                try:
+                    result = await login_atlassian(page, creds, ask_code, start_url=args.start_url,
+                                                   expect_text=args.expect_text, log=print)
+                except LoginError:
+                    target = out_dir / "login"
+                    target.mkdir(parents=True, exist_ok=True)
+                    try:
+                        await page.screenshot(path=str(target / "failure.png"))
+                    except Exception:
+                        pass
+                    raise
+                if args.save_session:
+                    await context.storage_state(path=args.save_session)
+                return " -> ".join(result.stages)
+            finally:
+                await browser.close()
+
+    try:
+        stages = asyncio.run(run())
+    except LoginError as exc:
+        message = t(lang, "login_failed", reason=str(exc))
+        print(message, file=sys.stderr)
+        prompter.notify(message)
+        return 1
+    message = t(lang, "login_ok", stages=stages)
+    print(message)
+    prompter.notify(message)
+    return 0
