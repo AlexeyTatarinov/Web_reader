@@ -37,6 +37,8 @@ def build_parser() -> argparse.ArgumentParser:
     login.add_argument("--allow-local", action="store_true", help="allow http and local hosts (tests only)")
     login.add_argument("--code-timeout", type=int, default=300, help="seconds to wait for the code in Telegram")
     login.add_argument("--expect-text", help="text that must be on the page after login")
+    login.add_argument("--probe", action="store_true",
+                       help="after login, print the structure of the page and its data requests (no page text)")
     login.add_argument("--save-session", help="write the logged-in session (cookies) to this file")
     tg = sub.add_parser("telegram-test", help="send a test message from the login bot to the owner's chat")
     _common(tg)
@@ -149,6 +151,9 @@ def _login_test(args: argparse.Namespace, settings, lang: str, out_dir: Path) ->
                     except Exception:
                         pass
                     raise
+                if args.probe:
+                    from .probe import probe_page
+                    await probe_page(page, args.start_url)
                 if args.save_session:
                     await context.storage_state(path=args.save_session)
                 return " -> ".join(result.stages)
