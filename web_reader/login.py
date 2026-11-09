@@ -340,10 +340,11 @@ async def login_atlassian(page: Any, creds: Credentials,
             if not code:
                 raise LoginError("code_timeout", "code", "no code was received in time")
             submits["code"] += 1
+            log(f"login: submitting a code of {len(code)} characters (attempt {submits['code']})")
             await _submit(page, "code", code)
         outcome = await _after_submit(page, stage)
         if outcome == "rejected":
             if stage == "code" and submits["code"] < 2:
                 continue  # one more try: the loop asks the owner again
-            raise LoginError("rejected", stage, f"the {stage} was not accepted")
+            raise LoginError("rejected", stage, f"the {stage} was not accepted; page: " + await _diagnostics(page))
     raise LoginError("timeout", stages[-1] if stages else "", "login did not finish in time")
