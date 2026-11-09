@@ -146,6 +146,8 @@ class _TelegramHandler(BaseHTTPRequestHandler):
         if len(parts) != 2 or parts[0] != f"bot{server.token}":
             return self._json({"ok": False, "description": "Unauthorized"}, 401)
         method = parts[1]
+        if method == "getMe":
+            return self._json({"ok": True, "result": {"id": 1, "is_bot": True, "username": "test_login_bot"}})
         if method == "sendMessage":
             server.sent.append(data)
             return self._json({"ok": True, "result": {"message_id": len(server.sent)}})

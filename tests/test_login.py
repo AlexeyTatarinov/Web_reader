@@ -26,6 +26,10 @@ def test_extract_code_takes_first_4_to_8_digit_number():
     assert extract_code("code is 482 915 thanks") == "482915"
     assert extract_code("here: 1234") == "1234"
     assert extract_code("no digits here") is None
+    assert extract_code("6E5IUQ") == "6E5IUQ"
+    assert extract_code("code is 6e5iuq thanks") == "6E5IUQ"
+    assert extract_code("ABCDEF") == "ABCDEF"
+    assert extract_code("hello there") is None
     assert extract_code("123") is None
     assert extract_code("") is None
 
@@ -199,3 +203,46 @@ def test_cli_login_test_end_to_end(site, telegram, monkeypatch, tmp_path, capsys
     assert "OK" in out.out
     for secret in (PASSWORD, CODE, EMAIL):
         assert secret not in out.out and secret not in out.err
+
+
+# ---------- Telegram check before any login attempt ----------
+
+def test_prompter_check_returns_bot_username_and_sends_message(telegram):
+    assert make_prompter(telegram).check("ping") == "test_login_bot"
+    assert telegram.sent[-1]["text"] == "ping"
+
+
+def test_prompter_check_wrong_token_raises(telegram):
+    with pytest.raises(LoginError) as info:
+        TelegramPrompter("BADTOKEN", CHAT, lang="en", api_base=telegram.url).check("ping")
+    assert info.value.reason == "telegram" and "BADTOKEN" not in str(info.value)
+
+
+def _tg_env(monkeypatch, telegram, token="TESTTOKEN"):
+    for name, value in (("ATLASSIAN_EMAIL", EMAIL), ("ATLASSIAN_PASSWORD", PASSWORD),
+                        ("LOGIN_TELEGRAM_BOT_TOKEN", token), ("LOGIN_TELEGRAM_CHAT_ID", str(CHAT)),
+                        ("LOGIN_TELEGRAM_API_BASE", telegram.url)):
+        monkeypatch.setenv(name, value)
+
+
+def test_cli_telegram_test_sends_message_and_names_the_bot(telegram, monkeypatch, capsys):
+    from web_reader.cli import main
+    _tg_env(monkeypatch, telegram)
+    assert main(["telegram-test"]) == 0
+    assert "@test_login_bot" in capsys.readouterr().out
+    assert len(telegram.sent) == 1
+
+
+def test_cli_telegram_test_wrong_token_exits_1_without_leaking_it(telegram, monkeypatch, capsys):
+    from web_reader.cli import main
+    _tg_env(monkeypatch, telegram, token="BADTOKEN")
+    assert main(["telegram-test"]) == 1
+    out = capsys.readouterr()
+    assert "BADTOKEN" not in out.out + out.err and "Start" in out.err
+
+
+def test_login_test_fails_fast_when_telegram_is_broken_and_never_opens_the_site(site, telegram, monkeypatch, capsys):
+    from web_reader.cli import main
+    _tg_env(monkeypatch, telegram, token="BADTOKEN")
+    assert main(["login-test", "--start-url", site.url + "/app", "--allow-local", "--code-timeout", "5"]) == 1
+    assert site.events == []
