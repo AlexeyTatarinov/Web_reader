@@ -47,9 +47,14 @@ class Page:
 
 
 class _AuthDenied(Exception):
-    def __init__(self, code: int, category: str) -> None:
-        self.code, self.category = code, category
+    def __init__(self, code: int, category: str, detail: str = "") -> None:
+        self.code, self.category, self.detail = code, category, detail
         super().__init__(str(code))
+
+
+def _describe(exc: "_AuthDenied") -> str:
+    """HTTP code plus the non-secret hints Atlassian sends with a refusal."""
+    return f"HTTP {exc.code}" + (f" {exc.category}" if exc.category else "") + (f" {exc.detail!r}" if exc.detail else "")
 
 
 def discover_cloud_id(site_host: str, timeout: float = 10.0) -> str | None:
@@ -84,7 +89,8 @@ class ConfluenceClient:
         if self.gateway_base:
             self._hosts.add((urlsplit(self.gateway_base).hostname or "").lower())
         auth = base64.b64encode(f"{email}:{token}".encode()).decode()
-        self._headers = {"Authorization": f"Basic {auth}", "Accept": "application/json"}
+        self._headers = {"Authorization": f"Basic {auth}", "Accept": "application/json",
+                         "User-Agent": "web_reader/0.1 (confluence-export; read-only)"}
         self._delay, self._sleep, self._retries = delay_s, sleep, max_retries
         local = self.host in ("127.0.0.1", "localhost")
         self._opener = urllib.request.build_opener(urllib.request.ProxyHandler({})) if local \
@@ -105,13 +111,13 @@ class ConfluenceClient:
         try:
             return self._request(self.base + path)
         except _AuthDenied as first:
-            tried = [f"site HTTP {first.code}" + (f" {first.category}" if first.category else "")]
+            tried = [f"site {_describe(first)}"]
             if self.gateway_base and self.base != self.gateway_base:
                 self.base = self.gateway_base
                 try:
                     return self._request(self.base + path)
                 except _AuthDenied as second:
-                    tried.append(f"gateway HTTP {second.code}" + (f" {second.category}" if second.category else ""))
+                    tried.append(f"gateway {_describe(second)}")
             raise ExportError(
                 f"authorization failed ({'; '.join(tried)}). Check the account email and the API token. "
                 "A token created with scopes needs read scopes for Confluence content and the cloud id "
@@ -130,7 +136,13 @@ class ConfluenceClient:
                 return data
             except urllib.error.HTTPError as exc:
                 if exc.code in (401, 403):
-                    raise _AuthDenied(exc.code, str(exc.headers.get("X-Failure-Category", ""))[:60]) from None
+                    hints = [str(exc.headers.get(h, "")) for h in ("X-Failure-Category", "X-Seraph-LoginReason")]
+                    try:
+                        body = exc.read(400).decode("utf-8", "replace")
+                    except Exception:
+                        body = ""
+                    body = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", body)).strip()[:160]
+                    raise _AuthDenied(exc.code, " ".join(h for h in hints if h)[:80], body) from None
                 if exc.code == 404:
                     raise ExportError("not found (HTTP 404): check the page id and the site") from None
                 if exc.code in _RETRY_STATUSES and attempt < self._retries:

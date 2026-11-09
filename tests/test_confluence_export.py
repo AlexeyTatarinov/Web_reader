@@ -166,6 +166,7 @@ def test_scoped_token_without_gateway_gives_a_helpful_error(server, tmp_path):
     message = str(info.value)
     assert "403" in message and "scope" in message and TOKEN not in message
     assert "FAILURE_CLIENT_AUTH_MISMATCH" in message
+    assert "Forbidden" in message                              # the (non-secret) answer body is reported
 
 
 def test_cloud_id_discovery_reads_tenant_info(server):
@@ -183,3 +184,8 @@ def test_cli_uses_cloud_id_for_scoped_tokens(server, monkeypatch, tmp_path, caps
                  "--out", str(tmp_path / "out"), "--delay", "0", "--cloud-id", "abc",
                  "--api-gateway", server.url])
     assert code == 0, capsys.readouterr().err
+
+
+def test_requests_carry_a_descriptive_user_agent(server, tmp_path):
+    run(server, tmp_path)
+    assert server.user_agents and all(ua.startswith("web_reader/") for ua in server.user_agents)
