@@ -226,8 +226,32 @@ async def _click_login_button(page: Any) -> bool:
     return False
 
 
+async def _submitted_by_itself(page: Any, had_error: bool, wait_s: float = 2.0) -> bool:
+    """True when the page reacted to the typed code on its own (re-rendered, navigated or showed a new error).
+
+    An error that was already on the page before the code was typed (from a previous attempt) proves nothing.
+    """
+    deadline = time.monotonic() + wait_s
+    while time.monotonic() < deadline:
+        await asyncio.sleep(0.25)
+        state = await _state(page)
+        new_error = bool(state["error"]) and not had_error
+        if state["stage"] == "busy":
+            return True
+        if state["stage"] is None:
+            if not state.get("generic"):
+                return True  # no input left: the page moved on
+            if state.get("genericFresh") or new_error:  # the unrecognised code page
+                return True
+            continue
+        if state["stage"] != "code" or state["fresh"] or new_error:
+            return True
+    return False
+
+
 async def _submit(page: Any, stage: str, value: str) -> None:
     await page.evaluate(_MARK_JS)
+    had_error = bool((await _state(page)).get("error"))
     field_locator = page.locator(_SELECTORS[stage]).first
     if stage == "code" and not await field_locator.count():
         field_locator = page.locator(_GENERIC_INPUT).first
@@ -236,26 +260,44 @@ async def _submit(page: Any, stage: str, value: str) -> None:
     if stage == "code":
         await field_locator.click(timeout=5000)
         await page.keyboard.type(value, delay=40)  # also works when the code is split into one box per digit
+        if await _submitted_by_itself(page, had_error):
+            return  # many code forms submit on the last character: a second Enter would send the code twice
     else:
         await field_locator.fill(value, timeout=5000)
     await page.keyboard.press("Enter")
 
 
-async def _after_submit(page: Any, stage: str, wait_s: float = 25.0) -> str:
-    """Waits until the page reacts. Returns 'progressed' or 'rejected'; raises on silence."""
+async def _after_submit(page: Any, stage: str, wait_s: float = 25.0, fresh_grace_s: float = 6.0) -> str:
+    """Waits until the page reacts. Returns 'progressed' or 'rejected'; raises on silence.
+
+    A code page that re-renders its boxes while it verifies the code is not a rejection: new empty fields only
+    count after `fresh_grace_s` seconds without any progress; a visible error text counts at once.
+    """
     deadline = time.monotonic() + wait_s
+    fresh_since: float | None = None
     while time.monotonic() < deadline:
         await asyncio.sleep(0.4)
         state = await _state(page)
         if state["stage"] == "busy":
             continue
-        if state["stage"] is None and stage == "code" and state.get("generic") and \
-                (state.get("genericFresh") or state["error"]):
-            return "rejected"  # the unrecognised code page came back with a fresh field or an error
-        if state["stage"] != stage:
+        if state["stage"] is None and stage == "code" and state.get("generic"):
+            fresh = bool(state.get("genericFresh"))  # the unrecognised code page
+            if not fresh and not state["error"]:
+                return "progressed"
+        elif state["stage"] != stage:
             return "progressed"
-        if state["fresh"] or state["error"]:
+        else:
+            fresh = bool(state["fresh"])
+        if state["error"]:
             return "rejected"
+        if fresh:
+            if stage != "code":
+                return "rejected"
+            fresh_since = fresh_since or time.monotonic()
+            if time.monotonic() - fresh_since > fresh_grace_s:
+                return "rejected"
+        else:
+            fresh_since = None
     raise LoginError("timeout", stage, "the page did not react to the submitted value")
 
 
@@ -344,6 +386,8 @@ async def login_atlassian(page: Any, creds: Credentials,
             await _submit(page, "code", code)
         outcome = await _after_submit(page, stage)
         if outcome == "rejected":
+            if stage == "code":
+                log("login: the code page after submission: " + await _diagnostics(page))
             if stage == "code" and submits["code"] < 2:
                 continue  # one more try: the loop asks the owner again
             raise LoginError("rejected", stage, f"the {stage} was not accepted; page: " + await _diagnostics(page))

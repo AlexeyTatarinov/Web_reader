@@ -27,3 +27,12 @@ Crawling the knowledge base, converting pages to Markdown, storing the session b
 6. No code in time: stops with `code_timeout`.
 7. Neither the password nor the code appears in stdout/stderr or in the error text.
 8. CLI `login-test` exits 2 with a clear message when secrets are missing.
+
+## Code entry (update)
+
+Many code forms are six one-character boxes that submit themselves on the last character and re-render the boxes while they verify the code. Therefore:
+
+- After typing the code the program waits up to 2 s. If the page reacted on its own (re-rendered, navigated, showed a new error), it does **not** press Enter again, so the code is sent once.
+- New empty boxes alone are not a rejection: they count only after 6 s without progress. A visible error text counts at once, unless it was already on the page before the code was typed.
+- When a code is rejected, the log shows a safe description of the page (no input values, emails masked).
+- Tests: `tests/test_login.py::test_six_boxes_*` (fake page with six auto-submitting boxes).
