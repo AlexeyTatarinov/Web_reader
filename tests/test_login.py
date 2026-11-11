@@ -285,3 +285,27 @@ def test_cli_login_test_probe_prints_the_page_structure(site, telegram, monkeypa
     assert "Knowledge base" in out                                  # page title / heading seen after login
     for secret in (PASSWORD, CODE, EMAIL):
         assert secret not in out
+
+
+@pytest.mark.browser
+def test_six_boxes_that_submit_themselves_log_in_with_one_submission(site):
+    fake_login_site.SIX["on"] = True
+    try:
+        (result, state), asked = run_login(site, [CODE])
+    finally:
+        fake_login_site.SIX["on"] = False
+    assert result.ok is True
+    assert asked == ["first"]  # the re-rendered boxes must not be taken for a rejection
+    assert site.events.count("code") == 1  # no extra Enter on top of the automatic submission
+    assert any(c["name"] == "sid" for c in state["cookies"])
+
+
+@pytest.mark.browser
+def test_six_boxes_wrong_code_is_rejected_after_the_error_text_appears(site):
+    fake_login_site.SIX["on"] = True
+    try:
+        exc, asked = run_login(site, ["000000", "111111"])
+    finally:
+        fake_login_site.SIX["on"] = False
+    assert isinstance(exc, LoginError) and exc.reason == "rejected" and exc.stage == "code"
+    assert asked == ["first", "retry"]

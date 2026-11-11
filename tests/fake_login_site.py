@@ -31,10 +31,33 @@ def password_form(error: str = "") -> bytes:
 
 
 ODD = {"on": False}
+SIX = {"on": False}  # six one-character boxes that submit themselves and re-render (like the real Atlassian page)
+
+SIX_BOXES_FORM = (
+    "<h1>Te hemos enviado un codigo</h1><p>Check your email us***@example.com</p><p class='error' id='e'></p>"
+    "<form id='f'><div id='boxes'></div><button type='submit'>Verificar</button></form>"
+    "<script>"
+    "const N=6; let busy=false, last='';"
+    "function boxes(){return [...document.getElementById('boxes').children];}"
+    "function render(){const b=document.getElementById('boxes'); b.innerHTML='';"
+    " for(let i=0;i<N;i++){const el=document.createElement('input'); el.maxLength=1; el.name='code-'+i;"
+    "  el.setAttribute('inputmode','numeric'); if(!i) el.autocomplete='one-time-code';"
+    "  el.addEventListener('input',()=>{const bx=boxes(); if(el.value&&bx[i+1]) bx[i+1].focus();"
+    "   const v=bx.map(x=>x.value).join(''); if(v.length===N) send(v);}); b.appendChild(el);}"
+    " boxes()[0].focus();}"
+    "async function send(v){ if(busy) return; busy=true; last=v; render();"
+    " const r=await fetch('/login/code',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'code='+v});"
+    " if(r.ok){location.href='/app';} else {busy=false; document.getElementById('e').textContent='That code is not valid'; render();}}"
+    "document.getElementById('f').addEventListener('submit',e=>{e.preventDefault(); fetch('/login/code',"
+    " {method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'code='+(last||boxes().map(x=>x.value).join(''))});});"
+    "render();</script>"
+)
 
 
 def code_form(error: str = "") -> bytes:
     note = f"<p class='error'>{error}</p>" if error else ""
+    if SIX["on"]:
+        return _html(SIX_BOXES_FORM)
     if ODD["on"]:  # an input that matches none of the usual code selectors
         return _html("<h1>Check your email</h1><p>We sent a 6-character code to us***@example.com</p>" + note +
                      "<form method='post' action='/login/code'><input type='text' name='field1' id='f1'>"
@@ -109,6 +132,11 @@ class _LoginHandler(BaseHTTPRequestHandler):
         if path == "/login/code":
             self.server.events.append("code")
             fields = parse_qs(body)
+            if SIX["on"]:
+                time.sleep(1.2)  # the real service answers with a delay while the boxes are re-rendered
+                if fields.get("code", [""])[0] != self.server.code:
+                    return self._send(b"no", 400)
+                return self._send(b"ok", 200, {"Set-Cookie": "sid=ok; Path=/"})
             if (fields.get("code") or fields.get("field1") or [""])[0].replace(" ", "") != self.server.code:
                 return self._send(code_form("That code is not valid"))
             return self._redirect("/app", {"Set-Cookie": "sid=ok; Path=/"})
