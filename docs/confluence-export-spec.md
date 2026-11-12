@@ -1,6 +1,6 @@
 # Spec: Confluence branch export to Markdown (REST API, read-only)
 
-Goal: export one branch of a Confluence Cloud space (first target: "User Guides", page id 7012399, about 1500 pages) into Markdown files that keep the page hierarchy, so the knowledge base can be searched and read as plain files.
+Goal: export one branch of a Confluence Cloud space into Markdown files that keep the page hierarchy, so the knowledge base can be searched and read as plain files.
 
 ## Decisions
 - Auth: Basic auth with the account email and an Atlassian API token from environment variables `CONFLUENCE_EMAIL` and `CONFLUENCE_API_TOKEN` (GitHub secrets). Never printed, never written to files.

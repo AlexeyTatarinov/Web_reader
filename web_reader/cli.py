@@ -45,7 +45,7 @@ def build_parser() -> argparse.ArgumentParser:
     cx = sub.add_parser("confluence-export", help="export a Confluence branch to Markdown files (read-only, REST API)")
     _common(cx)
     cx.add_argument("--root-id", required=True, help="id of the root page of the branch")
-    cx.add_argument("--site", default=os.environ.get("CONFLUENCE_SITE", "gr8-tech.atlassian.net"),
+    cx.add_argument("--site", default=os.environ.get("CONFLUENCE_SITE"),
                     help="Confluence Cloud site, e.g. example.atlassian.net")
     cx.add_argument("--max-pages", type=int, default=3000, help="safety cap on the number of pages")
     cx.add_argument("--delay", type=float, default=0.3, help="pause between requests, seconds")
@@ -198,7 +198,10 @@ def _confluence_export(args: argparse.Namespace, lang: str, out_dir: Path) -> in
     if missing:
         print(t(lang, "login_missing_env", names=", ".join(missing)), file=sys.stderr)
         return 2
-    site = args.site.strip()
+    site = (args.site or "").strip()
+    if not site:  # no built-in default: the site comes from --site or CONFLUENCE_SITE
+        print(t(lang, "cx_need_atlassian"), file=sys.stderr)
+        return 2
     if site.startswith("http"):
         base = site
         host = site.split("//", 1)[1].split("/", 1)[0].split(":")[0]
