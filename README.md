@@ -84,7 +84,7 @@ The domain also matches subdomains. Only these can be changed per site: `run.max
 ## What the program does not do (and why)
 
 * **It does not bypass CAPTCHAs or strong bot protection** (Cloudflare and the like). This is protection the site owner put there on purpose. A simple "wait a few seconds" check is passed by the browser itself, and the program waits a little. If that fails, the page is marked `blocked`. Legitimate alternatives: the hiring system API, RSS, the same vacancies on other platforms.
-* It does not fill in forms, log in to accounts, or click "Apply", "Accept", and similar (the list of dangerous buttons is `SKIP_RE` in `web_reader/dom.py`).
+* While reading pages it does not fill in forms, log in to accounts, or click "Apply", "Accept", and similar (the list of dangerous buttons is `SKIP_RE` in `web_reader/dom.py`). The only exception is the separate, manually started `login-test` command described below.
 * It does not read closed shadow DOM (the browser exposes it to no one).
 * It does not recognize text in images and PDF scans (the report has a note).
 * It does not save downloaded files, except PDFs in memory for reading.
@@ -163,6 +163,14 @@ web_reader/
   report.py      Markdown and JSON reports
   check.py       preliminary connection check
   cli.py         command line
+  api.py         programmatic interface: read one address from another program
+  browser.py     browser launch and page environment options
+  budget.py      time and page budgets
+  roles.py       role matching against config/roles.json
+  i18n.py        program messages (ru, en, uk)
+  probe.py       page structure probe used by login-test
+  login.py       Atlassian login with a one-time code via Telegram (login-test)
+  confluence_export.py  Confluence branch export to Markdown (REST API, read-only)
 tests/           tests on a local test site
 ```
 
@@ -202,6 +210,6 @@ Exports one branch of a Confluence Cloud space to Markdown files that keep the p
 
 1. Create the repository secrets `CONFLUENCE_EMAIL` (the Atlassian account email) and `CONFLUENCE_API_TOKEN` (id.atlassian.com, Security, API tokens).
 2. Run the workflow **Confluence export** (root page id, site) and download the artifact `confluence-export` from the finished run (kept 3 days, nothing is committed).
-3. Locally: `python -m web_reader confluence-export --root-id 7012399 --site example.atlassian.net --out export --zip`.
+3. Locally: `python -m web_reader confluence-export --root-id 123456 --site example.atlassian.net --out export --zip`.
 
 Only GET requests are made; the token is never printed or saved. The export stops with an error if the branch has more pages than `--max-pages` (default 3000).

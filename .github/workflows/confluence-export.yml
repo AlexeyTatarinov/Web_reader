@@ -6,13 +6,11 @@ on:
   workflow_dispatch:
     inputs:
       root_id:
-        description: "Id of the root page of the branch (User Guides = 7012399)"
+        description: "Id of the root page of the branch"
         required: true
-        default: "7012399"
       site:
-        description: "Confluence Cloud site"
+        description: "Confluence Cloud site, e.g. example.atlassian.net"
         required: true
-        default: "gr8-tech.atlassian.net"
 
 concurrency:
   group: confluence-export

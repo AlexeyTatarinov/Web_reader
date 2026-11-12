@@ -300,3 +300,65 @@ def test_roles_expanded_dictionary_multilingual():
         assert r.match(title), title
     for title in ("Qatar Sales Manager", "Release Manager", "Platform Engineer", "Marketing Manager", "Бухгалтер"):
         assert r.match(title) == [], title
+
+
+# ---------------- подзапросы страницы: имя, которое ведёт на частный адрес
+
+class _FakeRequest:
+    def __init__(self, url):
+        self.url = url
+        self.resource_type = "xhr"
+
+
+class _FakeRoute:
+    def __init__(self, url):
+        self.request = _FakeRequest(url)
+        self.action = None
+
+    async def continue_(self):
+        self.action = "continue"
+
+    async def abort(self):
+        self.action = "abort"
+
+
+def _route_once(monkeypatch, url, ips, **safety):
+    import asyncio
+    from web_reader import network
+
+    calls = []
+
+    async def fake_resolve(host, timeout=3.0):
+        calls.append(host)
+        return ips
+
+    monkeypatch.setattr(network, "resolve_host", fake_resolve)
+    watcher = network.Watcher(settings(safety=safety) if safety else settings())
+
+    async def run():
+        first, second = _FakeRoute(url), _FakeRoute(url)
+        await watcher.route(first)
+        await watcher.route(second)
+        return first.action, second.action
+
+    return asyncio.run(run()), watcher, calls
+
+
+def test_subrequest_to_name_resolving_to_private_address_is_blocked(monkeypatch):
+    actions, watcher, calls = _route_once(monkeypatch, "https://rebind.example.com/data", ["10.0.0.5"])
+    assert actions == ("abort", "abort")
+    assert watcher.blocked["private_address"] == 2
+    assert calls == ["rebind.example.com"]          # второй запрос берёт ответ из памяти
+
+
+def test_subrequest_to_public_name_is_allowed(monkeypatch):
+    actions, watcher, _ = _route_once(monkeypatch, "https://public.example.com/data", ["93.184.216.34"])
+    assert actions == ("continue", "continue")
+    assert watcher.requests == 2
+
+
+def test_subrequest_private_check_is_skipped_when_private_hosts_are_allowed(monkeypatch):
+    actions, _, calls = _route_once(monkeypatch, "https://rebind.example.com/data", ["10.0.0.5"],
+                                    allow_private_hosts=True)
+    assert actions == ("continue", "continue")
+    assert calls == []

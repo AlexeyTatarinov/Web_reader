@@ -8,7 +8,6 @@ on:
       start_url:
         description: "Page that requires login (https)"
         required: true
-        default: "https://knowledge-hub.gr8.tech/space/GD/7012399/User+Guides"
       probe:
         description: "After login, print the page structure and data requests (true/false)"
         required: false

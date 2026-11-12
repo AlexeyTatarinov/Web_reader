@@ -13,6 +13,13 @@ from .jobs import extract_job_items
 from .safety import host_matches, private_reason
 
 
+async def resolve_host(host: str, timeout: float = 3.0) -> list[str]:
+    """IP-адреса имени хоста (отдельная функция, чтобы тесты могли её подменить)."""
+    loop = asyncio.get_running_loop()
+    infos = await asyncio.wait_for(loop.getaddrinfo(host, None), timeout=timeout)
+    return [info[4][0] for info in infos]
+
+
 class Watcher:
     """Считает запросы страницы и режет лишние: рекламу, трекеры, медиа, шрифты,
     локальные адреса и всё сверх лимита числа запросов."""
@@ -26,6 +33,7 @@ class Watcher:
         self.pending = 0
         self.cap_hit = False
         self.blocked: Counter = Counter()
+        self._resolved_private: dict[str, bool] = {}
 
     def attach(self, page: Any) -> None:
         page.on("request", lambda r: self._inc())
@@ -58,7 +66,7 @@ class Watcher:
                 self.blocked["ads_trackers"] += 1
                 await route.abort()
                 return
-            if not self.allow_private and private_reason(host):
+            if not self.allow_private and (private_reason(host) or await self._resolves_private(host)):
                 self.blocked["private_address"] += 1
                 await route.abort()
                 return
@@ -66,6 +74,20 @@ class Watcher:
             await route.continue_()
         except Exception:
             pass  # страница могла закрыться в момент обработки запроса
+
+    async def _resolves_private(self, host: str) -> bool:
+        """Публичное имя может вести на частный адрес. Проверка по DNS, ответ запоминается на время страницы."""
+        if not host:
+            return False
+        cached = self._resolved_private.get(host)
+        if cached is not None:
+            return cached
+        try:
+            verdict = any(private_reason(ip) for ip in await resolve_host(host))
+        except Exception:
+            verdict = False  # имя не разрешилось: запрос завершится ошибкой сам
+        self._resolved_private[host] = verdict
+        return verdict
 
     async def settle(self, remaining: float, pause: float = 0.35, idle: float = 1.5) -> None:
         """Ждёт, пока новые запросы затихнут, но не дольше idle секунд и не дольше remaining."""
