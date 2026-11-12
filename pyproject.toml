@@ -1,11 +1,21 @@
 [project]
 name = "web_reader"
 version = "0.1.0"
-description = "Полное чтение динамических веб-страниц (Playwright) с честными пометками о полноте"
+description = "Full reading of dynamic web pages (Playwright) with honest notes on completeness"
 requires-python = ">=3.10"
 dependencies = ["playwright>=1.45", "pypdf>=4.0", "markdownify>=0.13"]
 license = { text = "MIT" }
 
+[project.scripts]
+web-reader = "web_reader.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["web_reader"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-markers = ["browser: тесты, которым нужен настоящий браузер"]
+markers = ["browser: tests that need a real browser"]

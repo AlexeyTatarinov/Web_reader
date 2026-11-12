@@ -262,6 +262,14 @@ async def _collect(rc: RunContext, res: PageResult, deadline: Deadline, st: _Sta
             chain.append(req.url)
         res.redirect_chain = list(reversed(chain))
     res.final_url = page.url
+    # Переадресация могла увести на локальный или частный адрес: содержимое такой страницы не читаем.
+    if res.final_url.startswith(("http://", "https://")):
+        ok, why = await check_url(res.final_url, settings.safety)
+        if not ok:
+            res.kind, res.status = "other", "skipped"
+            res.skip_reason = f"forbidden_address: {why} (final address after redirects)"
+            res._finalized = True
+            return None
     await st.watcher.settle(deadline.remaining(), idle=2.5)
     res.title = (await _safe_title(page))[:300]
 

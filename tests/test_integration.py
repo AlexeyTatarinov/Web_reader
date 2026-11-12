@@ -181,6 +181,22 @@ def test_private_start_address_is_refused_without_permission(base_url):
     assert res.status == "skipped" and "forbidden" in res.skip_reason
 
 
+def test_page_is_dropped_when_final_address_is_forbidden(base_url, monkeypatch):
+    """The start address passes the check, but the address the browser ended up on does not (redirect)."""
+    from web_reader import reader
+    calls = []
+
+    async def fake_check(url, safety):
+        calls.append(url)
+        return (True, "ok") if len(calls) == 1 else (False, "resolves to a private address")
+
+    monkeypatch.setattr(reader, "check_url", fake_check)
+    res = read_one(base_url + "/dynamic")
+    assert len(calls) == 2
+    assert res.status == "skipped" and "forbidden_address" in res.skip_reason
+    assert "final address" in res.skip_reason
+
+
 def test_light_mode_reads_title_and_jsonld_without_expansion(base_url):
     res = read_one(base_url + "/jobs/qa-tester-7", mode="light")
     assert res.kind == "job_posting"
