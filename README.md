@@ -12,6 +12,7 @@ There is **no AI inside the program**: it only reads and describes. Conclusions 
 | "Show more", tabs, accordions, collapsed blocks | Expands them one by one and saves what it sees after each click |
 | Infinite scroll, lists inside scrollable blocks | Scrolls while new content appears (with hard limits) |
 | Paginated lists ("Next") | Reads the following list pages (up to a set number) |
+| Lists that change page in place by a "Next" button (no link) | Clicks it while new content appears; each click counts toward the expansion limit |
 | Cookie banners, pop-ups | Clicks "Reject" or "Close". If there is no reject button: opens "Cookie settings", turns off the optional categories, and saves. If that is not possible either, the banner is hidden on the page without giving consent. "Accept" is never clicked |
 | Embedded frames (iframe), e.g. Greenhouse, Workable | Reads them separately and marks where the text came from |
 | Open shadow DOM | Reads it together with the rest |

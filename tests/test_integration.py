@@ -40,6 +40,14 @@ def test_load_more_button_loads_everything(base_url):
     assert res.status == "ok", (res.limits_hit, res.warnings)
 
 
+def test_next_button_without_link_pages_through_the_list(base_url):
+    """The list is replaced in place by a "Next" button (no link, no "load more")."""
+    res = read_one(base_url + "/pager")
+    assert res.jobs["counts"]["links"] == 15, res.expansion
+    assert sum(1 for c in res.expansion["clicks"] if c.startswith("next page")) == 2
+    assert res.status == "ok", (res.limits_hit, res.warnings)
+
+
 def test_infinite_scroll_reads_all_when_limits_allow(base_url):
     res = read_one(base_url + "/infinite")
     assert res.jobs["counts"]["links"] == 60, res.expansion

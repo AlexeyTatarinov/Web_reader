@@ -362,3 +362,11 @@ def test_subrequest_private_check_is_skipped_when_private_hosts_are_allowed(monk
                                     allow_private_hosts=True)
     assert actions == ("continue", "continue")
     assert calls == []
+
+
+# ---------------- проверка браузера у хостинга («One moment, please...»)
+
+def test_hosting_browser_check_is_recognised():
+    assert antibot.detect("One moment, please...", "Please wait while your request is being verified...", 200, {})
+    assert antibot.detect("Careers", "Please wait while your request is being verified...", 200, {}) == "browser_check"
+    assert antibot.detect("Careers at Example", "Open roles. One moment of your time: read our values. " * 80, 200, {}) is None

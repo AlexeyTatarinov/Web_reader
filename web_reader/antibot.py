@@ -9,7 +9,7 @@ from __future__ import annotations
 import re
 
 _TITLE_PATTERNS = re.compile(
-    r"just a moment|attention required|checking your browser|verifying you are human|"
+    r"just a moment|one moment,? please|attention required|checking your browser|verifying you are human|"
     r"one more step|security check|access denied|pardon our interruption|are you a robot|"
     r"human verification|ddos protection|un instant|einen moment|un momento|один момент",
     re.I,
@@ -17,6 +17,7 @@ _TITLE_PATTERNS = re.compile(
 _TEXT_PATTERNS = [
     (re.compile(r"verify you are human|checking if the site connection is secure|"
                 r"enable javascript and cookies to continue|performing security verification", re.I), "cloudflare"),
+    (re.compile(r"your request is being verified|please wait while we verify", re.I), "browser_check"),
     (re.compile(r"press\s*&\s*hold|px-captcha|perimeterx", re.I), "perimeterx"),
     (re.compile(r"incapsula incident|request unsuccessful\. incapsula", re.I), "imperva"),
     (re.compile(r"datadome", re.I), "datadome"),
