@@ -59,6 +59,19 @@ PAGES["/loadmore"] = page(
     "if(page>=3)document.getElementById('more').remove();}"
     "document.getElementById('more').addEventListener('click',more);more();</script>")
 
+PAGES["/pager"] = page(
+    "<h1>Open roles</h1><p>15 jobs</p>" + FILLER + "<ul id='jobs'></ul>"
+    "<div class='pagination'><button id='prev' aria-label='Previous page'>&lsaquo;</button>"
+    "<button id='next' aria-label='Next page'>&rsaquo;</button></div>"
+    "<script>let page=0;"
+    "async function show(n){page=n;const r=await fetch('/api/jobs?page='+page);const d=await r.json();"
+    "const ul=document.getElementById('jobs');ul.innerHTML='';"
+    "d.jobs.forEach(j=>{const li=document.createElement('li');li.innerHTML='<a href=\"'+j.url+'\">'+j.title+'</a> '+j.location;"
+    "ul.appendChild(li);});"
+    "document.getElementById('next').disabled=page>=3;document.getElementById('prev').disabled=page<=1;}"
+    "document.getElementById('next').addEventListener('click',()=>show(page+1));"
+    "document.getElementById('prev').addEventListener('click',()=>show(page-1));show(1);</script>")
+
 PAGES["/infinite"] = page(
     "<h1>Infinite list</h1>" + FILLER + "<div id='list'></div>"
     "<script>let n=0;function add(){for(let i=0;i<10&&n<60;i++){n++;const d=document.createElement('div');"

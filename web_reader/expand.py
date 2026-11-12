@@ -10,7 +10,7 @@ from dataclasses import dataclass, field
 from typing import Any, Callable
 
 from .budget import Deadline
-from .dom import FIND_JS, LOADMORE_RE, SCROLL_JS, SIGNATURE_JS, SKIP_RE
+from .dom import FIND_JS, LOADMORE_RE, NEXTPAGE_RE, SCROLL_JS, SIGNATURE_JS, SKIP_RE
 from .harvest import Harvester
 from .network import Watcher
 from .popups import click_marked, dismiss_popups
@@ -55,6 +55,7 @@ async def explore(page: Any, root: Any, source: str, harvester: Harvester, watch
     no_new = 0
     handled_toggles: set[str] = set()
     futile_loadmore: set[str] = set()
+    futile_next: set[str] = set()
     start_url = page.url
     last_round_progress = True
 
@@ -128,6 +129,25 @@ async def explore(page: Any, root: Any, source: str, harvester: Harvester, watch
             lines, links = await harvester.snapshot(root, f"expanded: {cand['text'] or cand['tag']}", source)
             progressed |= (lines + links) > 0
 
+        # 4. Listing that changes page in place by a "Next" button (no link): only when the current view
+        #    gave nothing new. Each turn counts as an expansion, so the same limit applies.
+        if not progressed and stats.expansions < limits.max_expansions and not deadline.expired():
+            for cand in await _find(root, "nextpage", NEXTPAGE_RE, SKIP_RE, 3):
+                if cand["sig"] in futile_next:
+                    continue
+                if not await click_marked(root, cand["id"]):
+                    continue
+                stats.expansions += 1
+                stats.clicks.append(f"next page: {cand['text'] or cand['tag']}")
+                did_action = True
+                await _after_click(page, watcher, deadline, stats, start_url, allow_navigation_check)
+                lines, links = await harvester.snapshot(root, f"next page {stats.expansions}", source)
+                if (lines + links) > 0:
+                    progressed = True
+                else:
+                    futile_next.add(cand["sig"])  # the click brought nothing new (carousel, last page)
+                break
+
         # окна могут появиться с задержкой (рассылка, опрос): закрываем
         if did_action and not deadline.expired():
             result = await dismiss_popups(page, deadline.remaining(), max_rounds=1)
@@ -155,7 +175,8 @@ async def note_remaining_expandables(root: Any, limits: Any, stats: ExploreStats
     """Если упёрлись в лимит раскрытий, проверяет, остались ли нераскрытые элементы."""
     if stats.expansions < limits.max_expansions:
         return
-    left = await _find(root, "toggle", ".*", SKIP_RE, 5) + await _find(root, "loadmore", LOADMORE_RE, SKIP_RE, 5)
+    left = (await _find(root, "toggle", ".*", SKIP_RE, 5) + await _find(root, "loadmore", LOADMORE_RE, SKIP_RE, 5)
+            + await _find(root, "nextpage", NEXTPAGE_RE, SKIP_RE, 2))
     if left:
         stats.hit("max_expansions", value=limits.max_expansions, remaining=[c["text"] for c in left[:5]])
 

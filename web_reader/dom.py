@@ -201,7 +201,7 @@ async () => {
 
 # Поиск кликабельных элементов нужного вида. Найденным присваивается data-wr-id,
 # по нему Python потом находит элемент и нажимает.
-# kind: loadmore | toggle | reject | close
+# kind: loadmore | toggle | nextpage | reject | close
 FIND_JS = r"""
 (arg) => {
   const re = new RegExp(arg.re, 'i');
@@ -248,6 +248,15 @@ FIND_JS = r"""
       const meta = (el.id || '') + ' ' + (typeof el.className === 'string' ? el.className : '') + ' ' + (el.getAttribute('aria-controls') || '');
       if (/menu|hamburger|navbar|cookie|consent|language|locale|search|filter-reset/i.test(meta)) continue;
       if (skip.test(text)) continue;
+    } else if (arg.kind === 'nextpage') {
+      // "Next" control that changes the list in place (no real link; real links are followed as pages).
+      const aria = (el.getAttribute('aria-label') || el.getAttribute('title') || '').trim();
+      if (realLink || text.length > 30 || !(re.test(text) || re.test(aria))) continue;
+      if (/slide|carousel|testimonial|image|photo|video|month|year|week|step|question/i.test(text + ' ' + aria)) continue;
+      if (el.closest('[class*="carousel" i], [class*="slider" i], [class*="swiper" i], [class*="slick" i], [class*="gallery" i], [class*="calendar" i], [role="dialog"], [aria-modal="true"]')) continue;
+      if (el.getAttribute('aria-current') || el.classList.contains('disabled')) continue;
+      const form = el.closest('form');  // never step through a form that asks for input
+      if (form && form.querySelector('input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input:not([type]), textarea')) continue;
     } else if (arg.kind === 'reject' || arg.kind === 'settings' || arg.kind === 'save') {
       if (!text || text.length > 60 || !re.test(text) || realLink) continue;
       if (!el.closest(BANNER)) continue;
@@ -347,6 +356,14 @@ LOADMORE_RE = (
     r"^\s*\+?\s*more\s*$|^\s*more\s+\w+\s*$"
 )
 LOADMORE_RE = LOADMORE_RE  # одна строка для new RegExp
+
+# "Next page" controls that replace the list in place (button or link without a real address).
+NEXTPAGE_RE = (
+    r"^\s*(go\s+to\s+)?(the\s+)?next(\s+page)?\s*[›»→>]*\s*$|"
+    r"^\s*(siguiente|página\s+siguiente|suivant|page\s+suivante|weiter|nächste(\s+seite)?|próxim[ao](\s+página)?|seguinte|"
+    r"successiv[ao]|avanti|następna(\s+strona)?|dalej|наступна(\s+сторінка)?|далі)\s*[›»→>]*\s*$|"
+    r"^\s*[›»→>]{1,2}\s*$"
+)
 
 REJECT_RE = (
     r"^(reject( all)?|decline( all)?|deny( all)?|refuse( all)?|only (necessary|essential)( cookies)?|necessary only|essential only|"
